@@ -2,7 +2,7 @@
 
 //object_tags
     string  armor_helmet    = "Takes damage from all sources instead of your health but deosn't prevent status conditions.";
-    string  armor_shield    = "Takes attacks from the front instead of your health and prevents status conditions.";
+    string  armor_shield    = "Takes attacks from the front instead of your health and prevents status conditions but can be countered by piercing attacks.";
     string  armor_umbrella  = "Takes attacks from the top instead of your health and prevents status conditions.";
     string  item_attack     = "An item designed to upgrade your attacks.";
     string  item_passive    = "An item design to give you passive bonuses.";
@@ -48,6 +48,20 @@
         string  object_type     = armor_shield;
         bool    magnetisable    = false;
 
+    //screendoor
+        string  description     = "The classic and certainly strong shield.";
+        double  armor           = 25;
+        string  special         = "";
+        string  object_type     = armor_shield;
+        bool    magnetisable    = true;
+
+    //zcorp_wc_door
+        string  description     = "So this is where it went.";
+        double  armor           = 25;
+        string  special         = "Blocks piercing attacks.";
+        string  object_type     = armor_shield;
+        bool    magnetisable    = true;
+
 //item_attack
     //bite
         string  description     = "The standard zombie attack.";
@@ -64,5 +78,6 @@
         string  object_type     = item_attack;  
 
 //item_passive
+    //zcorp_mug
 
 //gadget
