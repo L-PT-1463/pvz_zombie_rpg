@@ -6,8 +6,11 @@
     string  armor_umbrella  = "Takes attacks from the top instead of your health and prevents status conditions.";
     string  item_attack     = "An item designed to upgrade your attacks.";
     string  item_passive    = "An item design to give you passive bonuses.";
-    string  dmg_bite        = "A bite based attack is affected by plants with eating based abilities."
-    string  dmg_strike      = "A non-bite based attack is unaffected by plants with eating based abilities.";
+
+    string  bite        = "A bite based attack is affected by plants with eating based abilities."
+    string  strike      = "A non-bite based attack is unaffected by plants with eating based abilities.";
+    string  range       = "A ranged attack that does not require contact.";
+
     bool    magnetisable    = "Weak to Magnetshroom's ability.";
 
 //template_category
@@ -18,6 +21,7 @@
         string  special         = "";
         string  object_type     = ;
         bool    magnetisable    = false;
+        //Note: Base hp is 12
 
     //template_item
         string  description     = "";
@@ -29,7 +33,7 @@
 //armor
     //cone
         string  description     = "The most basic kind of armor.";
-        double  armor           = 10;
+        double  armor           = 8;
         string  special         = "";
         string  object_type     = armor_helmet;
         bool    magnetisable    = false;
@@ -66,16 +70,23 @@
     //bite
         string  description     = "The standard zombie attack.";
         string  dmg             = 1;
-        string  dmg_type        = dmg_bite;
+        string  dmg_type        = bite;
         string  special         = "";
         string  object_type     = item_attack;
 
     //riot_cane
         string  description     = "A weak cane used to fend off plant riots.";
         string  dmg             = 1;
-        string  dmg_type        = dmg_strike;
+        string  dmg_type        = strike;
         string  special         = "";
         string  object_type     = item_attack;  
+
+    //cardboard_shooters
+        string  description     = "Roles of toilet paper make for a perfect weapon.";
+        string  dmg             = 1;
+        string  dmg_type        = range;
+        string  special         = "";
+        string  object_type     = item_attack;
 
 //item_passive
     //zcorp_mug
