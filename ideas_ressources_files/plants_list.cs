@@ -21,6 +21,7 @@
 
     //dmg_boolean_tags
         bool    pierce      = "Attack passes hits past armor with the 'pass-through' tag.";
+        bool    fire        = "Deals double damage to certain armors.";
 
 //template_catergory
 
