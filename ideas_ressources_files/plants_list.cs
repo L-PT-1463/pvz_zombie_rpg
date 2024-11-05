@@ -1,22 +1,26 @@
-
 //This is the complete list of plant enemies in PvZ ZPG
 
 //plant_tags
-    string  shooter     = "Shooter plants attack at a range with straight-shooting projectiles.";
-    string  lobber      = "Lobber plants attack at a range with lobbed projectiles.";
-    string  melee       = "Melee plants attack at close proximity.";
-    string  protector   = "Protector plants take hits for others; they must be attacked before the plants behind them.";
-    string  eaten       = "Eaten plants have special powers that specifically trigger on being eaten.";
-    string  healer      = "Healer plants have powers allowing them to heal or buff other plants.";
-    string  debuffer    = "Debuffer plants have powers that weaken the player through status conditions.";
-    string  ground      = "Ground plants cannot be attacked by normal means but don't need to be defeated to complete a level. They do damage to zombies that attack a plant behind them.";
+    //plant_type
+        string  shooter     = "Shooter plants attack at a range with straight-shooting projectiles.";
+        string  lobber      = "Lobber plants attack at a range with lobbed projectiles.";
+        string  melee       = "Melee plants attack at close proximity.";
+        string  ground      = "Ground plants cannot be attacked by normal means but don't need to be defeated to complete a level. They do damage to zombies that attack a plant behind them.";
+        string  protector   = "Protector plants take hits for others; they must be attacked before the plants behind them.";
+        string  healer      = "Healer plants have powers allowing them to heal or buff other plants.";
+        string  debuffer    = "Debuffer plants have powers that weaken the player through status conditions.";
 
-    string  lane        = "A lane of the map.";
-    string  column      = "A columb of the map.";
-    string  adjX        = "Adjacent plants in the same lane.";
-    string  adjCross    = "Adjacent plants in the same lane and row.";
-    string  leasthp     = "The plant with the least hp.";
+    //range
+        string  lane        = "A lane of the map.";
+        string  column      = "A columb of the map.";
+        string  adjX        = "Adjacent tiles in the same lane.";
+        string  adjCross    = "Adjacent tiles in the same lane and row.";
+        string  adj3        = "Tiles in a 3x3 area.";
+        string  leasthp     = "The plant with the least hp.";
+        string  eaten       = "The effects of the plant happen when eaten.";
 
+    //dmg_boolean_tags
+        bool    pierce      = "Attack passes hits past armor with the 'pass-through' tag.";
 
 //template_catergory
 
