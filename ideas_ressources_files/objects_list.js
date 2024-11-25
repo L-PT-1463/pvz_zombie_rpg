@@ -2,26 +2,27 @@
 
 //object_tags
     //object_type
-        var armor_helmet    = "Takes damage from all source instead of your health but deosn't prevent status conditions.";
+        var armor_helmet    = "Takes damage from all source instead of your health but doesn't prevent status conditions.";
         var armor_shield    = "Takes attacks from 'shooter' and 'melee' plants instead of your health and prevents status conditions.";
         var armor_umbrella  = "Takes attacks from 'lobber' plants instead of your health and prevents status conditions.";
         var item_attack     = "An item designed to upgrade your attacks.";
         var item_passive    = "An item design to give you passive bonuses.";
-        var item_gadget     = "A single-use item, often used to summon spawnlings.";
+        var item_gadget     = "A single-use item.";
 
     //dmg_type
-        var bite        = "A bite based attack is affected by plants with 'eaten' range."
-        var strike      = "A non-bite based attack is unaffected by plants with eating based abilities.";
-        var range       = "A ranged attack that does not require contact.";
+        var bite        = "A bite based attack requires contact and is affected by plants with 'eaten' range."
+        var strike      = "A non-bite based attack requires contact but is unaffected by plants with 'eaten' range.";
+        var range       = "A ranged attack that does not require contact and is unaffected by plants with 'eaten' range.";
 
-    //armor_Booleanean_tags
+    //armor_booleanean_tags
         var magnetisable    = "Weak to Magnetshroom's ability.";
         var pass_through    = "Attacks with a 'pierce' tag can hit through the armor.";
         var fire_weak       = "Takes double damage from 'fire' tag projectile.";
 
     //status_conditions
-        var frozen      = "The creature doesn't attack this turn.";
-        var chilled     = "The creature attacks last this turn.";
+        var frozen      = "The creature doesn't attack this turn. Disabled by 'fire' tag projectiles.";
+        var buttered    = "The creature doesn't attack this turn.";
+        var chilled     = "The creature attacks last this turn. Disabled by 'fire' tag projectiles.";
 
 //template_category
     
@@ -30,9 +31,9 @@
         var armor           = 0;
         var special         = "";
         var object_type     = "Add Here";
-        var Boolean,    magnetisable    = false;
-        var Boolean,    pass_through    = false;
-        var Boolean,    fire_weak       = false;
+        Boolean,    magnetisable    = false;
+        Boolean,    pass_through    = false;
+        Boolean,    fire_weak       = false;
         //Note: Base hp is 12
 
     //template_item
@@ -49,72 +50,72 @@
         var armor           = 8;
         var special         = "";
         var object_type     = armor_helmet;
-        var Boolean,    magnetisable    = false;
-        var Boolean,    pass_through    = false;
-        var Boolean,    fire_weak       = true;
+        Boolean,    magnetisable    = false;
+        Boolean,    pass_through    = false;
+        Boolean,    fire_weak       = true;
 
     //bucket
         var description     = "A strong metalic helmet.";
         var armor           = 25;
         var special         = "";
         var object_type     = armor_helmet;
-        var Boolean,    magnetisable    = true;
-        var Boolean,    pass_through    = false;
-        var Boolean,    fire_weak       = false;
+        Boolean,    magnetisable    = true;
+        Boolean,    pass_through    = false;
+        Boolean,    fire_weak       = false;
 
     //newspaper
         var description     = "A weak shield that buffs you upon destruction.";
         var armor           = 10;
         var special         = "Buffs the player's damage after it's destroyed.";
         var object_type     = armor_shield;
-        var Boolean,    magnetisable    = false;
-        var Boolean,    pass_through    = true;
-        var Boolean,    fire_weak       = true;
+        Boolean,    magnetisable    = false;
+        Boolean,    pass_through    = true;
+        Boolean,    fire_weak       = true;
 
     //screendoor
         var description     = "The classic and certainly strong shield.";
         var armor           = 25;
         var special         = "";
         var object_type     = armor_shield;
-        var Boolean,    magnetisable    = true;
-        var Boolean,    pass_through    = true;
-        var Boolean,    fire_weak       = false;
+        Boolean,    magnetisable    = true;
+        Boolean,    pass_through    = true;
+        Boolean,    fire_weak       = false;
 
     //zcorp_wc_door
         var description     = "So this is where it went.";
         var armor           = 25;
         var special         = "";
         var object_type     = armor_shield;
-        var Boolean,    magnetisable    = true;
-        var Boolean,    pass_through    = false;
-        var Boolean,    fire_weak       = false;
+        Boolean,    magnetisable    = true;
+        Boolean,    pass_through    = false;
+        Boolean,    fire_weak       = false;
 
     //party_cone
         var description     = "The more the merrier in a party!";
         var armor           = 8;
         var special         = "Gains +2 armor every time a spawnling is summoned.";
         var object_type     = armor_helmet;
-        var Boolean,    magnetisable    = false;
-        var Boolean,    pass_through    = false;
-        var Boolean,    fire_weak       = true;
+        Boolean,    magnetisable    = false;
+        Boolean,    pass_through    = false;
+        Boolean,    fire_weak       = true;
 
     //ice_block
         var description     = "Nothing like ice to fight frost.";
         var armor           = 16;
         var special         = "Blocks 'frozen' and 'chilled' status conditions.";
         var object_type     = armor_helmet;
-        var Boolean,    magnetisable    = false;
-        var Boolean,    pass_through    = false;
-        var Boolean,    fire_weak       = true;
+        Boolean,    magnetisable    = false;
+        Boolean,    pass_through    = false;
+        Boolean,    fire_weak       = true;
 
     //brick_head
         var description     = "Much better than hay and wood.";
         var armor           = 30;
         var special         = "";
         var object_type     = armor_helmet;
-        var Boolean,    magnetisable    = false;
-        var Boolean,    pass_through    = false;
-        var Boolean,    fire_weak       = false;
+        Boolean,    magnetisable    = false;
+        Boolean,    pass_through    = false;
+        Boolean,    fire_weak       = false;
 
 //item_attack
     //bite
