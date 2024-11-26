@@ -27,7 +27,7 @@
 //template_category
     
     //template_armor
-        var description     = "";
+        var description     = ""
         var armor           = 0;
         var special         = "";
         var object_type     = "Add Here";
@@ -45,24 +45,6 @@
         var object_type     = "Add Here";   
 
 //armor
-    //cone
-        var description     = "The most basic kind of armor.";
-        var armor           = 8;
-        var special         = "";
-        var object_type     = armor_helmet;
-        Boolean,    magnetisable    = false;
-        Boolean,    pass_through    = false;
-        Boolean,    fire_weak       = true;
-
-    //bucket
-        var description     = "A strong metalic helmet.";
-        var armor           = 25;
-        var special         = "";
-        var object_type     = armor_helmet;
-        Boolean,    magnetisable    = true;
-        Boolean,    pass_through    = false;
-        Boolean,    fire_weak       = false;
-
     //newspaper
         var description     = "A weak shield that buffs you upon destruction.";
         var armor           = 10;
@@ -71,24 +53,6 @@
         Boolean,    magnetisable    = false;
         Boolean,    pass_through    = true;
         Boolean,    fire_weak       = true;
-
-    //screendoor
-        var description     = "The classic and certainly strong shield.";
-        var armor           = 25;
-        var special         = "";
-        var object_type     = armor_shield;
-        Boolean,    magnetisable    = true;
-        Boolean,    pass_through    = true;
-        Boolean,    fire_weak       = false;
-
-    //zcorp_wc_door
-        var description     = "So this is where it went.";
-        var armor           = 25;
-        var special         = "";
-        var object_type     = armor_shield;
-        Boolean,    magnetisable    = true;
-        Boolean,    pass_through    = false;
-        Boolean,    fire_weak       = false;
 
     //party_cone
         var description     = "The more the merrier in a party!";
@@ -108,43 +72,12 @@
         Boolean,    pass_through    = false;
         Boolean,    fire_weak       = true;
 
-    //brick_head
-        var description     = "Much better than hay and wood.";
-        var armor           = 30;
-        var special         = "";
-        var object_type     = armor_helmet;
-        Boolean,    magnetisable    = false;
-        Boolean,    pass_through    = false;
-        Boolean,    fire_weak       = false;
-
 //item_attack
-    //bite
-        var description     = "The standard zombie attack.";
-        var dmg             = 1;
-        var dmg_type        = bite;
-        var special         = "";
-        var object_type     = item_attack;
-
-    //riot_cane
-        var description     = "A weak cane used to fend off plant riots.";
-        var dmg             = 1;
-        var dmg_type        = strike;
-        var special         = "";
-        var object_type     = item_attack;  
-
-    //cardboard_shooters
-        var description     = "Roles of toilet paper make for a perfect weapon.";
-        var dmg             = 1;
-        var dmg_type        = range;
-        var special         = "";
-        var object_type     = item_attack;
-
     //excavator_shovel
         var description     = "A wonderful plant-thrower.";
         var dmg             = 1;
         var dmg_type        = strike;
         var special         = "Throws 'protecor' type plants back one tile (pushes whatever plant is there forwards).";
-        var spawnlings      = "";
         var object_type     = item_attack;
 
     //torch
@@ -152,7 +85,6 @@
         var dmg             = 1;
         var dmg_type        = strike;
         var special         = "deals triple damage to 'protector' plants.";
-        var spawnlings      = "";
         var object_type     = item_attack;
 
 //item_passive
@@ -208,3 +140,71 @@
         var special         = "Instantly summons spawnlings.";
         var spawnlings      = 2, Space_Cadet;
         var object_type     = item_gadget;
+
+//already in script.js
+    //cone
+        var description     = "The most basic kind of armor.";
+        var armor           = 8;
+        var special         = "";
+        var object_type     = armor_helmet;
+        Boolean,    magnetisable    = false;
+        Boolean,    pass_through    = false;
+        Boolean,    fire_weak       = true;
+
+    //bucket
+        var description     = "A strong metalic helmet.";
+        var armor           = 25;
+        var special         = "";
+        var object_type     = armor_helmet;
+        Boolean,    magnetisable    = true;
+        Boolean,    pass_through    = false;
+        Boolean,    fire_weak       = false;    
+
+    //brick_head
+        var description     = "Much better than hay and wood.";
+        var armor           = 30;
+        var special         = "";
+        var object_type     = armor_helmet;
+        Boolean,    magnetisable    = false;
+        Boolean,    pass_through    = false;
+        Boolean,    fire_weak       = false;
+
+
+    //screendoor
+        var description     = "The classic and certainly strong shield.";
+        var armor           = 25;
+        var special         = "";
+        var object_type     = armor_shield;
+        Boolean,    magnetisable    = true;
+        Boolean,    pass_through    = true;
+        Boolean,    fire_weak       = false;
+
+    //zcorp_wc_door
+        var description     = "So this is where it went.";
+        var armor           = 25;
+        var special         = "";
+        var object_type     = armor_shield;
+        Boolean,    magnetisable    = true;
+        Boolean,    pass_through    = false;
+        Boolean,    fire_weak       = false;
+
+    //bite
+        var description     = "The standard zombie attack.";
+        var dmg             = 1;
+        var dmg_type        = bite;
+        var special         = "";
+        var object_type     = item_attack;
+
+    //riot_cane
+        var description     = "A weak cane used to fend off plant riots.";
+        var dmg             = 1;
+        var dmg_type        = strike;
+        var special         = "";
+        var object_type     = item_attack;  
+
+    //cardboard_shooters
+        var description     = "Roles of toilet paper make for a perfect weapon.";
+        var dmg             = 1;
+        var dmg_type        = range;
+        var special         = "";
+        var object_type     = item_attack;
