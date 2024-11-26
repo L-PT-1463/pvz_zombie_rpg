@@ -4,4 +4,4 @@
     var description = "";
 
 //training_grounds
-    var description = "The first region of every game. This is the zombie's training grounds. Reminiscent of I, Zombie, the training grounds features cardboard plants.";
+    var description = "The first region of every game. This is the zombie's training grounds. Reminiscent of 'I, Zombie,' the Training Grounds features cardboard plants.";
