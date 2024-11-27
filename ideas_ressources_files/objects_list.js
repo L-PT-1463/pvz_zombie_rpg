@@ -63,28 +63,12 @@
         Boolean,    pass_through    = false;
         Boolean,    fire_weak       = true;
 
-    //ice_block
-        var description     = "Nothing like ice to fight frost.";
-        var armor           = 16;
-        var special         = "Blocks 'frozen' and 'chilled' status conditions.";
-        var object_type     = armor_helmet;
-        Boolean,    magnetisable    = false;
-        Boolean,    pass_through    = false;
-        Boolean,    fire_weak       = true;
-
 //item_attack
     //excavator_shovel
         var description     = "A wonderful plant-thrower.";
         var dmg             = 1;
         var dmg_type        = strike;
         var special         = "Throws 'protecor' type plants back one tile (pushes whatever plant is there forwards).";
-        var object_type     = item_attack;
-
-    //torch
-        var description     = "The best wall-destroyer.";
-        var dmg             = 1;
-        var dmg_type        = strike;
-        var special         = "deals triple damage to 'protector' plants.";
         var object_type     = item_attack;
 
 //item_passive
@@ -169,6 +153,14 @@
         Boolean,    pass_through    = false;
         Boolean,    fire_weak       = false;
 
+    //ice_block
+        var description     = "Nothing like ice to fight frost.";
+        var armor           = 16;
+        var special         = "Blocks 'frozen' and 'chilled' status conditions.";
+        var object_type     = armor_helmet;
+        Boolean,    magnetisable    = false;
+        Boolean,    pass_through    = false;
+        Boolean,    fire_weak       = true;
 
     //screendoor
         var description     = "The classic and certainly strong shield.";
@@ -200,7 +192,14 @@
         var dmg             = 1;
         var dmg_type        = strike;
         var special         = "";
-        var object_type     = item_attack;  
+        var object_type     = item_attack;
+        
+    //torch
+        var description     = "The best wall-destroyer.";
+        var dmg             = 1;
+        var dmg_type        = strike;
+        var special         = "deals triple damage to 'protector' plants.";
+        var object_type     = item_attack;
 
     //cardboard_shooters
         var description     = "Roles of toilet paper make for a perfect weapon.";
