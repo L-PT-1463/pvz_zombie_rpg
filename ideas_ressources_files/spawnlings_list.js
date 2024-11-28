@@ -6,8 +6,6 @@
 
 //conehead
 
-//zcorp_shield_generator
-
 //zcorp_costumer_service
 
 //space_cadet

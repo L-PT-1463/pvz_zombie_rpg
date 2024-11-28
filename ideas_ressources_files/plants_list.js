@@ -36,8 +36,7 @@
         var special     = "";
         var plant_type  = "Add Here";
 
-//training_grounds
-    
+//already in script.js
     //cardboard_peashooter
         var description = "";
         var hp          = 6;

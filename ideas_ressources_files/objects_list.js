@@ -6,7 +6,7 @@
         var armor_shield    = "Takes attacks from 'shooter' and 'melee' plants instead of your health and prevents status conditions.";
         var armor_umbrella  = "Takes attacks from 'lobber' plants instead of your health and prevents status conditions.";
         var item_attack     = "An item designed to upgrade your attacks.";
-        var item_passive    = "An item design to give you passive bonuses.";
+        var item_passive    = "An item designed to give you passive bonuses.";
         var item_gadget     = "A single-use item.";
 
     //dmg_type
@@ -25,7 +25,6 @@
         var chilled     = "The creature attacks last this turn. Disabled by 'fire' tag projectiles.";
 
 //template_category
-    
     //template_armor
         var description     = ""
         var armor           = 0;
@@ -55,7 +54,7 @@
         Boolean,    fire_weak       = true;
 
     //party_cone
-        var description     = "The more the merrier in a party!";
+        var description     = "The more the merrier!";
         var armor           = 8;
         var special         = "Gains +2 armor every time a spawnling is summoned.";
         var object_type     = armor_helmet;
@@ -76,53 +75,11 @@
 
     //ducky_tube
 
-    //flag
-        var description     = "Creates many weak allies.";
-        var special         = "Summons spawnlings every two waves.";
-        var spawnlings      = 1, Browncoat;
-        var object_type     = item_passive;
-
-    //frozen_flag
-        var description     = "Creates many frozen allies.";
-        var special         = "Summons spawnlings every three waves.";
-        var spawnlings      = 1, Brownparka;
-        var object_type     = item_passive;
-
-    //vaulting_pole
-        var description     = "The best wall-avoider.";
-        var special         = "Allows you to attack plants behind 'protector'.";
-        var spawnlings      = "";
-        var object_type     = item_passive;
-
 //gadget
-    //pocket_shield_gen
-        var description     = "The peak of work insurance.";
-        var special         = "Instantly summons spawnlings.";
-        var spawnlings      = 1, ZCorp_Shield_Generator;
-        var object_type     = item_gadget;
-
-    //zcorp_cellphone
-        var description     = "Costumer service please!";
-        var special         = "Instantly summons spawnlings.";
-        var spawnlings      = 2, ZCorp_Costumer_Service;
-        var object_type     = item_gadget;
-
-    //rally_flag
-        var description     = "Creates few stronger allies.";
-        var special         = "Instantly summons spawnlings.";
-        var spawnlings      = 3, Conehead;
-        var object_type     = item_gadget;
-
     //gravedigger's_shovel
         var description     = "Creates few stronger allies.";
         var special         = "Instantly summons spawnlings.";
         var spawnlings      = 1, Gravestone;
-        var object_type     = item_gadget;
-
-    //teleporter
-        var description     = "Gadget Scientist's favourite gadget.";
-        var special         = "Instantly summons spawnlings.";
-        var spawnlings      = 2, Space_Cadet;
         var object_type     = item_gadget;
 
 //already in script.js
@@ -201,9 +158,51 @@
         var special         = "deals triple damage to 'protector' plants.";
         var object_type     = item_attack;
 
+    //vaulting_pole
+        var description     = "The best wall-avoider.";
+        var special         = "Allows you to attack plants behind 'protector'.";
+        var spawnlings      = "";
+        var object_type     = item_passive;
+
     //cardboard_shooters
         var description     = "Roles of toilet paper make for a perfect weapon.";
         var dmg             = 1;
         var dmg_type        = range;
         var special         = "";
         var object_type     = item_attack;
+
+    //pocket_shield_gen
+        var description     = "The peak of work insurance.";
+        var special         = "Instantly summons spawnlings.";
+        var spawnlings      = 1, ZCorp_RoboShield;
+        var object_type     = item_gadget;
+
+    //flag
+        var description     = "Creates many weak allies.";
+        var special         = "Summons spawnlings every two waves.";
+        var spawnlings      = 1, Browncoat;
+        var object_type     = item_passive;
+
+    //frozen_flag
+        var description     = "Creates many frozen allies.";
+        var special         = "Summons spawnlings every three waves.";
+        var spawnlings      = 1, Brownparka;
+        var object_type     = item_passive;
+ 
+    //zcorp_cellphone
+        var description     = "Costumer service please!";
+        var special         = "Instantly summons spawnlings.";
+        var spawnlings      = 2, ZCorp_Costumer_Service;
+        var object_type     = item_gadget;
+
+    //rally_flag
+        var description     = "Creates few stronger allies.";
+        var special         = "Instantly summons spawnlings.";
+        var spawnlings      = 3, Conehead;
+        var object_type     = item_gadget;
+
+    //teleporter
+        var description     = "Gadget Scientist's favourite gadget.";
+        var special         = "Instantly summons spawnlings.";
+        var spawnlings      = 2, Space_Cadet;
+        var object_type     = item_gadget;
