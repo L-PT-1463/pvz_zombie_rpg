@@ -18,21 +18,21 @@
         let ground      = "Ground plants cannot be attacked but don't need to be defeated to complete a level. They do damage to zombies that attack a plant behind them.";
 
     //dmg_type
-        let bite        = "A bite based attack requires contact (adjFront (x)) and is affected by plants with 'eaten' and 'death_eaten' range."
-        let strike      = "A non-bite based attack requires contact (adjFront (x)) but is unaffected by plants with 'eaten' and 'death_eaten' range.";
+        let munch        = "A munch based attack requires contact (adjFront (x)) and is affected by plants with 'eaten' and 'death_eaten' range."
+        let strike      = "A non-munch based attack requires contact (adjFront (x)) but is unaffected by plants with 'eaten' and 'death_eaten' range.";
         let range       = "A ranged attack that does not require contact (lane) and is unaffected by plants with 'eaten' adn 'death_eaten' range.";    
     
         let lane        = "A lane of the map.";
         let row         = "A row of the map.";
-        let eaten       = "The plant attakcs the zombie that attacked it if hit by a 'bite' type attack.";
+        let eaten       = "The plant attakcs the zombie that attacked it if hit by a 'munch' type attack.";
         let adjFront    = "Adjacent tile in front (-x)."
         let adjX        = "Adjacent tiles in the same lane.";
         let adjY        = "Adjacent tiles in the same row.";
         let adjCross    = "Adjacent tiles in the same lane and row.";
         let adj3        = "Tiles in a 3x3 area centred around itself.";
-        let adjEaten    = "The plant attacks the zombie that attacked the plant behind (+x) if it is hit by a 'bite' or 'strike' type attack.";
+        let adjEaten    = "The plant attacks the zombie that attacked the plant behind (+x) if it is hit by a 'munch' or 'strike' type attack.";
         let death       = "The plant attacks the zombie that kills it."
-        let deathEaten  = "The plant attacks the zombie that kills it if it dies to a 'bite' type attack.";
+        let deathEaten  = "The plant attacks the zombie that kills it if it dies to a 'munch' type attack.";
         let leastHp     = "The plant with the least hp.";
 
     //dmg_tags
@@ -186,12 +186,12 @@ class Armor_Umbrella {
 
 //creating items
     //item_attack
-        //bite
-const munch = new Item_Attack(
+        //munch
+const bite = new Item_Attack(
     "Bite",
     "The standard zombie attack",
     1,
-    bite,
+    munch,
     []
 )
 
@@ -325,7 +325,7 @@ const player = new Zombie(
     "The hero of this adventure",
     12,
     1,
-    [munch],                         //How to add actions to array inside player: player.actions.push("test")
+    [bite],                         //How to add actions to array inside player: player.actions.push("test")
     [],
     [],
     []
@@ -337,7 +337,7 @@ const browncoat = new Zombie(
     "The weakest of the week, but an ally none the less",
     8,
     4,
-    [munch],
+    [bite],
     [],
     [],
     []
@@ -348,7 +348,7 @@ const brownparka = new Zombie(
     "A browncoat ready for winter",
     8,
     4,
-    [munch],
+    [bite],
     [],
     [],
     [ice_immune]
@@ -359,7 +359,7 @@ const conehead = new Zombie(
     "A weak but tough ally",
     8,
     4,
-    [munch],
+    [bite],
     [cone],
     [],
     []
@@ -370,7 +370,7 @@ const space_cadet = new Zombie(
     "Teleported in from space",
     8,
     4,
-    [munch, space_gun],
+    [bite, space_gun],
     [space_helmet],
     [],
     []
@@ -381,7 +381,7 @@ const zcorp_costumer_service = new Zombie(
     "Don't worry, he'll put a pin on your complaints",
     12,
     4,
-    [munch, zcorp_pin],
+    [bite, zcorp_pin],
     [],
     [],
     []
