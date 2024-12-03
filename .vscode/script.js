@@ -57,20 +57,42 @@
             let buttered    = "The zombie doesn't attack this turn.";
 
 //define classes
+    //zombies
 class Zombie{
     constructor(name, description, health, priority, actions, armors, passives, were_tags){
-        this.name           = name;             //define as words ""
-        this.description    = description;      //define as words ""
-        this.health         = health;           //define as number
-        this.priority       = priority;         //defines priority in turn order: 1 is first
-        this.actions        = actions;          //define as an array of attack and gadget items that are available to it
-        this.armors         = armors;           //define as an array of armor items that are available to it
-        this.passives       = passives;         //define as an array of passive items that are available to it
-        this.were_tags      = were_tags;        //define as an array of tags that affect it
-        this.conditions     = [];               //add conditions to array. Code will remove all conditions at the end of the turn
+        this.name               = name;                 //define as words ""
+        this.description        = description;          //define as words ""
+        this.health             = health;               //define as number
+        this.priority           = priority;             //defines priority in turn order: 1 is first
+        this.actions            = actions;              //define as an array of attack and gadget items that are available to it
+        this.armors             = armors;               //define as an array of armor items that are available to it
+        this.equippedArmor      = null;
+        this.passives           = passives;             //define as an array of passive items that are available to it
+        this.equippedPassives   = [];
+        this.were_tags          = were_tags;            //define as an array of tags that affect it
+        this.conditions         = [];                   //add conditions to array. Code will remove all conditions at the end of the turn
+    }
+
+    equipArmor(armor) {
+        if (this.equippedArmor) {
+            return;
+        }
+        
+        if (this.armors.includes(armor)) {
+            this.equippedArmor = armor;
+        }
+    }
+
+    equipPassive(passive) {
+        if (this.equippedPassives.length >= 3) {
+            return;
+        }
+
+        this.equippedPassives.push(passive);
     }
 }
 
+    //plants
 class Plant{
     constructor(name, health, dmg, dmg_tags, dmg_type, priority, plant_type){
         this.name           = name;             //define as words ""
@@ -93,6 +115,7 @@ class Plant_Ground{
     }
 }
 
+    //items
 class Item_Attack {
     constructor(name, description, dmg, dmg_type, dmg_tags) {
         this.name           = name;             //define as words ""
@@ -154,6 +177,7 @@ class Item_GadgetSpgl {
     }
 }
 
+    //armors
 class Armor_Helmet {
     constructor(name, description, armor, were_tags) {
         this.name           = name;             //define as words ""
@@ -318,6 +342,24 @@ const zcorp_pocket_roboShield = new Item_GadgetArmor(
     holoShield
 )
 
+//creating utilitary actions
+    //equip armor
+class ActionEquipArmor {
+    constructor(name, description) {
+        this.name = name;             // define as words ""
+        this.description = description; // define as words ""
+    }
+
+    execute(target, armor) {
+        target.equipArmor(armor);
+    }
+}
+    
+const actionEquipArmor = new ActionEquipArmor(
+    "Equip Armor",
+    "Allows the zombie to equip a piece of armor from its inventory."
+)
+
 //creating zombies
     //player
 const player = new Zombie(
@@ -325,7 +367,7 @@ const player = new Zombie(
     "The hero of this adventure",
     12,
     1,
-    [bite],                         //How to add actions to array inside player: player.actions.push("test")
+    [actionEquipArmor, bite],                         //How to add actions to array inside player: player.actions.push("test")
     [],
     [],
     []
