@@ -5,16 +5,12 @@
         let item_gadget     = "A single-use item.";
         
         let armor_helmet    = "Takes damage from all source instead of your health but doesn't prevent status conditions.";
-        let armor_shield    = "Takes attacks from 'shooter' and 'melee' plants instead of your health and prevents status conditions.";
-        let armor_umbrella  = "Takes attacks from 'lobber' plants instead of your health and prevents status conditions.";
+        let armor_shield    = "Takes attacks from 'straight' and 'melee' attacks instead of your health and prevents status conditions.";
+        let armor_umbrella  = "Takes attacks from 'lobbed' attacks instead of your health and prevents status conditions.";
 
     //plant_type
-        let shooter     = "Shooter plants attack with straight-shooting projectiles.";
-        let lobber      = "Lobber plants attack with lobbed projectiles.";
-        let melee       = "Melee plants attack with contact.";
-        let protector   = "Protector plants take hits for others; they must be attacked before the plants behind them.";
-        let healer      = "Healer plants have powers allowing them to heal or buff other plants or zombies.";
-
+        let regular     = "Regular plants must be defeated to complete a level and don't protect the plants behind them.";
+        let protector   = "Protector plants take hits for others; they must be attacked before the plants behind them. They must be defeated to complete a level.";
         let ground      = "Ground plants cannot be attacked but don't need to be defeated to complete a level. They do damage to zombies that attack a plant behind them.";
 
     //dmg_type
@@ -23,6 +19,7 @@
         let range       = "A ranged attack that does not require contact (lane) and is unaffected by plants with 'eaten' adn 'death_eaten' range.";    
     
         let lane        = "A lane of the map.";
+        let lan         = "A lane of the map, the projectile is lobbed.";
         let row         = "A row of the map.";
         let eaten       = "The plant attakcs the zombie that attacked it if hit by a 'munch' type attack.";
         let adjFront    = "Adjacent tile in front (-x)."
@@ -36,6 +33,11 @@
         let leastHp     = "The plant with the least hp.";
 
     //dmg_tags
+        let straight    = "The attack is shot at the target";
+        let lobbed      = "The attack is lobbed at the target.";
+        let melee       = "The attack requires physical contact.";
+        let heal        = "The attack heals the target using the dmg stat.";
+    
         let repeat      = "Attacks twice.";
         let pierce      = "Attack ignore armor shields and protector plants with the 'pass_through' tag.";
         let fire        = "Attack deals double damage to armor with the 'fire_weak' tag.";
@@ -88,29 +90,66 @@ class Zombie{
             return;
         }
 
-        this.equippedPassives.push(passive);
+        if (this.passives.includes(passive)){
+            this.equippedPassives.push(passive);
+        }
     }
 }
 
     //plants
-class Plant{
-    constructor(name, health, dmg, dmg_tags, dmg_type, priority, plant_type){
+class Plant_Regular{
+    constructor(name, health, dmg, dmg_tags, dmg_type, priority){
         this.name           = name;             //define as words ""
         this.health         = health;           //define as number
         this.dmg            = dmg;              //define as number
         this.dmg_tags       = dmg_tags;         //define as an array of tags that affect it
         this.dmg_type       = dmg_type;         //define as one of the variables in the list at the top
         this.priority       = priority;         //defines priority in turn order: 1 is first
-        this.plant_type     = plant_type;       //define as one of the variables in the list at the top
+        this.plant_type     = regular;          //define as one of the variables in the list at the top
     }
 }
 
-class Plant_Ground{
-    constructor(name, dmg, dmg_tags){
+class Plant_Eaten{          //version without priority as attack trigger is not turn-based
+    constructor(name, health, dmg, dmg_tags, dmg_type){
         this.name           = name;             //define as words ""
+        this.health         = health;           //define as number
         this.dmg            = dmg;              //define as number
         this.dmg_tags       = dmg_tags;         //define as an array of tags that affect it
-        this.dmg_type       = adjEaten;        
+        this.dmg_type       = dmg_type;         //define as eaten, deathEaten, adjEaten or death
+        this.plant_type     = regular;          //define as one of the variables in the list at the top
+    }
+}
+
+class Plant_Protector{
+    constructor(name, health, dmg, dmg_tags, dmg_type, priority){
+        this.name           = name;             //define as words ""
+        this.health         = health;           //define as number
+        this.dmg            = dmg;              //define as number
+        this.dmg_tags       = dmg_tags;         //define as an array of tags that affect it
+        this.dmg_type       = dmg_type;         //define as one of the variables in the list at the top
+        this.priority       = priority;         //defines priority in turn order: 1 is first
+        this.plant_type     = protector;        //define as one of the variables in the list at the top
+    }
+}
+
+class Plant_Endurian{       //version without priority as attack trigger is not turn-based
+    constructor(name, health, dmg, dmg_tags, dmg_type){
+        this.name           = name;             //define as words ""
+        this.health         = health;           //define as number
+        this.dmg            = dmg;              //define as number
+        this.dmg_tags       = dmg_tags;         //define as an array of tags that affect it
+        this.dmg_type       = dmg_type;         //define as eaten, deathEaten, adjEaten or death
+        this.plant_type     = protector;        //define as one of the variables in the list at the top
+    }
+}
+
+class Plant_Ground{         //has no priority as attack trigger is not turn-based
+    constructor(name, health, dmg, dmg_tags){
+        this.name           = name;             //define as words ""
+        this.health         = health;           //define as number
+        this.dmg            = dmg;              //define as number
+        this.dmg_tags       = dmg_tags;         //define as an array of tags that affect it
+        this.dmg_type       = adjEaten;   
         this.plant_type     = ground;           
     }
 }
@@ -346,7 +385,7 @@ const zcorp_pocket_roboShield = new Item_GadgetArmor(
     //equip armor
 class ActionEquipArmor {
     constructor(name, description) {
-        this.name = name;             // define as words ""
+        this.name = name;               // define as words ""
         this.description = description; // define as words ""
     }
 
@@ -360,6 +399,22 @@ const actionEquipArmor = new ActionEquipArmor(
     "Allows the zombie to equip a piece of armor from its inventory."
 )
 
+class ActionEquipPassive {
+    constructor(name, description) {
+        this.name = name;               // define as words ""
+        this.description = description; // define as words ""
+    }
+
+    execute(target, passive) {
+        target.equipPassive(passive);
+    }
+}
+
+const actionEquipPassive = new ActionEquipPassive(
+    "Equip Passive",
+    "Allows the zombie to equip a passive item from its inventory."
+)
+
 //creating zombies
     //player
 const player = new Zombie(
@@ -367,7 +422,7 @@ const player = new Zombie(
     "The hero of this adventure",
     12,
     1,
-    [actionEquipArmor, bite],                         //How to add actions to array inside player: player.actions.push("test")
+    [actionEquipArmor, actionEquipPassive, bite],   //How to add actions to array inside player: player.actions.push("test")
     [],
     [],
     []
@@ -401,7 +456,7 @@ const conehead = new Zombie(
     "A weak but tough ally",
     8,
     4,
-    [bite],
+    [actionEquipArmor, bite],
     [cone],
     [],
     []
@@ -412,7 +467,7 @@ const space_cadet = new Zombie(
     "Teleported in from space",
     8,
     4,
-    [bite, space_gun],
+    [actionEquipArmor, bite, space_gun],
     [space_helmet],
     [],
     []
@@ -472,114 +527,108 @@ const teleporter = new Item_GadgetSpgl(
 )
 
 //plants
-    //shooters
-const cardboard_peashooter = new Plant(
+    //regular
+        //shooters
+const cardboard_peashooter = new Plant_Regular(
     "Cardboard Peashooter",
     6,
     1,
     [],
     lane,
-    3,
-    shooter
+    3
 )
 
-const cardboard_repeater = new Plant(
+const cardboard_repeater = new Plant_Regular(
     "Cardboard Repeater",
     6,
     1,
     [repeat],
     lane,
-    3,
-    shooter
+    3
+)
+        //lobbers
+const cardboard_kernelpult = new Plant_Regular(
+    "Cardboard Kernelpult",
+    6,
+    1,
+    [lobbed, butter],
+    lane,
+    3
 )
 
-const stallia = new Plant(
+     //stallers
+const stallia = new Plant_Regular(
     "Stallia",
     6,
     0,
     [stall],
     adj3,
-    3,
-    shooter
-)
-
-    //lobber
-const cardboard_kernelpult = new Plant(
-    "Cardboard Kernelpult",
-    6,
-    1,
-    [butter],
-    lane,
-    3,
-    lobber
+    3
 )
 
     //melee
-const bonk_choy = new Plant(
+const bonk_choy = new Plant_Regular(
     "Bonk Choy",
     10,
     1,
-    [],
+    [melee],
     adjX,
-    3,
-    melee
+    3
 )
 
-const iceberg_lettuce = new Plant(
+    //eaten
+        //death_eaten
+const cardboard_sunflower = new Plant_Eaten(
+    "Cardboard Sunflower",
+    6,
+    1,
+    [heal],
+    deathEaten,
+    3
+)
+        //death
+const iceberg_lettuce = new Plant_Eaten(
     "Iceberg Lettuce",
     2,
     0,
-    [freezing],
+    [melee, freezing],
     death,
-    3,
-    melee
-)
-
-    //ground
-const cardboard_spikeweed = new Plant_Ground(
-    "Cardboard Spikeweed",
-    1,
-    []
+    3
 )
 
     //protector
-const cardboard_wallnut = new Plant(
+        //reg
+const cardboard_wallnut = new Plant_Protector(
     "Cardboard Wallnut",
     24,
     0,
     [],
     eaten,
-    3,
-    protector
+    3
 )
 
-const endurian = new Plant(
-    "Endurian",
-    24,
-    1,
-    [],
-    eaten,
-    3,
-    protector
-)
-
-const peanut = new Plant(
+const peanut = new Plant_Protector(
     "Peanut",
     18,
     1,
     [repeat],
     lane,
-    3,
-    protector
+    3
 )
 
-    //healer
-const cardboard_sunflower = new Plant(
-    "Cardboard Sunflower",
-    6,
+    //endurian
+const endurian = new Plant_Endurian(
+    "Endurian",
+    24,
     1,
     [],
-    deathEaten,
-    3,
-    healer
+    eaten,
+    3
+)
+
+//ground
+const cardboard_spikeweed = new Plant_Ground(
+    "Cardboard Spikeweed",
+    1,
+    []
 )
