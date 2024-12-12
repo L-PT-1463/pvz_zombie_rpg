@@ -140,23 +140,28 @@ class Zombie{
     }
 
     takeDamage(takenDmg, dmgTags, dmgConder) {
+        let armor       = this.equippedArmor;
         let reducedDmg  = this.equippedArmor.armor;
         let armorType   = this.equippedArmor.object_type;
         let health      = this.health;
         let effectiveDmg;
 
-        if(this.equippedArmor = null) {
-            this.conditions.push(dmgConder);
-
-            effectiveDmg = takenDmg;
+        if(dmgTags.includes(fire)){
+            if(this.equippedArmor.were_tags.includes(fire_weak)){
+                takenDmg = 2 * takenDmg;
+            } else {
+                takenDmg = takenDmg;
+            }
         }
 
             //defines effective damage if wearing Helmet type armors and inflicts condition on player
         if(armorType = armor_helmet) {
             if(this.equippedArmor.were_tags.includes("ice_immune")) {
-                if(!dmgConder.includes(freeze) && !dmgConder.includes(chill)){
+                if(dmgConder != freeze && dmgConder != chill){
                     this.conditions.push(dmgConder);
                 }
+            } else {
+                this.conditions.push(dmgConder);
             }
 
             if(reducedDmg >= takenDmg) {                        
@@ -170,16 +175,20 @@ class Zombie{
 
             //defines effective damage if wearing Shield type armors
         if(armorType = armor_shield) {
-            if(dmgTags.includes("melee") || dmgTags.includes("straight")) {
-                if(reducedDmg >= takenDmg) {                        
-                    effectiveDmg = 0;
-                    this.equippedArmor.takeDamage(takenDmg);
+            if(dmgTags.includes("melee") || dmgTags.includes("staright")) {
+                if(this.equippedArmor.were_tags.includes("pass_through") && dmgTags.inclides("pierce")) {
+                    armor = null;
                 } else {
-                    effectiveDmg = takenDmg - reducedDmg;
-                    this.equippedArmor.takenDamage(reducedDmg);
+                    if(reducedDmg >= takenDmg) {                        
+                        effectiveDmg = 0;
+                        this.equippedArmor.takeDamage(takenDmg);
+                    } else {
+                        effectiveDmg = takenDmg - reducedDmg;
+                        this.equippedArmor.takenDamage(reducedDmg);
+                    }
                 }
             } else {
-                effectiveDmg = takenDmg;
+                armor = null;
             }
         }
 
@@ -194,8 +203,20 @@ class Zombie{
                     this.equippedArmor.takenDamage(reducedDmg);
                 }
             } else {
-                effectiveDmg = takenDmg;
+                armor = null;
             }
+        }
+
+        if(armor = null) {
+            if(this.were_tags.includes("ice_iummune")){
+                if(dmgConder != freeze && dmgConder != chill) {
+                    this.conditions.push(dmgConder);
+                }
+            } else {
+                this.conditions.push(dmgConder);
+            }
+
+            effectiveDmg = takenDmg;
         }
 
             //takes effective damage
@@ -214,7 +235,7 @@ class Plant_Regular{
         this.health         = health;           //define as number
         this.dmg            = dmg;              //define as number
         this.dmg_tags       = dmg_tags;         //define as an array of tags that affect it
-        this.dmg_conder     = dmg_conder;       //define as an array of tags that affect it 
+        this.dmg_conder     = dmg_conder;       //define as null by default 
         this.dmg_type       = dmg_type;         //define as one of the variables in the list at the top
         this.priority       = priority;         //defines priority in turn order: 1 is first
         this.plant_type     = regular;          //define as one of the variables in the list at the top
@@ -222,6 +243,10 @@ class Plant_Regular{
 
     attack(target) {
         target.takeDamage(this.dmg, this.dmg_tags, this.dmg_conder);
+
+        if(this.dmg_tags.includes(repeat)){
+            target.takeDamage(this.dmg, this.dmg_tags, this.dmg_conder);
+        }
     }
 }
 
@@ -678,7 +703,7 @@ const cardboard_peashooter = new Plant_Regular(
     6,
     1,
     [],
-    [],
+    null,
     lane,
     3
 )
@@ -688,7 +713,7 @@ const cardboard_repeater = new Plant_Regular(
     6,
     1,
     [repeat],
-    [],
+    null,
     lane,
     3
 )
@@ -698,7 +723,7 @@ const cardboard_kernelpult = new Plant_Regular(
     6,
     1,
     [lobbed],
-    [butter],
+    butter,
     lane,
     3
 )
@@ -709,7 +734,7 @@ const stallia = new Plant_Regular(
     6,
     0,
     [],
-    [stall],
+    stall,
     adj3,
     3
 )
@@ -720,7 +745,7 @@ const bonk_choy = new Plant_Regular(
     10,
     1,
     [melee],
-    [],
+    null,
     adjX,
     3
 )
@@ -732,7 +757,7 @@ const cardboard_sunflower = new Plant_Eaten(
     6,
     1,
     [heal],
-    [],
+    null,
     deathEaten,
     3
 )
@@ -742,7 +767,7 @@ const iceberg_lettuce = new Plant_Eaten(
     2,
     0,
     [melee],
-    [freeze],
+    freeze,
     death,
     3
 )
@@ -754,7 +779,7 @@ const cardboard_wallnut = new Plant_Protector(
     24,
     0,
     [],
-    [],
+    null,
     eaten,
     3
 )
@@ -764,12 +789,12 @@ const peanut = new Plant_Protector(
     18,
     1,
     [repeat],
-    [],
+    null,
     lane,
     3
 )
 
-    //endurian
+        //endurian
 const endurian = new Plant_Endurian(
     "Endurian",
     24,
@@ -785,5 +810,5 @@ const cardboard_spikeweed = new Plant_Ground(
     "Cardboard Spikeweed",
     1,
     [],
-    []
+    null
 )
