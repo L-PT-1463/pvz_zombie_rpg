@@ -19,18 +19,18 @@
         let range       = "A ranged attack that does not require contact (lane) and is unaffected by plants with 'eaten' adn 'death_eaten' range.";    
     
         let lane        = "A lane of the map.";
-        let lan         = "A lane of the map, the projectile is lobbed.";
         let row         = "A row of the map.";
+
         let eaten       = "The plant attakcs the zombie that attacked it if hit by a 'munch' type attack.";
-        let adjFront    = "Adjacent tile in front (-x)."
+        let deathEaten  = "The plant attacks the zombie that kills it if it dies to a 'munch' type attack.";
+        let adjEaten    = "The plant attacks the zombie that attacked the plant behind (row +1) if that planty is hit by a 'munch' or 'strike' type attack.";
+        let death       = "The plant attacks the zombie that kills it."
+        
+        let adjFront    = "Adjacent tile in front (row -1)."
         let adjX        = "Adjacent tiles in the same lane.";
         let adjY        = "Adjacent tiles in the same row.";
         let adjCross    = "Adjacent tiles in the same lane and row.";
         let adj3        = "Tiles in a 3x3 area centred around itself.";
-        let adjEaten    = "The plant attacks the zombie that attacked the plant behind (+x) if it is hit by a 'munch' or 'strike' type attack.";
-        let death       = "The plant attacks the zombie that kills it."
-        let deathEaten  = "The plant attacks the zombie that kills it if it dies to a 'munch' type attack.";
-        let leastHp     = "The plant with the least hp.";
 
     //dmg_tags
         let straight    = "The attack is shot at the target";
@@ -39,7 +39,7 @@
     
         let repeat      = "Attacks twice.";
         let pierce      = "Attack ignore armor shields and protector plants with the 'pass_through' tag.";
-        let fire        = "Attack deals double damage to armor with the 'fire_weak' tag.";
+        let fire        = "Attack deals double damage to armor with the 'fire_weak' tag and triples damage to protector plants.";
 
         let heal        = "The attack heals the target using the dmg stat.";
 
@@ -260,7 +260,7 @@ class Zombie{
 
     //plants
 class Plant_Regular{
-    constructor(name, health, maxHp, dmg, dmg_tags, dmg_type, dmg_conder, priority){
+    constructor(name, health, maxHp, dmg, dmg_tags, dmg_conder, dmg_type, priority){
         this.name           = name;             //define as words ""
         this.health         = health;           //define as number
         this.maxHp          = maxHp;            //define as number
@@ -738,6 +738,17 @@ const cardboard_peashooter = new Plant_Regular(
     3
 )
 
+const peashooter = new Plant_Regular(
+    "Peashooter",
+    10,
+    10,
+    1,
+    [],
+    null,
+    lane,
+    3
+)
+
 const cardboard_repeater = new Plant_Regular(
     "Cardboard Repeater",
     6,
@@ -748,6 +759,40 @@ const cardboard_repeater = new Plant_Regular(
     lane,
     3
 )
+
+const repeater = new Plant_Regular(
+    "Repeater",
+    10,
+    10,
+    1,
+    [repeat],
+    null,
+    lane,
+    3
+)
+
+const snow_pea = new Plant_Regular(
+    "Snow Pea",
+    10,
+    10,
+    1,
+    [],
+    chill,
+    lane,
+    3
+)
+
+const fire_peashooter = new Plant_Regular(
+    "Fire Peashooter",
+    10,
+    10,
+    1,
+    [fire],
+    null,
+    lane,
+    3
+)
+
         //lobbers
 const cardboard_kernelpult = new Plant_Regular(
     "Cardboard Kernelpult",
@@ -793,9 +838,19 @@ const cardboard_sunflower = new Plant_Eaten(
     1,
     [heal],
     null,
-    deathEaten,
-    3
+    deathEaten
 )
+
+const sunflower = new Plant_Eaten(
+    "Sunflower",
+    6,
+    6,
+    1,
+    [heal],
+    null,
+    eaten
+)
+
         //death
 const iceberg_lettuce = new Plant_Eaten(
     "Iceberg Lettuce",
@@ -804,8 +859,7 @@ const iceberg_lettuce = new Plant_Eaten(
     0,
     [melee],
     freeze,
-    death,
-    3
+    death
 )
 
     //protector
