@@ -8,7 +8,6 @@
         var ground      = "Ground plants cannot be attacked by normal means but don't need to be defeated to complete a level. They do damage to zombies that attack a plant behind them.";
         var protector   = "Protector plants take hits for others; they must be attacked before the plants behind them.";
         var healer      = "Healer plants have powers allowing them to heal or buff other plants or zombies.";
-        var debuffer    = "Debuffer plants have powers that weaken their target through status conditions but don't damage it.";
 
     //range
         var lane        = "A lane of the map.";
@@ -56,7 +55,7 @@
     //cardboard_sunflower
         var description = "";
         var hp          = 6;
-        var dmg         = 0;
+        var dmg         = 1;
         var range       = eaten;
         var special     = "Death: Heals the creature that triggers the ability for 1hp.";
         var plant_type  = healer;
