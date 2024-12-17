@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin:             0;
+    padding:            0;
+    display:            flex;
+    flex-direction:     column;
+    align-items:        center;
+    background-color:   #333;
+    color:              #fff;
+}
+
+/* Title */
+h1 {
+    margin: 20px 0;
+}
+
+/* Grid Container */
+.grid {
+    display:                grid;
+    grid-template-columns:  repeat(8, 80px);
+    grid-template-rows:     repeat(3, 80px);
+    gap:                    5px;
+    margin:                 20px 0;
+}
+
+/* Tiles */
+.tile {
+    width:              80px;
+    height:             80px;
+    border:             1px solid #666;
+    background-color:   #444;
+    display:            flex;
+    justify-content:    center;
+    align-items:        center;
+    position:           relative;
+}
+
+/* Entities (Zombie & Plant) */
+.zombie, .plant {
+    width:              60px;
+    height:             60px;
+    border-radius:      10px;
+    display:            flex;
+    justify-content:    center;
+    align-items:        center;
+    color:              white;
+    font-size:          12px;
+    font-weight:        bold;
+}
+
+.zombie {
+    background-color:   #a00;
+}
+
+.plant {
+    background-color:   #0a0;
+}
+
+/* Armor Display */
+.armor {
+    position:           absolute;
+    bottom:             5px;
+    right:              5px;
+    background-color:   #0077cc;
+    padding:            2px 4px;
+    font-size:          10px;
+    border-radius:      3px;
+}
+
+/* Controls Section */
+.controls {
+    display:        flex;
+    flex-direction: column;
+    align-items:    center;
+}
+
+button {
+    margin:             5px;
+    padding:            10px;
+    background-color:   #0077cc;
+    color:              #fff;
+    border:             none;
+    border-radius:      5px;
+    cursor:             pointer;
+}
+
+button:hover {
+    background-color: #0055aa;
+}
+
+/* Log Section */
+#log {
+    max-width:          800px;
+    height:             200px;
+    background-color:   #222;
+    border:             1px solid #666;
+    overflow-y:         scroll;
+    padding:            10px;
+    margin-top:         20px;
+    color:              #ccc;
+}
+
+/* Entity Images */
+img {
+    max-width:  100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Plant and Zombie Types */
+.plants img {
+    border:         2px solid green;
+    border-radius:  5px;
+}
+
+.zombies img {
+    border:         2px solid red;
+    border-radius:  5px;
+}
