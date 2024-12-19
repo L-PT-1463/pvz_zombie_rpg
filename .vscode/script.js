@@ -119,21 +119,28 @@ class Zombie{
 
     equipArmor(armor) {
         if (this.equippedArmor) {
+            console.log(`${this.name} has already equipped an armor.`);
             return;
         }
         
         if (this.armors.includes(armor)) {
             this.equippedArmor = armor;
+        } else {
+            console.error(`${this.name} does not have this armor in its inventory.`);
+            return;
         }
     }
 
     equipPassive(passive) {
         if (this.equippedPassives.length >= 3) {
+            console.log(`${this.name} has already equipped its maximum amount of passives.`);
             return;
         }
 
         if (this.passives.includes(passive)){
             this.equippedPassives.push(passive);
+        } else {
+            console.error(`${this.name} does not have this passive in its inventory.`);
         }
     }
 
@@ -240,6 +247,7 @@ class Zombie{
             //removes armor if it reaches 0 hp
         if(this.equippedArmor.armor <= 0) {
             this.equippedArmor = null;
+            console.log(`${this.name} lost its armor.`);
         }
 
             //defines effective damage if player has no armor or if armor is irrelevent
@@ -252,8 +260,10 @@ class Zombie{
             //applies effective damage
         if(effectiveDmg >= health){
             this.health = 0;
+            console.log(`${this.name} has died.`);
         } else {
             this.health = health - effectiveDmg;
+            console.log(`${this.name} has taken ${effectiveDmg} damage.`);
         }
     }
 }
@@ -408,6 +418,7 @@ class Armor_Helmet {
 
     takeDamage(takenDmg) {
         this.armor = this.armor - takenDmg;
+        console.log(`${this.name} has taken ${takenDmg} damage.`);
     }
 }
 
@@ -422,6 +433,7 @@ class Armor_Shield {
     
     takeDamage(takenDmg) {
         this.armor = this.armor - takenDmg;
+        console.log(`${this.name} has taken ${takenDmg} damage.`);
     }
 }
 
@@ -436,6 +448,7 @@ class Armor_Umbrella {
     
     takeDamage(takenDmg) {
         this.armor = this.armor - takenDmg;
+        console.log(`${this.name} has taken ${takenDmg} damage.`);
     }
 }
 
@@ -907,3 +920,51 @@ const cardboard_spikeweed = new Plant_Ground(
     [],
     null
 )
+
+const zombieImg = {
+    player:         "art/zombies/Stand-ins/b_bc_v1.png",
+    browncoat:      "art/zombies/Stand-ins/b_bc_v1.png",
+    brownparka:     "art/zombies/Stand-ins/b_bp_v1.png",
+    conehead:       "art/zombies/Stand-ins/b_bc_ch_v1.png"
+};
+
+const plantImg = {
+    peashooter:         "art/plants/Stand-ins/peashooter_v1.png",
+    repeater:           "art/plants/Stand-ins/repeater_v1.png",
+    snow_pea:           "art/plants/Stand-ins/snowpea_v1.png",
+    fire_peashooter:    "art/plants/Stand-ins/firepea_v1.png",
+    sunflower:          "art/plants/Stand-ins/sunflower_v1.png"
+};
+
+const armorImg = {
+    cone:           "art/zombies/Stand-ins/b_bc_ch_v1.png",
+    screendoor:     "art/zombies/Stand-ins/b_bc_sd_v1.1.png",
+    zcorp_wc_door:  "art/zombies/Stand-ins/b_zc_sd_v1.png"
+};
+
+function    getZombieImg(zombieName) {
+    if (zombieImg[zombieName]) {
+        return zombieImg[zombieName];
+    } else {
+        console.error(`${zombieName} has so associated image.`);
+        return null;
+    }
+}
+
+function    getPlantImg(plantName) {
+    if (plantImg[plantName]) {
+        return plantImg[plantName];
+    } else {
+        console.error(`${plantName} has so associated image.`);
+        return null;
+    }
+}
+
+function    getArmorImg(armorName) {
+    if (armorImg[armorName]) {
+        return armorImg[armorName];
+    } else {
+        console.error(`${armorName} has so associated image.`);
+        return null;
+    }
+}
