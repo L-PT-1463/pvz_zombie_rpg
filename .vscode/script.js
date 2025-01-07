@@ -61,12 +61,19 @@
             let stalled     = "The zombie attacks last this turn.";
             let buttered    = "The zombie doesn't attack this turn.";
 
-//create game board
+//creating the game board
 const   rows        = ["T", "C", "B"];
-const   columns    = [1, 2, 3, 4, 5, 6, 7, 8];
+const   columns     = [1, 2, 3, 4, 5, 6, 7, 8];
 let     grid        = {};
 
 function initializeGrid() {
+    const gridElement = document.getElementById("lawn");
+
+    if (!gridElement) {
+        console.error("Lawn container not found!");
+        return;
+      }
+
     for (let i = 0; i < rows.length; i++) {
       let row = rows[i];
       grid[row] = {};
@@ -74,9 +81,22 @@ function initializeGrid() {
       for (let j = 0; j < columns.length; j++) {
         let col = columns[j];
         grid[row][col] = null;                          // "null" creates empty cells
+
+        // creating each tile
+        const tile = document.createElement("div");
+        tile.classList.add("lawn-tile");
+        tile.dataset.row = row;
+        tile.dataset.col = col;
+
+        tile.textContent = `${row}${col}`;              // cell's name
+        gridElement.appendChild(tile);                  // connecting tile to lawn
       }
     }
   }
+
+document.addEventListener("DOMContentLoaded", function() {
+    initializeGrid();
+});
 
 function spawnPlayer() {
     grid["C"][2] = player.name;
@@ -946,7 +966,7 @@ function    getZombieImg(zombieName) {
     if (zombieImg[zombieName]) {
         return zombieImg[zombieName];
     } else {
-        console.error(`${zombieName} has so associated image.`);
+        console.error(`${zombieName} has no associated image.`);
         return null;
     }
 }
@@ -955,7 +975,7 @@ function    getPlantImg(plantName) {
     if (plantImg[plantName]) {
         return plantImg[plantName];
     } else {
-        console.error(`${plantName} has so associated image.`);
+        console.error(`${plantName} has no associated image.`);
         return null;
     }
 }
@@ -964,7 +984,7 @@ function    getArmorImg(armorName) {
     if (armorImg[armorName]) {
         return armorImg[armorName];
     } else {
-        console.error(`${armorName} has so associated image.`);
+        console.error(`${armorName} has no associated image.`);
         return null;
     }
 }
