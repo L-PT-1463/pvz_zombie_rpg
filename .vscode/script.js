@@ -61,63 +61,6 @@
             let stalled     = "The zombie attacks last this turn.";
             let buttered    = "The zombie doesn't attack this turn.";
 
-//creating the game board
-const   rows        = ["T", "C", "B"];
-const   columns     = [1, 2, 3, 4, 5, 6, 7, 8];
-let     grid        = {};
-
-function initializeGrid() {
-    const gridElement = document.getElementById("lawn");
-
-    if (!gridElement) {
-        console.error("Lawn container not found!");
-        return;
-      }
-
-    for (let i = 0; i < rows.length; i++) {
-      let row = rows[i];
-      grid[row] = {};
-
-      for (let j = 0; j < columns.length; j++) {
-        let col = columns[j];
-        grid[row][col] = null;                          // "null" creates empty cells
-
-        // creating each tile
-        const tile = document.createElement("div");
-        tile.classList.add("lawn-tile");
-        tile.dataset.row = row;
-        tile.dataset.col = col;
-
-        tile.textContent = `${row}${col}`;              // cell's name
-        gridElement.appendChild(tile);                  // connecting tile to lawn
-      }
-    }
-  }
-
-document.addEventListener("DOMContentLoaded", function() {
-    initializeGrid();
-});
-
-function spawnPlayer() {
-    grid["C"][2] = player.name;
-}
-
-function spawnSplg(n, type) {
-    switch(n) {
-        case 1:
-            grid["C"][1] = type.name;
-            break;
-        case 2:
-            grid["T"][1] = type.name;
-            grid["B"][1] = type.name;
-            break;
-        case 3:
-            grid["T"][1] = type.name;
-            grid["C"][1] = type.name;
-            grid["B"][1] = type.name;
-            break;
-    }
-}
 
 //define classes
     //zombies

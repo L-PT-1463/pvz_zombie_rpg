@@ -1,13 +1,13 @@
 /* Base styling for the page */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
+    font-family:        Arial, sans-serif;
+    margin:             0;
+    padding:            0;
+    display:            flex;
+    justify-content:    center;
+    align-items:        center;
+    height:             100vh;
+    background-color:   #f4f4f4;
   }
 
 /* Title styling */
@@ -17,24 +17,32 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Lawn container */
+/* Lawn styling */
 #lawn {
-    display: grid;
-    grid-template-columns: repeat(8, 120px);
-    grid-template-rows: repeat(3, 120px);
-    background-color: #4CAF50;
-    border: 5px solid #2E7D32;
+  display: grid;
+  grid-template-rows:     repeat(3, 120px);
+  grid-template-columns:  repeat(8, 150px);
+  background-color:       #7cfc00;
+  border:                 3px solid #333;
+  width:                  fit-content;
+}
+
+.tile {
+  height:           120px;
+  width:            150px;
+  background-color: #a2d149;
+  position:         relative;           /* Allows layering of objects */
+}
+
+  /* Checkerboard pattern */
+  .tile[data-lane="T"]:nth-child(odd),
+  .tile[data-lane="C"]:nth-child(even),
+  .tile[data-lane="B"]:nth-child(odd){
+    background-color: #6cd56c;
   }
 
-/* Individual lawn tiles */
-.lawn-tile {
-    width: 120px;
-    height: 120px;
-    background-color: #8BC34A;
-    border: 1px solid #558B2F;
-    display: flex;
-    justify-content: left;
-    align-items: top;
-    font-size: 12px;
-    color: #fff;
+  .tile[data-lane="T"]:nth-child(even),
+  .tile[data-lane="C"]:nth-child(odd),
+  .tile[data-lane="B"]:nth-child(even){
+    background-color: #50b450;
   }
