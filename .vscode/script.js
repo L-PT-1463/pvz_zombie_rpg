@@ -333,7 +333,7 @@ class Item_PassiveSplg {
     constructor(name, description, spawnlings, splg_amount, cooldown) {
         this.name           = name;             //define as words ""
         this.description    = description;      //define as words ""
-        this.spawnlings     = spawnlings;       //define as spawnling (Zombie class) summoned if any or "" if none
+        this.spawnlings     = spawnlings;       //define as spawnling (Zombie class) summoned
         this.splg_amount    = splg_amount;      //define as number. Amount of spawnlings summoned (1-3)
         this.cooldown       = cooldown;         //define as number of waves between activations of effect
         this.object_type    = item_passive;
@@ -363,7 +363,7 @@ class Item_GadgetSpgl {
     constructor(name, description, spawnlings, splg_amount) {
         this.name           = name;             //define as words ""
         this.description    = description;      //define as words ""
-        this.spawnlings     = spawnlings;       //define as spawnling (Zombie class) summoned if any or "" if none
+        this.spawnlings     = spawnlings;       //define as spawnling (Zombie class) summoned
         this.splg_amount    = splg_amount;      //define as number. Amount of spawnlings summoned (1-3)
         this.object_type    = item_gadget;
     }
@@ -884,50 +884,65 @@ const cardboard_spikeweed = new Plant_Ground(
     null
 )
 
-const zombieImg = {
-    player:         "art/zombies/Stand-ins/b_bc_v1.png",
-    browncoat:      "art/zombies/Stand-ins/b_bc_v1.png",
-    brownparka:     "art/zombies/Stand-ins/b_bp_v1.png",
-    conehead:       "art/zombies/Stand-ins/b_bc_ch_v1.png"
-};
+//gameplay functions
+function spawnPlayer(){
+    const lane = 'C';
+    const column = '2';
 
-const plantImg = {
-    peashooter:         "art/plants/Stand-ins/peashooter_v1.png",
-    repeater:           "art/plants/Stand-ins/repeater_v1.png",
-    snow_pea:           "art/plants/Stand-ins/snowpea_v1.png",
-    fire_peashooter:    "art/plants/Stand-ins/firepea_v1.png",
-    sunflower:          "art/plants/Stand-ins/sunflower_v1.png"
-};
+    const targetTile = document.querySelector(`.tile[data-lane="${lane}"][data-column="${column}"]`);
+        if (!targetTile) {
+            console.error(`Tile at lane ${lane} and column ${column} not found.`);
+            return;
+        }
 
-const armorImg = {
-    cone:           "art/zombies/Stand-ins/b_bc_ch_v1.png",
-    screendoor:     "art/zombies/Stand-ins/b_bc_sd_v1.1.png",
-    zcorp_wc_door:  "art/zombies/Stand-ins/b_zc_sd_v1.png"
-};
+    const playerElement = document.createElement('div');
+        playerElement.classList.add('player');
+        playerElement.dataset.name = player.name;
 
-function    getZombieImg(zombieName) {
-    if (zombieImg[zombieName]) {
-        return zombieImg[zombieName];
-    } else {
-        console.error(`${zombieName} has no associated image.`);
-        return null;
-    }
+    targetTile.appendChild(playerElement);
+        console.log(`${player.name} spawned at lane ${lane} column ${column}.`);
 }
 
-function    getPlantImg(plantName) {
-    if (plantImg[plantName]) {
-        return plantImg[plantName];
-    } else {
-        console.error(`${plantName} has no associated image.`);
-        return null;
-    }
-}
+spawnPlayer();
 
-function    getArmorImg(armorName) {
-    if (armorImg[armorName]) {
-        return armorImg[armorName];
-    } else {
-        console.error(`${armorName} has no associated image.`);
-        return null;
+function spawnSplg(item) {
+    if (!item || !item.spawnlings || item.splg_amount < 1 || item.splg_amount > 3) {
+      console.error('Invalid item or spawnling data.');
+      return;
     }
+
+    const spawnLocations = {
+        1: ['C1'],
+        2: ['T1', 'B1'],
+        3: ['T1', 'C1', 'B1']
+      };
+
+    const locations = spawnLocations[item.splg_amount];
+        if (!locations) {
+            console.error('Invalid number of spawnlings specified.');
+            return;
+        }
+
+    locations.forEach(function(location, index) {
+        const [lane, column] = location.split('');
+        const targetTile = document.querySelector(`.tile[data-lane="${lane}"][data-column="${column}"]`);
+            if (!targetTile) {
+                console.error(`Tile at lane ${lane} and column ${column} not found.`);
+                return;
+            }
+
+            if (targetTile.querySelector('.spawnling')) {
+            console.warn(`Tile at lane ${lane} and column ${column} is already occupied. Skipping spawnling ${index + 1}.`);
+            return;
+            }
+    
+        // Create the spawnling representation
+        const spawnlingElement = document.createElement('div');
+            spawnlingElement.classList.add('spawnling');
+            spawnlingElement.dataset.name = item.spawnlings.name;
+            spawnlingElement.dataset.description = item.spawnlings.description;
+    
+        targetTile.appendChild(spawnlingElement);
+            console.log(`${item.spawnlings.name} spawned at lane ${lane} column ${column}.`);
+    });
 }
