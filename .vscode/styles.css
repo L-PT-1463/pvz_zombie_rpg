@@ -51,7 +51,7 @@ h1 {
 .player {
   width:                100%;
   height:               100%;
-  background-image:     url(stand-ins/zombies/browncoat.png);
+  /*background-image defined within .js*/
   background-size:      contain;
   background-repeat:    no-repeat;
   background-position:  center;
@@ -62,7 +62,7 @@ h1 {
 .spawnling {
   width:                100%;
   height:               100%;
-  background-image:     url(stand-ins/zombies/browncoat.png);
+  /*background-image defined within .js*/
   background-size:      contain;
   background-repeat:    no-repeat;
   background-position:  center;

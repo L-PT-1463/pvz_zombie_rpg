@@ -781,7 +781,7 @@ const cardboard_kernelpult = new Plant_Regular(
     3
 )
 
-     //stallers
+    //stallers
 const stallia = new Plant_Regular(
     "Stallia",
     6,
@@ -885,6 +885,26 @@ const cardboard_spikeweed = new Plant_Ground(
 )
 
 //gameplay functions
+function generateLawn(){
+    const lanes = [T, C, B];
+    const columns = [1, 2, 3, 4, 5, 6, 7, 8];
+
+    const newLawn = document.createElement('div');
+        newLawn.id.add('lawn');
+
+    for(let i = 1; i < lanes.length + 1; i++) {
+        const newTile = document.createElement('div');
+            newTile.classList.add('tile');
+            newTile.dataset.lane = lane[i];
+
+        for(let j = 1; j < columns.length + 1; j++){
+            newTile.dataset.column = column[j];
+        }
+
+        newLawn.appendChild(newTile);
+    }
+}
+
 function spawnPlayer(){
     const lane = 'C';
     const column = '2';
@@ -895,15 +915,16 @@ function spawnPlayer(){
             return;
         }
 
+    const fileName = player.name.toLowerCase().replace(/ /g, '_');
+
     const playerElement = document.createElement('div');
         playerElement.classList.add('player');
         playerElement.dataset.name = player.name;
+        playerElement.style.backgroundImage = `url(stand-ins/zombies/${fileName}.png)`
 
     targetTile.appendChild(playerElement);
         console.log(`${player.name} spawned at lane ${lane} column ${column}.`);
 }
-
-spawnPlayer();
 
 function spawnSplg(item) {
     if (!item || !item.spawnlings || item.splg_amount < 1 || item.splg_amount > 3) {
@@ -935,11 +956,14 @@ function spawnSplg(item) {
             console.warn(`Tile at lane ${lane} and column ${column} is already occupied. Skipping spawnling ${index + 1}.`);
             return;
             }
+
+        const fileName = item.spawnlings.name.toLowerCase().replace(/ /g, '_');
     
         // Create the spawnling representation
         const spawnlingElement = document.createElement('div');
             spawnlingElement.classList.add('spawnling');
             spawnlingElement.dataset.name = item.spawnlings.name;
+            spawnlingElement.style.backgroundImage = `url(stand-ins/zombies/${fileName}.png)`
             spawnlingElement.dataset.description = item.spawnlings.description;
     
         targetTile.appendChild(spawnlingElement);
