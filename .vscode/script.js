@@ -886,23 +886,24 @@ const cardboard_spikeweed = new Plant_Ground(
 
 //gameplay functions
 function generateLawn(){
-    const lanes = [T, C, B];
-    const columns = [1, 2, 3, 4, 5, 6, 7, 8];
+    const lanes = ['T', 'C', 'B'];
+    const columns = 8;
+    
+    const lawn = document.createElement('div');
+        lawn.id = 'lawn';
 
-    const newLawn = document.createElement('div');
-        newLawn.id.add('lawn');
-
-    for(let i = 1; i < lanes.length + 1; i++) {
-        const newTile = document.createElement('div');
-            newTile.classList.add('tile');
-            newTile.dataset.lane = lane[i];
-
-        for(let j = 1; j < columns.length + 1; j++){
-            newTile.dataset.column = column[j];
-        }
-
-        newLawn.appendChild(newTile);
+    lanes.forEach(function (lane) {
+    for (let col = 1; col <= columns; col++) {
+      const tile = document.createElement('div');
+        tile.classList.add('tile');
+        tile.setAttribute('data-lane', lane);
+        tile.setAttribute('data-column', col);
+        
+      lawn.appendChild(tile);
     }
+  });
+
+  document.body.appendChild(lawn);
 }
 
 function spawnPlayer(){
@@ -919,7 +920,7 @@ function spawnPlayer(){
 
     const playerElement = document.createElement('div');
         playerElement.classList.add('player');
-        playerElement.dataset.name = player.name;
+        playerElement.setAttribute('data-name', player.name);
         playerElement.style.backgroundImage = `url(stand-ins/zombies/${fileName}.png)`
 
     targetTile.appendChild(playerElement);
@@ -959,10 +960,9 @@ function spawnSplg(item) {
 
         const fileName = item.spawnlings.name.toLowerCase().replace(/ /g, '_');
     
-        // Create the spawnling representation
         const spawnlingElement = document.createElement('div');
             spawnlingElement.classList.add('spawnling');
-            spawnlingElement.dataset.name = item.spawnlings.name;
+            spawnlingElement.setAttribute('data-name', item.spawnlings.name);
             spawnlingElement.style.backgroundImage = `url(stand-ins/zombies/${fileName}.png)`
             spawnlingElement.dataset.description = item.spawnlings.description;
     
@@ -970,3 +970,45 @@ function spawnSplg(item) {
             console.log(`${item.spawnlings.name} spawned at lane ${lane} column ${column}.`);
     });
 }
+
+function spawnPlant(plant, tile) {
+    const [lane, column] = tile.split('');
+
+    const targetTile = document.querySelector(`.tile[data-lane="${lane}"][data-column="${column}"]`);
+        if (!targetTile) {
+            console.error(`Tile at lane ${lane} and column ${column} not found.`);
+            return;
+        }
+
+    const fileName = plant.name.toLowerCase().replace(/ /g, '_');
+
+    const plantElement = document.createElement('div');
+        plantElement.classList.add('plant');
+        plantElement.setAttribute('data-name', plant.name);
+        plantElement.style.backgroundImage = `url(stand-ins/plants/${fileName}.png)`
+
+    targetTile.appendChild(plantElement);
+        console.log(`${plant.name} spawned at lane ${lane} column ${column}.`);
+}
+
+const startButton = document.getElementById('start-button');
+
+startButton.addEventListener('click', function () {
+    generateLawn();
+    spawnPlayer();
+
+    spawnPlant(peashooter, 'C4')
+  
+    startButton.remove();
+  });
+
+function autoStart(){
+    generateLawn();
+    spawnPlayer();
+
+    spawnPlant(peashooter, 'C4')
+  
+    startButton.remove();
+}
+
+autoStart();
