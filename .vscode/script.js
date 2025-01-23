@@ -189,7 +189,7 @@ class Zombie{
         if(armorType = armor_shield) {
             if(dmgTags.includes("melee") || dmgTags.includes("straight")) {
                 if(this.equippedArmor.were_tags.includes("pass_through") && dmgTags.inclides("pierce")) {
-                    armor = null;
+                    effectiveArmor = null;
                 } else {
                     reduceDmg()
                 }
