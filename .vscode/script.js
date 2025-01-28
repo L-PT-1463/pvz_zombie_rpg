@@ -906,6 +906,23 @@ function generateLawn(){
   document.body.appendChild(lawn);
 }
 
+function generateHPDisplay() {
+    const healthDisplay = document.createElement('div');
+        healthDisplay.id = 'player-health';
+        healthDisplay.textContent = `${player.health}/${player.maxHp}`;
+
+    document.body.appendChild(healthDisplay);
+}
+
+function updateHPDisplay() {
+    const healthDisplay = document.getElementById('player-health');
+    if (healthDisplay) {
+        healthDisplay.textContent = `${player.health}/${player.maxHp}`;
+    } else {
+        console.error('Health display not found.');
+    }
+}
+
 function spawnPlayer(){
     const lane = 'C';
     const column = '2';
@@ -969,6 +986,8 @@ function spawnSplg(item) {
         targetTile.appendChild(spawnlingElement);
             console.log(`${item.spawnlings.name} spawned at lane ${lane} column ${column}.`);
     });
+
+    generateHPDisplay();
 }
 
 function spawnPlant(plant, tile) {
@@ -997,18 +1016,29 @@ startButton.addEventListener('click', function () {
     generateLawn();
     spawnPlayer();
 
-    spawnPlant(peashooter, 'C4')
+    spawnPlant(peashooter, 'C4');
   
     startButton.remove();
   });
 
+//dev tools
 function autoStart(){
     generateLawn();
     spawnPlayer();
 
-    spawnPlant(peashooter, 'C4')
+    spawnPlant(peashooter, 'C4');
   
     startButton.remove();
 }
 
 autoStart();
+
+function simulateDmg(dmg) {
+    player.takeDamage(dmg, [], null);
+    updateHPDisplay();
+}
+
+function simulateHeal(dmg) {
+    player.takeDamage(dmg, [heal], null);
+    updateHPDisplay();
+}
