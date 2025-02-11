@@ -108,14 +108,14 @@ class Zombie{
     }
 
     takeDamage(takenDmg, dmgTags, dmgConder) {
-        let effectiveArmor  = this.equippedArmor;
-        let reducedDmg      = this.equippedArmor.armor;
-        let armorType       = this.equippedArmor.object_type;
+        let effectiveArmor;
+        let armorType;
+        let reducedDmg;
         let health          = this.health;
         let lostHp          = this.maxHp - health;
         let effectiveDmg;
 
-            //heals up to maxHp instead of dealing damage if hit by a healing attack.
+        //heals up to maxHp instead of dealing damage if hit by a healing attack.
         if(dmgTags.includes(heal)) {
             if(takenDmg >= lostHp) {
                 takenDmg = lostHp;
@@ -124,6 +124,30 @@ class Zombie{
             this.health = health + takenDmg;
             return;
         }
+        
+        if(!this.equippedArmor) {
+            //defines and inflicts damage if there is no armor
+
+            applyCondition(dmgConder);
+            effectiveDmg = takenDmg;
+
+            if(effectiveDmg >= health){
+                this.health = 0;
+                console.log(`${this.name} has died.`);
+            } else {
+                this.health = health - effectiveDmg;
+                console.log(`${this.name} has taken ${effectiveDmg} damage.`);
+            }
+            
+            return;
+
+        } else {
+
+            effectiveArmor  = this.equippedArmor;
+            armorType       = this.equippedArmor.object_type;
+            reducedDmg      = this.equippedArmor.armor;
+
+        };
 
         function reduceDmg() {
                 //doubles damage if armor is fire weak
@@ -213,7 +237,7 @@ class Zombie{
             console.log(`${this.name} lost its armor.`);
         }
 
-            //defines effective damage if player has no armor or if armor is irrelevent
+            //defines effective damage if armor is irrelevent
         if(effectiveArmor == null) {
             applyCondition(dmgConder);
 
@@ -918,6 +942,7 @@ function updateHPDisplay() {
     const healthDisplay = document.getElementById('player-health');
     if (healthDisplay) {
         healthDisplay.textContent = `${player.health}/${player.maxHp}`;
+        console.log(`${player.name}'s health has been updated.`);
     } else {
         console.error('Health display not found.');
     }
@@ -942,6 +967,8 @@ function spawnPlayer(){
 
     targetTile.appendChild(playerElement);
         console.log(`${player.name} spawned at lane ${lane} column ${column}.`);
+
+    generateHPDisplay();
 }
 
 function spawnSplg(item) {
@@ -986,8 +1013,6 @@ function spawnSplg(item) {
         targetTile.appendChild(spawnlingElement);
             console.log(`${item.spawnlings.name} spawned at lane ${lane} column ${column}.`);
     });
-
-    generateHPDisplay();
 }
 
 function spawnPlant(plant, tile) {
@@ -1022,6 +1047,34 @@ startButton.addEventListener('click', function () {
   });
 
 //dev tools
+function simulateDmg(dmg) {
+    player.takeDamage(dmg, [], null);
+        console.log(`Simulate damage: ${player.name} took ${dmg} damage.`);
+
+    updateHPDisplay();
+}
+
+function simulateHeal(dmg) {
+    player.takeDamage(dmg, [heal], null);
+        console.log(`Simulate heal: ${player.name} was healed by ${dmg} hit.`);
+
+    updateHPDisplay();
+}
+
+function generateDevTools() {
+    const dmgButton = document.createElement('button');
+        dmgButton.id = 'dmg-button';
+        dmgButton.textContent = 'Simulate 3 Damage';
+
+    document.body.appendChild(dmgButton);
+
+    const healButton = document.createElement('button');
+        healButton.id = 'heal-button';
+        healButton.textContent = 'Simulate 3 Heal';
+
+    document.body.appendChild(healButton);
+}
+
 function autoStart(){
     generateLawn();
     spawnPlayer();
@@ -1029,16 +1082,19 @@ function autoStart(){
     spawnPlant(peashooter, 'C4');
   
     startButton.remove();
+
+    generateDevTools();
 }
 
 autoStart();
 
-function simulateDmg(dmg) {
-    player.takeDamage(dmg, [], null);
-    updateHPDisplay();
-}
+const dmgButton = document.getElementById('dmg-button');
+const healButton = document.getElementById('heal-button');
 
-function simulateHeal(dmg) {
-    player.takeDamage(dmg, [heal], null);
-    updateHPDisplay();
-}
+dmgButton.addEventListener('click', function () {
+    simulateDmg(3);
+});
+
+healButton.addEventListener('click', function () {
+    simulateHeal(3);
+});
