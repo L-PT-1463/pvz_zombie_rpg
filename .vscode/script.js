@@ -60,6 +60,10 @@
             let frozen      = "The zombie doesn't attack this turn.";
             let stalled     = "The zombie attacks last this turn.";
             let buttered    = "The zombie doesn't attack this turn.";
+        
+    //state_tags
+        let alive   = `${this.name} is alive.`;
+        let dead    = `${this.name} is dead.`;
 
 
 //define classes
@@ -78,6 +82,7 @@ class Zombie{
         this.equippedPassives   = [];
         this.were_tags          = were_tags;            //define as an array of tags that affect it
         this.conditions         = [];                   //add conditions to array
+        this.state              = alive;                //defines if character is living or dead
     }
 
     equipArmor(armor) {
@@ -125,9 +130,7 @@ class Zombie{
             return;
         }
         
-        if(!this.equippedArmor) {
-            //defines and inflicts damage if there is no armor
-
+        if(!this.equippedArmor) {           //defines and inflicts damage if there is no armor
             applyCondition(dmgConder);
             effectiveDmg = takenDmg;
 
@@ -136,12 +139,13 @@ class Zombie{
                 console.log(`${this.name} has died.`);
             } else {
                 this.health = health - effectiveDmg;
+                this.state  = dead;
                 console.log(`${this.name} has taken ${effectiveDmg} damage.`);
             }
             
             return;
 
-        } else {
+        } else {                            //defines variables if there is armor
 
             effectiveArmor  = this.equippedArmor;
             armorType       = this.equippedArmor.object_type;
@@ -149,9 +153,8 @@ class Zombie{
 
         };
 
-        function reduceDmg() {
-                //doubles damage if armor is fire weak
-            if(dmgTags.includes(fire)){
+        function reduceDmg() {              //function to define effective damage
+            if(dmgTags.includes(fire)){     //doubles damage if armor is fire weak
                 if(this.equippedArmor.were_tags.includes(fire_weak)){
                     takenDmg = 2 * takenDmg;
                 } else {
@@ -202,15 +205,15 @@ class Zombie{
             }
         }
 
-            //defines effective damage if wearing Helmet type armors and inflicts condition on player
-        if(armorType = armor_helmet) {
+            
+        if(armorType = armor_helmet) {      //defines effective damage if wearing Helmet type armors and inflicts condition on player
             applyCondition(dmgConder);
 
             reduceDmg();
         }
 
-            //defines effective damage if wearing Shield type armors
-        if(armorType = armor_shield) {
+           
+        if(armorType = armor_shield) {      //defines effective damage if wearing Shield type armors
             if(dmgTags.includes("melee") || dmgTags.includes("straight")) {
                 if(this.equippedArmor.were_tags.includes("pass_through") && dmgTags.inclides("pierce")) {
                     effectiveArmor = null;
@@ -222,8 +225,7 @@ class Zombie{
             }
         }
 
-            //defines effective damage if wearing Umbrella type armors
-        if(armorType = armor_umbrella) {
+        if(armorType = armor_umbrella) {    //defines effective damage if wearing Umbrella type armors
             if (dmgTags.includes("lobbed")) {
                 reduceDmg()
             } else {
@@ -231,22 +233,20 @@ class Zombie{
             }
         }
 
-            //removes armor if it reaches 0 hp
-        if(this.equippedArmor.armor <= 0) {
+        if(this.equippedArmor.armor <= 0) { //removes armor if it reaches 0 hp
             this.equippedArmor = null;
             console.log(`${this.name} lost its armor.`);
         }
 
-            //defines effective damage if armor is irrelevent
-        if(effectiveArmor == null) {
+        if(effectiveArmor == null) {        //defines effective damage if armor is irrelevent
             applyCondition(dmgConder);
 
             effectiveDmg = takenDmg;
         }
 
-            //applies effective damage
-        if(effectiveDmg >= health){
+        if(effectiveDmg >= health){         //applies effective damage
             this.health = 0;
+            this.state  = dead;
             console.log(`${this.name} has died.`);
         } else {
             this.health = health - effectiveDmg;
@@ -966,7 +966,7 @@ function spawnPlayer(){
         playerElement.style.backgroundImage = `url(stand-ins/zombies/${fileName}.png)`
 
     targetTile.appendChild(playerElement);
-        console.log(`${player.name} spawned at lane ${lane} column ${column}.`);
+        console.log(`${player.name} spawned in ${lane}${column}.`);
 
     generateHPDisplay();
 }
@@ -1011,7 +1011,7 @@ function spawnSplg(item) {
             spawnlingElement.dataset.description = item.spawnlings.description;
     
         targetTile.appendChild(spawnlingElement);
-            console.log(`${item.spawnlings.name} spawned at lane ${lane} column ${column}.`);
+            console.log(`${item.spawnlings.name} spawned in ${lane}${column}.`);
     });
 }
 
@@ -1032,7 +1032,7 @@ function spawnPlant(plant, tile) {
         plantElement.style.backgroundImage = `url(stand-ins/plants/${fileName}.png)`
 
     targetTile.appendChild(plantElement);
-        console.log(`${plant.name} spawned at lane ${lane} column ${column}.`);
+        console.log(`${plant.name} spawned in ${lane}${column}.`);
 }
 
 const startButton = document.getElementById('start-button');
@@ -1065,14 +1065,12 @@ function generateDevTools() {
     const dmgButton = document.createElement('button');
         dmgButton.id = 'dmg-button';
         dmgButton.textContent = 'Simulate 3 Damage';
-
-    document.body.appendChild(dmgButton);
+        document.body.appendChild(dmgButton);
 
     const healButton = document.createElement('button');
         healButton.id = 'heal-button';
         healButton.textContent = 'Simulate 3 Heal';
-
-    document.body.appendChild(healButton);
+        document.body.appendChild(healButton);
 }
 
 function autoStart(){
