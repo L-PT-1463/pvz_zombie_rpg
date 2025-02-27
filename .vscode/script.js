@@ -948,6 +948,55 @@ function updateHPDisplay() {
     }
 }
 
+function generateBattleUI() {
+    const actionsButton = document.createElement("button");
+        actionsButton.textContent = "Actions";
+        actionsButton.id = "actions-button";
+    
+    document.body.appendChild(actionsButton);
+
+    const actionsMenu = document.createElement("div");
+        actionsMenu.id  = "actions-menu";
+        actionsMenu.style.display = "none";
+    
+    document.body.appendChild(actionsMenu);
+
+    function updateActionsMenu(){
+        actionsMenu.innerHTML = "";     //clear previous actions
+        
+        player.actions.forEach(function(action) {
+            const actionButton = document.createElement("button");
+                actionButton.textContent = action.name
+    
+            actionButton.addEventListener("click", function() {
+                console.log(`Player used ${action.name}.`);
+                //define what happens when action is selected here
+            });
+    
+            actionsMenu.appendChild(actionButton);
+        });
+    }
+
+    actionsButton.addEventListener("click", function() {
+        if(actionsMenu.style.display == "none") {
+            updateActionsMenu();
+            actionsMenu.style.display = "block";
+        } else {
+            actionsMenu.style.display = "none";
+        }
+    })
+
+    const endTurnButton = document.createElement("button");
+        endTurnButton.textContent = "End Turn";
+        endTurnButton.id = "end-turn-button";
+
+    document.body.appendChild(endTurnButton);
+
+    endTurnButton.addEventListener("click", function () {
+        console.log("Player ended their turn");
+    });
+}
+
 function spawnPlayer(){
     const lane = 'C';
     const column = '2';
@@ -1040,6 +1089,7 @@ const startButton = document.getElementById('start-button');
 startButton.addEventListener('click', function () {
     generateLawn();
     spawnPlayer();
+    generateBattleUI();
 
     spawnPlant(peashooter, 'C4');
   
@@ -1071,11 +1121,20 @@ function generateDevTools() {
         healButton.id = 'heal-button';
         healButton.textContent = 'Simulate 3 Heal';
         document.body.appendChild(healButton);
+
+    dmgButton.addEventListener('click', function () {
+        simulateDmg(3);
+    });
+    
+    healButton.addEventListener('click', function () {
+        simulateHeal(3);
+    });
 }
 
 function autoStart(){
     generateLawn();
     spawnPlayer();
+    generateBattleUI();
 
     spawnPlant(peashooter, 'C4');
   
@@ -1085,14 +1144,3 @@ function autoStart(){
 }
 
 autoStart();
-
-const dmgButton = document.getElementById('dmg-button');
-const healButton = document.getElementById('heal-button');
-
-dmgButton.addEventListener('click', function () {
-    simulateDmg(3);
-});
-
-healButton.addEventListener('click', function () {
-    simulateHeal(3);
-});

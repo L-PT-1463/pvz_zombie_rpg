@@ -28,6 +28,27 @@ h1 {
   cursor:     pointer;
 }
 
+#actions-button {
+  position:   absolute;
+  bottom:     5%;
+  left:       40%;
+  transform:  translate(-50%, -50%);
+  padding:    10px 20px;
+  font-size:  16px;
+  cursor:     pointer;
+}
+
+#end-turn-button {
+  position:   absolute;
+  bottom:     5%;
+  right:      40%;
+  transform:  translate(-50%, -50%);
+  padding:    10px 20px;
+  font-size:  16px;
+  cursor:     pointer;
+}
+
+
 #player-health {
 position:           absolute;
   top:              10px;
@@ -64,18 +85,21 @@ position:           absolute;
 /* Lawn styling */
 #lawn {
   display:                grid;
-  grid-template-rows:     repeat(3, 180px);
-  grid-template-columns:  repeat(8, 180px);
+  grid-template-rows:     repeat(3, minmax(15vh, 1fr)); /* Adjusts height based on viewport */
+  grid-template-columns:  repeat(8, minmax(8vw, 1fr));  /* Adjusts width based on viewport */
   background-color:       #7cfc00;
   border:                 3px solid #333;
-  width:                  fit-content;
+  width:                  90vw;
+  height:                 70vh;
+  max-width:              100%;
+  margin:                 auto;
 }
 
 .tile {
-  height:           180px;
-  width:            180px;
+  width:            100%;
+  height:           100%;
   background-color: #a2d149;
-  position:         relative;           /* Allows layering of objects */
+  position:         relative;   /* Allows layering of objects */
 }
 
   /* Checkerboard pattern */
