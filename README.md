@@ -25,7 +25,7 @@ Special shout out to him.
 
 _Tools Used_
 
-- **Game Development:** Unity
+- **Game Development:** VS Code
 - **Art:** Clip Studio Paint
 - **Animations:** Spriter
 
