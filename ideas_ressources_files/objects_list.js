@@ -1,208 +1,343 @@
 //This is the complete list of objects for PvZ ZPG
 
-//object_tags
-    //object_type
-        var armor_helmet    = "Takes damage from all source instead of your health but doesn't prevent status conditions.";
-        var armor_shield    = "Takes attacks from 'shooter' and 'melee' plants instead of your health and prevents status conditions.";
-        var armor_umbrella  = "Takes attacks from 'lobber' plants instead of your health and prevents status conditions.";
-        var item_attack     = "An item designed to upgrade your attacks.";
-        var item_passive    = "An item designed to give you passive bonuses.";
-        var item_gadget     = "A single-use item.";
+//zombie_item_type
+    let item_attack     = "An item designed to upgrade your attacks.";
+    let item_passive    = "An item designed to give you passive bonuses.";
+    let item_gadget     = "A single-use item.";
 
-    //dmg_type
-        var bite        = "A bite based attack requires contact and is affected by plants with 'eaten' range."
-        var strike      = "A non-bite based attack requires contact but is unaffected by plants with 'eaten' range.";
-        var range       = "A ranged attack that does not require contact and is unaffected by plants with 'eaten' range.";
+    let armor_helmet    = "Takes damage from all source instead of your health but doesn't prevent status conditions.";
+    let armor_shield    = "Takes attacks from 'straight' and 'melee' attacks instead of your health and prevents status conditions.";
+    let armor_umbrella  = "Takes attacks from 'lobbed' attacks instead of your health and prevents status conditions.";
 
-    //armor_booleanean_tags
-        var magnetisable    = "Weak to Magnetshroom's ability.";
-        var pass_through    = "Attacks with a 'pierce' tag can hit through the armor.";
-        var fire_weak       = "Takes double damage from 'fire' tag projectile.";
+//dmg_type
+    let munch       = "A munch based attack requires contact (adjFront (x)) and is affected by plants with 'eaten' and 'death_eaten' range."
+    let strike      = "A non-munch based attack requires contact (adjFront (x)) but is unaffected by plants with 'eaten' and 'death_eaten' range.";
+    let range       = "A ranged attack that does not require contact (lane) and is unaffected by plants with 'eaten' adn 'death_eaten' range.";  
+    
+//dmg_tags
+    let straight    = "The attack is shot at the target";
+    let lobbed      = "The attack is lobbed at the target.";
+    let melee       = "The attack requires physical contact.";
 
-    //status_conditions
-        var frozen      = "The creature doesn't attack this turn. Disabled by 'fire' tag projectiles.";
-        var buttered    = "The creature doesn't attack this turn.";
-        var chilled     = "The creature attacks last this turn. Disabled by 'fire' tag projectiles.";
+    let repeat      = "Attacks twice.";
+    let pierce      = "Attack ignore armor shields and protector plants with the 'pass_through' tag.";
+    let fire        = "Attack deals double damage to armor with the 'fire_weak' tag and triples damage to protector plants.";
 
-//template_category
-    //template_armor
-        var description     = ""
-        var armor           = 0;
-        var special         = "";
-        var object_type     = "Add Here";
-        Boolean,    magnetisable    = false;
-        Boolean,    pass_through    = false;
-        Boolean,    fire_weak       = false;
-        //Note: Base hp is 12
+    let heal        = "The attack heals the target using the dmg stat.";
+    
+//were_tags (weaknesses/resistances)
+    let magnetisable    = "Weak to Magnetshroom's ability.";
+    let pass_through    = "Attacks with a 'pierce' tag can hit through the armor/can hit the plants behind.";
+    let fire_weak       = "Takes double damage from 'fire' tag projectile.";
+    let ice_immune      = "Isn't affected by 'chill' and 'freeze' attacks.";
 
-    //template_item
-        var description     = "";
-        var dmg             = 0;
-        var dmg_type        = "Add Here";
-        var special         = "";
-        var spawnlings      = "";
-        var object_type     = "Add Here";   
+//condition_tags
+    let chilled     = "The zombie attacks last this turn.";
+    let frozen      = "The zombie doesn't attack this turn.";
+    let stalled     = "The zombie attacks last this turn.";
+    let buttered    = "The zombie doesn't attack this turn.";
 
-//armor
-    //newspaper
-        var description     = "A weak shield that buffs you upon destruction.";
-        var armor           = 10;
-        var special         = "Buffs the player's damage after it's destroyed.";
-        var object_type     = armor_shield;
-        Boolean,    magnetisable    = false;
-        Boolean,    pass_through    = true;
-        Boolean,    fire_weak       = true;
+//items
+class Item_Attack {
+    constructor(name, description, dmg, dmg_type, dmg_tags) {
+        this.name           = name;             //define as words ""
+        this.description    = description;      //define as words ""
+        this.dmg            = dmg;              //define as number
+        this.dmg_tags       = dmg_tags          //define as an array of tags that affect it
+        this.dmg_type       = dmg_type;         //define as one of the variables in the list at the top
+        this.object_type    = item_attack;
+    }
+}  
 
-    //party_cone
-        var description     = "The more the merrier!";
-        var armor           = 8;
-        var special         = "Gains +2 armor every time a spawnling is summoned.";
-        var object_type     = armor_helmet;
-        Boolean,    magnetisable    = false;
-        Boolean,    pass_through    = false;
-        Boolean,    fire_weak       = true;
+
+class Item_PassiveBuff {
+    constructor(name, description, buffs, cooldown) {
+        this.name           = name;             //define as words ""
+        this.description    = description;      //define as words ""
+        this.buffs          = buffs;            //define as an array of condition_tags and/or were_tags
+        this.cooldown       = cooldown;         //define as number of waves between activations of effect        
+        this.object_type    = item_passive;
+    }
+}
+
+class Item_PassiveSplg {
+    constructor(name, description, spawnlings, splg_amount, cooldown) {
+        this.name           = name;             //define as words ""
+        this.description    = description;      //define as words ""
+        this.spawnlings     = spawnlings;       //define as spawnling (Zombie class) summoned
+        this.splg_amount    = splg_amount;      //define as number. Amount of spawnlings summoned (1-3)
+        this.cooldown       = cooldown;         //define as number of waves between activations of effect
+        this.object_type    = item_passive;
+    }
+}
+
+class Item_GadgetBuff {
+    constructor(name, description, buffs) {
+        this.name           = name;             //define as words ""
+        this.description    = description;      //define as words ""
+        this.buffs          = buffs;            //define as an array of condition_tags and/or were_tags
+        this.duration       = duration;         //define as number of waves the effect will last
+        this.object_type    = item_gadget;
+    }
+}
+
+class Item_GadgetArmor {
+    constructor(name, description, armor) {
+        this.name           = name;             //define as words ""
+        this.description    = description;      //define as words ""
+        this.armor          = armor;            //define as a shield that it will give the zombie
+        this.object_type    = item_gadget;
+    }
+}
+
+class Item_GadgetSpgl {
+    constructor(name, description, spawnlings, splg_amount) {
+        this.name           = name;             //define as words ""
+        this.description    = description;      //define as words ""
+        this.spawnlings     = spawnlings;       //define as spawnling (Zombie class) summoned
+        this.splg_amount    = splg_amount;      //define as number. Amount of spawnlings summoned (1-3)
+        this.object_type    = item_gadget;
+    }
+}class Item_GadgetBuff {
+    constructor(name, description, buffs) {
+        this.name           = name;             //define as words ""
+        this.description    = description;      //define as words ""
+        this.buffs          = buffs;            //define as an array of condition_tags and/or were_tags
+        this.duration       = duration;         //define as number of waves the effect will last
+        this.object_type    = item_gadget;
+    }
+}
+
+class Item_GadgetArmor {
+    constructor(name, description, armor) {
+        this.name           = name;             //define as words ""
+        this.description    = description;      //define as words ""
+        this.armor          = armor;            //define as a shield that it will give the zombie
+        this.object_type    = item_gadget;
+    }
+}
+
+class Item_GadgetSpgl {
+    constructor(name, description, spawnlings, splg_amount) {
+        this.name           = name;             //define as words ""
+        this.description    = description;      //define as words ""
+        this.spawnlings     = spawnlings;       //define as spawnling (Zombie class) summoned
+        this.splg_amount    = splg_amount;      //define as number. Amount of spawnlings summoned (1-3)
+        this.object_type    = item_gadget;
+    }
+}
+
+//armors
+class Armor_Helmet {
+    constructor(name, description, armor, were_tags) {
+        this.name           = name;             //define as words ""
+        this.description    = description;      //define as words ""
+        this.armor          = armor;            //define as a number
+        this.armor_tags     = were_tags;        //define as an array of tags that affect it
+        this.object_type    = armor_helmet;     
+    }
+}
+
+class Armor_Shield {
+    constructor(name, description, armor, were_tags) {
+        this.name           = name;             //define as words ""
+        this.description    = description;      //define as words ""
+        this.armor          = armor;            //define as a number "" 
+        this.armor_tags     = were_tags;        //define as an array of tags that affect it - Always include cndt_immune
+        this.object_type    = armor_shield;
+    }
+}
+
+class Armor_Umbrella {
+    constructor(name, description, armor, were_tags) {
+        this.name           = name;             //define as words ""
+        this.description    = description;      //define as words ""
+        this.armor          = armor;            //define as number ""
+        this.armor_tags     = were_tags;        //define as an array of tags that affect it - Always include cndt_immune
+        this.object_type    = armor_umbrella;
+    }
+}
 
 //item_attack
-    //excavator_shovel
-        var description     = "A wonderful plant-thrower.";
-        var dmg             = 1;
-        var dmg_type        = strike;
-        var special         = "Throws 'protecor' type plants back one tile (pushes whatever plant is there forwards).";
-        var object_type     = item_attack;
+const bite = new Item_Attack(
+    "Bite",
+    "The standard zombie attack",
+    1,
+    munch,
+    []
+)
 
-//item_passive
-    //zcorp_mug
+const riot_cane = new Item_Attack(
+    "Riot Cane",
+    "A weak cane used to fend off plant riots",
+    1,
+    strike,
+    []
+)
 
-    //ducky_tube
+const zcorp_pin = new Item_Attack(
+    "ZCorp Pin",
+    "A small pin used to pierce papers and plants",
+    1,
+    strike,
+    []
+)
 
-//gadget
-    //gravedigger's_shovel
-        var description     = "Creates few stronger allies.";
-        var special         = "Instantly summons spawnlings.";
-        var spawnlings      = 1, Gravestone;
-        var object_type     = item_gadget;
+const torch = new Item_Attack(
+    "Torch",
+    "The perfect tool for an explorer, or a pyromaniac",
+    2,
+    strike,
+    [fire]
+)
 
-//already in script.js
-    //cone
-        var description     = "The most basic kind of armor.";
-        var armor           = 8;
-        var special         = "";
-        var object_type     = armor_helmet;
-        Boolean,    magnetisable    = false;
-        Boolean,    pass_through    = false;
-        Boolean,    fire_weak       = true;
+const vaulting_pole = new Item_Attack(
+    "Vaulting Pole",
+    "A classic wall avoider",
+    1,
+    strike,
+    [pierce]
+)
 
-    //bucket
-        var description     = "A strong metalic helmet.";
-        var armor           = 25;
-        var special         = "";
-        var object_type     = armor_helmet;
-        Boolean,    magnetisable    = true;
-        Boolean,    pass_through    = false;
-        Boolean,    fire_weak       = false;    
+const excavator_shovel = new Item_Attack()
 
-    //brick_head
-        var description     = "Much better than hay and wood.";
-        var armor           = 30;
-        var special         = "";
-        var object_type     = armor_helmet;
-        Boolean,    magnetisable    = false;
-        Boolean,    pass_through    = false;
-        Boolean,    fire_weak       = false;
+const cardboard_shooters = new Item_Attack(
+    "Cardboard Shooters",
+    "Roles of toilet paper make for a perfect ranged weapon",
+    1,
+    range,
+    []
+)
 
-    //ice_block
-        var description     = "Nothing like ice to fight frost.";
-        var armor           = 16;
-        var special         = "Blocks 'frozen' and 'chilled' status conditions.";
-        var object_type     = armor_helmet;
-        Boolean,    magnetisable    = false;
-        Boolean,    pass_through    = false;
-        Boolean,    fire_weak       = true;
+const space_gun = new Item_Attack(
+    "Space Gun",
+    "Manufactured by Gadget Scientist Co.",
+    1,
+    range,
+    [fire]
+)
 
-    //screendoor
-        var description     = "The classic and certainly strong shield.";
-        var armor           = 25;
-        var special         = "";
-        var object_type     = armor_shield;
-        Boolean,    magnetisable    = true;
-        Boolean,    pass_through    = true;
-        Boolean,    fire_weak       = false;
+//armor
+const cone = new Armor_Helmet(
+    "Cone",
+    "The classic zombie armor",
+    8,
+    [fire_weak]
+)
 
-    //zcorp_wc_door
-        var description     = "So this is where it went.";
-        var armor           = 25;
-        var special         = "";
-        var object_type     = armor_shield;
-        Boolean,    magnetisable    = true;
-        Boolean,    pass_through    = false;
-        Boolean,    fire_weak       = false;
+const party_cone = new Armor_Helmet()
 
-    //bite
-        var description     = "The standard zombie attack.";
-        var dmg             = 1;
-        var dmg_type        = bite;
-        var special         = "";
-        var object_type     = item_attack;
+const bucket = new Armor_Helmet(
+    "Bucket",
+    "A metalic protection; tough and effecitve",
+    25,
+    [magnetisable]
+)
 
-    //riot_cane
-        var description     = "A weak cane used to fend off plant riots.";
-        var dmg             = 1;
-        var dmg_type        = strike;
-        var special         = "";
-        var object_type     = item_attack;
-        
-    //torch
-        var description     = "The best wall-destroyer.";
-        var dmg             = 1;
-        var dmg_type        = strike;
-        var special         = "deals triple damage to 'protector' plants.";
-        var object_type     = item_attack;
+const brick_head = new Armor_Helmet(
+    "Brickhead",
+    "Much better than hay and wood",
+    30,
+    []
+)
 
-    //vaulting_pole
-        var description     = "The best wall-avoider.";
-        var special         = "Allows you to attack plants behind 'protector'.";
-        var spawnlings      = "";
-        var object_type     = item_passive;
+const ice_block = new Armor_Helmet(
+    "Ice Block",
+    "Nothing like ice to fight frost.",
+    16,
+    [ice_immune, fire_weak]
+)
 
-    //cardboard_shooters
-        var description     = "Roles of toilet paper make for a perfect weapon.";
-        var dmg             = 1;
-        var dmg_type        = range;
-        var special         = "";
-        var object_type     = item_attack;
+const space_helmet = new Armor_Helmet(
+    "Space Helmet",
+    "It's like an aquarium, but with air inside",
+    8,
+    []
+)
 
-    //pocket_shield_gen
-        var description     = "The peak of work insurance.";
-        var special         = "Instantly summons spawnlings.";
-        var spawnlings      = 1, ZCorp_RoboShield;
-        var object_type     = item_gadget;
+const screendoor = new Armor_Shield(
+    "Screendoor",
+    "A door with a buch of holes",
+    25,
+    [magnetisable, pass_through]
+)
 
-    //flag
-        var description     = "Creates many weak allies.";
-        var special         = "Summons spawnlings every two waves.";
-        var spawnlings      = 1, Browncoat;
-        var object_type     = item_passive;
+const zcorp_wc_door = new Armor_Shield(
+    "ZCorp WC Door",
+    "So this is where it went",
+    25,
+    [magnetisable]
+)
 
-    //frozen_flag
-        var description     = "Creates many frozen allies.";
-        var special         = "Summons spawnlings every three waves.";
-        var spawnlings      = 1, Brownparka;
-        var object_type     = item_passive;
- 
-    //zcorp_cellphone
-        var description     = "Costumer service please!";
-        var special         = "Instantly summons spawnlings.";
-        var spawnlings      = 2, ZCorp_Costumer_Service;
-        var object_type     = item_gadget;
+const newspaper = new Armor_Shield()
 
-    //rally_flag
-        var description     = "Creates few stronger allies.";
-        var special         = "Instantly summons spawnlings.";
-        var spawnlings      = 3, Conehead;
-        var object_type     = item_gadget;
+const holoShield = new Armor_Shield(
+    "Holo-Shield",
+    "Generated by the Z Corporation",
+    20,
+    []
+)
 
-    //teleporter
-        var description     = "Gadget Scientist's favourite gadget.";
-        var special         = "Instantly summons spawnlings.";
-        var spawnlings      = 2, Space_Cadet;
-        var object_type     = item_gadget;
+//gadgets
+const zcorp_pocket_roboShield = new Item_GadgetArmor(
+    "ZCorp Pocket Robo-Shield",
+    "Nothing like an instant shield to help you in a fight",
+    holoShield
+)
+
+const rally_flag = new Item_GadgetSpgl(
+    "Rally Flag",
+    "Instantly rallies stronger allies.",
+    conehead,
+    3
+)
+
+const zcorp_cellphone = new Item_GadgetSpgl(
+    "ZCorp Cellphone",
+    "Costumer service please!",
+    zcorp_costumer_service,
+    2
+)
+
+const teleporter = new Item_GadgetSpgl(
+    "Teleporter",
+    "Gadget Scientist's favourite gadget",
+    space_cadet,
+    2
+)
+
+const gravedigger_shovel = new Item_GadgetSpgl(
+    "Gravedigger's Shovel",
+    "It digs graves, shocking",
+    gravestone,
+    1
+)
+
+//passives
+const zcorp_mug = new Item_PassiveBuff()
+
+const ducky_tube = new Item_PassiveBuff()
+
+const flag = new Item_PassiveSplg(
+    "Flag",
+    "Summons weak spawnlings every two waves.",
+    browncoat,
+    1,
+    2
+)
+
+const frozen_flag = new Item_PassiveSplg(
+    "Frozen Flag",
+    "Summons spawnlings every three waves.",
+    brownparka,
+    1,
+    3
+)
+
+const necromancy = new Item_PassiveSplg(
+    "Necromancy",
+    "Summons two weak spawnlings every three waves",
+    peasant_zombie,
+    2,
+    3
+)

@@ -670,9 +670,9 @@ const space_cadet = new Zombie(
     []
 )
 
-const zcorp_costumer_service = new Zombie(
-    "ZCorp Costumer Service",
-    "Don't worry, he'll put a pin on your complaints",
+const zcorp_customer_service = new Zombie(
+    "ZCorp Customer Service",
+    "Hang on - he'll put a pin on it",
     12,
     12,
     4,
@@ -893,7 +893,7 @@ const endurian = new Plant_Endurian(
     24,
     1,
     [],
-    [],
+    null,
     eaten,
     3
 )
@@ -961,8 +961,12 @@ function generateBattleUI() {
     
     document.body.appendChild(actionsMenu);
 
+    const closeButton = document.createElement("button");
+        closeButton.id = "close-actions-button";
+
     function updateActionsMenu(){
-        actionsMenu.innerHTML = "";     //clear previous actions
+        actionsMenu.innerHTML = "";             //clear previous actions
+        actionsMenu.appendChild(closeButton);
         
         player.actions.forEach(function(action) {
             const actionButton = document.createElement("button");
@@ -976,14 +980,14 @@ function generateBattleUI() {
             actionsMenu.appendChild(actionButton);
         });
     }
+    
+    closeButton.addEventListener("click", function() {
+        actionsMenu.style.display = "none";
+    });
 
     actionsButton.addEventListener("click", function() {
-        if(actionsMenu.style.display == "none") {
             updateActionsMenu();
-            actionsMenu.style.display = "block";
-        } else {
-            actionsMenu.style.display = "none";
-        }
+            actionsMenu.style.display = "flex";
     })
 
     const endTurnButton = document.createElement("button");
