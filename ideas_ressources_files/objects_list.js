@@ -15,10 +15,6 @@
     let range       = "A ranged attack that does not require contact (lane) and is unaffected by plants with 'eaten' adn 'death_eaten' range.";  
     
 //dmg_tags
-    let straight    = "The attack is shot at the target";
-    let lobbed      = "The attack is lobbed at the target.";
-    let melee       = "The attack requires physical contact.";
-
     let repeat      = "Attacks twice.";
     let pierce      = "Attack ignore armor shields and protector plants with the 'pass_through' tag.";
     let fire        = "Attack deals double damage to armor with the 'fire_weak' tag and triples damage to protector plants.";
@@ -55,6 +51,17 @@ class Item_PassiveBuff {
         this.name           = name;             //define as words ""
         this.description    = description;      //define as words ""
         this.buffs          = buffs;            //define as an array of condition_tags and/or were_tags
+        this.duration       = 1;                //number of waves the effect will last
+        this.cooldown       = cooldown;         //define as number of waves between activations of effect        
+        this.object_type    = item_passive;
+    }
+}
+
+class Item_PassiveArmor {
+    constructor(name, description, buffs, cooldown) {
+        this.name           = name;             //define as words ""
+        this.description    = description;      //define as words ""
+        this.buffs          = armor;            //define as an array of condition_tags and/or were_tags
         this.cooldown       = cooldown;         //define as number of waves between activations of effect        
         this.object_type    = item_passive;
     }
@@ -158,7 +165,7 @@ class Armor_Umbrella {
     }
 }
 
-//item_attack
+//attack
 const bite = new Item_Attack(
     "Bite",
     "The standard zombie attack",
@@ -230,14 +237,14 @@ const party_cone = new Armor_Helmet()
 const bucket = new Armor_Helmet(
     "Bucket",
     "A metalic protection; tough and effecitve",
-    25,
+    16,
     [magnetisable]
 )
 
 const brick_head = new Armor_Helmet(
     "Brickhead",
     "Much better than hay and wood",
-    30,
+    24,
     []
 )
 
@@ -258,7 +265,7 @@ const space_helmet = new Armor_Helmet(
 const screendoor = new Armor_Shield(
     "Screendoor",
     "A door with a buch of holes",
-    25,
+    24,
     [magnetisable, pass_through]
 )
 

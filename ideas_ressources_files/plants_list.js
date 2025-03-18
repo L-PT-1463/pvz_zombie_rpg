@@ -48,7 +48,7 @@ class Plant{
         this.dmg_tags       = dmg_tags;         //define as an array of tags that affect it
         this.dmg_conder     = dmg_conder;       //define as null by default 
         this.dmg_type       = dmg_type;         //define as one of the variables in the list at the top
-        this.plant_type     = plant_type;          //define as one of the variables in the list at the top
+        this.plant_type     = plant_type;       //define as one of the variables in the list at the top
     }
 }
 
@@ -110,7 +110,7 @@ const snow_pea = new Plant(
 
 const fire_peashooter = new Plant(
     "Fire Peashooter",
-    "Careful, it's hot",
+    "A rather hot peashooter",
     10,
     1,
     [fire],
@@ -165,6 +165,8 @@ const kernelpult = new Plant(
 )
 
 //melee
+const cardboard_chomper = new Plant()
+
 const bonk_choy = new Plant(
     "Bonk Choy",
     "It can bonk",
