@@ -105,33 +105,6 @@ class Item_GadgetSpgl {
         this.splg_amount    = splg_amount;      //define as number. Amount of spawnlings summoned (1-3)
         this.object_type    = item_gadget;
     }
-}class Item_GadgetBuff {
-    constructor(name, description, buffs) {
-        this.name           = name;             //define as words ""
-        this.description    = description;      //define as words ""
-        this.buffs          = buffs;            //define as an array of condition_tags and/or were_tags
-        this.duration       = duration;         //define as number of waves the effect will last
-        this.object_type    = item_gadget;
-    }
-}
-
-class Item_GadgetArmor {
-    constructor(name, description, armor) {
-        this.name           = name;             //define as words ""
-        this.description    = description;      //define as words ""
-        this.armor          = armor;            //define as a shield that it will give the zombie
-        this.object_type    = item_gadget;
-    }
-}
-
-class Item_GadgetSpgl {
-    constructor(name, description, spawnlings, splg_amount) {
-        this.name           = name;             //define as words ""
-        this.description    = description;      //define as words ""
-        this.spawnlings     = spawnlings;       //define as spawnling (Zombie class) summoned
-        this.splg_amount    = splg_amount;      //define as number. Amount of spawnlings summoned (1-3)
-        this.object_type    = item_gadget;
-    }
 }
 
 //armors
@@ -292,6 +265,8 @@ const zcorp_pocket_roboShield = new Item_GadgetArmor(
     holoShield
 )
 
+const zcorp_mug = new Item_GadgetBuff()
+
 const rally_flag = new Item_GadgetSpgl(
     "Rally Flag",
     "Instantly rallies stronger allies.",
@@ -321,8 +296,6 @@ const gravedigger_shovel = new Item_GadgetSpgl(
 )
 
 //passives
-const zcorp_mug = new Item_PassiveBuff()
-
 const ducky_tube = new Item_PassiveBuff()
 
 const flag = new Item_PassiveSplg(
