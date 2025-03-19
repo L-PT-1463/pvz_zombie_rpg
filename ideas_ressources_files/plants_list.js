@@ -6,8 +6,13 @@
     let ground      = "Ground plants cannot be attacked but don't need to be defeated to complete a level. They do damage to zombies that attack a plant behind them.";
 
 //dmg_type
-    let lane        = "A lane of the map.";
+    let lane        = "A lane of the map, one way.";
+    let laneBoth    = "A lane of the map, both ways.";
+    let lane3       = "Plant's lane and adjacent lanes.";
     let row         = "A row of the map.";
+    let cross       = "Lane and row of the garden, both ways.";
+    let star        = "Star pattern.";
+
     let tile        = "The tile it is on.";
 
     let hit         = "The plant attacks the zombie that attacked it if hit by a 'munch' or 'strike' type attack."
@@ -97,6 +102,17 @@ const repeater = new Plant(
     regular
 )
 
+const cardboard_snow_pea = new Plant(
+    "Cardboard Snow Pea",
+    "Its attacks will slow you down",
+    6,
+    1,
+    [],
+    chill,
+    lane,
+    regular
+)
+
 const snow_pea = new Plant(
     "Snow Pea",
     "A rather cold peashooter",
@@ -105,6 +121,32 @@ const snow_pea = new Plant(
     [],
     chill,
     lane,
+    regular
+)
+
+const cardboard_spilt_pea = new Plant()
+
+const spilt_pea = new Plant()
+
+const cardboard_threepeater = new Plant(
+    "Cardboard Threepeater",
+    "Its three heads attack in three lanes",
+    6,
+    1,
+    [],
+    null,
+    lane3,
+    regular
+)
+
+const threepeater = new Plant(
+    "Threepeater",
+    "These heads are always in sync",
+    10,
+    1,
+    [],
+    null,
+    lane3,
     regular
 )
 
@@ -222,6 +264,10 @@ const wallnut = new Plant(
     protector
 )
 
+const cardboard_torchwood = new Plant()
+
+const torchwood = new Plant()
+
 const peanut = new Plant(
     "Peanut",
     "A peashooter with more health, or a nut with more peas...",
@@ -300,3 +346,8 @@ const metal_petal = new Plant(
     deathEaten,
     protector
 )
+
+//debuffers
+const cardboard_magnetshroom = new Plant()
+
+const magnetshroom = new Plant()
