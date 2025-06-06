@@ -244,7 +244,7 @@ const screendoor = new Armor_Shield(
 
 const zcorp_wc_door = new Armor_Shield(
     "ZCorp WC Door",
-    "So this is where it went",
+    "So that's where it went",
     25,
     [magnetisable]
 )
