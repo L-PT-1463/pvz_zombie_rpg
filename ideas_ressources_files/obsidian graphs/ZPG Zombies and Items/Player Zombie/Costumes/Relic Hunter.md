@@ -1,0 +1,1 @@
+[[Costume]] inspired by the [[Lost City]] area, unlocked by obtaining the [[Turquoise Skull]] almanac entry.

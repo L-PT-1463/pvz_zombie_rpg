@@ -1,0 +1,1 @@
+Default [[Costume]]. Available from the beginning of the game.

@@ -1,0 +1,232 @@
+{
+  "main": {
+    "id": "a1c1576ff1b81dc1",
+    "type": "split",
+    "children": [
+      {
+        "id": "0247de275d755c41",
+        "type": "tabs",
+        "dimension": 43.962848297213625,
+        "children": [
+          {
+            "id": "9e15499b073e25c3",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      },
+      {
+        "id": "69719853c384293d",
+        "type": "tabs",
+        "dimension": 56.03715170278638,
+        "children": [
+          {
+            "id": "1c0e322f95d28580",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e899fae4ab8b3d52",
+    "type": "split",
+    "children": [
+      {
+        "id": "c2c8ada15df52047",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8eef5aa8c8e1dad5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "d89ca350a2ea2304",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "5a4359eccc4c9444",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "a45a7d09cbfba9df",
+    "type": "split",
+    "children": [
+      {
+        "id": "c9f9f16c1141bdb8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e72b9ffe2d21023f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Melon-pult.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Melon-pult"
+            }
+          },
+          {
+            "id": "4b3038f42bf4c344",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Melon-pult.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Melon-pult"
+            }
+          },
+          {
+            "id": "77bbc4111b5f8824",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "10f673bab717e669",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Melon-pult.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Melon-pult"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "1c0e322f95d28580",
+  "lastOpenFiles": [
+    "Dungeon Crawling/Areas/Zen Garden.md",
+    "Dungeon Crawling/Areas/ZCorp Intra-Space-Time.md",
+    "Rush Hour.md",
+    "Time Twist.md",
+    "Dungeon Crawling/Areas/Training Grounds.md",
+    "Dungeon Crawling/Areas/The Zombosseum.md",
+    "Marine Battle.md",
+    "Docked Ship.md",
+    "Low Tide.md",
+    "High Tide.md",
+    "Dungeon Crawling/Areas/Pirate's Beach.md",
+    "Untitled.md",
+    "Spawnlings/Paper Plane Imp.md",
+    "Dungeon Crawling/Areas/Old Wild Egypt.md",
+    "Night Cold Winds.md",
+    "Dungeon Crawling/Areas/Neon Future.md",
+    "Plants/Boss/Shooting Starfruit.md",
+    "Plants/Boss/The Pinearch.md",
+    "Plants/TBD/Strach Lord.md",
+    "Plants/TBD/Fila-mint.md",
+    "Fila-mint.md",
+    "Dungeon Crawling/Areas/Neighbour's House.md",
+    "Fog.md",
+    "Spring.md",
+    "Summer.md",
+    "Fall.md",
+    "Dungeon Crawling/Areas",
+    "Dungeon Crawling/Garden Gimmicks",
+    "Garden",
+    "Dungeon Crawling/Gardens",
+    "Plants/Boss",
+    "Untitled.canvas",
+    "00 Groupers/Traits",
+    "00 Groupers/Types",
+    "Plants/TBD",
+    "Plants/Ground",
+    "Plants/Protector",
+    "orange_player_browncoat.png",
+    "orange_player_mummy.png",
+    "orange_player_fancycoat.png",
+    "orange_player_training.png",
+    "orange_player_winter.png",
+    "orange_player_zcorp.png",
+    "orange_player_beach.png"
+  ]
+}
