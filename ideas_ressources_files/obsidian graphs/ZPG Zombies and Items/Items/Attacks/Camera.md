@@ -1,4 +1,4 @@
 Type: [[Ranged]]
-Area: n/a
+Area: [[Neon Carnival]]
 
 Speciality: Deals more damage to Bosses

@@ -1,4 +1,4 @@
-Type: [[Boss]]
+Type: [[Boss]] ([[Regular]])
 Area: [[Dark Ages]] ([[Dark Meadow]])
 Attack: [[Straight]]
 Traits:

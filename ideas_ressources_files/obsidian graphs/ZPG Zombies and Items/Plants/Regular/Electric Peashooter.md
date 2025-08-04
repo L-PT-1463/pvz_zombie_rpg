@@ -1,5 +1,5 @@
 Type: [[Regular]]
-Area: [[Neon Future]]
+Area: [[Far Future]]
 Attack: [[Straight]]
 Traits:
 - [[Laser]]

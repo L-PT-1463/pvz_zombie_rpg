@@ -1,5 +1,5 @@
 Type: [[Regular]]
-Area: [[Neon Future]]
+Area: [[Far Future]]
 Attack: n/a
 
 Speciality: When another plant is vanquished, this turns into that plant.

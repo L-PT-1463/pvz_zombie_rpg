@@ -1,2 +1,2 @@
 Type: [[Helmet]]
-Area: [[Neon Future]]
+Area: [[Far Future]]

@@ -4,6 +4,6 @@ Attack: n/a
 Traits:
 - [[Tiny]]
 - [[Fire Weak]]
-- [[Amphibious]]
+- [[Aerial]]
 
 Start of second turn: Turns into an [[Astrocado]].

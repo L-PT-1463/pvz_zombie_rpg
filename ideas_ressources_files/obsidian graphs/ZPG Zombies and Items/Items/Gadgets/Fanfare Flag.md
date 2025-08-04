@@ -1,5 +1,5 @@
 Type: [[Passive]]
-Area: [[Neighbour's House]]
+Area: [[Neon Carnival]]
 [[Weapon slot]]
 
 Speciality: Summons Fanfare zombies (*TBD*)

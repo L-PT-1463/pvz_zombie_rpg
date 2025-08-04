@@ -1,7 +1,7 @@
 Type: [[Regular]]
-Area: [[Neon Future]]
+Area: [[Far Future]]
 Attack: [[Lobbed]]
 Traits:
-- [[Amphibious]]
+- [[Aerial]]
 
 Start of turn: Spawns an [[Intensive Carrot]].

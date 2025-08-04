@@ -1,4 +1,4 @@
-Type: [[Boss]]
+Type: [[Boss]] ([[Regular]])
 Area: [[Training Grounds]]
 Attack: n/a
 

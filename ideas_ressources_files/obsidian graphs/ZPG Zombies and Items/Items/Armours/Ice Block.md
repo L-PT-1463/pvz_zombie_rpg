@@ -1,5 +1,5 @@
 Type: [[Helmet]]
-Area: [[Old Wild Egypt]]
+Area: [[Neighbour's House]]
 Traits:
 - [[Ice Immune]]
 - [[Fire Weak]]

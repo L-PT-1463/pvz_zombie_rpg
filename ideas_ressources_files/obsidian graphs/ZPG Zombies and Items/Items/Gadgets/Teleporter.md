@@ -1,4 +1,4 @@
 Type: [[Active]]
-Area: [[Neon Future]]
+Area: [[Far Future]]
 
 Speciality: Summons [[Space Cadet]]

@@ -1,1 +1,1 @@
-[[Costume]] unlocked in the [[Neighbour's House]] area. Reason undefined *TBD.
+[[Costume]] unlocked in the [[Steam City]] area. Reason undefined *TBD.

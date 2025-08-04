@@ -1,5 +1,5 @@
 Type: [[Regular]]
-Area: n/a
+Area: [[Neon Carnival]]
 Attack: [[Melee]]
 Traits:
 - [[Butter]]

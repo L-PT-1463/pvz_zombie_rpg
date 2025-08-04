@@ -1,5 +1,5 @@
 Type: [[Protector]]
-Area: [[Neon Future]]
+Area: [[Far Future]]
 Attack: [[Heal]]
 Traits:
 - [[Pass-through]]

@@ -1,5 +1,5 @@
-Type: [[Boss]]
-Area: [[Neon Future]]
+Type: [[Boss]] ([[Regular]])
+Area: [[Far Future]]
 Attack: n/a
 Traits:
 - 

@@ -1,5 +1,5 @@
 Type: [[Helmet]]
-Area: n/a
+Area: [[Neon Carnival]]
 Traits:
 - [[Fire Weak]]
 

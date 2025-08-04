@@ -1,4 +1,4 @@
-Type: [[Boss]]
+Type: [[Boss]] ([[Regular]])
 Area: [[Jurassic Marsh]]
 Attack: [[Melee]]
 Traits:

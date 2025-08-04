@@ -1,5 +1,5 @@
-Type: [[Boss]]
-Area: n/a
+Type: [[Boss]] ([[Protector]])
+Area: [[Steam City]]
 Attack: [[Melee]]
 Traits:
 - [[Armoured]] (1)

@@ -1,6 +1,6 @@
 Type: [[Regular]]
-Area: [[Pirate's Beach]]
+Area: [[Steam City]]
 Attack: [[Straight]]
 Traits:
-- [[Amphibious]]
+- [[Aerial]]
 - [[Flammable]]

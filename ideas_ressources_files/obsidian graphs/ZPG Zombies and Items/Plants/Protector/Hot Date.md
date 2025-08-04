@@ -1,5 +1,5 @@
 Type: [[Protector]]
-Area: n/a
+Area: [[Neon Carnival]]
 Attack: n/a
 Traits:
 -  [[Fire]]

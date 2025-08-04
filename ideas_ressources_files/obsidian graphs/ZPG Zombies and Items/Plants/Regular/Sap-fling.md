@@ -1,5 +1,5 @@
 Type: [[Regular]]
-Area: n/a
+Area: [[Neighbour's House]] ([[Winter]])
 Attack: [[Lobbed]]
 Traits:
 - [[Stall]]

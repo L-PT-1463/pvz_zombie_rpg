@@ -1,4 +1,4 @@
-Type: [[Boss]]
+Type: [[Boss]] ([[Regular]])
 Area: [[The Zombosseum]]
 Attack: [[Melee]]
 Traits:

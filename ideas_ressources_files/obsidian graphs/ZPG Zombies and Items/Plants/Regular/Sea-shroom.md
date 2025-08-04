@@ -1,5 +1,5 @@
 Type: [[Regular]]
-Area: [[Neighbour's House]]
+Area: [[Neighbour's House]] ([[Fall]])
 Attack: [[Straight]]
 Traits:
 - [[Aquatic]]

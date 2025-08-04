@@ -1,4 +1,4 @@
 Type: [[Shop Garden]]
-Area: n/a
+Area: [[Steam City]]
 
 Speciality: *TBD*

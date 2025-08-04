@@ -1,5 +1,5 @@
 Type: [[Protector]]
-Area: [[Neon Future]]
+Area: [[Neon Carnival]]
 Attack: [[Melee]]
 
 Speciality: Gains health when a Spawnling is spawned.

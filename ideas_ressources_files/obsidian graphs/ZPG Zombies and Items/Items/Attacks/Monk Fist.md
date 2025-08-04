@@ -1,4 +1,6 @@
 Type: [[Strike]]
 Area: [[Zen Garden]]
+Traits:
+- [[Friendly Fire]]
 
-Speciality: Can target zombies. Chance of doing a [[Heal]] attack instead.
+Speciality: Chance of doing a [[Heal]] attack instead.

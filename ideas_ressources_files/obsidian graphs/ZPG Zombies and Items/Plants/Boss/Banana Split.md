@@ -1,4 +1,4 @@
-Type: [[Boss]]
+Type: [[Boss]] ([[Regular]])
 Area: [[Pirate's Beach]] ([[Docked Ship]])
 Attack: [[Lobbed]]
 Traits:

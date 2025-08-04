@@ -1,5 +1,5 @@
 Type: [[Regular]]
-Area: [[Neon Future]]
+Area: [[Far Future]]
 Attack: n/a
 
 Speciality: Keeps the attack type (Straight if Ground) and "When vanquished" ability of the plant it transformed from.

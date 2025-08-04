@@ -1,5 +1,5 @@
 Type: [[Boss]] ([[Power-mint]])
-Area: [[Neon Future]]
+Area: [[Far Future]]
 Attack: n/a
 Traits:
 - 

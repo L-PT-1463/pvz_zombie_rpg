@@ -1,5 +1,5 @@
 Type: [[Helmet]]
-Area: [[Pirate's Beach]]
+Area: [[Steam City]]
 Traits:
 - [[Fire Weak]]
 

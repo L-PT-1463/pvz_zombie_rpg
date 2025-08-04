@@ -1,7 +1,7 @@
 Type: [[Regular]]
-Area: [[Pirate's Beach]]
+Area: [[Steam City]]
 Attack: [[Straight]]
 Traits:
-- [[Amphibious]]
+- [[Aerial]]
 
 Speciality: Attacks in the four diagonals.

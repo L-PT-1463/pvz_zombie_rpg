@@ -1,5 +1,5 @@
 [[Spawnling]]
 
-Area: [[Neon Future]]
-Classification: n/a
+Area: [[Neon Carnival]]
+Classification: [[Crowd basic]]
 Attack: [[Bite]]

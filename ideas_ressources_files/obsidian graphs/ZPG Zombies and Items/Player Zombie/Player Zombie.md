@@ -2,7 +2,7 @@ Has multiple costumes available in a predefined selection of colours (black, blu
 Costumes:
 - [[Browncoat (costume)]]
 - [[Training Bandana]]
-- [[Snowy Day]]
+- [[Snow Day]]
 - [[Fancy Coat]]
 - [[Modern Mummy]]
 - [[Beach Bum]]

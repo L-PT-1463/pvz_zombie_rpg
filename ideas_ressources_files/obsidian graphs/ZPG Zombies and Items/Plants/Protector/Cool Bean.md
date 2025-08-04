@@ -5,3 +5,4 @@ Traits:
 - [[Chill]]
 - [[Pass-through]]
 - [[Fire Immune]]
+- [[Ice Immune]]

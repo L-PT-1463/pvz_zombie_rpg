@@ -1,4 +1,4 @@
-Type: [[Pear Cub]]
+Type: [[Regular]]
 Area: [[Jurassic Marsh]]
 Attack: [[Melee]]
 Traits:

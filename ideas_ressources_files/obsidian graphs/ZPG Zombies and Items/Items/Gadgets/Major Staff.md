@@ -1,4 +1,4 @@
 Type: [[Active]]
-Area: [[Neighbour's House]]
+Area: [[Neon Carnival]]
 
 Speciality: Summons Fanfare zombies (*TBD*)

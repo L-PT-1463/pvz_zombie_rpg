@@ -5,7 +5,7 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
       "query": "Training Grounds",
@@ -36,10 +36,10 @@
       }
     },
     {
-      "query": "Neon Future",
+      "query": "Far Future",
       "color": {
         "a": 1,
-        "rgb": 13933269
+        "rgb": 16666045
       }
     },
     {
@@ -83,6 +83,20 @@
         "a": 1,
         "rgb": 16741120
       }
+    },
+    {
+      "query": "Steam City",
+      "color": {
+        "a": 1,
+        "rgb": 9273729
+      }
+    },
+    {
+      "query": "Neon Carnival",
+      "color": {
+        "a": 1,
+        "rgb": 16748453
+      }
     }
   ],
   "collapse-display": true,
@@ -95,6 +109,6 @@
   "repelStrength": 10,
   "linkStrength": 0.849272349272349,
   "linkDistance": 259,
-  "scale": 0.16348370567220558,
+  "scale": 0.1634837056722056,
   "close": true
 }

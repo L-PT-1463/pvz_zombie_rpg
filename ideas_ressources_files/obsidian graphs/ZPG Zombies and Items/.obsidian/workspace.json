@@ -6,27 +6,402 @@
       {
         "id": "0247de275d755c41",
         "type": "tabs",
-        "dimension": 43.962848297213625,
+        "dimension": 51.16640746500778,
         "children": [
           {
-            "id": "9e15499b073e25c3",
+            "id": "eff97eda5a49e705",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Dungeon Crawling/Areas/Dark Ages.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Dark Ages"
+            }
+          },
+          {
+            "id": "02b16f337001762f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dungeon Crawling/Areas/Far Future.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Far Future"
+            }
+          },
+          {
+            "id": "941ef06550d48e3c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dungeon Crawling/Areas/Jurassic Marsh.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Jurassic Marsh"
+            }
+          },
+          {
+            "id": "83128fdd0900559b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dungeon Crawling/Areas/Lost City.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Lost City"
+            }
+          },
+          {
+            "id": "da2819de34d7a9de",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dungeon Crawling/Areas/Neighbour's House.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Neighbour's House"
+            }
+          },
+          {
+            "id": "949ea18cbe3e8102",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dungeon Crawling/Areas/Neon Carnival.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Neon Carnival"
+            }
+          },
+          {
+            "id": "a17b8d092d5571ad",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dungeon Crawling/Areas/Old Wild Egypt.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Old Wild Egypt"
+            }
+          },
+          {
+            "id": "8cb97ec40ea31dc2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dungeon Crawling/Areas/Pirate's Beach.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Pirate's Beach"
+            }
+          },
+          {
+            "id": "8a74ac7d1a467762",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dungeon Crawling/Areas/Steam City.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Steam City"
+            }
+          },
+          {
+            "id": "aba7ec1aa615455f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dungeon Crawling/Areas/The Zombosseum.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "The Zombosseum"
+            }
+          },
+          {
+            "id": "ace3a594658d4d3d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dungeon Crawling/Areas/Training Grounds.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Training Grounds"
+            }
+          },
+          {
+            "id": "5a655f4165ff7415",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dungeon Crawling/Areas/ZCorp Intra-Space-Time.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ZCorp Intra-Space-Time"
+            }
+          },
+          {
+            "id": "a6e77e97aefbc038",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dungeon Crawling/Areas/Zen Garden.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Zen Garden"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
-        "id": "69719853c384293d",
+        "id": "f22b0a8f55dd8c7e",
         "type": "tabs",
-        "dimension": 56.03715170278638,
+        "dimension": 48.83359253499223,
         "children": [
           {
-            "id": "1c0e322f95d28580",
+            "id": "9bb65f46a29c0006",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Dungeon Crawling/Areas/Jurassic Marsh.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [
+                    {
+                      "query": "Regular",
+                      "color": {
+                        "a": 1,
+                        "rgb": 2457875
+                      }
+                    },
+                    {
+                      "query": "Ground (plant)",
+                      "color": {
+                        "a": 1,
+                        "rgb": 2457875
+                      }
+                    },
+                    {
+                      "query": "Protector",
+                      "color": {
+                        "a": 1,
+                        "rgb": 2457875
+                      }
+                    },
+                    {
+                      "query": "Power-mint",
+                      "color": {
+                        "a": 1,
+                        "rgb": 5431473
+                      }
+                    },
+                    {
+                      "query": "Spawnling",
+                      "color": {
+                        "a": 1,
+                        "rgb": 8392463
+                      }
+                    }
+                  ],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.524948024948025,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.7514342322277606,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph of Jurassic Marsh"
+            }
+          },
+          {
+            "id": "276c8e8fca43d253",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Dungeon Crawling/Areas/Jurassic Marsh.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": false,
+                  "colorGroups": [
+                    {
+                      "query": "Training Grounds",
+                      "color": {
+                        "a": 1,
+                        "rgb": 6702080
+                      }
+                    },
+                    {
+                      "query": "Neighbour's House",
+                      "color": {
+                        "a": 1,
+                        "rgb": 292096
+                      }
+                    },
+                    {
+                      "query": "Zen Garden",
+                      "color": {
+                        "a": 1,
+                        "rgb": 10092288
+                      }
+                    },
+                    {
+                      "query": "Pirate's Beach",
+                      "color": {
+                        "a": 1,
+                        "rgb": 42751
+                      }
+                    },
+                    {
+                      "query": "Far Future",
+                      "color": {
+                        "a": 1,
+                        "rgb": 16666045
+                      }
+                    },
+                    {
+                      "query": "Lost City",
+                      "color": {
+                        "a": 1,
+                        "rgb": 16766208
+                      }
+                    },
+                    {
+                      "query": "Dark Ages",
+                      "color": {
+                        "a": 1,
+                        "rgb": 5832959
+                      }
+                    },
+                    {
+                      "query": "Jurassic Marsh",
+                      "color": {
+                        "a": 1,
+                        "rgb": 6029366
+                      }
+                    },
+                    {
+                      "query": "The Zombosseum",
+                      "color": {
+                        "a": 1,
+                        "rgb": 16711680
+                      }
+                    },
+                    {
+                      "query": "ZCorp Intra-Space-Time",
+                      "color": {
+                        "a": 1,
+                        "rgb": 65425
+                      }
+                    },
+                    {
+                      "query": "Old Wild Egypt",
+                      "color": {
+                        "a": 1,
+                        "rgb": 16741120
+                      }
+                    },
+                    {
+                      "query": "Steam City",
+                      "color": {
+                        "a": 1,
+                        "rgb": 9273729
+                      }
+                    },
+                    {
+                      "query": "Neon Carnival",
+                      "color": {
+                        "a": 1,
+                        "rgb": 16748453
+                      }
+                    }
+                  ],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph of Jurassic Marsh"
+            }
+          },
+          {
+            "id": "9d3b28b24d6f8417",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -58,7 +433,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "File explorer"
             }
           },
           {
@@ -67,7 +442,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Area n/a",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -92,7 +467,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 206.5
   },
   "right": {
     "id": "a45a7d09cbfba9df",
@@ -174,42 +549,42 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "daily-notes:Open today's note": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false
     }
   },
-  "active": "1c0e322f95d28580",
+  "active": "8eef5aa8c8e1dad5",
   "lastOpenFiles": [
-    "Dungeon Crawling/Areas/Zen Garden.md",
-    "Dungeon Crawling/Areas/ZCorp Intra-Space-Time.md",
-    "Rush Hour.md",
-    "Time Twist.md",
-    "Dungeon Crawling/Areas/Training Grounds.md",
+    "Items/Attacks/Super-fan Gloves.md",
+    "Dungeon Crawling/Areas/Jurassic Marsh.md",
+    "Spawnlings/Conehead Pilot.md",
+    "Spawnlings/Hunter Zombie.md",
+    "Items/Attacks/Snowball.md",
+    "Items/Attacks/Flint-tipped Spear.md",
+    "Dungeon Crawling/Areas/Lost City.md",
     "Dungeon Crawling/Areas/The Zombosseum.md",
-    "Marine Battle.md",
-    "Docked Ship.md",
-    "Low Tide.md",
-    "High Tide.md",
-    "Dungeon Crawling/Areas/Pirate's Beach.md",
-    "Untitled.md",
+    "Items/Gadgets/Drone Remote.md",
+    "Spawnlings/Zombot Drone.md",
+    "Items/Attacks/Laser Shot.md",
+    "00 Groupers/Traits/Laser.md",
+    "Spawnlings/Robo-Shield.md",
+    "Spawnlings/Theatre Skull.md",
+    "Spawnlings/Shield Decoy.md",
+    "Mr. Freezy.md",
+    "Freezy Wind.md",
+    "Spawnlings/Jetpack Zombie.md",
+    "Spawnlings/Pilot Zombie.md",
+    "Spawnlings/Glider Zombie.md",
+    "Spawnlings/Seagull Zombie.md",
     "Spawnlings/Paper Plane Imp.md",
-    "Dungeon Crawling/Areas/Old Wild Egypt.md",
-    "Night Cold Winds.md",
-    "Dungeon Crawling/Areas/Neon Future.md",
-    "Plants/Boss/Shooting Starfruit.md",
-    "Plants/Boss/The Pinearch.md",
-    "Plants/TBD/Strach Lord.md",
-    "Plants/TBD/Fila-mint.md",
-    "Fila-mint.md",
-    "Dungeon Crawling/Areas/Neighbour's House.md",
-    "Fog.md",
-    "Spring.md",
-    "Summer.md",
-    "Fall.md",
+    "Items/Attacks/Perfume.md",
+    "Spawnlings/Conehead Aristocrat.md",
+    "Items/Armours/Nobility Cone.md",
+    "Dungeon Crawling/Areas/Zen Garden.md",
     "Dungeon Crawling/Areas",
     "Dungeon Crawling/Garden Gimmicks",
     "Garden",

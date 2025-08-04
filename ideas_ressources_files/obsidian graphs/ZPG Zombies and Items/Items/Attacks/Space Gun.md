@@ -1,4 +1,4 @@
 Type: [[Ranged]]
-Area: [[Neon Future]]
+Area: [[Far Future]]
 Traits:
 - [[Fire]]

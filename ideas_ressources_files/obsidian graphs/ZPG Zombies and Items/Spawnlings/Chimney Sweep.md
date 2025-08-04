@@ -1,5 +1,5 @@
 [[Spawnling]]
 
-Area: [[Neighbour's House]]
+Area: [[Zen Garden]]
 Classification: n/a
 Attack: [[Sweep]]

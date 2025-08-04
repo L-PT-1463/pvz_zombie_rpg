@@ -1,4 +1,4 @@
 Type: [[Shop Garden]]
-Area: [[Neon Future]]
+Area: [[Far Future]]
 
 Speciality: *TBD*

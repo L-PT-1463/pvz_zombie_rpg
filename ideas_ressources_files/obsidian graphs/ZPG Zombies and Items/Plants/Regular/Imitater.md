@@ -1,5 +1,5 @@
 Type: n/a
-Area: n/a
+Area: [[Neon Carnival]]
 Attack: n/a
 
 Start of turn: Copies stats, abilities and appearance of the closest plant

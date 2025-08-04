@@ -1,5 +1,5 @@
 Type: [[Regular]]
-Area: [[Zen Garden]]
+Area: [[Zen Garden]] ([[Indoors]])
 Attack: [[Straight]]
 Traits:
 - [[Laser]]

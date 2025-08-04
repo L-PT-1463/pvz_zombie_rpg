@@ -1,4 +1,4 @@
-Type: [[Boss]]
+Type: [[Boss]] ([[Regular]])
 Area: [[ZCorp Intra-Space-Time]]
 Attack: [[Melee]]
 

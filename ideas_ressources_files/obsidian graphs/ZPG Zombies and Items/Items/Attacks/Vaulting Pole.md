@@ -1,4 +1,4 @@
 Type: [[Strike]]
-Area: n/a
+Area: [[Training Grounds]]
 Traits:
 - [[Pierce]]

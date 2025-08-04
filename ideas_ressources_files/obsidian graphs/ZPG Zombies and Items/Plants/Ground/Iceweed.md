@@ -4,3 +4,4 @@ Attack: [[Ground (attack)]]
 Traits:
 - [[Grounded]]
 - [[Chill]]
+- [[Ice Immune]]

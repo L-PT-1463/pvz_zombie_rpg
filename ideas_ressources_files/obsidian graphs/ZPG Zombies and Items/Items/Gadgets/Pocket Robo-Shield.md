@@ -1,4 +1,4 @@
 Type: [[Active]]
-Area: [[Neon Future]]
+Area: [[Far Future]]
 
-Speciality: Instantly equips the zombie with a [[Holo-Shield]]
+Speciality: Spawns a [[Robo-Shield]]

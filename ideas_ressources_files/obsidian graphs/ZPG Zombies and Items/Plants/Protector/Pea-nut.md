@@ -1,5 +1,5 @@
 Type: [[Protector]]
-Area: n/a
+Area: [[Steam City]]
 Attack: [[Straight]]
 Traits:
 - [[Flammable]]

@@ -1,6 +1,6 @@
 [[Area]]
 
-Area taking elements from Pirate Seas, Sky City and Big Wave Beach from PvZ 2, with a general naval battle theme.
+Area taking elements from Pirate Seas and Big Wave Beach from PvZ 2, with a general naval battle and relaxing vacation theme.
 
 Bosses:
 - [[Tricorn]]

@@ -1,5 +1,5 @@
 Type: [[Regular]]
-Area: [[Old Wild Egypt]]
+Area: [[Neighbour's House]] ([[Winter]])
 Attack: [[Lobbed]]
 Traits:
 - [[Chill]]

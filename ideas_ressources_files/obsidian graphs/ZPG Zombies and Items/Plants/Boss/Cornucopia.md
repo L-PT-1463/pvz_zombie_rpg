@@ -1,4 +1,4 @@
-Type: [[Boss]]
+Type: [[Boss]] ([[Regular]])
 Area: [[Neighbour's House]]
 Attack: [[Straight]]
 

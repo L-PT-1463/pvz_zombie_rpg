@@ -1,3 +1,3 @@
 Type: [[Regular]]
-Area: n/a
+Area: [[Zen Garden]]
 Attack: [[Lobbed]]

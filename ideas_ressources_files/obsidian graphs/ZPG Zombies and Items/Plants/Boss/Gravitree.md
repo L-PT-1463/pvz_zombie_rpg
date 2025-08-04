@@ -1,5 +1,5 @@
-Type: [[Boss]]
-Area: [[Zen Garden]]
+Type: [[Boss]] ([[Regular]])
+Area: [[Zen Garden]] ([[Indoors]])
 Attack: [[Straight]]
 Traits:
 - [[Armoured]] (1)

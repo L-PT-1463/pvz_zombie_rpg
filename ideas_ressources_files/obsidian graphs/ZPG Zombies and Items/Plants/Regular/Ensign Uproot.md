@@ -1,7 +1,7 @@
 Type: [[Regular]]
-Area: [[Neon Future]]
+Area: [[Far Future]]
 Attack: [[Straight]]
 Traits:
-- [[Amphibious]]
+- [[Aerial]]
 
 Start of turn: Moves a plant or a zombie by one tile.

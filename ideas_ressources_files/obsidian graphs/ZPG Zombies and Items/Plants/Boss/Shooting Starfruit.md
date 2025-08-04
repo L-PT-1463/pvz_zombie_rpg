@@ -1,8 +1,8 @@
-Type: [[Boss]]
-Area: [[Neon Future]]
+Type: [[Boss]] ([[Regular]])
+Area: [[Steam City]]
 Attack: [[Straight]]
 Traits:
 - [[Repeat]]
-- [[Amphibious]]
+- [[Aerial]]
 
 Speciality: Attacks in a star pattern.

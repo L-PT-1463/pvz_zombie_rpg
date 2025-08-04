@@ -2,7 +2,7 @@
 
 Area: [[Lost City]]
 Classification: [[Spawner]]
-Gadget: [[Tent (Lost City)]]
+Gadget: [[Necromancy (Lost City)]]
 
 Traits:
 - [[Fire Weak]]

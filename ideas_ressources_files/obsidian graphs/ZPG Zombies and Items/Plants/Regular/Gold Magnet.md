@@ -1,5 +1,5 @@
 Type: [[Regular]]
-Area: [[Zen Garden]]
+Area: [[Lost City]]
 Attack: [[Straight]]
 Traits:
 - [[Magnetising]] (own lane)

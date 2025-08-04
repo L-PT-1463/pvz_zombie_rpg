@@ -1,5 +1,5 @@
 Type: [[Regular]]
-Area: [[Zen Garden]]
+Area: [[Zen Garden]] ([[Roof]])
 Attack: n/a
 Traits:
 - 

@@ -1,5 +1,5 @@
 Type: [[Regular]]
-Area: n/a
+Area: [[Steam City]]
 Attack: [[Straight]]
 Traits:
 - [[Stall]]

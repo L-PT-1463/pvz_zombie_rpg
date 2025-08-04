@@ -1,5 +1,5 @@
 Type: [[Regular]]
-Area: [[Neon Future]]
+Area: [[Steam City]]
 Attack: [[Straight]]
 
 Speciality: Attacks in a star-shaped pattern.

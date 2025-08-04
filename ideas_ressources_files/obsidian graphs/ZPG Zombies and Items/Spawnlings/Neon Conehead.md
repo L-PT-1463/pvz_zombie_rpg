@@ -1,6 +1,6 @@
 [[Spawnling]]
 
-Area: [[Neon Future]]
+Area: [[Neon Carnival]]
 Classification: [[Cone basic]]
 Attack: [[Bite]]
 Armoured: [[Neon Cone]]

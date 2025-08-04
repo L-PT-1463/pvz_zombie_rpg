@@ -1,2 +1,2 @@
 Type: [[Helmet]]
-Area: [[Neighbour's House]]
+Area: [[Neon Carnival]]

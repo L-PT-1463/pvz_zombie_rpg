@@ -1,8 +1,8 @@
 Type: [[Regular]]
-Area: [[Neon Future]]
+Area: [[Far Future]]
 Attack: [[Straight]]
 Traits:
 - [[Repeat]]
-- [[Amphibious]]
+- [[Aerial]]
 
 Speciality: Can target teh front-most zombie of any lane.

@@ -1,4 +1,4 @@
 Type: [[Helmet]]
-Area: [[Neon Future]]
+Area: [[Neon Carnival]]
 Traits:
 - [[Fire Weak]]

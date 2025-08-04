@@ -1,5 +1,5 @@
 Type: [[Regular]]
-Area: [[Neon Future]]
+Area: [[Neon Carnival]]
 Attack: [[Straight]]
 Traits:
 - [[Repeat]]

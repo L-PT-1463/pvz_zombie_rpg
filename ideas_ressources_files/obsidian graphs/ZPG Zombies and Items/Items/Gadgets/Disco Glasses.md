@@ -1,5 +1,5 @@
 Type: [[Passive]]
-Area: [[Neon Future]]
+Area: [[Neon Carnival]]
 [[Armour slot]]
 
 Speciality: Summons [[Back-up Dancer]]
