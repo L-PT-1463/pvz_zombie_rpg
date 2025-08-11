@@ -10,6 +10,7 @@ Bosses:
 
 Unique costumes:
 - [[Employee of the Week]]
+- [[Prized Employee]]
 
 Garden Gimmicks:
 - [[Time Twist]]

@@ -6,10 +6,10 @@
       {
         "id": "0247de275d755c41",
         "type": "tabs",
-        "dimension": 51.16640746500778,
+        "dimension": 50.15552099533437,
         "children": [
           {
-            "id": "eff97eda5a49e705",
+            "id": "02b16f337001762f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,20 +20,6 @@
               },
               "icon": "lucide-file",
               "title": "Dark Ages"
-            }
-          },
-          {
-            "id": "02b16f337001762f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dungeon Crawling/Areas/Far Future.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Far Future"
             }
           },
           {
@@ -190,13 +176,12 @@
               "title": "Zen Garden"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       },
       {
         "id": "f22b0a8f55dd8c7e",
         "type": "tabs",
-        "dimension": 48.83359253499223,
+        "dimension": 49.84447900466563,
         "children": [
           {
             "id": "9bb65f46a29c0006",
@@ -204,7 +189,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Dungeon Crawling/Areas/Jurassic Marsh.md",
+                "file": "Dungeon Crawling/Areas/Dark Ages.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -263,12 +248,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.7514342322277606,
+                  "scale": 0.7514342322277595,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Jurassic Marsh"
+              "title": "Graph of Dark Ages"
             }
           },
           {
@@ -277,7 +262,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Dungeon Crawling/Areas/Jurassic Marsh.md",
+                "file": "Dungeon Crawling/Areas/Dark Ages.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -392,12 +377,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1,
+                  "scale": 0.7132754626224421,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Jurassic Marsh"
+              "title": "Graph of Dark Ages"
             }
           },
           {
@@ -442,8 +427,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Area n/a",
-                "matchingCase": true,
+                "query": "",
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -557,34 +542,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8eef5aa8c8e1dad5",
+  "active": "02b16f337001762f",
   "lastOpenFiles": [
-    "Items/Attacks/Super-fan Gloves.md",
+    "2025-08-11.md",
+    "Dungeon Crawling/Areas/Dark Ages.md",
+    "Dungeon Crawling/Areas/Far Future.md",
     "Dungeon Crawling/Areas/Jurassic Marsh.md",
-    "Spawnlings/Conehead Pilot.md",
-    "Spawnlings/Hunter Zombie.md",
-    "Items/Attacks/Snowball.md",
-    "Items/Attacks/Flint-tipped Spear.md",
-    "Dungeon Crawling/Areas/Lost City.md",
-    "Dungeon Crawling/Areas/The Zombosseum.md",
-    "Items/Gadgets/Drone Remote.md",
-    "Spawnlings/Zombot Drone.md",
-    "Items/Attacks/Laser Shot.md",
-    "00 Groupers/Traits/Laser.md",
-    "Spawnlings/Robo-Shield.md",
-    "Spawnlings/Theatre Skull.md",
-    "Spawnlings/Shield Decoy.md",
-    "Mr. Freezy.md",
-    "Freezy Wind.md",
-    "Spawnlings/Jetpack Zombie.md",
-    "Spawnlings/Pilot Zombie.md",
-    "Spawnlings/Glider Zombie.md",
-    "Spawnlings/Seagull Zombie.md",
-    "Spawnlings/Paper Plane Imp.md",
-    "Items/Attacks/Perfume.md",
-    "Spawnlings/Conehead Aristocrat.md",
-    "Items/Armours/Nobility Cone.md",
+    "Plants/Regular/Cardboard Magnet-shroom.md",
+    "00 Groupers/Traits/Magnetising.md",
     "Dungeon Crawling/Areas/Zen Garden.md",
+    "Dungeon Crawling/Areas/ZCorp Intra-Space-Time.md",
+    "Dungeon Crawling/Areas/Training Grounds.md",
+    "Dungeon Crawling/Areas/The Zombosseum.md",
+    "Dungeon Crawling/Areas/Steam City.md",
+    "Dungeon Crawling/Areas/Pirate's Beach.md",
+    "Dungeon Crawling/Areas/Old Wild Egypt.md",
+    "Dungeon Crawling/Areas/Neon Carnival.md",
+    "Dungeon Crawling/Areas/Neighbour's House.md",
+    "Dungeon Crawling/Areas/Lost City.md",
+    "Spawnlings/Bungee Zombie.md",
+    "Items/Gadgets/Grab.md",
+    "00 Groupers/Traits/Stealer.md",
+    "Items/Gadgets/Captain's Hat.md",
+    "Spawnlings/Zombie Parrot.md",
+    "Items/Gadgets/Magic Hat.md",
+    "Spawnlings/Zombie Dove.md",
+    "Spawnlings/Zombie Rabbit.md",
+    "Spawnlings/Weasel.md",
+    "Spawnlings/Hunter Zombie.md",
     "Dungeon Crawling/Areas",
     "Dungeon Crawling/Garden Gimmicks",
     "Garden",
