@@ -1,3 +1,5 @@
-Type: [[Regular]]
+#ZenGarden #Plant
+
+Type: #Regular
 Area: [[Zen Garden]]
-Attack: [[Lobbed]]
+Attack: #Lobbed

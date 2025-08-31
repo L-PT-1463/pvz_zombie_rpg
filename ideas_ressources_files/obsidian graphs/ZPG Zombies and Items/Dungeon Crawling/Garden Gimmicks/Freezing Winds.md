@@ -1,4 +1,5 @@
-[[Garden Gimmick]] exclusive to the [[Neighbour's House]] ([[Winter]])
+#NeighboursHouse #GardenGimmick
 
+Unique to [[Winter]] Gardens in [[Neighbour's House]]
 - Start of turn
-- [[Chill]] all zombies
+- #Chill all zombies

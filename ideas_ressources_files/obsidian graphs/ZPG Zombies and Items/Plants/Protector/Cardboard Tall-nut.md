@@ -1,5 +1,7 @@
-Type: [[Protector]]
+#TrainingGrounds #Plant
+
+Type: #Protector
 Area: [[Training Grounds]]
 Attack: n/a
 Traits:
-- [[Fire Weak]]
+- #FireWeak

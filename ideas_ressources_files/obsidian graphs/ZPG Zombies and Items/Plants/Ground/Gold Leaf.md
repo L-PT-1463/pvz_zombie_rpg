@@ -1,9 +1,11 @@
-Type: [[Ground (plant)]]
+#LostCity #Plant
+
+Type: #GroundPlant 
 Area: [[Lost City]]
-Attack: [[Ground (attack)]]
+Attack: #GroundAttack 
 Traits:
-- [[Stall]]
-- [[Pot]]
+- #Stall
+- #Pot
 
 Speciality: Attacks deal no damage.
 Start of turn: If stood on, gives Brainiac Coins.

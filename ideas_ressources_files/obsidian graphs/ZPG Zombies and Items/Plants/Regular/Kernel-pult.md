@@ -1,5 +1,7 @@
-Type: [[Regular]]
+#PiratesBeach #Plant 
+
+Type: #Regular 
 Area: [[Pirate's Beach]]
-Attack: [[Lobbed]]
+Attack: #Lobbed
 Traits:
-- [[Butter]]
+- #Butter

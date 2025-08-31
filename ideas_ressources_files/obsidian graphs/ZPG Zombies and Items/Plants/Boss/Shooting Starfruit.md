@@ -1,8 +1,10 @@
-Type: [[Boss]] ([[Regular]])
+#SteamCity #Plant
+
+Type: #Boss #Regular
 Area: [[Steam City]]
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Repeat]]
-- [[Aerial]]
+- #Repeat
+- #Aerial
 
 Speciality: Attacks in a star pattern.

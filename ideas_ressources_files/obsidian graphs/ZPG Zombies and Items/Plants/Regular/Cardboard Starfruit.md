@@ -1,5 +1,7 @@
-Type: [[Regular]]
+#TrainingGrounds #Plant
+
+Type: #Regular
 Area: [[Training Grounds]]
-Attack: [[Straight]]
+Attack: #Straight
 
 Speciality: Attacks in a star pattern.

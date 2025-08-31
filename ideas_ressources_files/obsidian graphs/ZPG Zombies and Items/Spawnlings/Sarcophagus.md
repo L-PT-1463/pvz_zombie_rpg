@@ -1,9 +1,9 @@
-[[Spawnling]]
+#OldWildEgypt #Spawnling
 
 Area: [[Old Wild Egypt]]
-Classification: [[Spawner]]
 Gadget: [[Necromancy (Egypt)]]
 
 Traits:
-- [[Armoured]] (1)
-- [[Ice Immune]]
+- #Armoured (1)
+- #IceImmune
+- #Sturdy 

@@ -1,5 +1,7 @@
-Type: [[Passive]]
+#NeonCarnival #Item #Gadget
+
+Type: #Passive
 Area: [[Neon Carnival]]
-n/a
+*Slot n/a*
 
 Speciality: Spawns [[Newspaper Zombie]].

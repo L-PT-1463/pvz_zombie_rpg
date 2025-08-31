@@ -1,5 +1,4 @@
-[[Spawnling]]
+#TheZombosseum #Spawnling #UnarmouredBasic 
 
 Area: [[The Zombosseum]]
-Classification: [[Unarmoured basic]]
 Attack: [[Bite]]

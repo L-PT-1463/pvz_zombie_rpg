@@ -37,20 +37,6 @@
             }
           },
           {
-            "id": "2184f7e369cc4348",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Plants/Regular/Rotten Red.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Rotten Red"
-            }
-          },
-          {
             "id": "941ef06550d48e3c",
             "type": "leaf",
             "state": {
@@ -204,7 +190,8 @@
               "title": "Zen Garden"
             }
           }
-        ]
+        ],
+        "currentTab": 12
       },
       {
         "id": "f22b0a8f55dd8c7e",
@@ -212,209 +199,17 @@
         "dimension": 49.84447900466563,
         "children": [
           {
-            "id": "9bb65f46a29c0006",
+            "id": "15e9172d5e6d2d86",
             "type": "leaf",
             "state": {
-              "type": "localgraph",
-              "state": {
-                "file": "Dungeon Crawling/Areas/Dark Ages.md",
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [
-                    {
-                      "query": "Regular",
-                      "color": {
-                        "a": 1,
-                        "rgb": 2457875
-                      }
-                    },
-                    {
-                      "query": "Ground (plant)",
-                      "color": {
-                        "a": 1,
-                        "rgb": 2457875
-                      }
-                    },
-                    {
-                      "query": "Protector",
-                      "color": {
-                        "a": 1,
-                        "rgb": 2457875
-                      }
-                    },
-                    {
-                      "query": "Power-mint",
-                      "color": {
-                        "a": 1,
-                        "rgb": 5431473
-                      }
-                    },
-                    {
-                      "query": "Spawnling",
-                      "color": {
-                        "a": 1,
-                        "rgb": 8392463
-                      }
-                    }
-                  ],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.524948024948025,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 0.7514342322277595,
-                  "close": true
-                }
-              },
+              "type": "graph",
+              "state": {},
               "icon": "lucide-git-fork",
-              "title": "Graph of Dark Ages"
+              "title": "Graph view"
             }
           },
           {
-            "id": "276c8e8fca43d253",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "file": "Dungeon Crawling/Areas/Dark Ages.md",
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": false,
-                  "colorGroups": [
-                    {
-                      "query": "Training Grounds",
-                      "color": {
-                        "a": 1,
-                        "rgb": 6702080
-                      }
-                    },
-                    {
-                      "query": "Neighbour's House",
-                      "color": {
-                        "a": 1,
-                        "rgb": 292096
-                      }
-                    },
-                    {
-                      "query": "Zen Garden",
-                      "color": {
-                        "a": 1,
-                        "rgb": 10092288
-                      }
-                    },
-                    {
-                      "query": "Pirate's Beach",
-                      "color": {
-                        "a": 1,
-                        "rgb": 42751
-                      }
-                    },
-                    {
-                      "query": "Far Future",
-                      "color": {
-                        "a": 1,
-                        "rgb": 16666045
-                      }
-                    },
-                    {
-                      "query": "Lost City",
-                      "color": {
-                        "a": 1,
-                        "rgb": 16766208
-                      }
-                    },
-                    {
-                      "query": "Dark Ages",
-                      "color": {
-                        "a": 1,
-                        "rgb": 5832959
-                      }
-                    },
-                    {
-                      "query": "Jurassic Marsh",
-                      "color": {
-                        "a": 1,
-                        "rgb": 6029366
-                      }
-                    },
-                    {
-                      "query": "The Zombosseum",
-                      "color": {
-                        "a": 1,
-                        "rgb": 16711680
-                      }
-                    },
-                    {
-                      "query": "ZCorp Intra-Space-Time",
-                      "color": {
-                        "a": 1,
-                        "rgb": 65425
-                      }
-                    },
-                    {
-                      "query": "Old Wild Egypt",
-                      "color": {
-                        "a": 1,
-                        "rgb": 16741120
-                      }
-                    },
-                    {
-                      "query": "Steam City",
-                      "color": {
-                        "a": 1,
-                        "rgb": 9273729
-                      }
-                    },
-                    {
-                      "query": "Neon Carnival",
-                      "color": {
-                        "a": 1,
-                        "rgb": 16748453
-                      }
-                    }
-                  ],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 0.7132754626224421,
-                  "close": true
-                }
-              },
-              "icon": "lucide-git-fork",
-              "title": "Graph of Dark Ages"
-            }
-          },
-          {
-            "id": "9d3b28b24d6f8417",
+            "id": "0b46326dc340cec6",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -423,7 +218,8 @@
               "title": "Graph view"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -496,7 +292,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Melon-pult.md",
+                "file": "Plants/Regular/Cattail.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -506,7 +302,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Melon-pult"
+              "title": "Backlinks for Cattail"
             }
           },
           {
@@ -515,12 +311,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Melon-pult.md",
+                "file": "Plants/Regular/Cattail.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Melon-pult"
+              "title": "Outgoing links from Cattail"
             }
           },
           {
@@ -553,7 +349,8 @@
               "title": "Outline of Melon-pult"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -571,34 +368,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8eef5aa8c8e1dad5",
+  "active": "0b46326dc340cec6",
   "lastOpenFiles": [
-    "Plants/Regular/Oak Archer.md",
-    "Dungeon Crawling/Areas/Dark Ages.md",
-    "Dungeon Crawling/Areas/Far Future.md",
-    "Dungeon Crawling/Areas/The Zombosseum.md",
-    "Plants/Regular/Thorn Fencer.md",
-    "Plants/Ground/Saucer.md",
-    "00 Groupers/Traits/Aerial.md",
-    "Plants/Regular/Skyshooter.md",
-    "Plants/Regular/Rotten Red.md",
-    "Dungeon Crawling/Areas/Old Wild Egypt.md",
-    "Plants/Regular/A.K.E.E..md",
-    "00 Groupers/Traits/Knockback.md",
-    "2025-08-11.md",
-    "Dungeon Crawling/Areas/Jurassic Marsh.md",
-    "Plants/Regular/Cardboard Magnet-shroom.md",
-    "00 Groupers/Traits/Magnetising.md",
     "Dungeon Crawling/Areas/Zen Garden.md",
-    "Dungeon Crawling/Areas/ZCorp Intra-Space-Time.md",
-    "Dungeon Crawling/Areas/Training Grounds.md",
-    "Dungeon Crawling/Areas/Steam City.md",
-    "Dungeon Crawling/Areas/Pirate's Beach.md",
-    "Dungeon Crawling/Areas/Neon Carnival.md",
-    "Dungeon Crawling/Areas/Neighbour's House.md",
-    "Dungeon Crawling/Areas/Lost City.md",
-    "Spawnlings/Bungee Zombie.md",
-    "Items/Gadgets/Grab.md",
+    "Player Zombie/Costumes/Prized Employee.md",
+    "Player Zombie/Costumes/Beach Bum.md",
+    "Items/Armours/Steam Umbrella.md",
+    "Plants/Boss/Winter-mint.md",
+    "Dungeon Crawling/Garden Gimmicks/Low Tide.md",
+    "Dungeon Crawling/Garden Gimmicks/High Tide.md",
+    "Amphibious.md",
+    "Spawnlings/Brownparka.md",
+    "Dungeon Crawling/Gardens/Winter.md",
+    "Player Zombie/Costumes/Training Bandana.md",
+    "Player Zombie/Costumes/Snow Day.md",
+    "Player Zombie/Costumes/Relic Hunter.md",
+    "Player Zombie/Costumes/Part of the Crew.md",
+    "Player Zombie/Costumes/Modern Mummy.md",
+    "Player Zombie/Costumes/Fancy Coat.md",
+    "Player Zombie/Costumes/Employee of the Week.md",
+    "Player Zombie/Costumes/Browncoat (costume).md",
+    "Dungeon Crawling/Areas/Jurassic Marsh.md",
+    "Player Zombie/Player Zombie.md",
+    "Spawnlings/Adventuring Tent.md",
+    "Spawnlings/Camping Tent.md",
+    "Spawnlings/Carnie Zombie.md",
+    "Spawnlings/Campimp.md",
+    "Spawnlings/Engraved Gravestone.md",
+    "Spawnlings/Gravestone.md",
     "Dungeon Crawling/Areas",
     "Dungeon Crawling/Garden Gimmicks",
     "Garden",

@@ -1,3 +1,4 @@
-[[Fight Garden]] unique to the [[Dark Ages]].
+#DarkAges #FightingGarden
 
+Unique to [[Dark Ages]]
 - Sunflowers don't spawn.

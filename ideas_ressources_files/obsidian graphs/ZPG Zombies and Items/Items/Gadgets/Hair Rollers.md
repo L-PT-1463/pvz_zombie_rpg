@@ -1,5 +1,7 @@
-Type: [[Passive]]
+#Item #Gadget
+
+Type: #Passive
 Area: n/a
-[[Armour slot]]
+*Armour slot*
 
 Speciality: Spawns [[Fraidy Cat Zombie]]. Cannot be unequiped so long as the Spawnling is alive.

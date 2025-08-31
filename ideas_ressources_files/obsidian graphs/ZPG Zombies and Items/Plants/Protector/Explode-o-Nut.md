@@ -1,8 +1,10 @@
-Type: [[Protector]]
+#Plant
+
+Type: #Protector
 Area: n/a
 Attack: n/a
 Traits:
-- [[Fire Weak]]
-- [[Pass-through]]
+- #FireWeak
+- #Pass-through
 
 When vanquished: It explodes in a 3x3 area.

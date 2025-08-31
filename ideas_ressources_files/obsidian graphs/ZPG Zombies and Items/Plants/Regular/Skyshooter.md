@@ -1,6 +1,8 @@
-Type: [[Regular]]
+#SteamCity #Plant 
+
+Type: #Regular 
 Area: [[Steam City]]
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Aerial]]
-- [[Flammable]]
+- #Aerial
+- #Flammable

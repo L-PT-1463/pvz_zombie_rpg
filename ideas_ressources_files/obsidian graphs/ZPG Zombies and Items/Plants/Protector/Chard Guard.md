@@ -1,5 +1,7 @@
-Type: [[Protector]]
+#JurassicMarsh #Plant
+
+Type: #Protector
 Area: [[Jurassic Marsh]]
-Attack: [[Melee]]
+Attack: #Melee
 Traits:
-- [[Knockback]]
+- #Knockback

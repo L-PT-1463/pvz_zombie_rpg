@@ -1,8 +1,10 @@
-Type: [[Regular]]
+#PiratesBeach #Plant 
+
+Type: #Regular 
 Area: [[Pirate's Beach]]
-Attack: [[Melee]]
+Attack: #Melee
 Traits:
-- [[Fire]]
-- [[Pierce]]
+- #Fire
+- #Pierce
 
 Speciality: Attacks on its lane and neighbouring lanes

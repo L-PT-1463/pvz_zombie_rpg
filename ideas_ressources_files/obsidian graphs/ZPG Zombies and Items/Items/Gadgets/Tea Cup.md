@@ -1,5 +1,7 @@
-Type: [[Passive]]
-Area: [[Steam City]]
-[[Weapon slot]]
+#SteamCity #Item #Gadget
 
-Speciality: Gives zombie the [[Fire]] trait while used.
+Type: #Passive
+Area: [[Steam City]]
+*Weapon slot*
+
+Speciality: Gives zombie the #Fire trait while used.

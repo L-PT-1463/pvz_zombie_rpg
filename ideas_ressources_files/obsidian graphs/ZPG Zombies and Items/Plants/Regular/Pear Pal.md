@@ -1,5 +1,7 @@
-Type: [[Regular]]
+#LostCity #Plant 
+
+Type: #Regular 
 Area: [[Lost City]]
-Attack: [[Melee]]
+Attack: #Melee
 Traits:
-- [[Amphibious]]
+- #Amphibious

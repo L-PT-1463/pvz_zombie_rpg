@@ -1,5 +1,7 @@
-Type: [[Passive]]
+#PiratesBeach #Item #Gadget
+
+Type: #Passive
 Area: [[Pirate's Beach]]
-n/a
+*Slot n/a*
 
 Speciality: Spawns [[Swabbie]].

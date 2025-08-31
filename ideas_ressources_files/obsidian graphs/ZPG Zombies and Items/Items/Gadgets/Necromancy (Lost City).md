@@ -1,6 +1,8 @@
-Type: [[Passive]]
+#LostCity #Item #Gadget 
+
+Type: #Passive
 Area: [[Lost City]]
-n/a
+*Slot n/a*
 
 Speciality: Summons [[Adventurer Zombie]], [[Conehead Adventurer]] and [[Pothead Adventurer]]
 

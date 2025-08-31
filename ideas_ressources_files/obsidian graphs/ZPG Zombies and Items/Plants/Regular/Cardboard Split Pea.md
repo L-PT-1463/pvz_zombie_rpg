@@ -1,8 +1,10 @@
-Type: [[Regular]]
+#TrainingGrounds #Plant
+
+Type: #Regular
 Area: [[Training Grounds]]
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Flammable]]
-- [[Repeat]] (back head)
+- #Flammable
+- #Repeat (back head)
 
 Speciality: Can attack in front and behind itself.

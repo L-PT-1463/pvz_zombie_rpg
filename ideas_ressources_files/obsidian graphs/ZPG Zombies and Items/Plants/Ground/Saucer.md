@@ -1,6 +1,8 @@
-Type: [[Ground]]
+#FarFuture #Plant
+
+Type: #GroundPlant 
 Area: [[Far Future]]
-Attack: [[Ground]]
+Attack: #GroundAttack 
 Traits:
-- [[Aerial]]
-- [[Stall]]
+- #Aerial
+- #Stall

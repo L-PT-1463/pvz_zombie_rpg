@@ -1,1 +1,3 @@
-[[Costume]] unlocked in the [[Training Grounds]] area by beating it for the first time.
+#Costume
+
+Unlocked in the [[Training Grounds]] area by beating it for the first time.

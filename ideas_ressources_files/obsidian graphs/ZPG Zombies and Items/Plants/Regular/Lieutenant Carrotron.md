@@ -1,7 +1,9 @@
-Type: [[Regular]]
+#FarFuture #Plant 
+
+Type: #Regular 
 Area: [[Far Future]]
-Attack: [[Lobbed]]
+Attack: #Lobbed
 Traits:
-- [[Aerial]]
+- #Aerial
 
 Start of turn: Spawns an [[Intensive Carrot]].

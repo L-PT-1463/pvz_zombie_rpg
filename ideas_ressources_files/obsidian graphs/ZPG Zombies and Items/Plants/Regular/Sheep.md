@@ -1,4 +1,6 @@
-Type: [[Regular]]
+#DarkAges #Plant 
+
+Type: #Regular 
 Area: [[Dark Ages]]
 Attack: n/a
 

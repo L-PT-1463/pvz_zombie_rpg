@@ -1,6 +1,8 @@
-Type: [[Shield]]
+#ZenGarden #Item #Armour 
+
+Type: #Shield
 Area: [[Zen Garden]]
 Traits:
-- [[Magnetisable]]
+- #Magnetisable
 
-Speciality: Gives the zombie the [[Pierce]] trait.
+Speciality: Gives the zombie the #Pierce trait.

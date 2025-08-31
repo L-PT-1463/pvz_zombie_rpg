@@ -1,4 +1,6 @@
-Type: [[Helmet]]
+#TheZombosseum #Item #Armour 
+
+Type: #Helmet
 Area: [[The Zombosseum]]
 Traits: 
-- [[Fire Weak]]
+- #FireWeak

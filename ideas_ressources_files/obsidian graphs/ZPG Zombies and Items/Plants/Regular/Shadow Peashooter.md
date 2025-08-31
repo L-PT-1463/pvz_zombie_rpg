@@ -1,6 +1,8 @@
-Type: [[Regular]]
+#DarkAges #Plant 
+
+Type: #Regular 
 Area: [[Dark Ages]] ([[Dark Meadow]])
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Stall]] (Shadow-powered)
-- [[Laser]] (Shadow-powered)
+- #Stall (Shadow-powered)
+- #Laser (Shadow-powered)

@@ -1,7 +1,6 @@
-[[Spawnling]]
+#ZenGarden #Spawnling
 
 Area: [[Zen Garden]]
-Classificatiom: n/a
 Attack: [[Gardening Trowel]]
 Gadget: [[Seed Packet]]
 

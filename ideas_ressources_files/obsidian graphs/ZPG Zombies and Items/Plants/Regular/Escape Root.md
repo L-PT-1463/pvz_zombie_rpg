@@ -1,4 +1,6 @@
-Type: [[Regular]]
+#NeighboursHouse #Plant 
+
+Type: #Regular 
 Area: [[Neighbour's House]]
 Attack: n/a
 

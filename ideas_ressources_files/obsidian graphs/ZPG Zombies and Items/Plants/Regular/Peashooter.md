@@ -1,5 +1,7 @@
-Type: [[Regular]]
+#Plant 
+
+Type: #Regular 
 Area: n/a
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Flammable]]
+- #Flammable

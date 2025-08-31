@@ -1,6 +1,8 @@
-Type: [[Umbrella]]
+#SteamCity #Item #Armour 
+
+Type: #Umbrella
 Area: [[Steam City]]
 Traits:
-- [[Fire Weak]]
+- #FireWeak
 
-Speciality: Gives the zombie the [[Aerial]] trait while equipped. 
+Speciality: Gives the zombie the #Aerial trait while equipped. 

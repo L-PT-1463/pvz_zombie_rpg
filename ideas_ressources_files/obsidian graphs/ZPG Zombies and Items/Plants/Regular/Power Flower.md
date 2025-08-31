@@ -1,7 +1,9 @@
-Type: [[Regular]]
+#ZenGarden #Plant 
+
+Type: #Regular 
 Area: [[Zen Garden]] ([[Indoors]])
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Laser]]
+- #Laser
 
 Start of turn: Heals all plants in its lane an amount of health equal to the number of flowers on the garden. 

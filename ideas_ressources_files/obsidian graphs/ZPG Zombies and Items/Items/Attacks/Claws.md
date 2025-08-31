@@ -1,2 +1,4 @@
-Type: [[Strike]]
+#Item #Attack
+
+Type: #Strike
 Area: n/a

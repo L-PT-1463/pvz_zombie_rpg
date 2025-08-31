@@ -1,8 +1,10 @@
-Type: [[Protector]]
+#LostCity #Plant
+
+Type: #Protector
 Area: [[Lost City]]
-Attack: [[Melee]]
+Attack: #Melee
 Traits:
-- [[Fire Weak]]
-- [[Pass-through]]
+- #FireWeak
+- #Pass-through
 
 Speciality: Attacks when hit by a Munch or Strike type attack.

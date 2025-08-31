@@ -1,8 +1,7 @@
-[[Spawnling]]
+#OldWildEgypt #Spawnling #Pet 
 
 Area: [[Old Wild Egypt]]
-Classification: [[Pet]]
 Attack: [[Peck]]
 
 Traits:
-- [[Tiny]]
+- #Tiny

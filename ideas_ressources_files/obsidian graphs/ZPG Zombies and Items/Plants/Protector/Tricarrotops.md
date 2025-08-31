@@ -1,8 +1,10 @@
-Type: [[Protector]]
+#JurassicMarsh #Plant
+
+Type: #Protector
 Area: [[Jurassic Marsh]]
-Attack: [[Melee]]
+Attack: #Melee
 Traits:
-- [[Fire Weak]]
-- [[Pass-through]]
+- #FireWeak
+- #Pass-through
 
 [[Dino-roar]]: Increases its own health. 

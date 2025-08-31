@@ -1,4 +1,6 @@
-Type: [[Ranged]]
+#SteamCity #Item #Attack
+
+Type: #Ranged
 Area: [[Steam City]]
 Traits:
-- [[Fire]]
+- #Fire

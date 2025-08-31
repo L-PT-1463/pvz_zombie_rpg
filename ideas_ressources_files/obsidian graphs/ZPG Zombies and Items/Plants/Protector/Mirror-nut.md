@@ -1,5 +1,7 @@
- Type: [[Protector]]
+#FarFuture #Plant
+
+Type: #Protector
 Area: [[Far Future]]
-Attack: [[Straight]]
+Attack: #Straight
 
 Speciality: When a nut, including itself, is hit by an attack, it makes an attack.

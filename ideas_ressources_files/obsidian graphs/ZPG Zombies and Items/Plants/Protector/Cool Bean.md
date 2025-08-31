@@ -1,8 +1,10 @@
-Type: [[Protector]]
-Area: [[Neon Cone]]
-Attack: [[Melee]]
+#FarFuture  #Plant
+
+Type: #Protector
+Area: [[Far Future]]
+Attack: #Melee
 Traits:
-- [[Chill]]
-- [[Pass-through]]
-- [[Fire Immune]]
-- [[Ice Immune]]
+- #Chill
+- #Pass-through
+- #FireImmune
+- #IceImmune

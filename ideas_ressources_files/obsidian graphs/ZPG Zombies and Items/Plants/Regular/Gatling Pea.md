@@ -1,6 +1,8 @@
-Type: [[Regular]]
+#NeighboursHouse #Plant 
+
+Type: #Regular 
 Area: [[Neighbour's House]]
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Spread]] (4)
-- [[Flammable]]
+- #Spread (4)
+- #Flammable

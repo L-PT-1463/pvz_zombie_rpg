@@ -1,5 +1,7 @@
-Type: [[Boss]] ([[Regular]])
+#PiratesBeach #Plant
+
+Type: #Boss #Regular
 Area: [[Pirate's Beach]]
-Attack: [[Straight]]
+Attack: #Straight
 
 Speciality: Attacks on its lane and neighbouring lanes.

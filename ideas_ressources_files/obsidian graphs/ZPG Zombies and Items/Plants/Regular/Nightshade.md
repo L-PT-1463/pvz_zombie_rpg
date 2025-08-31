@@ -1,6 +1,8 @@
-Type: [[Regular]]
+#DarkAges #Plant 
+
+Type: #Regular 
 Area: [[Dark Ages]] ([[Dark Meadow]])
-Attack: [[Melee]]
+Attack: #Melee
 
 Speciality: Can only attack three times.
 Shadow-powered: 4x1 range (2 tiles in front)

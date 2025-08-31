@@ -1,7 +1,9 @@
-Type: [[Regular]]
+#ZCorpIntraSpaceTime #Plant 
+
+Type: #Regular 
 Area: [[ZCorp Intra-Space-Time]]
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Repeat]]
+- #Repeat
 
 Start of second turn: Becomes a random pea plant that gains the Repeat trait. 

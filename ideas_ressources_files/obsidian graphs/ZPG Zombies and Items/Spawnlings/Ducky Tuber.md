@@ -1,6 +1,5 @@
-[[Spawnling]]
+#PiratesBeach #Spawnling #UnarmouredBasic 
 
 Area: [[Pirate's Beach]]
-Classification: [[Unarmoured basic]]
 Attack: [[Bite]]
-Gadget: [[Ducyk Tube]]
+Gadget: [[Ducky Tube]]

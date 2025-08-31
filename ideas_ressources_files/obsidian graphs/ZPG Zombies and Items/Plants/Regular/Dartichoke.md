@@ -1,7 +1,9 @@
-Type: [[Regular]]
+#TheZombosseum #Plant 
+
+Type: #Regular 
 Area: [[The Zombosseum]]
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Pierce]]
+- #Pierce
 
 Speciality: Shoots at highest HP zombie in range, ignoring zombies in front of it.

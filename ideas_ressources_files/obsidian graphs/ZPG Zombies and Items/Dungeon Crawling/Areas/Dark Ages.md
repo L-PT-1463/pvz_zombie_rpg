@@ -1,4 +1,4 @@
-[[Area]]
+#Area #DarkAges
 
 Area inspired by the Dark Ages world from PvZ 2 as well as the Modern Day's plant selection.
 

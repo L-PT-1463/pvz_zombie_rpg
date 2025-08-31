@@ -1,7 +1,9 @@
-Type: [[Regular]]
+#OldWildEgypt #Plant 
+
+Type: #Regular 
 Area: [[Old Wild Egypt]]
-Attack: [[Ground (attack)]]
+Attack: #GroundAttack 
 Traits:
-- [[Fire]]
+- #Fire
 
 When vanquished: Attacks all zombies in its lane.

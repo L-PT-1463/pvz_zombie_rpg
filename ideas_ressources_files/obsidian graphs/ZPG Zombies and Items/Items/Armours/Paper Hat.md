@@ -1,6 +1,8 @@
-Type: [[Helmet]]
+#SteamCity #Item #Armour 
+
+Type: #Helmet
 Area: [[Steam City]]
 Traits:
-- [[Fire Weak]]
+- #FireWeak
 
 Speciality: When destroyed, summons [[Paper Plane Imp]]

@@ -1,9 +1,11 @@
-Type: [[Regular]]
+#ZenGarden #Plant 
+
+Type: #Regular 
 Area: [[Zen Garden]]
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Stall]]
-- [[Pierce]]
-- [[Laser]]
+- #Stall
+- #Pierce
+- #Laser
 
 Speciality: Limited range. Attack deals no damage.

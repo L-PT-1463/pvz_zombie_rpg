@@ -1,5 +1,7 @@
-Type: [[Regular]]
+#JurassicMarsh #Plant 
+
+Type: #Regular 
 Area: [[Jurassic Marsh]]
-Attack: [[Melee]]
+Attack: #Melee
 
 When vanquished: It attacks all zombies in its lane.

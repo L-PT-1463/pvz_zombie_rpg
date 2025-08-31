@@ -1,4 +1,4 @@
-Has multiple costumes available in a predefined selection of colours (black, blue, green, orange, pink, purple) with orane being used for promotional content and concept design.
+Has multiple costumes available in a predefined selection of colours (black, blue, green, orange, pink, purple) with orange being used for promotional content and concept design.
 Costumes:
 - [[Browncoat (costume)]]
 - [[Training Bandana]]

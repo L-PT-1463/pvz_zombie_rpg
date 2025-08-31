@@ -1,5 +1,7 @@
-Type: [[Regular]]
+#NeonCarnival #Plant
+
+Type: #Regular
 Area: [[Neon Carnival]]
-Attack: [[Lobbed]]
+Attack: #Lobbed
 
 Speciality: Damage increases every time it hits a zombie

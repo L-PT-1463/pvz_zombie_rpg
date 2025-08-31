@@ -1,5 +1,7 @@
-Type: [[Regular]]
+#Plant 
+
+Type: #Regular 
 Area: n/a
-Attack: [[Lobbed]]
+Attack: #Lobbed
 
 Speciality: Can attack in all three lanes.

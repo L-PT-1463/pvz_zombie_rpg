@@ -1,5 +1,7 @@
-Type: [[Regular]]
+#DarkAges #Plant
+
+Type: #Regular
 Area: [[Dark Ages]] ([[Castle]])
-Attack: [[Straight]]
+Attack: #Straight
 
 Speciality: Increases damage of shrooms in a 3x3 area.

@@ -1,5 +1,7 @@
-Type: [[Regular]]
+#Plant 
+
+Type: #Regular 
 Area: n/a
-Attack: [[Melee]]
+Attack: #Melee
 
 Speciality: Cooldown between attacks.

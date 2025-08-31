@@ -1,4 +1,6 @@
-Type: [[Helmet]]
+#NeonCarnival #Item #Armour 
+
+Type: #Helmet
 Area: [[Neon Carnival]]
 Traits:
-- [[Magnetisable]]
+- #Magnetisable

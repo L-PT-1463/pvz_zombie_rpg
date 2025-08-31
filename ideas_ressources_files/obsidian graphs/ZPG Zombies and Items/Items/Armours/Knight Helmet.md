@@ -1,5 +1,7 @@
-Type: [[Helmet]]
+#DarkAges #Item #Armour 
+
+Type:  #Helmet
 Area: [[Dark Ages]]
 Traits:
-- [[Magnetisable]]
-- [[Armoured]] (1)
+- #Magnetisable
+- #Armoured (1)

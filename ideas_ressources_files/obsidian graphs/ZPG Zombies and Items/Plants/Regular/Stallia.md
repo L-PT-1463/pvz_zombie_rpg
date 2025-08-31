@@ -1,7 +1,9 @@
-Type: [[Regular]]
+#LostCity #Plant 
+
+Type: #Regular 
 Area: [[Lost City]]
-Attack: [[Melee]]
+Attack: #Melee
 Traits:
-- [[Stall]]
+- #Stall
 
 Speciality: Attacks deal no damage. Attacks in a 3x3 area. 

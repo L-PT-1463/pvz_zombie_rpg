@@ -1,7 +1,9 @@
-Type: [[Regular]]
+#PiratesBeach #Plant 
+
+Type: #Regular 
 Area: [[Pirate's Beach]]
-Attack: [[Melee]]
+Attack: #Melee
 Traits:
-- [[Knockback]]
+- #Knockback
 
 Speciality: Attacks deal no damage.

@@ -1,7 +1,9 @@
-Type: [[Boss]] ([[Regular]])
+#PiratesBeach #Plant
+
+Type: #Boss #Regular
 Area: [[Pirate's Beach]] ([[Docked Ship]])
-Attack: [[Lobbed]]
+Attack: #Lobbed
 Traits:
-- [[Chill]]
+-  #Chill
 
 When vanquished: Splits into two [[Half-Banana]] on neighbouring lanes. 

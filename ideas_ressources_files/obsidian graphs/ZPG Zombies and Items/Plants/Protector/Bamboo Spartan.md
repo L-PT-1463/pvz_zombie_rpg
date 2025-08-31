@@ -1,7 +1,9 @@
-Type: [[Protector]]
+#TheZombosseum #Plant
+
+Type: #Protector
 Area: [[The Zombosseum]]
-Attack: [[Melee]]
+Attack: #Melee
 Traits:
-- [[Fire Weak]]
-- [[Pass-through]]
-- [[Armoured]] (1)
+- #FireWeak
+- #Pass-through
+- #Armoured (1)

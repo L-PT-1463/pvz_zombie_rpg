@@ -1,5 +1,7 @@
-Type: [[Helmet]]
+#NeighboursHouse #Item #Armour 
+
+Type: #Helmet
 Area: [[Neighbour's House]]
 Traits:
-- [[Ice Immune]]
-- [[Fire Weak]]
+- #IceImmune
+- #FireWeak

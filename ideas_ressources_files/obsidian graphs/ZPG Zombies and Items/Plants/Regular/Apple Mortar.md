@@ -1,7 +1,9 @@
-Type: [[Regular]]
+#PiratesBeach #Plant
+
+Type: #Regular
 Area: [[Pirate's Beach]]
-Attack: [[Lobbed]]
+Attack: #Lobbed
 Traits:
-- [[Stun]]
+- #Stun
 
 Speciality: Attacks on its lane and neighbouring lanes.

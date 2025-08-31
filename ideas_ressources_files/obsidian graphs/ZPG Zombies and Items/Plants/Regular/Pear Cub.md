@@ -1,7 +1,9 @@
-Type: [[Regular]]
+#JurassicMarsh #Plant 
+
+Type: #Regular 
 Area: [[Jurassic Marsh]]
-Attack: [[Melee]]
+Attack: #Melee
 Traits:
-- [[Tiny]]
+- #Tiny
 
 When vanquished: Turns into a [[Grizzly Pear]]. 

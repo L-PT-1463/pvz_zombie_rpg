@@ -1,7 +1,9 @@
-Type: [[Regular]]
+#NeonCarnival #Plant 
+
+Type: #Regular 
 Area: [[Neon Carnival]]
-Attack: [[Melee]]
+Attack: #Melee
 Traits:
-- [[Butter]]
+- #Butter
 
 Speciality: Can attack in front and behind itself.

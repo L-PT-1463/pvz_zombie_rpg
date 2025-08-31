@@ -1,7 +1,9 @@
-Type: [[Boss]] ([[Regular]])
+#TheZombosseum #Plant
+
+Type: #Boss #Regular
 Area: [[The Zombosseum]]
-Attack: [[Melee]]
+Attack: #Melee
 Traits:
-- [[Armoured]] (1)
+- #Armoured (1)
 
 Speciality: Makes a straight attack, if possible, when any zombie equips or activates a Gadget.

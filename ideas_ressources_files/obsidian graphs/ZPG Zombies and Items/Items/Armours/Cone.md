@@ -1,4 +1,6 @@
-Type: [[Helmet]]
+#Item #Armour 
+
+Type: #Helmet
 Area: n/a
 Traits:
-- [[Fire Weak]]
+- #FireWeak 

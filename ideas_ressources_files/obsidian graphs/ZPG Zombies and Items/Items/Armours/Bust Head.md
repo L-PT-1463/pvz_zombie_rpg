@@ -1,4 +1,6 @@
-Type: [[Helmet]]
+#Item #Armour 
+
+Type: #Helmet
 Area: [[The Zombosseum]]
 Traits:
-- [[Armoured]] (1)
+- #Armoured (1)

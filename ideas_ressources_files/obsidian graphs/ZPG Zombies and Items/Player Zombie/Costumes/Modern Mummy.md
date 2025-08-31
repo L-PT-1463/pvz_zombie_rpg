@@ -1,1 +1,3 @@
-[[Costume]] unlocked in the [[Old Wild Egypt]] area by beating it for the first time.
+#Costume
+
+Unlocked in the [[Old Wild Egypt]] area by beating it for the first time.

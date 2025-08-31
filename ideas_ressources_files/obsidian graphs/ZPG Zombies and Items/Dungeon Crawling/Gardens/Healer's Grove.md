@@ -1,4 +1,4 @@
-Type: [[Support Garden]]
-Area: [[The Zombosseum]]
+#TheZombosseum #Non-FightGarden #SupportGarden 
 
-Speciality: *TBD*
+Unique to [[The Zombosseum]]
+Speciality: #TBD

@@ -1,7 +1,9 @@
-Type: [[Protector]]
+#JurassicMarsh #Plant
+
+Type: #Protector
 Area: [[Jurassic Marsh]]
 Attack: n/a
 Traits:
-- [[Pass-through]]
+- #Pass-through
 
 Speciality: Cannot be moved.

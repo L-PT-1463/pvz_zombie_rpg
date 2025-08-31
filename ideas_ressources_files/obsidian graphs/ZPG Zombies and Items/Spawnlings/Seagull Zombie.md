@@ -1,10 +1,9 @@
-[[Spawnling]]
+#PiratesBeach #Spawnling
 
 Area: [[Pirate's Beach]]
-Classification: [[Aerial basic]]
 Attack: [[Bite]]
 
 Traits:
-- [[Aerial]]
+- #Aerial
 
-Speciality: Takes heavy damage from [[Butter]] attacks.
+Speciality: Takes heavy damage from Butter attacks.

@@ -1,5 +1,7 @@
-Type: [[Helmet]]
+#NeonCarnival #Item #Armour 
+
+Type: #Helmet
 Area: [[Neon Carnival]]
 Traits:
-- [[Fire Weak]]
+- #FireWeak
 

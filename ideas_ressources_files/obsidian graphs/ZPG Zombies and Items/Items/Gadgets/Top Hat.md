@@ -1,3 +1,4 @@
-Type: *TBD*
+#SteamCity #Item #Gadget
+
+Type: #TBD 
 Area: [[Steam City]]
-n/a

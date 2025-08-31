@@ -1,8 +1,10 @@
-Type: [[Protector]]
+#DarkAges #Plant
+
+Type: #Protector
 Area: [[Dark Ages]] ([[Castle]])
-Attack: [[Melee]]
+Attack: #Melee
 Traits:
-- [[Fire Weak]]
-- [[Pass-through]]
+- #FireWeak
+- #Pass-through
 
 Speciality: Heals after attacking.

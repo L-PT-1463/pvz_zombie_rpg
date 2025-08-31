@@ -1,5 +1,7 @@
-Type: [[Passive]]
+#NeighboursHouse #Item #Gadget
+
+Type: #Passive
 Area: [[Neighbour's House]]
-n/a
+*Slot n/a*
 
 Speciality: Spawns [[Aristocrat Zombie]].

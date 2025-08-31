@@ -1,5 +1,7 @@
-Type: [[Helmet]]
+#TrainingGrounds #Item #Armour 
+
+Type: #Helmet
 Area: [[Training Grounds]]
 Traits:
-- [[Magnetisable]]
-- [[Armoured]] (1)
+- #Magnetisable
+- #Armoured (1)

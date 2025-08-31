@@ -1,5 +1,7 @@
-Type: [[Ground (plant)]]
+#TheZombosseum #Plant
+
+Type: #GroundPlant 
 Area: [[The Zombosseum]]
-Attack: [[Ground (attack)]]
+Attack: #GroundAttack 
 Traits:
-- [[Grounded]]
+- #Grounded

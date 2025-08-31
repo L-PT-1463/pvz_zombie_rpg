@@ -1,5 +1,7 @@
-Type: [[Passive]]
+#PiratesBeach #Item #Gadget
+
+Type: #Passive
 Area: [[Pirate's Beach]]
-[[Gadget slot]]
+*Gadget slot*
 
 Speciality: Summons [[Ducky Tuber]]

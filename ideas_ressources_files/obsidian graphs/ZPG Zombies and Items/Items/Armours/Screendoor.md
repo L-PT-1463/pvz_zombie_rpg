@@ -1,4 +1,6 @@
-Type: [[Shield]]
+#Item #Armour 
+
+Type: #Shield
 Area: n/a
 Traits:
-- [[Pass-through]]
+- #Pass-through

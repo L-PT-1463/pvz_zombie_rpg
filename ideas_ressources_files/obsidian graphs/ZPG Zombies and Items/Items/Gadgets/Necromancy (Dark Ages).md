@@ -1,5 +1,7 @@
-Type: [[Passive]]
+#DarkAges #Item #Gadget
+
+Type: #Passive
 Area: [[Dark Ages]]
-n/a
+*Slot n/a*
 
 Speciality: Summons [[Peasant Zombie]]

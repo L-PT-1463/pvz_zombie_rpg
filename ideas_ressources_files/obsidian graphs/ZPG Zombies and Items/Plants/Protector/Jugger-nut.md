@@ -1,6 +1,8 @@
-Type: [[Protector]]
+#TheZombosseum #Plant
+
+Type: #Protector
 Area: [[The Zombosseum]]
 Attack: n/a
 Traits:
-- [[Pass-through]]
-- [[Armoured]] (1)
+- #Pass-through
+- #Armoured (1)

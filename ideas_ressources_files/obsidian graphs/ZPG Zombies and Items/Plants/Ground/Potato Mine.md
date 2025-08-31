@@ -1,7 +1,9 @@
-Type: [[Ground (plant)]]
+#Plant
+
+Type: #GroundPlant 
 Area: n/a
-Attack: [[Ground (attack)]]
+Attack: #GroundAttack 
 Traits:
-- [[Tiny]]
+- #Tiny
 
 Speciality: Cooldown before attacking. Vanquishes itself upon attacking.

@@ -1,9 +1,11 @@
-Type: [[Boss]] ([[Regular]])
+#DarkAges #Plant
+
+Type: #Boss #Regular
 Area: [[Dark Ages]] ([[Castle]])
-Attack: [[Melee]]
+Attack: #Melee
 Traits:
-- [[Freeze]]
-- [[Ice Immune]]
+- #Freeze
+- #IceImmune
 
 Speciality: Attacks deal no damage.
 When vanquished: Attacks all zombies.

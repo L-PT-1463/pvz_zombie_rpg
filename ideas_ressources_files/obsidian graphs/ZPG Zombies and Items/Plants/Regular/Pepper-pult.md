@@ -1,5 +1,7 @@
-Type: [[Regular]]
+#OldWildEgypt #Plant 
+
+Type: #Regular 
 Area: [[Old Wild Egypt]]
-Attack: [[Lobbed]]
+Attack: #Lobbed
 Traits:
-- [[Fire]]
+- #Fire

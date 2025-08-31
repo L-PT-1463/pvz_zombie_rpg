@@ -1,5 +1,7 @@
-Type: [[Ranged]]
+#Item #Attack
+
+Type: #Ranged
 Area: [[Neighbour's House]]
 Traits:
-- [[Chill]]
-- [[Pierce]]
+- #Chill
+- #Pierce

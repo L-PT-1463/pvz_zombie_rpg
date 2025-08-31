@@ -1,4 +1,6 @@
-Type: [[Shield]]
+#TrainingGrounds #Item #Armour 
+
+Type: #Shield
 Area: [[Training Grounds]]
 Traits:
-- [[Pass-through]]
+- #Pass-through

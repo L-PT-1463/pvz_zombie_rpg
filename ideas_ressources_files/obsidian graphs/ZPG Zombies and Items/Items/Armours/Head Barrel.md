@@ -1,5 +1,7 @@
-Type: [[Helmet]]
+#PiratesBeach #Item #Armour 
+
+Type: #Helmet
 Area: [[Pirate's Beach]]
 Traits:
-- [[Fire Weak]]
-- [[Armoured]] (1)
+- #FireWeak
+- #Armoured (1)

@@ -1,7 +1,9 @@
-Type: [[Regular]]
-Area: [[Neon Carnival]]
-Attack: [[Straight]]
-Traits:
-- [[Repeat]]
+#NeonCarnival #Plant 
 
-Speciality: Gives plants in its column the [[Repeat]] trait while alive. 
+Type: #Regular 
+Area: [[Neon Carnival]]
+Attack:  #Straight
+Traits:
+- #Repeat
+
+Speciality: Gives plants in its column the Repeat trait while alive. 

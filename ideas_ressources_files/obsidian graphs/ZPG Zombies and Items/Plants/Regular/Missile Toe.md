@@ -1,7 +1,9 @@
-Type:[[Regular]]
+#ZCorpIntraSpaceTime #Plant 
+
+Type: #Regular 
 Area: [[ZCorp Intra-Space-Time]]
-Attack: [[Lobbed]]
+Attack: #Lobbed
 Traits:
-- [[Chill]]
+- #Chill
 
 Speciality: Cooldown between attacks. Can target any zombie. Deals damage in a 3x1 area. 

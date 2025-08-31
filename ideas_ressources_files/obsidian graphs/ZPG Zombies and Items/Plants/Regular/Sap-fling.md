@@ -1,7 +1,9 @@
-Type: [[Regular]]
+#NeighboursHouse #Plant 
+
+Type: #Regular 
 Area: [[Neighbour's House]] ([[Winter]])
-Attack: [[Lobbed]]
+Attack: #Lobbed
 Traits:
-- [[Stall]]
+- #Stall
 
 Speciality: Attack deals no damage.

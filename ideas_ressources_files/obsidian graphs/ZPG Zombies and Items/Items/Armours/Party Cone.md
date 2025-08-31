@@ -1,6 +1,8 @@
-Type: [[Helmet]]
+#NeonCarnival #Item #Armour 
+
+Type: #Helmet
 Area: [[Neon Carnival]]
 Traits:
-- [[Fire Weak]]
+-  #FireWeak
 
 Speciality: Has more health based on how many Spawnlings are on the garden

@@ -1,4 +1,5 @@
-[[Garden Gimmick]] exclusive to the [[Dark Ages]] ([[Dark Meadow]])
+#DarkAges #GardenGimmick
 
+Unique to [[Dark Meadow]] Gardens in [[Dark Ages]]
 - Start of turn
 - Shadow-powers all plants for a turn

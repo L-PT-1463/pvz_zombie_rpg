@@ -1,4 +1,6 @@
-Type: [[Boss]] ([[Protector]])
+#PiratesBeach #Plant
+
+Type: #Boss #Protector
 Area: [[Pirate's Beach]]
 Attack: n/a
 

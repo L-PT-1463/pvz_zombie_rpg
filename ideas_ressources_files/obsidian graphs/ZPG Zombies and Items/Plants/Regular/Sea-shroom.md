@@ -1,8 +1,10 @@
-Type: [[Regular]]
+#NeighboursHouse #Plant 
+
+Type: #Regular 
 Area: [[Neighbour's House]] ([[Fall]])
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Aquatic]]
-- [[Tiny]]
+- #Aquatic
+- #Tiny
 
 Speciality: Limited range.

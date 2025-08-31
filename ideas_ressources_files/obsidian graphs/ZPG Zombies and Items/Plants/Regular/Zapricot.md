@@ -1,3 +1,5 @@
-Type: [[Regular]]
+#FarFuture #Plant 
+
+Type: #Regular 
 Area: [[Far Future]]
-Attack: [[Straight]]
+Attack: #Straight

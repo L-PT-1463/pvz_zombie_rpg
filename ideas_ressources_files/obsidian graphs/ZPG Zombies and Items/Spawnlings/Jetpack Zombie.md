@@ -1,8 +1,7 @@
-[[Spawnling]]
+#FarFuture #Spawnling
 
 Area: [[Far Future]]
-Classification: [[Aerial basic]]
 Attack: [[Bite]]
 
 Traits:
-- [[Aerial]]
+- #Aerial

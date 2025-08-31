@@ -1,6 +1,8 @@
-Type: [[Strike]]
+#NeighboursHouse #Item #Attack
+
+Type: #Strike
 Area: [[Neighbour's House]]
 Traits:
-- [[Friendly Fire]]
+- #FriendlyFire
 
 Speciality: Attacks in a 3x3 area

@@ -1,6 +1,8 @@
-Type: [[Regular]]
+#OldWildEgypt #Plant 
+
+Type: #Regular 
 Area: [[Old Wild Egypt]]
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Fire]]
-- [[Flammable]]
+- #Fire
+- #Flammable

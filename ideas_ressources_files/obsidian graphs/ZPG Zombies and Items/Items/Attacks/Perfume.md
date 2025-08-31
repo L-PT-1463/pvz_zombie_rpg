@@ -1,7 +1,9 @@
-Type: [[Ranged]]
+#TheZombosseum #Item #Attack
+
+Type: #Ranged
 Area: [[The Zombosseum]]
 Traits:
-- [[Poison]]
-- [[Pierce]]
+- #Poison
+- #Pierce
 
 Speciality: Attacks deal no damage.

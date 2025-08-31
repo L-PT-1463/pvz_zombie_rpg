@@ -1,5 +1,7 @@
-Type: [[Passive]]
+#NeighboursHouse #Item #Gadget
+
+Type: #Passive
 Area: [[Neighbour's House]]
-[[Gadget slot]]
+*Gadget slot*
 
 Speciality: Summons [[Brownparka]]

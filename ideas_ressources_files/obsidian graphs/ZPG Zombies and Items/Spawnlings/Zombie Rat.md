@@ -1,8 +1,7 @@
-[[Spawnling]]
+#NeonCarnival #Spawnling #Pet 
 
 Area: [[Neon Carnival]]
-Classification: [[Pet]]
 Attack: [[Bite]]
 
 Traits:
-- [[Tiny]]
+- #Tiny

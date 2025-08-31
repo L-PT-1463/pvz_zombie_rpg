@@ -1,5 +1,7 @@
-Type: [[Passive]]
+#Item #Gadget
+
+Type: #Passive
 Area: n/a
-[[Weapon slot]]
+*Weapon slot*
 
 Speciality: Summons [[Conehead]]

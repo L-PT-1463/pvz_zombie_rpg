@@ -1,5 +1,7 @@
-Type: [[Regular]]
+#TrainingGrounds #Plant
+
+Type: #Regular
 Area: [[Training Grounds]]
-Attack: [[Lobbed]]
+Attack: #Lobbed
 Traits:
-- [[Butter]]
+- #Butter

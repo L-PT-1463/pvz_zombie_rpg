@@ -1,7 +1,9 @@
-Type: [[Regular]]
+#JurassicMarsh #Plant 
+
+Type: #Regular 
 Area: [[Jurassic Marsh]]
 Attack: n/a
 Traits:
-- [[Tiny]]
+- #Tiny
 
 Speciality: Increases cost of Spawnlings.

@@ -1,7 +1,9 @@
-Type: [[Ground (plant)]]
+#PiratesBeach #Plant
+
+Type: #GroundPlant 
 Area: [[Pirate's Beach]]
-Attack: [[Ground (attack)]]
+Attack: #GroundAttack 
 Traits:
-- [[Aquatic]]
+- #Aquatic
 
 Speciality: Vanquishes itself after attacking.

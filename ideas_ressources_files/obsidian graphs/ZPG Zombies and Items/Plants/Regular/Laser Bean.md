@@ -1,8 +1,8 @@
-Type: [[Regular]]
-Area: [[Far Future]]
-Attack: [[Straight]]
-Traits:
-- [[Laser]]
-- [[Pierce]]
+#FarFuture #Plant 
 
-Speciality: 
+Type: #Regular 
+Area: [[Far Future]]
+Attack: #Straight
+Traits:
+-  #Laser
+- #Pierce

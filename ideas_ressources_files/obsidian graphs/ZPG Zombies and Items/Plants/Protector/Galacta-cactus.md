@@ -1,9 +1,11 @@
-Type: [[Protector]]
+#ZCorpIntraSpaceTime #Plant
+
+Type: #Protector
 Area: [[ZCorp Intra-Space-Time]]
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Pierce]]
-- [[Fire Weak]]
-- [[Pass-through]]
+- #Pierce
+- #FireWeak
+- #Pass-through
 
 When vanquished: Damages all plants and zombies.

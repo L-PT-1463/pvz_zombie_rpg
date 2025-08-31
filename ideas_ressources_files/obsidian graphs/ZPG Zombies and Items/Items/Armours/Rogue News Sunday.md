@@ -1,6 +1,8 @@
-Type: [[Shield]]
+#NeighboursHouse #Item #Armour 
+
+Type: #Shield
 Area: [[Neighbour's House]]
 Traits:
-- [[Fire Weak]]
+- #FireWeak
 
 Speciality: Gives zombie two actions on next turn after being destroyed

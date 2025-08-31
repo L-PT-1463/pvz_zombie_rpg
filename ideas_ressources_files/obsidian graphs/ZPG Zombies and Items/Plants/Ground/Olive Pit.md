@@ -1,8 +1,10 @@
-Type: [[Ground (plant)]]
+#TheZombosseum #Plant
+
+Type: #GroundPlant 
 Area: [[The Zombosseum]]
-Attack: [[Ground (attack)]]
+Attack: #GroundAttack 
 Traits:
-- [[Stun]]
-- [[Grounded]]
+- #Stun
+- #Grounded
 
 Speciality: Attacks deal no damage.

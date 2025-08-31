@@ -1,4 +1,6 @@
-Type: [[Boss]] ([[Regular]])
+#TrainingGrounds #Plant
+
+Type: #Boss #Regular
 Area: [[Training Grounds]]
 Attack: n/a
 

@@ -1,7 +1,9 @@
-Type: [[Protector]]
+#DarkAges #Plant
+
+Type: #Protector
 Area: [[Dark Ages]]
 Attack: n/a
 Traits:
-- [[Vine]]
-- [[Fire Weak]]
-- [[Pass-through]]
+- #Vine
+- #FireWeak
+- #Pass-through

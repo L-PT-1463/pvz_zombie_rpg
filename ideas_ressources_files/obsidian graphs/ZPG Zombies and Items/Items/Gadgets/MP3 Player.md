@@ -1,5 +1,7 @@
-Type: [[Passive]]
-Area: [[Neon Carnival]]
-[[Weapon slot]]
+#NeonCarnival #Item #Gadget
 
-Speciality: Prevents plants from using their [[Repeat]] trait
+Type: #Passive
+Area: [[Neon Carnival]]
+*Weapon slot*
+
+Speciality: Prevents plants from using their #Repeat trait

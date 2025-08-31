@@ -1,8 +1,10 @@
-Type: [[Ground (plant)]]
+#PiratesBeach #Plant 
+
+Type: #GroundPlant 
 Area: [[Pirate's Beach]]
 Attack: n/a
 Traits:
-- [[Aquatic]]
-- [[Pot]]
+- #Aquatic
+- #Pot
 
-Speciality: Allows plants without the [[Amphibious]] or Aquatic traits to be placed on its water tile.
+Speciality: Allows plants without the Amphibious or Aquatic traits to be placed on its water tile.

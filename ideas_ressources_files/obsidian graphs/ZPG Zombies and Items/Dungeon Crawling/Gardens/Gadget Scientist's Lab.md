@@ -1,4 +1,4 @@
-Type: [[Shop Garden]]
-Area: [[Far Future]]
+#FarFuture #Non-FightGarden #ShopGarden 
 
-Speciality: *TBD*
+Unique to [[Far Future]]
+Speciality: #TBD

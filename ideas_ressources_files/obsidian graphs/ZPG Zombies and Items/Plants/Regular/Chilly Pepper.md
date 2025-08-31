@@ -1,9 +1,11 @@
-Type: [[Regular]]
+#NeighboursHouse #Plant 
+
+Type: #Regular 
 Area: [[Neighbour's House]] ([[Winter]])
-Attack: [[Ground (attack)]]
+Attack: #GroundAttack 
 Traits:
-- [[Freeze]]
-- [[Ice Immune]]
+- #Freeze
+- #IceImmune
 
 Speciality: Attacks deal no damage.
 When vanquished: Attacks all zombies in its lane.

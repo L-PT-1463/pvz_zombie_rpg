@@ -1,4 +1,4 @@
-Type: [[Shop Garden]]
-Area: [[Dark Ages]]
+#DarkAges #Non-FightGarden #ShopGarden 
 
-Speciality: *TBD*
+Unique to [[Dark Ages]]
+Speciality: #TBD 

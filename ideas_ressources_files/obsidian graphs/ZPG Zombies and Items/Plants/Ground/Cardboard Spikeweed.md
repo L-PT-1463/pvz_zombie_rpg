@@ -1,5 +1,7 @@
-Type: [[Ground (plant)]]
+#TrainingGrounds #Plant
+
+Type: #GroundPlant 
 Area: [[Training Grounds]]
-Attack: [[Ground (plant)]]
+Attack: #GroundAttack 
 Traits:
-- [[Grounded]]
+- #Grounded

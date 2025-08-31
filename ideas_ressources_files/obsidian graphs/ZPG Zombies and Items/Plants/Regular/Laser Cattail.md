@@ -1,8 +1,10 @@
-Type: [[Regular]]
+#FarFuture #Plant 
+
+Type: #Regular 
 Area: [[Far Future]]
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Repeat]]
-- [[Aerial]]
+- #Repeat
+- #Aerial
 
 Speciality: Can target teh front-most zombie of any lane.

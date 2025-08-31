@@ -1,5 +1,7 @@
-Type: [[Regular]]
+#TheZombosseum #Plant 
+
+Type: #Regular 
 Area: [[The Zombosseum]]
-Attack: [[Melee]]
+Attack: #Melee
 
 Speciality: Spawns [[Lil' Buddy]]

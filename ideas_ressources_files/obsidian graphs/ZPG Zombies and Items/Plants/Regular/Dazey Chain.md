@@ -1,7 +1,9 @@
-Type: [[Regular]]
+#LostCity #Plant 
+
+Type: #Regular 
 Area: [[Lost City]]
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Stall]] (last stage)
+- #Stall (last stage)
 
 Speciality: Each attack is stronger than the last (up to third stage).

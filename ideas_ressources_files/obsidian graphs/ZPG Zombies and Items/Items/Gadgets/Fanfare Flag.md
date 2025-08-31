@@ -1,5 +1,7 @@
-Type: [[Passive]]
-Area: [[Neon Carnival]]
-[[Weapon slot]]
+#NeonCarnival #Item #Gadget
 
-Speciality: Summons Fanfare zombies (*TBD*)
+Type: #Passive
+Area: [[Neon Carnival]]
+*Weapon slot*
+
+Speciality: Summons Fanfare zombies #TBD

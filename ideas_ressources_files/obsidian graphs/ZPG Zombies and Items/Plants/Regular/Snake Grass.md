@@ -1,7 +1,9 @@
-Type: [[Regular]]
+#TheZombosseum #Plant 
+
+Type: #Regular 
 Area: [[The Zombosseum]]
-Attack: [[Melee]]
+Attack: #Melee
 Traits:
-- [[Amphibious]]
+- #Amphibious
 
 Start of turn: Spawns a Snake Grass.

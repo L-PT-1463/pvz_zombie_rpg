@@ -1,7 +1,9 @@
-Type: [[Regular]]
+#ZCorpIntraSpaceTime #Plant 
+
+Type: #Regular 
 Area: [[ZCorp Intra-Space-Time]]
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Aerial]]
+- #Aerial
 
 Speciality: If possible, causes zombies in a 3x3 area of the hit zombie to move to its lane.

@@ -1,1 +1,4 @@
-Default [[Costume]]. Available from the beginning of the game.
+#Costume 
+
+Default.
+Available from the beginning of the game.

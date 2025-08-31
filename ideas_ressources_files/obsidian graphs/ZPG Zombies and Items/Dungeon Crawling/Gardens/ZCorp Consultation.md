@@ -1,4 +1,4 @@
-Type: [[Shop Garden]]
-Area: [[ZCorp Intra-Space-Time]]
+#ZCorpIntraSpaceTime #Non-FightGarden #ShopGarden 
 
-Speciality: *TBD*
+Unique to [[ZCorp Intra-Space-Time]]
+Speciality: #TBD 

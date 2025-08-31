@@ -1,5 +1,7 @@
-Type: [[Strike]]
+#NeonCarnival #Item #Attack
+
+Type: #Strike
 Area: [[Neon Carnival]]
 Traits:
-- [[Friendly Fire]]
-- [[Knockback]]
+- #FriendlyFire
+- #Knockback

@@ -1,4 +1,6 @@
-Type: [[Regular]]
+#ZCorpIntraSpaceTime #Plant 
+
+Type: #Regular 
 Area: [[ZCorp Intra-Space-Time]]
 Attack: n/a
 

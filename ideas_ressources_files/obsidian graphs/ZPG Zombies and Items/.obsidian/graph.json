@@ -8,91 +8,91 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "Training Grounds",
+      "query": "tag:#TrainingGrounds",
       "color": {
         "a": 1,
         "rgb": 6702080
       }
     },
     {
-      "query": "Neighbour's House",
+      "query": "tag:#NeighboursHouse",
       "color": {
         "a": 1,
         "rgb": 292096
       }
     },
     {
-      "query": "Zen Garden",
+      "query": "tag:#ZenGarden",
       "color": {
         "a": 1,
         "rgb": 10092288
       }
     },
     {
-      "query": "Pirate's Beach",
+      "query": "tag:#PiratesBeach",
       "color": {
         "a": 1,
         "rgb": 42751
       }
     },
     {
-      "query": "Far Future",
+      "query": "tag:#FarFuture",
       "color": {
         "a": 1,
         "rgb": 16666045
       }
     },
     {
-      "query": "Lost City",
+      "query": "tag:#LostCity",
       "color": {
         "a": 1,
         "rgb": 16766208
       }
     },
     {
-      "query": "Dark Ages",
+      "query": "tag:#DarkAges",
       "color": {
         "a": 1,
         "rgb": 5832959
       }
     },
     {
-      "query": "Jurassic Marsh",
+      "query": "tag:#JurassicMarsh",
       "color": {
         "a": 1,
         "rgb": 6029366
       }
     },
     {
-      "query": "The Zombosseum",
+      "query": "tag:#TheZombosseum",
       "color": {
         "a": 1,
         "rgb": 16711680
       }
     },
     {
-      "query": "ZCorp Intra-Space-Time",
+      "query": "tag:#ZCorpIntraSpaceTime",
       "color": {
         "a": 1,
         "rgb": 65425
       }
     },
     {
-      "query": "Old Wild Egypt",
+      "query": "tag:#OldWildEgypt",
       "color": {
         "a": 1,
         "rgb": 16741120
       }
     },
     {
-      "query": "Steam City",
+      "query": "tag:#SteamCity",
       "color": {
         "a": 1,
-        "rgb": 9273729
+        "rgb": 8284007
       }
     },
     {
-      "query": "Neon Carnival",
+      "query": "tag:#NeonCarnival",
       "color": {
         "a": 1,
         "rgb": 16748453
@@ -109,6 +109,6 @@
   "repelStrength": 10,
   "linkStrength": 0.849272349272349,
   "linkDistance": 259,
-  "scale": 0.1634837056722056,
+  "scale": 0.16348370567220627,
   "close": true
 }

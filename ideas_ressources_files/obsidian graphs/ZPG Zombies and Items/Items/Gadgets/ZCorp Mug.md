@@ -1,5 +1,7 @@
-Type: [[Passive]]
-Area: [[ZCorp Intra-Space-Time]]
-[[Weapon slot]]
+#ZCorpIntraSpaceTime #Item #Gadget
 
-Speciality: Gives zombie the [[Repeat]] trait while used.
+Type: #Passive
+Area: [[ZCorp Intra-Space-Time]]
+*Weapon slot*
+
+Speciality: Gives zombie the #Repeat trait while used.

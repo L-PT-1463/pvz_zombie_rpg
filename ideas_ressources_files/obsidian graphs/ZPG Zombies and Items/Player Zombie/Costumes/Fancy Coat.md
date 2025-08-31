@@ -1,4 +1,6 @@
-[[Costume]] unlocked in the [[Steam City]] area. unlocked by obtaining all winter almanac entries:
+#Costume
+
+Unlocked in the [[Steam City]] area by obtaining all gentleman almanac entries:
 
 Items:
 - [[Tea Cup]]

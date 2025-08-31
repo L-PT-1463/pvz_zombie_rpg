@@ -1,7 +1,9 @@
-Type: [[Regular]]
+#TrainingGrounds #Plant
+
+Type: #Regular
 Area: [[Training Grounds]]
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Flammable]]
+- #Flammable
 
 Speciality: Attacks on its lane and neighbouring lanes.

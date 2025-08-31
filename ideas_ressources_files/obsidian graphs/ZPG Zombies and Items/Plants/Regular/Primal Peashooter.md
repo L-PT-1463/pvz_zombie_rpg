@@ -1,5 +1,7 @@
-Type: [[Regular]]
+#JurassicMarsh #Plant 
+
+Type: #Regular 
 Area: [[Jurassic Marsh]]
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Knockback]]
+- #Knockback

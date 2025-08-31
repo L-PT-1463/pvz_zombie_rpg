@@ -1,4 +1,4 @@
-[[Area]]
+#Area #SteamCity
 
 Area taking major inspiration from the Sky City world of PvZ 2 China, with elements of its Steam Ages world.
 

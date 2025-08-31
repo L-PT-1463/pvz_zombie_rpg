@@ -1,4 +1,6 @@
-Type: [[Ranged]]
+#Item #Attack
+
+Type: #Ranged
 Area: n/a
 Traits:
-- [[Poison]]
+- #Poison

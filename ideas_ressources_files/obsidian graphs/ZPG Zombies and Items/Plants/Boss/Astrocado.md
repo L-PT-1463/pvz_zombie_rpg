@@ -1,9 +1,11 @@
-Type: [[Boss]] ([[Regular]])
+#ZCorpIntraSpaceTime #Plant
+
+Type: #Boss #Regular
 Area: [[ZCorp Intra-Space-Time]]
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Laser]]
-- [[Pierce]]
-- [[Aerial]]
+- #Laser
+- #Pierce
+- #Aerial
 
 When vanquished: Spawns an [[Astrocado Pit]] on an available tile, if possible on the lane behind.

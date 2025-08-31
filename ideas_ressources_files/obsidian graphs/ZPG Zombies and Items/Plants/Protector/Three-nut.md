@@ -1,8 +1,10 @@
-Type: [[Protector]]
+#JurassicMarsh #Plant
+
+Type: #Protector
 Area: [[Jurassic Marsh]]
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Fire Weak]]
-- [[Pass-through]]
+- #FireWeak
+- #Pass-through
 
 Speciality: Makes damage of every plant in a 3x3 area be 3.

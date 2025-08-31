@@ -1,5 +1,7 @@
-Type: [[Regular]]
+#SteamCity #Plant 
+
+Type: #Regular 
 Area: [[Steam City]]
-Attack: [[Straight]]
+Attack: #Straight
 
 Speciality: Attacks in a star-shaped pattern.

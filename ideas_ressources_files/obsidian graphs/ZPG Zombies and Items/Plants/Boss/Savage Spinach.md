@@ -1,7 +1,9 @@
-Type: [[Boss]] ([[Regular]])
+#JurassicMarsh #Plant
+
+Type: #Boss #Regular
 Area: [[Jurassic Marsh]]
-Attack: [[Melee]]
+Attack: #Melee
 Traits:
-- [[Pierce]]
+- #Pierce
 
 Speciality: Increases the damage of all plants in the garden.

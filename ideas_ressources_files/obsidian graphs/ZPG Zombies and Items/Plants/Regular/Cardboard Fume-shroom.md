@@ -1,8 +1,10 @@
-Type: [[Regular]]
+#TrainingGrounds #Plant
+
+Type: #Regular
 Area: [[Training Grounds]]
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Pierce]]
-- [[Laser]]
+- #Pierce
+- #Laser
 
 Speciality: Limited range.

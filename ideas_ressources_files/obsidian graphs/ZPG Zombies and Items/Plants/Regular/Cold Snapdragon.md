@@ -1,9 +1,11 @@
-Type: [[Regular]]
+#NeighboursHouse #Plant 
+
+Type: #Regular 
 Area: [[Neighbour's House]] ([[Winter]])
-Attack: [[Melee]]
+Attack: #Melee
 Traits:
-- [[Chill]]
-- [[Pierce]]
-- [[Ice Immune]]
+- #Chill
+- #Pierce
+- #IceImmune
 
 Speciality: Attacks on its lane and neighbouring lanes.

@@ -1,6 +1,8 @@
-Type: [[Strike]]
+#ZenGarden #Item #Attack
+
+Type: #Strike
 Area: [[Zen Garden]]
 Traits:
-- [[Friendly Fire]]
+- #FriendlyFire
 
-Speciality: Chance of doing a [[Heal]] attack instead.
+Speciality: Chance of doing a #Heal attack instead.

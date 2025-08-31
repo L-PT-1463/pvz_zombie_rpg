@@ -1,8 +1,10 @@
-Type: [[Regular]] 
+#OldWildEgypt #Plant 
+
+Type: #Regular 
 Area: [[Old Wild Egypt]]
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Flammable]]
-- [[Repeat]] (back head)
+- #Flammable
+- #Repeat (back head)
 
 Speciality: Can attack in front or behind itself.

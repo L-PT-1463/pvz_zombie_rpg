@@ -1,7 +1,9 @@
-Type: [[Regular]]
+ #ZCorpIntraSpaceTime #Plant 
+
+Type: #Regular 
 Area: [[ZCorp Intra-Space-Time]]
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Pierce]]
+- #Pierce
 
 Speciality: Gives Pierce trait to plants in its column while alive.

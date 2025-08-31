@@ -1,4 +1,6 @@
-Type: [[Helmet]]
+#FarFuture #Item #Armour 
+
+Type: #Helmet
 Area: [[Far Future]]
 Traits:
-- [[Armoured]] (1)
+- #Armoured (1)

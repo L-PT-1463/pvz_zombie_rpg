@@ -1,8 +1,10 @@
-Type: [[Regular]]
+#JurassicMarsh #Plant 
+
+Type: #Regular 
 Area: [[Jurassic Marsh]]
-Attack: [[Melee]]
+Attack: #Melee
 Traits:
-- [[Stun]]
+- #Stun
 
 Speciality: Attacks deal no damage.
 When vanquished: Attacks the two tiles in front of it.

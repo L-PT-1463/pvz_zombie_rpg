@@ -1,7 +1,9 @@
-Type: [[Regular]]
+#FarFuture #Plant 
+
+Type: #Regular 
 Area: [[Far Future]]
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Laser]]
+- #Laser
 
 Speciality: Projectile damages zombies on neighbouring lanes as it passes them.

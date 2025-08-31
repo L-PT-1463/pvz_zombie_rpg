@@ -1,7 +1,9 @@
-Type: [[Regular]]
+#ZCorpIntraSpaceTime #Plant 
+
+Type: #Regular 
 Area: [[ZCorp Intra-Space-Time]]
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Aerial]]
+- #Aerial
 
 Speciality: Increases damage and health when a Garden Gimmick happens.

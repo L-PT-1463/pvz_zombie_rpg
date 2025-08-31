@@ -1,7 +1,9 @@
-Type: [[Regular]]
+#PiratesBeach #Plant 
+
+Type: #Regular 
 Area: [[Pirate's Beach]]
-Attack: [[Melee]]
+Attack: #Melee
 Traits:
-- [[Aerial]]
+- #Aerial
 
 Speciality: Increases health of nut plants in the garden.

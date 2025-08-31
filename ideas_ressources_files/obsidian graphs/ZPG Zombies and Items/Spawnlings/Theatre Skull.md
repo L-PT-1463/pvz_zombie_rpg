@@ -1,7 +1,6 @@
-[[Spawnling]]
+#TheZombosseum #Spawnling
 
 Area: [[The Zombosseum]]
-Classification: [[Pure support]]
 
 Traits:
-- [[Aerial]]
+- #Aerial

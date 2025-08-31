@@ -1,7 +1,9 @@
-Type: [[Regular]]
+#FarFuture #Plant 
+
+Type: #Regular 
 Area: [[Far Future]]
-Attack: [[Lobbed]]
+Attack: #Lobbed
 Traits:
-- [[Tiny]]
+- #Tiny
 
 Speciality: Cooldown between attacks. Can target any zombie in the garden. 

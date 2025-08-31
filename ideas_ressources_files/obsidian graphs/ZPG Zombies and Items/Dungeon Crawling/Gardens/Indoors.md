@@ -1,4 +1,5 @@
-[[Fight Garden]] unique to the [[Zen Garden]].
+#ZenGarden #FightingGarden
 
+Unique to [[Zen Garden]]
 - All plants have [[Flower Pot]] under them.
-- [[Aerial]] trait plants cannot spawn.
+- Aerial trait plants cannot spawn.

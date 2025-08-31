@@ -1,5 +1,7 @@
-Type: [[Passive]]
+#OldWildEgypt #Item #Gadget
+
+Type: #Passive
 Area: [[Old Wild Egypt]]
-n/a
+*Slot n/a*
 
 Speciality: Summons [[Mummy Zombie]]

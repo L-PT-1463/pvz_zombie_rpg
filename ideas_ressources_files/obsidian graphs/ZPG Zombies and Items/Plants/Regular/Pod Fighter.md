@@ -1,7 +1,9 @@
-Type: [[Regular]]
+#SteamCity #Plant 
+
+Type: #Regular 
 Area: [[Steam City]]
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Aerial]]
+- #Aerial
 
 Speciality: Makes an attack when a plant in a neighbouring tile on its column makes an attack.

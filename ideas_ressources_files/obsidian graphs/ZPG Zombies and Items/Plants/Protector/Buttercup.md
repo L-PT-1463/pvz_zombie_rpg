@@ -1,7 +1,9 @@
-Type: [[Protector]]
+#NeonCarnival #Plant
+
+Type: #Protector
 Area: [[Neon Carnival]]
-Attack: [[Melee]]
+Attack: #Melee
 Traits:
-- [[Butter]]
+- #Butter
 
 Speciality: Attack deals no damage.

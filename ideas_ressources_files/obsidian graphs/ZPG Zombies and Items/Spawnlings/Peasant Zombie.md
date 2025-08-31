@@ -1,8 +1,7 @@
-[[Spawnling]]
+#DarkAges #Spawnling #UnarmouredBasic 
 
 Area: [[Dark Ages]]
-Classification: [[Unarmoured basic]]
 Attack: [[Bite]]
 
 Traits:
-- [[Fire Weak]]
+- #FireWeak

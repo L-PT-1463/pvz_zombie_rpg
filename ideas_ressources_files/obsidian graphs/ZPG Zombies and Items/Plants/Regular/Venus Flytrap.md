@@ -1,5 +1,7 @@
-Type: [[Regular]]
+#JurassicMarsh #Plant 
+
+Type: #Regular 
 Area: [[Jurassic Marsh]]
-Attack: [[Melee]]
+Attack: #Melee
 
 Speciality: Heals the plant in front of it equally to the damage dealt.

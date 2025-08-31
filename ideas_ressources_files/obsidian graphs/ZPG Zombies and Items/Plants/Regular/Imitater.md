@@ -1,4 +1,6 @@
-Type: n/a
+#NeonCarnival #Plant 
+
+Type: #Regular 
 Area: [[Neon Carnival]]
 Attack: n/a
 

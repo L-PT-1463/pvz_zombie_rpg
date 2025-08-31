@@ -1,7 +1,9 @@
-Type: [[Regular]]
+#PiratesBeach #Plant
+
+Type: #Regular
 Area: [[Pirate's Beach]]
-Attack: [[Lobbed]]
+Attack: #Lobbed
 Traits:
-- [[Vine]]
+- #Vine
 
 Speciality: Attacks target zombie and two tiles behind it.

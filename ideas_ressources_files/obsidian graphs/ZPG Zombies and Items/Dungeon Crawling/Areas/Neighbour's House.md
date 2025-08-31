@@ -1,4 +1,4 @@
-[[Area]]
+#Area #NeighboursHouse
 
 Area split into seasons to represent many things. Notably, this world mostly incorporates elements from Rogue Garden, the Frostbite Caves of PvZ 2 and the Pool/Fog levels of the classic PvZ.
 

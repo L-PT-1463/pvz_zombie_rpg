@@ -1,5 +1,7 @@
-Type: [[Boss]] ([[Regular]])
+#NeighboursHouse #Plant
+
+Type: #Boss #Regular
 Area: [[Neighbour's House]]
-Attack: [[Straight]]
+Attack: #Straight
 
 Start of turn: Spawns a random plant on an available tile.

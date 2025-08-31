@@ -1,8 +1,10 @@
-Type: [[Regular]]
+#DarkAges #Plant 
+
+Type: #Regular 
 Area: [[Dark Ages]] ([[Castle]])
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Pierce]]
-- [[Laser]]
+- #Pierce
+- #Laser
 
 Speciality: Attack has limited range.

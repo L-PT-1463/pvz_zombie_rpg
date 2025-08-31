@@ -1,5 +1,7 @@
-Type: [[Regular]]
+#OldWildEgypt #Plant
+
+Type: #Regular
 Area: [[Old Wild Egypt]]
-Attack: [[Melee]]
+Attack: #Melee
 
 Speciality: Can attack both in front and behind itself.

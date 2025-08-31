@@ -1,8 +1,10 @@
-Type: [[Protector]]
+#ZenGarden #Plant
+
+Type: #Protector
 Area: [[Zen Garden]]
-Attack: [[Melee]]
+Attack: #Melee
 Traits:
-- [[Fire Weak]]
-- [[Pass-through]]
+- #FireWeak
+- #Pass-through
 
 Speciality: Starts off with no damage but gains damage when hit with an attack.

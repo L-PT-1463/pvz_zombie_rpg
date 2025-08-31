@@ -1,5 +1,7 @@
-Type: [[Regular]]
+#DarkAges #Plant 
+
+Type: #Regular 
 Area: [[Dark Ages]] ([[Castle]])
-Attack: [[Melee]]
+Attack: #Melee
 Traits:
-- [[Pierce]]
+- #Pierce

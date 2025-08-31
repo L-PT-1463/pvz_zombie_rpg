@@ -1,4 +1,6 @@
-Type: [[Helmet]]
+#OldWildEgypt #Item #Armour 
+
+Type: #Helmet
 Area: [[Old Wild Egypt]]
 Traits
-- [[Fire Weak]]
+- #FireWeak

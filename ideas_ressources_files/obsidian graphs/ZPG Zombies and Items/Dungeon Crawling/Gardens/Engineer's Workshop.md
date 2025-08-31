@@ -1,4 +1,4 @@
-Type: [[Shop Garden]]
-Area: [[Steam City]]
+#SteamCity #Non-FightGarden #ShopGarden
 
-Speciality: *TBD*
+Unique to [[Steam City]]
+Speciality: #TBD

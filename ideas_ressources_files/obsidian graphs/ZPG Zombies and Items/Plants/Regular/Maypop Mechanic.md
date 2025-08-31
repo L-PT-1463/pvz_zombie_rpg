@@ -1,7 +1,9 @@
-Type: [[Regular]]
+#SteamCity #Plant 
+
+Type: #Regular 
 Area: [[Steam City]]
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Pierce]]
+- #Pierce
 
 Speciality: Attacks both in front and behind itself.

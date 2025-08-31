@@ -1,7 +1,9 @@
-Type: [[Regular]]
+#ZenGarden #Plant 
+
+Type: #Regular 
 Area: [[Zen Garden]]
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Flammable]]
+- #Flammable
 
 Speciality: Prevents hit zombie from moving to a different lane on their next turn.

@@ -1,7 +1,9 @@
-Type: [[Regular]]
+#JurassicMarsh #Plant 
+
+Type: #Regular 
 Area: [[Jurassic Marsh]]
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Amphibious]]
+- #Amphibious
 
 [[Dino-roar]]: Makes an attack, if possible.

@@ -1,5 +1,7 @@
-Type: [[Regular]]
-Area: [[Jurassic Marsh]]
-Attack: [[Melee]]
+#JurassicMarsh #Plant 
 
-Speciality: Does a [[Heal]] attack if his by a Munch type attack.
+Type: #Regular 
+Area: [[Jurassic Marsh]]
+Attack: #Melee
+
+Speciality: Does a #Heal attack if hit by a Munch type attack.

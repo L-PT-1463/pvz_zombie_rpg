@@ -1,5 +1,7 @@
-Type: [[Regular]]
+#ZenGarden #Plant
+
+Type: #Regular
 Area: [[Zen Garden]]
-Attack: [[Straight]]
+Attack: #Straight
 
 Speciality: Can target any zombie in front of it in all lanes.

@@ -1,2 +1,4 @@
-Type: [[Strike]]
+#JurassicMarsh #Item #Attack
+
+Type: #Strike
 Area: [[Jurassic Marsh]]

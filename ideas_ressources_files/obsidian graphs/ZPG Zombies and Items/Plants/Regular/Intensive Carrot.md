@@ -1,4 +1,6 @@
-Type: [[Regular]]
+#FarFuture #Plant 
+
+Type: #Regular 
 Area: [[Far Future]]
 Attack: n/a
 

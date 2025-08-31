@@ -1,8 +1,7 @@
-[[Spawnling]]
+#JurassicMarsh #Spawnling #Pet 
 
 Area: [[Jurassic Marsh]]
-Classification: [[Pet]]
 Attack: [[Bite]]
 
 Traits:
-- [[Tiny]]
+- #Tiny

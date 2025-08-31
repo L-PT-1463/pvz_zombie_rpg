@@ -1,4 +1,4 @@
-[[Area]]
+#Area #PiratesBeach
 
 Area taking elements from Pirate Seas and Big Wave Beach from PvZ 2, with a general naval battle and relaxing vacation theme.
 

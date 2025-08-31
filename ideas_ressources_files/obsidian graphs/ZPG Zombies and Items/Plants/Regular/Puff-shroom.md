@@ -1,7 +1,9 @@
-Type: [[Regular]]
+#DarkAges #Plant 
+
+Type: #Regular 
 Area: [[Dark Ages]] ([[Castle]])
-Attack: [[Straight]]
+Attack: #Straight
 Traits:
-- [[Tiny]]
+- #Tiny
 
 Speciality: Attack has limited range. 

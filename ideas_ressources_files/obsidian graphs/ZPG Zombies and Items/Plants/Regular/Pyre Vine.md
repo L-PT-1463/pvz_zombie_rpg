@@ -1,7 +1,9 @@
-Type: [[Regular]]
+#OldWildEgypt #Plant 
+
+Type: #Regular 
 Area: [[Old Wild Egypt]]
-Attack: [[Melee]]
+Attack: #Melee
 Traits:
-- [[Fire]]
-- [[Pierce]]
-- [[Vine]]
+- #Fire
+- #Pierce
+- #Vine

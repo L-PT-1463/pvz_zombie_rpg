@@ -1,5 +1,4 @@
-[[Spawnling]]
+#NeonCarnival #Spawnling #UnarmouredBasic 
 
 Area: [[Neon Carnival]]
-Classification: [[Crowd basic]]
 Attack: [[Bite]]

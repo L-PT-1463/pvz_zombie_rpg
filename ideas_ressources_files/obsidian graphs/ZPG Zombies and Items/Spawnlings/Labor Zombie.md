@@ -1,5 +1,4 @@
-[[Spawnling]]
+#SteamCity #Spawnling #UnarmouredBasic 
 
 Area: [[Steam City]]
-Classification: [[Unarmoured basic]]
 Attack: [[Bite]]

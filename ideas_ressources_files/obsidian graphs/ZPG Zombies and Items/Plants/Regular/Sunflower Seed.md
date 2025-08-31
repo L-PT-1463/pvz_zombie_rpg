@@ -1,4 +1,6 @@
-Type: [[Regular]]
+#ZenGarden #Plant 
+
+Type: #Regular 
 Area: [[Zen Garden]] ([[Indoors]])
 Attack: n/a
 

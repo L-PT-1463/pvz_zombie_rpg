@@ -1,4 +1,4 @@
-Type: [[Bonus Garden]]
-Area: [[Training Grounds]]
+#TrainingGrounds #Non-FightGarden #BonusGarden
 
-Speciality: 
+Unique to [[Training Grounds]]
+Speciality: #TBD

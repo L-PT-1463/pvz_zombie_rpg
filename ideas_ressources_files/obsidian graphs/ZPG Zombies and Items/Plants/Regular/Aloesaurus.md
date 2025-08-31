@@ -1,5 +1,7 @@
-Type: [[Regular]]
+#JurassicMarsh #Plant
+
+Type: #Regular
 Area: [[Jurassic Marsh]]
-Attack: [[Melee]]
+Attack: #Melee
 
 [[Dino-roar]]: Heals plants in a cross pattern area, including itself.

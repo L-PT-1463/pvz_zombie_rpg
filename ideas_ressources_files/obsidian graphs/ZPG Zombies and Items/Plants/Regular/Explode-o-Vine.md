@@ -1,7 +1,9 @@
-Type: [[Regular]]
+#PiratesBeach #Plant 
+
+Type: #Regular 
 Area: [[Pirate's Beach]]
-Attack: [[Melee]]
+Attack: #Melee
 Traits:
-- [[Vine]]
+- #Vine
 
 When vanquished: Attacks damage to all zombies in 3x3 area.

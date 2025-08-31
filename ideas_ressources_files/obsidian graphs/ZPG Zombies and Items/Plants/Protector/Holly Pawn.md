@@ -1,8 +1,10 @@
-Type: [[Protector]]
+#DarkAges #Plant
+
+Type: #Protector
 Area: [[Dark Ages]]
-Attack: [[Melee]]
+Attack: #Melee
 Traits:
-- [[Fire Weak]]
-- [[Pass-through]]
+- #FireWeak
+- #Pass-through
 
 Speciality: Attacks the zombie when hit by a Munch type attack.
