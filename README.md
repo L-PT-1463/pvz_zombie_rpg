@@ -28,4 +28,5 @@ _Tools Used_
 - **Game Development:** VS Code
 - **Art:** Clip Studio Paint
 - **Animations:** Spriter
+- **Early Development Mindmapping:** Obsidian
 

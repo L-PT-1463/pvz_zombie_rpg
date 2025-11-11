@@ -1,4 +1,4 @@
-#Item #Armour 
+#Item #Armour #TheZombosseum 
 
 Type: #Helmet
 Area: [[The Zombosseum]]

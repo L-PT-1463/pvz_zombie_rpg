@@ -6,7 +6,7 @@
       {
         "id": "0247de275d755c41",
         "type": "tabs",
-        "dimension": 50.15552099533437,
+        "dimension": 50,
         "children": [
           {
             "id": "02b16f337001762f",
@@ -196,16 +196,65 @@
       {
         "id": "f22b0a8f55dd8c7e",
         "type": "tabs",
-        "dimension": 49.84447900466563,
+        "dimension": 50,
         "children": [
           {
-            "id": "15e9172d5e6d2d86",
+            "id": "389216d31aea2c8a",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
+              "type": "localgraph",
+              "state": {
+                "file": "Dungeon Crawling/Areas/Zen Garden.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": false,
+                  "colorGroups": [
+                    {
+                      "query": "tag:#plant",
+                      "color": {
+                        "a": 1,
+                        "rgb": 2213918
+                      }
+                    },
+                    {
+                      "query": "tag:#item",
+                      "color": {
+                        "a": 1,
+                        "rgb": 14757860
+                      }
+                    },
+                    {
+                      "query": "tag:#spawnling",
+                      "color": {
+                        "a": 1,
+                        "rgb": 16711680
+                      }
+                    }
+                  ],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1.0000000000000018,
+                  "close": true
+                }
+              },
               "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Graph of Zen Garden"
             }
           },
           {
@@ -368,34 +417,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0b46326dc340cec6",
+  "active": "a6e77e97aefbc038",
   "lastOpenFiles": [
-    "Dungeon Crawling/Areas/Zen Garden.md",
-    "Player Zombie/Costumes/Prized Employee.md",
-    "Player Zombie/Costumes/Beach Bum.md",
-    "Items/Armours/Steam Umbrella.md",
-    "Plants/Boss/Winter-mint.md",
-    "Dungeon Crawling/Garden Gimmicks/Low Tide.md",
-    "Dungeon Crawling/Garden Gimmicks/High Tide.md",
-    "Amphibious.md",
-    "Spawnlings/Brownparka.md",
-    "Dungeon Crawling/Gardens/Winter.md",
     "Player Zombie/Costumes/Training Bandana.md",
     "Player Zombie/Costumes/Snow Day.md",
     "Player Zombie/Costumes/Relic Hunter.md",
+    "Player Zombie/Costumes/Prized Employee.md",
     "Player Zombie/Costumes/Part of the Crew.md",
     "Player Zombie/Costumes/Modern Mummy.md",
     "Player Zombie/Costumes/Fancy Coat.md",
     "Player Zombie/Costumes/Employee of the Week.md",
     "Player Zombie/Costumes/Browncoat (costume).md",
-    "Dungeon Crawling/Areas/Jurassic Marsh.md",
+    "Player Zombie/Costumes/Beach Bum.md",
     "Player Zombie/Player Zombie.md",
-    "Spawnlings/Adventuring Tent.md",
-    "Spawnlings/Camping Tent.md",
-    "Spawnlings/Carnie Zombie.md",
-    "Spawnlings/Campimp.md",
-    "Spawnlings/Engraved Gravestone.md",
-    "Spawnlings/Gravestone.md",
+    "Plants/Regular/Sun Magnet.md",
+    "Plants/Regular/Negative Magnet-shroom.md",
+    "Plants/Regular/Magnet-shroom.md",
+    "Plants/Regular/Magnet Plant.md",
+    "Plants/Regular/Gold Magnet.md",
+    "Plants/Regular/Cardboard Magnet-shroom.md",
+    "Dungeon Crawling/Areas/Zen Garden.md",
+    "Dungeon Crawling/Areas/ZCorp Intra-Space-Time.md",
+    "Dungeon Crawling/Areas/Training Grounds.md",
+    "Dungeon Crawling/Areas/The Zombosseum.md",
+    "Dungeon Crawling/Areas/Steam City.md",
+    "Dungeon Crawling/Areas/Pirate's Beach.md",
+    "Dungeon Crawling/Areas/Dark Ages.md",
+    "Dungeon Crawling/Areas/Far Future.md",
+    "Dungeon Crawling/Areas/Old Wild Egypt.md",
     "Dungeon Crawling/Areas",
     "Dungeon Crawling/Garden Gimmicks",
     "Garden",
