@@ -5,3 +5,4 @@ Area set in the the Renaissance Age from PvZ 2 China taking many elements from t
 Bosses:
 - [[Sportacus]]
 - [[Spear-mint]]
+- [[Grass Knuckles]]

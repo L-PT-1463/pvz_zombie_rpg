@@ -6,3 +6,4 @@ Bosses:
 - [[Fila-mint]]
 - [[Strach Lord]]
 - [[The Pinearch]]
+- [[Beta-Carrotina]]

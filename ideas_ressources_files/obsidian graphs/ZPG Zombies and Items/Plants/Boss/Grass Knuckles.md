@@ -1,7 +1,7 @@
-#Plant 
+#TheZombosseum #Plant 
 
 Type: #Boss #Hero 
-Area: n/a
+Area: [[The Zombosseum]]
 Attack: #Melee 
 Traits:
 - 

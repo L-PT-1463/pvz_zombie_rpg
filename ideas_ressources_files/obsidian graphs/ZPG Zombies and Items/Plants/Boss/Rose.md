@@ -1,7 +1,7 @@
-#Plant 
+#ZCorpIntraSpaceTime #Plant 
 
 Type: #Boss #Hero 
-Area: n/a
+Area: [[ZCorp Intra-Space-Time]]
 Attack: n/a
 Traits:
 - 

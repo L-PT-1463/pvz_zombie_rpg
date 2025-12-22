@@ -1,4 +1,4 @@
-#FarFuture #Spawnling
+#NeonCarnival  #Spawnling
 
-Area: [[Far Future]]
+Area: [[Neon Carnival]]
 Gadget: [[Necromancy (8-Bit)]]

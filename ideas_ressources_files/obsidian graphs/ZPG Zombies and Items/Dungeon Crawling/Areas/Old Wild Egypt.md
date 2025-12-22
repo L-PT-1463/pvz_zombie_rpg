@@ -6,6 +6,7 @@ Bosses:
 - [[The Podfather]]
 - [[Appease-mint]]
 - [[Pepper-mint]]
+- [[Captain Combustible]]
 
 Unique costumes:
 - [[Modern Mummy]]

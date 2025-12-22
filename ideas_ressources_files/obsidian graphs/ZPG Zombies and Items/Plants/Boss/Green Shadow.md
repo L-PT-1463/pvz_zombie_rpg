@@ -1,7 +1,7 @@
-#Plant 
+#NeighboursHouse #Plant 
 
 Type: #Boss #Hero 
-Area: n/a
+Area: [[Neighbour's House]]
 Attack: #Straight
 Traits:
 - #Flammable

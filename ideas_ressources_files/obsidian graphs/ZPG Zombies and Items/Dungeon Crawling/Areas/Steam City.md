@@ -4,6 +4,7 @@ Area taking major inspiration from the Sky City world of PvZ 2 China, with eleme
 
 Bosses:
 - [[Shooting Starfruit]]
+- [[Soul Patch]]
 
 Unqiue costumes:
 - [[Fancy Coat]]

@@ -9,7 +9,7 @@
         "dimension": 50,
         "children": [
           {
-            "id": "02b16f337001762f",
+            "id": "84263421d2f11a46",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -30,7 +30,17 @@
               "state": {
                 "file": "Dungeon Crawling/Areas/Far Future.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
               "title": "Far Future"
@@ -44,7 +54,17 @@
               "state": {
                 "file": "Dungeon Crawling/Areas/Jurassic Marsh.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
               "title": "Jurassic Marsh"
@@ -58,7 +78,17 @@
               "state": {
                 "file": "Dungeon Crawling/Areas/Lost City.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
               "title": "Lost City"
@@ -72,7 +102,17 @@
               "state": {
                 "file": "Dungeon Crawling/Areas/Neighbour's House.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
               "title": "Neighbour's House"
@@ -86,7 +126,17 @@
               "state": {
                 "file": "Dungeon Crawling/Areas/Neon Carnival.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
               "title": "Neon Carnival"
@@ -100,7 +150,17 @@
               "state": {
                 "file": "Dungeon Crawling/Areas/Old Wild Egypt.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
               "title": "Old Wild Egypt"
@@ -114,7 +174,17 @@
               "state": {
                 "file": "Dungeon Crawling/Areas/Pirate's Beach.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
               "title": "Pirate's Beach"
@@ -128,21 +198,41 @@
               "state": {
                 "file": "Dungeon Crawling/Areas/Steam City.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
               "title": "Steam City"
             }
           },
           {
-            "id": "aba7ec1aa615455f",
+            "id": "752ec4a52c9e27a8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Dungeon Crawling/Areas/The Zombosseum.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
               "title": "The Zombosseum"
@@ -156,7 +246,17 @@
               "state": {
                 "file": "Dungeon Crawling/Areas/Training Grounds.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
               "title": "Training Grounds"
@@ -170,7 +270,17 @@
               "state": {
                 "file": "Dungeon Crawling/Areas/ZCorp Intra-Space-Time.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
               "title": "ZCorp Intra-Space-Time"
@@ -184,14 +294,23 @@
               "state": {
                 "file": "Dungeon Crawling/Areas/Zen Garden.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
               "title": "Zen Garden"
             }
           }
-        ],
-        "currentTab": 12
+        ]
       },
       {
         "id": "f22b0a8f55dd8c7e",
@@ -204,7 +323,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Dungeon Crawling/Areas/Zen Garden.md",
+                "file": "Dungeon Crawling/Areas/Dark Ages.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -249,12 +368,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1.0000000000000018,
+                  "scale": 0.7132754626224436,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Zen Garden"
+              "title": "Graph of Dark Ages"
             }
           },
           {
@@ -417,34 +536,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a6e77e97aefbc038",
+  "active": "84263421d2f11a46",
   "lastOpenFiles": [
-    "Player Zombie/Costumes/Training Bandana.md",
-    "Player Zombie/Costumes/Snow Day.md",
-    "Player Zombie/Costumes/Relic Hunter.md",
-    "Player Zombie/Costumes/Prized Employee.md",
-    "Player Zombie/Costumes/Part of the Crew.md",
-    "Player Zombie/Costumes/Modern Mummy.md",
-    "Player Zombie/Costumes/Fancy Coat.md",
-    "Player Zombie/Costumes/Employee of the Week.md",
-    "Player Zombie/Costumes/Browncoat (costume).md",
-    "Player Zombie/Costumes/Beach Bum.md",
-    "Player Zombie/Player Zombie.md",
-    "Plants/Regular/Sun Magnet.md",
-    "Plants/Regular/Negative Magnet-shroom.md",
-    "Plants/Regular/Magnet-shroom.md",
-    "Plants/Regular/Magnet Plant.md",
-    "Plants/Regular/Gold Magnet.md",
-    "Plants/Regular/Cardboard Magnet-shroom.md",
+    "Dungeon Crawling/Areas/Far Future.md",
+    "Items/Attacks/Snowball.md",
     "Dungeon Crawling/Areas/Zen Garden.md",
+    "Plants/Regular/Sprout.md",
+    "Spawnlings/Chimney Sweep.md",
+    "Player Zombie/Costumes/Training Bandana.md",
     "Dungeon Crawling/Areas/ZCorp Intra-Space-Time.md",
+    "Plants/Regular/Wing-nut.md",
+    "Plants/Protector/Galacta-cactus.md",
+    "Plants/Regular/Cosmoss.md",
     "Dungeon Crawling/Areas/Training Grounds.md",
+    "Items/Armours/Target.md",
     "Dungeon Crawling/Areas/The Zombosseum.md",
     "Dungeon Crawling/Areas/Steam City.md",
+    "Plants/Boss/Soul Patch.md",
     "Dungeon Crawling/Areas/Pirate's Beach.md",
-    "Dungeon Crawling/Areas/Dark Ages.md",
-    "Dungeon Crawling/Areas/Far Future.md",
+    "Plants/Regular/Smackadamia.md",
+    "Plants/Regular/Spineapple.md",
+    "Plants/Regular/Snapdragon.md",
+    "Items/Armours/Map.md",
+    "Plants/Regular/Aloe.md",
     "Dungeon Crawling/Areas/Old Wild Egypt.md",
+    "Plants/Boss/Wall Knight.md",
+    "Plants/Boss/Spudow.md",
+    "Plants/Boss/Solar Flare.md",
+    "Plants/Boss/Rose.md",
     "Dungeon Crawling/Areas",
     "Dungeon Crawling/Garden Gimmicks",
     "Garden",

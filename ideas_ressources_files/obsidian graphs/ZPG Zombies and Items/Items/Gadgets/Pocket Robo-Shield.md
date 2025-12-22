@@ -3,4 +3,4 @@
 Type:  #Active
 Area: [[Far Future]]
 
-Speciality: Spawns a [[Robo-Shield]]
+Speciality: Spawns a [[Robo-shield]]

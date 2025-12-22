@@ -5,6 +5,7 @@ Area split into seasons to represent many things. Notably, this world mostly inc
 Bosses:
 - [[Cornucopia]]
 - [[Winter-mint]]
+- [[Green Shadow]]
 
 Unique costumes:
 - [[Snow Day]]

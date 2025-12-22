@@ -9,6 +9,8 @@ Bosses:
 - [[Dark Matter Dragonfruit]]
 - [[Ail-mint]]
 - [[Conceal-mint]]
+- [[Nightcap]]
+- [[Wall Knight]]
 
 Unique gardens:
 - [[Castle]]

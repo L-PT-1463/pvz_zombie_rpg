@@ -1,4 +1,4 @@
-#FarFuture #Spawnling #UnarmouredBasic
+#NeonCarnival  #Spawnling #UnarmouredBasic
 
-Area: [[Far Future]]
+Area: [[Neon Carnival]]
 Attack: [[Bite]]

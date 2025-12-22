@@ -1,7 +1,7 @@
-#Plant 
+#OldWildEgypt #Plant 
 
 Type: #Boss #Hero 
-Area: n/a
+Area: [[Old Wild Egypt]]
 Attack: n/a
 Traits:
 - 

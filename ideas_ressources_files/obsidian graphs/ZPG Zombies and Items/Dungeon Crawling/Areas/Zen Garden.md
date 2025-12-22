@@ -5,6 +5,7 @@
 Bosses:
 - [[Enlighten-mint]]
 - [[Gravitree]]
+- [[Chompzilla]]
 
 Unique gardens
 - [[Indoors]]

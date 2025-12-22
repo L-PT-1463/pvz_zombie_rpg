@@ -7,6 +7,7 @@ Bosses:
 - [[Molekale]]
 - [[Astrocado]]
 - [[Enchant-mint]]
+- [[Rose]]
 
 Unique costumes:
 - [[Employee of the Week]]
