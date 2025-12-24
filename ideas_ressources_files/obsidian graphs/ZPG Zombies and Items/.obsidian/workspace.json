@@ -310,7 +310,8 @@
               "title": "Zen Garden"
             }
           }
-        ]
+        ],
+        "currentTab": 12
       },
       {
         "id": "f22b0a8f55dd8c7e",
@@ -323,7 +324,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Dungeon Crawling/Areas/Dark Ages.md",
+                "file": "Dungeon Crawling/Areas/Zen Garden.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -373,7 +374,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Dark Ages"
+              "title": "Graph of Zen Garden"
             }
           },
           {
@@ -536,34 +537,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "84263421d2f11a46",
+  "active": "a6e77e97aefbc038",
   "lastOpenFiles": [
-    "Dungeon Crawling/Areas/Far Future.md",
-    "Items/Attacks/Snowball.md",
-    "Dungeon Crawling/Areas/Zen Garden.md",
-    "Plants/Regular/Sprout.md",
-    "Spawnlings/Chimney Sweep.md",
-    "Player Zombie/Costumes/Training Bandana.md",
-    "Dungeon Crawling/Areas/ZCorp Intra-Space-Time.md",
-    "Plants/Regular/Wing-nut.md",
-    "Plants/Protector/Galacta-cactus.md",
-    "Plants/Regular/Cosmoss.md",
-    "Dungeon Crawling/Areas/Training Grounds.md",
-    "Items/Armours/Target.md",
-    "Dungeon Crawling/Areas/The Zombosseum.md",
-    "Dungeon Crawling/Areas/Steam City.md",
-    "Plants/Boss/Soul Patch.md",
-    "Dungeon Crawling/Areas/Pirate's Beach.md",
-    "Plants/Regular/Smackadamia.md",
-    "Plants/Regular/Spineapple.md",
-    "Plants/Regular/Snapdragon.md",
-    "Items/Armours/Map.md",
-    "Plants/Regular/Aloe.md",
-    "Dungeon Crawling/Areas/Old Wild Egypt.md",
-    "Plants/Boss/Wall Knight.md",
-    "Plants/Boss/Spudow.md",
-    "Plants/Boss/Solar Flare.md",
-    "Plants/Boss/Rose.md",
+    "Tugboat's Tugboat.md",
+    "Dungeon Crawling/Gardens/Engineer's Workshop.md",
+    "Dungeon Crawling/Gardens/Endangered Plant.md",
+    "Plants/Regular/Chomper.md",
+    "Plants/Regular/Chilly Pepper.md",
+    "Plants/Regular/Chili Bean.md",
+    "Plants/Regular/Caulipower.md",
+    "Plants/Regular/Cattail.md",
+    "Plants/Regular/Carrotillery.md",
+    "Plants/Regular/Cardboard Threepeater.md",
+    "Plants/Regular/Cardboard Umbrella Leaf.md",
+    "Plants/Regular/Cardboard Sunflower.md",
+    "Plants/Regular/Cardboard Starfruit.md",
+    "Plants/Regular/Cardboard Split Pea.md",
+    "Plants/Regular/Cardboard Squash.md",
+    "Plants/Regular/Cardboard Snow Pea.md",
+    "Plants/Regular/Cardboard Scaredy-shroom.md",
+    "Plants/Regular/Cardboard Repeater.md",
+    "Plants/Regular/Cardboard Puff-shroom.md",
+    "Plants/Regular/Cardboard Peashooter.md",
+    "Plants/Regular/Cardboard Kernel-pult.md",
+    "Plants/Regular/Cardboard Fume-shroom.md",
+    "Plants/Regular/Cardboard Chomper.md",
+    "Plants/Regular/Cardboard Cactus.md",
+    "Plants/Regular/Cactus.md",
+    "Plants/Regular/Cabbage-pult.md",
     "Dungeon Crawling/Areas",
     "Dungeon Crawling/Garden Gimmicks",
     "Garden",
