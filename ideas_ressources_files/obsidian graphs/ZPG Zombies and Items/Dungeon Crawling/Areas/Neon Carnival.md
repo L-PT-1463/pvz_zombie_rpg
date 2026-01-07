@@ -4,3 +4,6 @@ Area combining the music and festivities of the Neon Mixtape Tour world, Backyar
 
 Bosses:
 - 
+
+Unique Costumes:
+- [[Carnie-man]]

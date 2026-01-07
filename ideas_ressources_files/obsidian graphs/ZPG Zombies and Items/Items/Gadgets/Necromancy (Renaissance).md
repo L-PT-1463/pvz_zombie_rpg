@@ -1,4 +1,4 @@
-#NeighboursHouse #Item #Gadget
+#TheZombosseum  #Item #Gadget
 
 Type: #Passive
 Area: [[Neighbour's House]]
