@@ -5,6 +5,7 @@ PvZ 2’s Jurassic Marsh with a handful more prehistoric additions. It is also t
 Bosses:
 - [[Apotatosaurus]]
 - [[Bananasaurus Rex]]
+- [[Three-Headed Chomper]]
 - [[Savage Spinach]]
 - [[Pecanolith]]
 - [[Enforce-mint]]

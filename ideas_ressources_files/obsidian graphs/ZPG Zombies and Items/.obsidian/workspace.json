@@ -202,7 +202,8 @@
               "title": "Zen Garden"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "f22b0a8f55dd8c7e",
@@ -428,8 +429,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0b46326dc340cec6",
+  "active": "941ef06550d48e3c",
   "lastOpenFiles": [
+    "Dungeon Crawling/Areas/Lost City.md",
+    "Plants/Boss/Bananasaurus Rex.md",
+    "Plants/Boss/Three-Headed Chomper.md",
+    "Dungeon Crawling/Areas/Jurassic Marsh.md",
     "Dungeon Crawling/Gardens/Holly Gambit.md",
     "Dungeon Crawling/Areas/Dark Ages.md",
     "Dungeon Crawling/Areas/Zen Garden.md",
@@ -452,10 +457,6 @@
     "Dungeon Crawling/Areas/The Zombosseum.md",
     "Dungeon Crawling/Areas/Steam City.md",
     "Dungeon Crawling/Areas/Pirate's Beach.md",
-    "Dungeon Crawling/Areas/Neighbour's House.md",
-    "Plants/Regular/Fume-shroom.md",
-    "Plants/Regular/Icy Fume-shroom.md",
-    "Dungeon Crawling/Areas/Lost City.md",
     "Dungeon Crawling/Areas",
     "Dungeon Crawling/Garden Gimmicks",
     "Garden",
