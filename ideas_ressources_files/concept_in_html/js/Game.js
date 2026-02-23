@@ -1,4 +1,5 @@
 import Renderer from "./Renderer.js";
+import AvatarSelectState from "./states/AvatarSelectState.js";
 
 export default class Game {
     constructor() {
@@ -6,13 +7,19 @@ export default class Game {
 
         this.lastTime = 0;
         this.deltaTime = 0;
-
         this.running = false;
+
+        this.currentState = null;
     }
 
     start() {
+        this.changeState(new AvatarSelectState(this));
         this.running = true;
         requestAnimationFrame((t) => this.loop(t));
+    }
+
+    changeState(newState) {
+        this.currentState = newState;
     }
 
     loop(timestamp) {
@@ -21,21 +28,11 @@ export default class Game {
         this.deltaTime = (timestamp - this.lastTime) / 1000;
         this.lastTime = timestamp;
 
-        this.update(this.deltaTime);
-        this.render();
+        if (this.currentState) {
+            this.currentState.update(this.deltaTime);
+            this.currentState.render(this.renderer);
+        }
 
         requestAnimationFrame((t) => this.loop(t));
-    }
-
-    update(dt) {
-        // Game logic will live here
-    }
-
-    render() {
-        this.renderer.clear();
-
-        // Temporary visual test
-        this.renderer.fillRect(0, 0, this.renderer.width, this.renderer.height, "#222");
-        this.renderer.fillRect(200, 200, 150, 150, "red");
     }
 }
