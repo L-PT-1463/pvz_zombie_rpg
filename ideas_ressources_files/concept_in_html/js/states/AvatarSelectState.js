@@ -1,5 +1,7 @@
 import SaveManager from "../storage/SaveManager.js";
 import { MODELS } from "../data/models.js";
+import AssetLoader from "../../assets/AssetLoader.js";
+import { tintWhiteSprite } from "../rendering/tint.js";
 
 export default class AvatarSelectState {
   constructor(game) {
@@ -11,18 +13,19 @@ export default class AvatarSelectState {
     // Model registry
     this.models = MODELS;
 
-    // Resolve saved model index
-    this.selectedModelIndex = Math.max(
-      0,
-      this.models.findIndex(m => m.id === this.save.avatar.modelId)
-    );
+    // Assets
+    this.assets = new AssetLoader();
 
-    // Fallback if save refers to unknown model
-    if (this.selectedModelIndex === -1) this.selectedModelIndex = 0;
+    // Resolve saved model index
+    const savedIndex = this.models.findIndex((m) => m.id === this.save.avatar.modelId);
+    this.selectedModelIndex = savedIndex >= 0 ? savedIndex : 0;
 
     // Color (saved), fallback to model default
     const currentModel = this.getCurrentModel();
     this.color = this.save.avatar.color || currentModel.defaultColor;
+
+    // Queue sprites for initial model
+    this.queueModelSprites(currentModel);
 
     this.setupUI();
     this.refreshUIFromState();
@@ -46,6 +49,14 @@ export default class AvatarSelectState {
     SaveManager.save(this.save);
   }
 
+  queueModelSprites(model) {
+    if (!model?.sprites) return;
+
+    // Keys are stable and unique per model
+    this.assets.loadImage(`${model.id}_base`, model.sprites.base);
+    this.assets.loadImage(`${model.id}_color`, model.sprites.color);
+  }
+
   // ---------- UI ----------
   setupUI() {
     this.leftArrow = document.getElementById("leftArrow");
@@ -61,34 +72,34 @@ export default class AvatarSelectState {
 
     this.colorPicker.oninput = (e) => {
       this.color = e.target.value;
-      this.persistAvatar();
+
+      // Persist only if current model is unlocked
+      if (this.isModelUnlocked(this.getCurrentModel())) {
+        this.persistAvatar();
+      }
+
       this.refreshUIFromState();
     };
   }
 
   cycleModel(dir) {
     const max = this.models.length;
-    let nextIndex = this.selectedModelIndex;
 
-    // Cycle until we find something (we allow previewing locked,
-    // but we won’t write locked into the save)
-    nextIndex = (nextIndex + dir + max) % max;
-    this.selectedModelIndex = nextIndex;
+    // Move index
+    this.selectedModelIndex = (this.selectedModelIndex + dir + max) % max;
 
     const model = this.getCurrentModel();
+    this.queueModelSprites(model);
 
-    // If model is unlocked, adopt its default color if current color is empty
-    // (we keep chosen color otherwise)
+    // If switching and color is empty, use model default
     if (!this.color) this.color = model.defaultColor;
 
     // Only persist if unlocked
     if (this.isModelUnlocked(model)) {
-      // If switching to an unlocked model, keep current color but clamp to a default if missing
       if (!this.color) this.color = model.defaultColor;
       this.persistAvatar();
     }
 
-    // Also update color picker to match current color
     this.refreshUIFromState();
   }
 
@@ -124,15 +135,54 @@ export default class AvatarSelectState {
     renderer.clear();
     renderer.fillRect(0, 0, renderer.width, renderer.height, "#1a1a1a");
 
-    // Preview area (still approximate)
-    const previewX = renderer.width * 0.23;
-    const previewY = renderer.height * 0.5;
-
-    // Body placeholder changes slightly if locked (just to show feedback)
     const model = this.getCurrentModel();
     const unlocked = this.isModelUnlocked(model);
 
-    renderer.fillRect(previewX - 100, previewY - 150, 200, 300, unlocked ? "#444" : "#2b2b2b");
-    renderer.fillRect(previewX - 20, previewY - 50, 40, 100, unlocked ? this.color : "#666");
+    // Approx preview position (matches your left-side layout)
+    const centerX = renderer.width * 0.23;
+    const centerY = renderer.height * 0.5;
+
+    const baseKey = `${model.id}_base`;
+    const colorKey = `${model.id}_color`;
+
+    const baseImg = this.assets.getImage(baseKey);
+    const colorImg = this.assets.getImage(colorKey);
+
+    // If base sprite not ready, show loading placeholder
+    if (!baseImg || !baseImg.complete || baseImg.naturalWidth === 0) {
+      renderer.fillRect(centerX - 130, centerY - 180, 260, 360, "#333");
+      renderer.fillRect(centerX - 90, centerY + 140, 180, 18, "#555");
+      return;
+    }
+
+    // Fit sprite into a target preview height
+    const spriteW = baseImg.width;
+    const spriteH = baseImg.height;
+
+    const targetH = 360; // matches #previewFrame height
+    const scale = targetH / spriteH;
+
+    const drawW = spriteW * scale;
+    const drawH = spriteH * scale;
+
+    const drawX = centerX - drawW / 2;
+    const drawY = centerY - drawH / 2;
+
+    // Draw base
+    renderer.drawImage(baseImg, drawX, drawY, drawW, drawH);
+
+    // Draw tinted overlay (only if unlocked and overlay loaded)
+    if (unlocked && colorImg && colorImg.complete && colorImg.naturalWidth !== 0) {
+      const tintedOverlay = tintWhiteSprite(colorImg, this.color);
+      renderer.drawImage(tintedOverlay, drawX, drawY, drawW, drawH);
+    }
+
+    // If locked, dim preview a bit
+    if (!unlocked) {
+      renderer.ctx.save();
+      renderer.ctx.globalAlpha = 0.35;
+      renderer.fillRect(drawX, drawY, drawW, drawH, "#000");
+      renderer.ctx.restore();
+    }
   }
 }

@@ -31,4 +31,13 @@ export default class Renderer {
         this.ctx.fillStyle = color;
         this.ctx.fillRect(x, y, w, h);
     }
+
+    drawImage(img, x, y, w, h) {
+        if (!img) return;
+        if (typeof w === "number" && typeof h === "number") {
+            this.ctx.drawImage(img, x, y, w, h);
+        } else {
+            this.ctx.drawImage(img, x, y);
+        }
+    }
 }
