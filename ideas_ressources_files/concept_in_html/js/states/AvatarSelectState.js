@@ -80,6 +80,68 @@ export default class AvatarSelectState {
 
       this.refreshUIFromState();
     };
+
+    this.confirmButton = document.getElementById("confirmAvatar");
+
+    this.confirmButton.onclick = () => {
+      const model = this.getCurrentModel();
+      const unlocked = this.isModelUnlocked(model);
+
+      if (!unlocked) return; // should already be disabled, but safety
+
+      // Save already happens on changes, but make sure it's consistent
+      this.persistAvatar();
+
+      // NEXT: later we will change state to the actual game
+      // For now, just a placeholder action:
+      console.log("Confirmed avatar:", this.save.avatar);
+
+      // Example later:
+      // this.game.changeState(new PlayingState(this.game));
+    };
+
+    this.onKeyDown = (e) => {
+      if (e.repeat) return;
+
+      const key = e.key.toLowerCase();
+
+      if (key === "u") {
+        // unlock all
+        for (const m of this.models) {
+          this.save.unlocks[m.id] = true;
+        }
+        SaveManager.save(this.save);
+        this.refreshUIFromState();
+        console.log("DEBUG: unlocked all models");
+      }
+
+      if (key === "l") {
+        // lock all except browncoat
+        this.save.unlocks = { browncoat: true };
+        SaveManager.save(this.save);
+        this.refreshUIFromState();
+        console.log("DEBUG: locked all models (except browncoat)");
+      }
+
+      if (key === "r") {
+        // reset save
+        SaveManager.reset();
+        this.save = SaveManager.load();
+
+        // re-sync state from save
+        this.selectedModelIndex = Math.max(
+          0,
+          this.models.findIndex(m => m.id === this.save.avatar.modelId)
+        );
+        this.color = this.save.avatar.color || this.getCurrentModel().defaultColor;
+
+        this.refreshUIFromState();
+        console.log("DEBUG: save reset");
+      }
+    };
+
+    window.addEventListener("keydown", this.onKeyDown);
+
   }
 
   cycleModel(dir) {
@@ -107,20 +169,26 @@ export default class AvatarSelectState {
     const model = this.getCurrentModel();
     const unlocked = this.isModelUnlocked(model);
 
-    // Name
+    // Name text
     this.modelName.textContent = unlocked ? model.displayName : `${model.displayName} (locked)`;
 
     // Label changes depending on model
     const partName = model.recolorPartName || "Color";
     if (this.colorLabel) this.colorLabel.textContent = `${partName} Color`;
 
-    // Color picker value
+    // Color picker always shows current chosen color (even if locked)
     this.colorPicker.value = this.color;
 
-    // Disable picker if locked (since you can't commit to that model yet)
+    // Locked model: you can preview with current color, but cannot change it
     this.colorPicker.disabled = !unlocked;
 
-    // Optional: add tooltip/hint for locked models
+    // Confirm button disabled when locked
+    if (this.confirmButton) {
+      this.confirmButton.disabled = !unlocked;
+      this.confirmButton.textContent = unlocked ? "Confirm" : "Locked Avatar";
+    }
+
+    // Tooltip hint for locked models
     if (!unlocked) {
       this.modelName.title = model.unlockHint || "Locked";
     } else {
@@ -172,9 +240,9 @@ export default class AvatarSelectState {
     renderer.drawImage(baseImg, drawX, drawY, drawW, drawH);
 
     // Draw tinted overlay (only if unlocked and overlay loaded)
-    if (unlocked && colorImg && colorImg.complete && colorImg.naturalWidth !== 0) {
-      const tintedOverlay = tintWhiteSprite(colorImg, this.color);
-      renderer.drawImage(tintedOverlay, drawX, drawY, drawW, drawH);
+    if (colorImg && colorImg.complete && colorImg.naturalWidth !== 0) {
+      const tinted = tintWhiteSprite(colorImg, this.color);
+      renderer.drawImage(tinted, drawX, drawY, drawW, drawH);
     }
 
     // If locked, dim preview a bit
@@ -185,4 +253,8 @@ export default class AvatarSelectState {
       renderer.ctx.restore();
     }
   }
+
+  destroy() {
+    window.removeEventListener("keydown", this.onKeyDown);
+  };
 }

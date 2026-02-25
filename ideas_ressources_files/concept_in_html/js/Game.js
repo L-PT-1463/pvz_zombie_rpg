@@ -19,6 +19,9 @@ export default class Game {
     }
 
     changeState(newState) {
+        if (this.currentState && typeof this.currentState.destroy === "function") {
+            this.currentState.destroy();
+        }
         this.currentState = newState;
     }
 

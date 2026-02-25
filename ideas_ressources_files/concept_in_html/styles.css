@@ -87,3 +87,33 @@ canvas {
 
     pointer-events: auto;
 }
+
+#confirmAvatar {
+  position: absolute;
+  left: 50%;
+  bottom: 8%;
+  transform: translateX(-50%);
+
+  pointer-events: auto;
+  cursor: pointer;
+
+  font-size: 18px;
+  padding: 14px 22px;
+
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.10);
+  color: white;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+#confirmAvatar:hover {
+  background: rgba(255,255,255,0.16);
+}
+
+#confirmAvatar:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  background: rgba(255,255,255,0.06);
+}
