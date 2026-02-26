@@ -32,6 +32,29 @@ export default class AvatarSelectState {
   }
 
   // ---------- helpers ----------
+    getPreviewRectInCanvasSpace(renderer) {
+    // Fallback if frame is missing
+    if (!this.previewFrame) {
+      return {
+        x: renderer.width * 0.23 - 130,
+        y: renderer.height * 0.5 - 180,
+        w: 260,
+        h: 360
+      };
+    }
+
+    const rect = this.previewFrame.getBoundingClientRect();
+
+    // Canvas uses logical pixels because renderer scales for DPR internally
+    // So we can use rect values directly.
+    return {
+      x: rect.left,
+      y: rect.top,
+      w: rect.width,
+      h: rect.height
+    };
+  }
+
   getCurrentModel() {
     return this.models[this.selectedModelIndex];
   }
@@ -59,15 +82,16 @@ export default class AvatarSelectState {
 
   // ---------- UI ----------
   setupUI() {
-    this.leftArrow = document.getElementById("leftArrow");
-    this.rightArrow = document.getElementById("rightArrow");
-    this.modelName = document.getElementById("modelName");
-    this.colorPicker = document.getElementById("tieColorPicker");
+    this.leftArrow    = document.getElementById("leftArrow");
+    this.rightArrow   = document.getElementById("rightArrow");
+    this.previewFrame = document.getElementById("previewFrame");
+    this.modelName    = document.getElementById("modelName");
+    this.colorPicker  = document.getElementById("tieColorPicker");
 
     // We'll also repurpose the label text to match model part name
     this.colorLabel = document.querySelector(`#colorSelector label[for="tieColorPicker"]`);
 
-    this.leftArrow.onclick = () => this.cycleModel(-1);
+    this.leftArrow.onclick  = () => this.cycleModel(-1);
     this.rightArrow.onclick = () => this.cycleModel(1);
 
     this.colorPicker.oninput = (e) => {
@@ -105,6 +129,29 @@ export default class AvatarSelectState {
 
       const key = e.key.toLowerCase();
 
+      // Navigation
+      if (key === "arrowleft" || key === "a") {
+        e.preventDefault();
+        this.cycleModel(-1);
+        return;
+      }
+
+      if (key === "arrowright" || key === "d") {
+        e.preventDefault();
+        this.cycleModel(1);
+        return;
+      }
+
+      // Confirm
+      if (key === "enter") {
+        e.preventDefault();
+        const model = this.getCurrentModel();
+        if (!this.isModelUnlocked(model)) return;
+        if (this.confirmButton && !this.confirmButton.disabled) this.confirmButton.click();
+        return;
+      }
+
+      // Debug keys
       if (key === "u") {
         // unlock all
         for (const m of this.models) {
@@ -113,6 +160,7 @@ export default class AvatarSelectState {
         SaveManager.save(this.save);
         this.refreshUIFromState();
         console.log("DEBUG: unlocked all models");
+        return;
       }
 
       if (key === "l") {
@@ -121,6 +169,7 @@ export default class AvatarSelectState {
         SaveManager.save(this.save);
         this.refreshUIFromState();
         console.log("DEBUG: locked all models (except browncoat)");
+        return;
       }
 
       if (key === "r") {
@@ -133,10 +182,13 @@ export default class AvatarSelectState {
           0,
           this.models.findIndex(m => m.id === this.save.avatar.modelId)
         );
+        if (this.selectedModelIndex === -1) this.selectedModelIndex = 0;
+
         this.color = this.save.avatar.color || this.getCurrentModel().defaultColor;
 
         this.refreshUIFromState();
         console.log("DEBUG: save reset");
+        return;
       }
     };
 
@@ -205,6 +257,8 @@ export default class AvatarSelectState {
 
     const model = this.getCurrentModel();
     const unlocked = this.isModelUnlocked(model);
+    const box = this.getPreviewRectInCanvasSpace(renderer);
+
 
     // Approx preview position (matches your left-side layout)
     const centerX = renderer.width * 0.23;
@@ -216,40 +270,37 @@ export default class AvatarSelectState {
     const baseImg = this.assets.getImage(baseKey);
     const colorImg = this.assets.getImage(colorKey);
 
-    // If base sprite not ready, show loading placeholder
     if (!baseImg || !baseImg.complete || baseImg.naturalWidth === 0) {
-      renderer.fillRect(centerX - 130, centerY - 180, 260, 360, "#333");
-      renderer.fillRect(centerX - 90, centerY + 140, 180, 18, "#555");
+      renderer.fillRect(box.x, box.y, box.w, box.h, "#333");
+      renderer.fillRect(box.x + box.w * 0.15, box.y + box.h * 0.48, box.w * 0.7, 20, "#555");
       return;
     }
 
-    // Fit sprite into a target preview height
+    // Fit sprite into box
     const spriteW = baseImg.width;
     const spriteH = baseImg.height;
 
-    const targetH = 360; // matches #previewFrame height
-    const scale = targetH / spriteH;
-
+    const scale = Math.min(box.w / spriteW, box.h / spriteH);
     const drawW = spriteW * scale;
     const drawH = spriteH * scale;
 
-    const drawX = centerX - drawW / 2;
-    const drawY = centerY - drawH / 2;
+    const drawX = box.x + (box.w - drawW) / 2;
+    const drawY = box.y + (box.h - drawH) / 2;
 
     // Draw base
     renderer.drawImage(baseImg, drawX, drawY, drawW, drawH);
 
-    // Draw tinted overlay (only if unlocked and overlay loaded)
+    // Draw tinted overlay ALWAYS (locked or not), using current color
     if (colorImg && colorImg.complete && colorImg.naturalWidth !== 0) {
       const tinted = tintWhiteSprite(colorImg, this.color);
       renderer.drawImage(tinted, drawX, drawY, drawW, drawH);
     }
 
-    // If locked, dim preview a bit
+    // If locked, add subtle dim over the preview box
     if (!unlocked) {
       renderer.ctx.save();
-      renderer.ctx.globalAlpha = 0.35;
-      renderer.fillRect(drawX, drawY, drawW, drawH, "#000");
+      renderer.ctx.globalAlpha = 0.25;
+      renderer.fillRect(box.x, box.y, box.w, box.h, "#000");
       renderer.ctx.restore();
     }
   }
