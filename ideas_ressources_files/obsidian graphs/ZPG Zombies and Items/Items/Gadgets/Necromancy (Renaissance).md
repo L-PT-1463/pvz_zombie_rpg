@@ -1,7 +1,7 @@
 #TheZombosseum  #Item #Gadget
 
 Type: #Passive
-Area: [[Neighbour's House]]
+Area: [[The Zombosseum]]
 *Slot n/a*
 
 Speciality: Spawns [[Aristocrat Zombie]].

@@ -7,6 +7,6 @@ Plant pool:
 - Line of [[Wall-nut]]s on front-most plant column
 - [[Holly Knight]]
 - [[Holly Rook]]
-- [[Holly Bishop]]
-- [[Holly Queen]]
+- [[Jolly Bishop]]
+- [[Missile Queen]]
 - [[Holly King]]

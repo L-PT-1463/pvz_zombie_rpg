@@ -1,7 +1,7 @@
-#ZCorpIntraSpaceTime #Plant 
+#NeighboursHouse  #Plant 
 
 Type: #Regular 
-Area: [[ZCorp Intra-Space-Time]]
+Area: [[Neighbour's House]] ([[Winter]])
 Attack: #Lobbed
 Traits:
 - #Chill

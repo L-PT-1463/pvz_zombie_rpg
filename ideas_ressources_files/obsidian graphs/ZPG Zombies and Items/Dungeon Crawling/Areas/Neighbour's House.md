@@ -12,6 +12,7 @@ Unique costumes:
 
 Unique gardens:
 - [[Day]]
+- [[Night]]
 - [[Winter]]
 - [[Fall]]
 
