@@ -20,6 +20,10 @@ canvas {
     color: white;
 }
 
+#avatarUI.hidden {
+  display: none;
+}
+
 #modelSelector {
   position: absolute;
   left: 8%;

@@ -9,25 +9,25 @@
     <canvas id="gameCanvas"></canvas>
 
     <div id="ui">
-        <div id="modelSelector">
+        <div id="avatarUI">
+            <div id="modelSelector">
             <button id="leftArrow" class="arrow">◀</button>
 
             <div id="modelPreviewBlock">
-                <!-- this is just a "frame" over the canvas preview area -->
                 <div id="previewFrame"></div>
-                <div id="modelName">browncoat</div>
+                <div id="modelName">Browncoat</div>
             </div>
 
             <button id="rightArrow" class="arrow">▶</button>
-        </div>
+            </div>
 
-        <div id="colorSelector">
+            <div id="colorSelector">
             <label for="tieColorPicker">Tie Color</label>
             <input type="color" id="tieColorPicker" value="#ff0000">
+            </div>
+
+            <button id="confirmAvatar">Continue</button>
         </div>
-
-        <button id="confirmAvatar">Confirm</button>
-
     </div>
 
     <script type="module" src="js/main.js"></script>

@@ -2,6 +2,7 @@ import SaveManager from "../storage/SaveManager.js";
 import { MODELS } from "../data/models.js";
 import AssetLoader from "../../assets/AssetLoader.js";
 import { tintWhiteSprite } from "../rendering/tint.js";
+import FightingGardenState from "./FightingGardenState.js";
 
 export default class AvatarSelectState {
   constructor(game) {
@@ -82,6 +83,9 @@ export default class AvatarSelectState {
 
   // ---------- UI ----------
   setupUI() {
+    this.avatarUIRoot = document.getElementById("avatarUI");
+    if (this.avatarUIRoot) this.avatarUIRoot.classList.remove("hidden");
+
     this.leftArrow    = document.getElementById("leftArrow");
     this.rightArrow   = document.getElementById("rightArrow");
     this.previewFrame = document.getElementById("previewFrame");
@@ -114,14 +118,14 @@ export default class AvatarSelectState {
       if (!unlocked) return; // should already be disabled, but safety
 
       // Save already happens on changes, but make sure it's consistent
-      this.persistAvatar();
+      this.persistAvatar();      
 
-      // NEXT: later we will change state to the actual game
-      // For now, just a placeholder action:
-      console.log("Confirmed avatar:", this.save.avatar);
-
-      // Example later:
-      // this.game.changeState(new PlayingState(this.game));
+      this.game.changeState(
+        new FightingGardenState(this.game, {
+          modelId: this.save.avatar.modelId,
+          color: this.save.avatar.color
+        })
+      );
     };
 
     this.onKeyDown = (e) => {
@@ -307,5 +311,9 @@ export default class AvatarSelectState {
 
   destroy() {
     window.removeEventListener("keydown", this.onKeyDown);
-  };
+
+    if (this.avatarUIRoot) {
+      this.avatarUIRoot.classList.add("hidden");
+    }
+  }
 }
