@@ -1,9 +1,12 @@
 import Renderer from "./Renderer.js";
 import AvatarSelectState from "./states/AvatarSelectState.js";
+import FightingGardenState from "./states/FightingGardenState.js";
+import UIController from "./ui/UIController.js";
 
 export default class Game {
     constructor() {
-        this.renderer = new Renderer();
+        this.renderer   = new Renderer();
+        this.ui         = new UIController();
 
         this.lastTime = 0;
         this.deltaTime = 0;
@@ -13,7 +16,8 @@ export default class Game {
     }
 
     start() {
-        this.changeState(new AvatarSelectState(this));
+        //this.changeState(new AvatarSelectState(this));
+        this.changeState(new FightingGardenState(this));
         this.running = true;
         requestAnimationFrame((t) => this.loop(t));
     }

@@ -1,3 +1,5 @@
+import AvatarSelectState from "./AvatarSelectState.js";
+
 export default class FightingGardenState {
   constructor(game, playerProfile) {
     this.game = game;
@@ -13,6 +15,18 @@ export default class FightingGardenState {
     this.cellSize       = 90;
     this.cellGap        = 6;
     this.borderRadius   = 10;
+
+    this.setupUI();
+  }
+
+  setupUI() {
+    // Put UI in the correct mode for this state
+    this.game.ui.showGardenUI();
+
+    // Back button handler owned by UIController
+    this.game.ui.setBackHandler(() => {
+      this.game.changeState(new AvatarSelectState(this.game));
+    });
   }
 
   update(dt) {
@@ -71,5 +85,10 @@ export default class FightingGardenState {
       30
     );
     renderer.ctx.restore();
+  }
+
+  destroy() {
+    // Prevent handler stacking
+    this.game.ui.setBackHandler(null);
   }
 }

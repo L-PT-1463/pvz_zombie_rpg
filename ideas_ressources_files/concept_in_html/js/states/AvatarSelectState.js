@@ -83,8 +83,8 @@ export default class AvatarSelectState {
 
   // ---------- UI ----------
   setupUI() {
-    this.avatarUIRoot = document.getElementById("avatarUI");
-    if (this.avatarUIRoot) this.avatarUIRoot.classList.remove("hidden");
+    // Put UI in the correct mode for this state
+    this.game.ui.showAvatarSelectUI();
 
     this.leftArrow    = document.getElementById("leftArrow");
     this.rightArrow   = document.getElementById("rightArrow");
@@ -92,33 +92,32 @@ export default class AvatarSelectState {
     this.modelName    = document.getElementById("modelName");
     this.colorPicker  = document.getElementById("tieColorPicker");
 
-    // We'll also repurpose the label text to match model part name
     this.colorLabel = document.querySelector(`#colorSelector label[for="tieColorPicker"]`);
 
-    this.leftArrow.onclick  = () => this.cycleModel(-1);
-    this.rightArrow.onclick = () => this.cycleModel(1);
+    // Arrow clicks
+    if (this.leftArrow)  this.leftArrow.onclick  = () => this.cycleModel(-1);
+    if (this.rightArrow) this.rightArrow.onclick = () => this.cycleModel(1);
 
-    this.colorPicker.oninput = (e) => {
-      this.color = e.target.value;
+    // Color change
+    if (this.colorPicker) {
+      this.colorPicker.oninput = (e) => {
+        this.color = e.target.value;
 
-      // Persist only if current model is unlocked
-      if (this.isModelUnlocked(this.getCurrentModel())) {
-        this.persistAvatar();
-      }
+        // Persist only if current model is unlocked
+        if (this.isModelUnlocked(this.getCurrentModel())) {
+          this.persistAvatar();
+        }
 
-      this.refreshUIFromState();
-    };
+        this.refreshUIFromState();
+      };
+    }
 
-    this.confirmButton = document.getElementById("confirmAvatar");
-
-    this.confirmButton.onclick = () => {
+    // Confirm button is owned by UIController (prevents stacked listeners)
+    this.game.ui.setConfirmHandler(() => {
       const model = this.getCurrentModel();
-      const unlocked = this.isModelUnlocked(model);
+      if (!this.isModelUnlocked(model)) return;
 
-      if (!unlocked) return; // should already be disabled, but safety
-
-      // Save already happens on changes, but make sure it's consistent
-      this.persistAvatar();      
+      this.persistAvatar();
 
       this.game.changeState(
         new FightingGardenState(this.game, {
@@ -126,11 +125,11 @@ export default class AvatarSelectState {
           color: this.save.avatar.color
         })
       );
-    };
+    });
 
+    // Keyboard controls (your existing logic, unchanged in behavior)
     this.onKeyDown = (e) => {
       if (e.repeat) return;
-
       const key = e.key.toLowerCase();
 
       // Navigation
@@ -139,7 +138,6 @@ export default class AvatarSelectState {
         this.cycleModel(-1);
         return;
       }
-
       if (key === "arrowright" || key === "d") {
         e.preventDefault();
         this.cycleModel(1);
@@ -151,16 +149,16 @@ export default class AvatarSelectState {
         e.preventDefault();
         const model = this.getCurrentModel();
         if (!this.isModelUnlocked(model)) return;
-        if (this.confirmButton && !this.confirmButton.disabled) this.confirmButton.click();
+        // Trigger controller-owned confirm handler
+        this.game.ui.setConfirmEnabled(true); // no-op safety
+        document.getElementById("confirmAvatar")?.click();
         return;
       }
 
       // Debug keys
       if (key === "u") {
         // unlock all
-        for (const m of this.models) {
-          this.save.unlocks[m.id] = true;
-        }
+        for (const m of this.models) this.save.unlocks[m.id] = true;
         SaveManager.save(this.save);
         this.refreshUIFromState();
         console.log("DEBUG: unlocked all models");
@@ -181,12 +179,8 @@ export default class AvatarSelectState {
         SaveManager.reset();
         this.save = SaveManager.load();
 
-        // re-sync state from save
-        this.selectedModelIndex = Math.max(
-          0,
-          this.models.findIndex(m => m.id === this.save.avatar.modelId)
-        );
-        if (this.selectedModelIndex === -1) this.selectedModelIndex = 0;
+        const savedIndex = this.models.findIndex((m) => m.id === this.save.avatar.modelId);
+        this.selectedModelIndex = savedIndex >= 0 ? savedIndex : 0;
 
         this.color = this.save.avatar.color || this.getCurrentModel().defaultColor;
 
@@ -197,7 +191,6 @@ export default class AvatarSelectState {
     };
 
     window.addEventListener("keydown", this.onKeyDown);
-
   }
 
   cycleModel(dir) {
@@ -226,30 +219,23 @@ export default class AvatarSelectState {
     const unlocked = this.isModelUnlocked(model);
 
     // Name text
-    this.modelName.textContent = unlocked ? model.displayName : `${model.displayName} (locked)`;
+    if (this.modelName) {
+      this.modelName.textContent = unlocked ? model.displayName : `${model.displayName} (locked)`;
+      this.modelName.title = unlocked ? "" : (model.unlockHint || "Locked");
+    }
 
     // Label changes depending on model
     const partName = model.recolorPartName || "Color";
     if (this.colorLabel) this.colorLabel.textContent = `${partName} Color`;
 
     // Color picker always shows current chosen color (even if locked)
-    this.colorPicker.value = this.color;
-
-    // Locked model: you can preview with current color, but cannot change it
-    this.colorPicker.disabled = !unlocked;
-
-    // Confirm button disabled when locked
-    if (this.confirmButton) {
-      this.confirmButton.disabled = !unlocked;
-      this.confirmButton.textContent = unlocked ? "Confirm" : "Locked Avatar";
+    if (this.colorPicker) {
+      this.colorPicker.value = this.color;
+      this.colorPicker.disabled = !unlocked; // locked = preview only
     }
 
-    // Tooltip hint for locked models
-    if (!unlocked) {
-      this.modelName.title = model.unlockHint || "Locked";
-    } else {
-      this.modelName.title = "";
-    }
+    // Confirm handled by UIController
+    this.game.ui.setConfirmEnabled(unlocked, "Confirm", "Locked Avatar");
   }
 
   // ---------- game loop ----------
@@ -312,8 +298,12 @@ export default class AvatarSelectState {
   destroy() {
     window.removeEventListener("keydown", this.onKeyDown);
 
-    if (this.avatarUIRoot) {
-      this.avatarUIRoot.classList.add("hidden");
-    }
+    // Prevent handler stacking
+    this.game.ui.setConfirmHandler(null);
+
+    // Clear direct element handlers to avoid weirdness if DOM persists
+    if (this.leftArrow)  this.leftArrow.onclick = null;
+    if (this.rightArrow) this.rightArrow.onclick = null;
+    if (this.colorPicker) this.colorPicker.oninput = null;
   }
 }

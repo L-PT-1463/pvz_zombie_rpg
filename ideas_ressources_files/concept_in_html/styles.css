@@ -8,6 +8,8 @@ canvas {
     display: block;
 }
 
+.hidden { display: none !important; }
+
 #ui {
     position: absolute;
     top: 0;
@@ -18,6 +20,27 @@ canvas {
     pointer-events: none; /* canvas still receives events unless overridden */
     font-family: sans-serif;
     color: white;
+}
+
+#backToAvatar {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+
+  pointer-events: auto;
+  cursor: pointer;
+
+  font-size: 14px;
+  padding: 10px 14px;
+
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.08);
+  color: white;
+}
+
+#backToAvatar:hover {
+  background: rgba(255,255,255,0.14);
 }
 
 #avatarUI.hidden {
