@@ -1,7 +1,11 @@
-import { UI_IDS } from "./UI_IDS.js";
+import { UI_MODES } from "./UI_MODES.js";
+import { UI_EVENTS } from "./UI_EVENTS.js";
+import { UI_IDS } from "./UI_IDS.js"; // if you already added it
 
 export default class UIController {
-  constructor() {
+  constructor(bus) {
+    this.bus = bus;
+
     this.el = {
       uiRoot: this.#mustGet(UI_IDS.ROOT),
       avatarUI: this.#mustGet(UI_IDS.AVATAR_UI),
@@ -15,20 +19,9 @@ export default class UIController {
       confirmBtn: this.#mustGet(UI_IDS.CONFIRM_BTN),
     };
 
-    // Handlers (we store them so we can always remove cleanly)
-    this.handlers = {
-      save: null,
-      export: null,
-      back: null,
-      confirm: null,
-      importPayload: null, // (payload) => void
-    };
+    this.#wireEvents();
 
-    // Bindings we control internally
-    this.#wireInternalImportFlow();
-
-    // Start from known state
-    this.setMode("none");
+    this.setMode(UI_MODES.NONE);
     this.setConfirmEnabled(false);
   }
 
@@ -43,7 +36,7 @@ export default class UIController {
    * - "none": everything hidden (safe reset).
    */
   setMode(mode) {
-    const m = String(mode || "none").toLowerCase();
+    const m = mode ?? UI_MODES.NONE;
 
     // Always start by hiding everything we control
     this.#hide(this.el.avatarUI);
@@ -53,9 +46,6 @@ export default class UIController {
     this.#hide(this.el.importBtn);
     this.#hide(this.el.backBtn);
     this.#hide(this.el.confirmBtn);
-
-    // Also clear handlers by default (prevents “old state” actions firing)
-    this.clearHandlers();
 
     if (m === "avatar") {
       this.#show(this.el.avatarUI);
@@ -75,41 +65,6 @@ export default class UIController {
     // "none" => keep all hidden
   }
 
-  // ---- Click handlers (no stacking) ----
-
-  setSaveHandler(fn) {
-    this.#setClickHandler("save", this.el.saveBtn, fn);
-  }
-
-  setExportHandler(fn) {
-    this.#setClickHandler("export", this.el.exportBtn, fn);
-  }
-
-  setBackHandler(fn) {
-    this.#setClickHandler("back", this.el.backBtn, fn);
-  }
-
-  setConfirmHandler(fn) {
-    this.#setClickHandler("confirm", this.el.confirmBtn, fn);
-  }
-
-  clearHandlers() {
-    this.setSaveHandler(null);
-    this.setExportHandler(null);
-    this.setBackHandler(null);
-    this.setConfirmHandler(null);
-    this.setImportPayloadHandler(null);
-  }
-
-  /**
-   * Called when user selects a JSON file via the Import button.
-   * UIController will read+JSON.parse the file, then call `fn(payload, file)`.
-   * If parsing fails, it will alert + console.error.
-   */
-  setImportPayloadHandler(fn) {
-    this.handlers.importPayload = typeof fn === "function" ? fn : null;
-  }
-
   setConfirmEnabled(
     enabled,
     textWhenEnabled = "Continue",
@@ -124,47 +79,37 @@ export default class UIController {
      Internal helpers
      ========================================================= */
 
-  #wireInternalImportFlow() {
-    // Import button ALWAYS just opens file picker.
-    // State only defines what to do with the parsed payload.
+  #wireEvents() {
+    // Simple button clicks
+    this.el.saveBtn.addEventListener("click", () => this.bus.emit(UI_EVENTS.SAVE));
+    this.el.exportBtn.addEventListener("click", () => this.bus.emit(UI_EVENTS.EXPORT));
+    this.el.backBtn.addEventListener("click", () => this.bus.emit(UI_EVENTS.BACK_TO_AVATAR));
+    this.el.confirmBtn.addEventListener("click", () => this.bus.emit(UI_EVENTS.CONFIRM_AVATAR));
+
+    // Import flow (UI owns file picker + parse)
     this.el.importBtn.addEventListener("click", () => {
-      // reset so selecting the same file twice triggers change
       this.el.importFile.value = "";
       this.el.importFile.click();
     });
 
-    // Parse file + forward payload to state handler
     this.el.importFile.addEventListener("change", async (e) => {
       const file = e.target.files?.[0];
       if (!file) return;
 
-      if (!this.handlers.importPayload) {
-        console.warn("Import selected, but no import handler is set.");
-        return;
-      }
-
       try {
         const text = await file.text();
         const payload = JSON.parse(text);
-        await this.handlers.importPayload(payload, file);
+        this.bus.emit(UI_EVENTS.IMPORT_PAYLOAD, { payload, file });
       } catch (err) {
         console.error(err);
         alert("Import failed: " + (err?.message || err));
       }
     });
-  }
 
-  #setClickHandler(key, element, fn) {
-    // Remove previous
-    if (this.handlers[key]) {
-      element.removeEventListener("click", this.handlers[key]);
-    }
-
-    this.handlers[key] = typeof fn === "function" ? fn : null;
-
-    if (this.handlers[key]) {
-      element.addEventListener("click", this.handlers[key]);
-    }
+    this.el.confirmBtn.addEventListener("click", () => {
+      if (this.el.confirmBtn.disabled) return;
+      this.bus.emit(UI_EVENTS.CONFIRM_AVATAR);
+    });
   }
 
   #show(node) {

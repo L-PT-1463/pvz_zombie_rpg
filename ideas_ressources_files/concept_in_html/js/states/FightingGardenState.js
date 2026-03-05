@@ -3,13 +3,18 @@ import AssetLoader from "../../assets/AssetLoader.js";
 import { MODELS } from "../data/models.js";
 import Player from "../entities/Player.js";
 import SaveSystem from "../storage/SaveSystem.js";
+import { UI_MODES } from "../ui/UI_MODES.js";
+import { UI_EVENTS } from "../ui/UI_EVENTS.js";
 
 export default class FightingGardenState {
   constructor(game, playerProfile) {
     this.game = game;
+    this.unsubs = [];
+
+    // --- UI mode ---
+    this.game.ui.setMode(UI_MODES.GARDEN);
 
     // --- Load profile (settings + avatar + unlocks) ---
-    // This replaces the old SaveManager for long-term structure.
     this.profile = SaveSystem.loadProfile();
 
     // Use provided profile (from AvatarSelect) OR fallback to saved profile avatar
@@ -29,7 +34,7 @@ export default class FightingGardenState {
       SaveSystem.saveRun(this.run);
     }
 
-    // Ensure run has avatar info (in case we entered garden via AvatarSelect)
+    // Ensure run has avatar info
     this.run.player.modelId = this.playerProfile.modelId;
     this.run.player.color = this.playerProfile.color;
 
@@ -39,7 +44,7 @@ export default class FightingGardenState {
     // Find model definition for the selected avatar
     this.modelDef = MODELS.find(m => m.id === this.playerProfile.modelId) || MODELS[0];
 
-    // Create player (defaults to lane 2 col 1 inside Player)
+    // Create player
     this.player = new Player(this.playerProfile, this.modelDef, this.assets);
 
     // Apply run -> player (run is the source of truth for live state)
@@ -57,21 +62,7 @@ export default class FightingGardenState {
     this.cellGap = 6;
     this.borderRadius = 10;
 
-    this.setupUI();
-  }
-
-  setupUI() {
-    this.game.ui.setMode("garden");
-
-    // Back handler
-    this.game.ui.setBackHandler(() => {
-      this.game.changeState(() => new AvatarSelectState(this.game));
-    });
-
-    // Manual save button
-    this.game.ui.setSaveHandler(() => this.saveNow("manual"));
-
-    // Autosave when tab is hidden / user leaves
+    // --- Autosave when tab is hidden / user leaves ---
     this.onVisibilityChange = () => {
       if (document.visibilityState === "hidden") {
         this.saveNow("visibilitychange");
@@ -79,32 +70,44 @@ export default class FightingGardenState {
     };
     document.addEventListener("visibilitychange", this.onVisibilityChange);
 
-    // Export
-    this.game.ui.setExportHandler(() => {
-      this.saveNow("pre-export");
+    // --- UI events via bus ---
+    this.unsubs.push(
+      this.game.uiBus.on(UI_EVENTS.BACK_TO_AVATAR, () => {
+        this.game.changeState(() => new AvatarSelectState(this.game));
+      })
+    );
 
-      const data = SaveSystem.exportAll();
-      const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+    this.unsubs.push(
+      this.game.uiBus.on(UI_EVENTS.SAVE, () => this.saveNow("manual"))
+    );
 
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
+    this.unsubs.push(
+      this.game.uiBus.on(UI_EVENTS.EXPORT, () => {
+        this.saveNow("pre-export");
 
-      const stamp = new Date().toISOString().replace(/[:.]/g, "-");
-      a.download = `fighting-gardens-save_${stamp}.json`;
+        const data = SaveSystem.exportAll();
+        const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
 
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
-      URL.revokeObjectURL(url);
-    });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
 
-    // Import (UIController handles file picking + parsing)
-    this.game.ui.setImportPayloadHandler((payload) => {
-      SaveSystem.importAll(payload);
-      location.reload(); // still simplest/safest for now
-    });
+        const stamp = new Date().toISOString().replace(/[:.]/g, "-");
+        a.download = `fighting-gardens-save_${stamp}.json`;
 
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(url);
+      })
+    );
+
+    this.unsubs.push(
+      this.game.uiBus.on(UI_EVENTS.IMPORT_PAYLOAD, ({ payload }) => {
+        SaveSystem.importAll(payload);
+        location.reload(); // still simplest/safest for now
+      })
+    );
   }
 
   update(dt) {
@@ -197,7 +200,9 @@ export default class FightingGardenState {
   }
 
   destroy() {
-    this.game.ui.clearHandlers();
+    // Unsubscribe bus listeners
+    for (const off of this.unsubs) off();
+    this.unsubs = [];
 
     document.removeEventListener("visibilitychange", this.onVisibilityChange);
 

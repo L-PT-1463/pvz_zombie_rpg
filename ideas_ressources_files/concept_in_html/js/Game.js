@@ -1,12 +1,15 @@
 import Renderer from "./Renderer.js";
 import AvatarSelectState from "./states/AvatarSelectState.js";
 import FightingGardenState from "./states/FightingGardenState.js";
+import UIBus from "./ui/UI_BUS.js";
 import UIController from "./ui/UIController.js";
 
 export default class Game {
     constructor() {
+        this.uiBus      = new UIBus();
+        this.ui         = new UIController(this.uiBus);
+
         this.renderer   = new Renderer();
-        this.ui         = new UIController();
 
         this.lastTime = 0;
         this.deltaTime = 0;

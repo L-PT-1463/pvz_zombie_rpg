@@ -3,12 +3,18 @@ import { MODELS } from "../data/models.js";
 import AssetLoader from "../../assets/AssetLoader.js";
 import { tintWhiteSprite } from "../rendering/tint.js";
 import FightingGardenState from "./FightingGardenState.js";
+import { UI_MODES } from "../ui/UI_MODES.js";
+import { UI_EVENTS } from "../ui/UI_EVENTS.js";
 
 export default class AvatarSelectState {
   constructor(game) {
     this.game = game;
+    this.unsubs = [];
 
-    // Load profile (settings + avatar + unlocks)
+    // --- UI mode ---
+    this.game.ui.setMode(UI_MODES.AVATAR);
+
+    // --- Load profile (settings + avatar + unlocks) ---
     this.profile = SaveSystem.loadProfile();
 
     // Model registry
@@ -28,7 +34,109 @@ export default class AvatarSelectState {
     // Queue sprites for initial model
     this.queueModelSprites(currentModel);
 
-    this.setupUI();
+    // --- Cache DOM refs ---
+    this.leftArrow    = document.getElementById("leftArrow");
+    this.rightArrow   = document.getElementById("rightArrow");
+    this.previewFrame = document.getElementById("previewFrame");
+    this.modelName    = document.getElementById("modelName");
+    this.colorPicker  = document.getElementById("tieColorPicker");
+    this.colorLabel   = document.querySelector(`#colorSelector label[for="tieColorPicker"]`);
+
+    // --- Local UI interactions (state-specific elements) ---
+    if (this.leftArrow)  this.leftArrow.onclick  = () => this.cycleModel(-1);
+    if (this.rightArrow) this.rightArrow.onclick = () => this.cycleModel(1);
+
+    if (this.colorPicker) {
+      this.colorPicker.oninput = (e) => {
+        this.color = e.target.value;
+
+        // Persist only if current model is unlocked
+        if (this.isModelUnlocked(this.getCurrentModel())) {
+          this.persistAvatar();
+        }
+
+        this.refreshUIFromState();
+      };
+    }
+
+    // --- Confirm (via UI Bus) ---
+    this.unsubs.push(
+      this.game.uiBus.on(UI_EVENTS.CONFIRM_AVATAR, () => {
+        const model = this.getCurrentModel();
+        if (!this.isModelUnlocked(model)) return;
+
+        this.persistAvatar();
+
+        this.game.changeState(() => new FightingGardenState(this.game, {
+          modelId: this.profile.avatar.modelId,
+          color: this.profile.avatar.color,
+        }));
+      })
+    );
+
+    // --- Keyboard controls (same behavior, but no button .click() hack) ---
+    this.onKeyDown = (e) => {
+      if (e.repeat) return;
+      const key = e.key.toLowerCase();
+
+      // Navigation
+      if (key === "arrowleft" || key === "a") {
+        e.preventDefault();
+        this.cycleModel(-1);
+        return;
+      }
+      if (key === "arrowright" || key === "d") {
+        e.preventDefault();
+        this.cycleModel(1);
+        return;
+      }
+
+      // Confirm
+      if (key === "enter") {
+        e.preventDefault();
+        const model = this.getCurrentModel();
+        if (!this.isModelUnlocked(model)) return;
+
+        // Just emit the same logical confirm action
+        this.game.uiBus.emit(UI_EVENTS.CONFIRM_AVATAR);
+        return;
+      }
+
+      // Debug keys (unchanged)
+      if (key === "u") {
+        for (const m of this.models) this.profile.unlocks[m.id] = true;
+        SaveSystem.saveProfile(this.profile);
+        this.refreshUIFromState();
+        console.log("DEBUG: unlocked all models");
+        return;
+      }
+
+      if (key === "l") {
+        this.profile.unlocks = { browncoat: true };
+        SaveSystem.saveProfile(this.profile);
+        this.refreshUIFromState();
+        console.log("DEBUG: locked all models (except browncoat)");
+        return;
+      }
+
+      if (key === "r") {
+        SaveSystem.resetProfile();
+        this.profile = SaveSystem.loadProfile();
+
+        const savedIndex2 = this.models.findIndex((m) => m.id === this.profile.avatar.modelId);
+        this.selectedModelIndex = savedIndex2 >= 0 ? savedIndex2 : 0;
+
+        this.color = this.profile.avatar.color || this.getCurrentModel().defaultColor;
+
+        this.refreshUIFromState();
+        console.log("DEBUG: profile reset");
+        return;
+      }
+    };
+
+    window.addEventListener("keydown", this.onKeyDown);
+
+    // Initial paint
     this.refreshUIFromState();
   }
 
@@ -79,116 +187,6 @@ export default class AvatarSelectState {
     // Keys are stable and unique per model
     this.assets.loadImage(`${model.id}_base`, model.sprites.base);
     this.assets.loadImage(`${model.id}_color`, model.sprites.color);
-  }
-
-  // ---------- UI ----------
-  setupUI() {
-    // Put UI in the correct mode for this state
-    this.game.ui.setMode("avatar");
-
-    this.leftArrow    = document.getElementById("leftArrow");
-    this.rightArrow   = document.getElementById("rightArrow");
-    this.previewFrame = document.getElementById("previewFrame");
-    this.modelName    = document.getElementById("modelName");
-    this.colorPicker  = document.getElementById("tieColorPicker");
-
-    this.colorLabel = document.querySelector(`#colorSelector label[for="tieColorPicker"]`);
-
-    // Arrow clicks
-    if (this.leftArrow)  this.leftArrow.onclick  = () => this.cycleModel(-1);
-    if (this.rightArrow) this.rightArrow.onclick = () => this.cycleModel(1);
-
-    // Color change
-    if (this.colorPicker) {
-      this.colorPicker.oninput = (e) => {
-        this.color = e.target.value;
-
-        // Persist only if current model is unlocked
-        if (this.isModelUnlocked(this.getCurrentModel())) {
-          this.persistAvatar();
-        }
-
-        this.refreshUIFromState();
-      };
-    }
-
-    // Confirm button is owned by UIController (prevents stacked listeners)
-    this.game.ui.setConfirmHandler(() => {
-      const model = this.getCurrentModel();
-      if (!this.isModelUnlocked(model)) return;
-
-      this.persistAvatar();
-
-      this.game.changeState(() => new FightingGardenState(this.game, {
-        modelId: this.profile.avatar.modelId,
-        color: this.profile.avatar.color
-      }));
-    });
-
-    // Keyboard controls (your existing logic, unchanged in behavior)
-    this.onKeyDown = (e) => {
-      if (e.repeat) return;
-      const key = e.key.toLowerCase();
-
-      // Navigation
-      if (key === "arrowleft" || key === "a") {
-        e.preventDefault();
-        this.cycleModel(-1);
-        return;
-      }
-      if (key === "arrowright" || key === "d") {
-        e.preventDefault();
-        this.cycleModel(1);
-        return;
-      }
-
-      // Confirm
-      if (key === "enter") {
-        e.preventDefault();
-        const model = this.getCurrentModel();
-        if (!this.isModelUnlocked(model)) return;
-        // Trigger controller-owned confirm handler
-        this.game.ui.setConfirmEnabled(true); // no-op safety
-        document.getElementById("confirmAvatar")?.click();
-        return;
-      }
-
-      // Debug keys
-      if (key === "u") {
-        // unlock all
-        for (const m of this.models) this.profile.unlocks[m.id] = true;
-        SaveSystem.saveProfile(this.profile);
-        this.refreshUIFromState();
-        console.log("DEBUG: unlocked all models");
-        return;
-      }
-
-      if (key === "l") {
-        // lock all except browncoat
-        this.profile.unlocks = { browncoat: true };
-        SaveSystem.saveProfile(this.profile);
-        this.refreshUIFromState();
-        console.log("DEBUG: locked all models (except browncoat)");
-        return;
-      }
-
-      if (key === "r") {
-        // reset save
-        SaveSystem.resetProfile();
-        this.profile = SaveSystem.loadProfile();
-
-        const savedIndex = this.models.findIndex((m) => m.id === this.profile.avatar.modelId);
-        this.selectedModelIndex = savedIndex >= 0 ? savedIndex : 0;
-
-        this.color = this.profile.avatar.color || this.getCurrentModel().defaultColor;
-
-        this.refreshUIFromState();
-        console.log("DEBUG: profile reset");
-        return;
-      }
-    };
-
-    window.addEventListener("keydown", this.onKeyDown);
   }
 
   cycleModel(dir) {
@@ -294,13 +292,14 @@ export default class AvatarSelectState {
   }
 
   destroy() {
+    // Unsubscribe bus listeners
+    for (const off of this.unsubs) off();
+    this.unsubs = [];
+
     window.removeEventListener("keydown", this.onKeyDown);
 
-    // Prevent handler stacking
-    this.game.ui.setConfirmHandler(null);
-
     // Clear direct element handlers to avoid weirdness if DOM persists
-    if (this.leftArrow)  this.leftArrow.onclick = null;
+    if (this.leftArrow) this.leftArrow.onclick = null;
     if (this.rightArrow) this.rightArrow.onclick = null;
     if (this.colorPicker) this.colorPicker.oninput = null;
   }
