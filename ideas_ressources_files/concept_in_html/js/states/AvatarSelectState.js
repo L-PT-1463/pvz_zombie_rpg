@@ -119,12 +119,10 @@ export default class AvatarSelectState {
 
       this.persistAvatar();
 
-      this.game.changeState(
-        new FightingGardenState(this.game, {
-          modelId: this.profile.avatar.modelId,
-          color: this.profile.avatar.color
-        })
-      );
+      this.game.changeState(() => new FightingGardenState(this.game, {
+        modelId: this.profile.avatar.modelId,
+        color: this.profile.avatar.color
+      }));
     });
 
     // Keyboard controls (your existing logic, unchanged in behavior)

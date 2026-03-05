@@ -22,11 +22,13 @@ export default class Game {
         requestAnimationFrame((t) => this.loop(t));
     }
 
-    changeState(newState) {
+    changeState(next) {
         if (this.currentState && typeof this.currentState.destroy === "function") {
             this.currentState.destroy();
         }
-        this.currentState = newState;
+
+        // Allow passing a factory to delay construction until after destroy()
+        this.currentState = (typeof next === "function") ? next() : next;
     }
 
     loop(timestamp) {

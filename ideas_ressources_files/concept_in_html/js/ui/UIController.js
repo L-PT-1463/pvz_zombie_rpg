@@ -1,17 +1,18 @@
-// UIController.js
+import { UI_IDS } from "./UI_IDS.js";
+
 export default class UIController {
   constructor() {
     this.el = {
-      uiRoot: this.#mustGet("ui"),
-      avatarUI: this.#mustGet("avatarUI"),
+      uiRoot: this.#mustGet(UI_IDS.ROOT),
+      avatarUI: this.#mustGet(UI_IDS.AVATAR_UI),
 
-      saveBtn: this.#mustGet("saveRunBtn"),
-      exportBtn: this.#mustGet("exportSaveBtn"),
-      importBtn: this.#mustGet("importSaveBtn"),
-      importFile: this.#mustGet("importSaveFile"),
+      saveBtn: this.#mustGet(UI_IDS.SAVE_BTN),
+      exportBtn: this.#mustGet(UI_IDS.EXPORT_BTN),
+      importBtn: this.#mustGet(UI_IDS.IMPORT_BTN),
+      importFile: this.#mustGet(UI_IDS.IMPORT_FILE),
 
-      backBtn: this.#mustGet("backToAvatar"),
-      confirmBtn: this.#mustGet("confirmAvatar"),
+      backBtn: this.#mustGet(UI_IDS.BACK_BTN),
+      confirmBtn: this.#mustGet(UI_IDS.CONFIRM_BTN),
     };
 
     // Handlers (we store them so we can always remove cleanly)
@@ -54,11 +55,7 @@ export default class UIController {
     this.#hide(this.el.confirmBtn);
 
     // Also clear handlers by default (prevents “old state” actions firing)
-    this.setSaveHandler(null);
-    this.setExportHandler(null);
-    this.setBackHandler(null);
-    this.setConfirmHandler(null);
-    this.setImportPayloadHandler(null);
+    this.clearHandlers();
 
     if (m === "avatar") {
       this.#show(this.el.avatarUI);
@@ -94,6 +91,14 @@ export default class UIController {
 
   setConfirmHandler(fn) {
     this.#setClickHandler("confirm", this.el.confirmBtn, fn);
+  }
+
+  clearHandlers() {
+    this.setSaveHandler(null);
+    this.setExportHandler(null);
+    this.setBackHandler(null);
+    this.setConfirmHandler(null);
+    this.setImportPayloadHandler(null);
   }
 
   /**

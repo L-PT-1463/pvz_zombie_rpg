@@ -65,7 +65,7 @@ export default class FightingGardenState {
 
     // Back handler
     this.game.ui.setBackHandler(() => {
-      this.game.changeState(new AvatarSelectState(this.game));
+      this.game.changeState(() => new AvatarSelectState(this.game));
     });
 
     // Manual save button
@@ -105,7 +105,6 @@ export default class FightingGardenState {
       location.reload(); // still simplest/safest for now
     });
 
-    document.getElementById("importSaveFile")?.addEventListener("change", this.onImportFileChange);
   }
 
   update(dt) {
@@ -198,9 +197,7 @@ export default class FightingGardenState {
   }
 
   destroy() {
-    this.game.ui.setBackHandler(null);
-    this.game.ui.setSaveHandler(null);
-    this.game.ui.setExportHandler(null);
+    this.game.ui.clearHandlers();
 
     document.removeEventListener("visibilitychange", this.onVisibilityChange);
 
