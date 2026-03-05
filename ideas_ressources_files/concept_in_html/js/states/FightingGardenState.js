@@ -1,12 +1,29 @@
 import AvatarSelectState from "./AvatarSelectState.js";
+import AssetLoader from "../../assets/AssetLoader.js";
+import { MODELS } from "../data/models.js";
+import Player from "../entities/Player.js";
+import SaveManager from "../storage/SaveManager.js";
 
 export default class FightingGardenState {
   constructor(game, playerProfile) {
     this.game = game;
 
-    // playerProfile example:
-    // { modelId: "browncoat", color: "#ff00aa" }
-    this.playerProfile = playerProfile;
+    // Fallback: if launched directly into the garden, use saved avatar
+    const save = SaveManager.load();
+    this.playerProfile = playerProfile ?? save.avatar;
+
+    // Safety fallback if save is weird/corrupt
+    if (!this.playerProfile || !this.playerProfile.modelId) {
+      this.playerProfile = { modelId: "browncoat", color: "#FF6600" };
+    }
+
+    this.assets = new AssetLoader();
+
+    // Find model definition for the selected avatar
+    this.modelDef = MODELS.find(m => m.id === this.playerProfile.modelId) || MODELS[0];
+
+    // Create player (defaults to lane 2 col 1 inside Player)
+    this.player = new Player(this.playerProfile, this.modelDef, this.assets);
 
     this.lanes  = 3;
     this.cols   = 9;
@@ -74,6 +91,10 @@ export default class FightingGardenState {
       }
     }
 
+    // --- Draw player ---
+    const playerCell = this.getCellRect(renderer, startX, startY, this.player.lane, this.player.col);
+    this.player.render(renderer, playerCell);
+
     // Tiny debug label
     renderer.ctx.save();
     renderer.ctx.globalAlpha = 0.85;
@@ -85,6 +106,13 @@ export default class FightingGardenState {
       30
     );
     renderer.ctx.restore();
+  }
+
+  //----- helper methods -------
+  getCellRect(renderer, startX, startY, r, c) {
+    const x = startX + c * (this.cellSize + this.cellGap);
+    const y = startY + r * (this.cellSize + this.cellGap);
+    return { x, y, w: this.cellSize, h: this.cellSize };
   }
 
   destroy() {
