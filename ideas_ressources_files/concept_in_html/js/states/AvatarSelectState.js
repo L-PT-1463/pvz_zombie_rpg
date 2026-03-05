@@ -84,7 +84,7 @@ export default class AvatarSelectState {
   // ---------- UI ----------
   setupUI() {
     // Put UI in the correct mode for this state
-    this.game.ui.showAvatarSelectUI();
+    this.game.ui.setMode("avatar");
 
     this.leftArrow    = document.getElementById("leftArrow");
     this.rightArrow   = document.getElementById("rightArrow");

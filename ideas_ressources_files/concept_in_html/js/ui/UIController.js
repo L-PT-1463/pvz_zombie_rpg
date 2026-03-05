@@ -1,147 +1,180 @@
+// UIController.js
 export default class UIController {
   constructor() {
-    this.uiRoot = document.getElementById("ui");
+    this.el = {
+      uiRoot: this.#mustGet("ui"),
+      avatarUI: this.#mustGet("avatarUI"),
 
-    // Sections
-    this.avatarUIRoot = document.getElementById("avatarUI");
+      saveBtn: this.#mustGet("saveRunBtn"),
+      exportBtn: this.#mustGet("exportSaveBtn"),
+      importBtn: this.#mustGet("importSaveBtn"),
+      importFile: this.#mustGet("importSaveFile"),
 
-    // Shared buttons
-    this.saveBtn = document.getElementById("saveRunBtn");
-    this._saveHandler = null;
-    this.exportBtn = document.getElementById("exportSaveBtn");
-    this.importBtn = document.getElementById("importSaveBtn");
-    this.importFile = document.getElementById("importSaveFile");
+      backBtn: this.#mustGet("backToAvatar"),
+      confirmBtn: this.#mustGet("confirmAvatar"),
+    };
 
-    this._exportHandler = null;
-    this._importHandler = null;
-    this.backBtn = document.getElementById("backToAvatar");
-    this.confirmBtn = document.getElementById("confirmAvatar");
+    // Handlers (we store them so we can always remove cleanly)
+    this.handlers = {
+      save: null,
+      export: null,
+      back: null,
+      confirm: null,
+      importPayload: null, // (payload) => void
+    };
 
-    // Internal refs to cleanup
-    this._backHandler = null;
-    this._confirmHandler = null;
+    // Bindings we control internally
+    this.#wireInternalImportFlow();
 
-    // Start from a known state (nothing shown except what a state asks for)
-    this.hideAll();
+    // Start from known state
+    this.setMode("none");
+    this.setConfirmEnabled(false);
   }
 
-  hideAll() {
-    // Hide blocks
-    if (this.saveBtn) this.saveBtn.style.display = "none";
-    if (this.avatarUIRoot) this.avatarUIRoot.classList.add("hidden");
+  /* =========================================================
+     Public API (what game states should use)
+     ========================================================= */
 
-    // Hide buttons
-    if (this.backBtn) this.backBtn.style.display = "none";
-    if (this.confirmBtn) this.confirmBtn.style.display = "none";
+  /**
+   * Modes:
+   * - "avatar": avatar selection UI visible, confirm visible, topbar buttons hidden.
+   * - "garden": avatar UI hidden, save/export/import/back visible.
+   * - "none": everything hidden (safe reset).
+   */
+  setMode(mode) {
+    const m = String(mode || "none").toLowerCase();
 
-    // Remove handlers
+    // Always start by hiding everything we control
+    this.#hide(this.el.avatarUI);
+
+    this.#hide(this.el.saveBtn);
+    this.#hide(this.el.exportBtn);
+    this.#hide(this.el.importBtn);
+    this.#hide(this.el.backBtn);
+    this.#hide(this.el.confirmBtn);
+
+    // Also clear handlers by default (prevents “old state” actions firing)
     this.setSaveHandler(null);
+    this.setExportHandler(null);
     this.setBackHandler(null);
     this.setConfirmHandler(null);
-    this.showExportImport(false);
-    this.setExportHandler(null);
-    this.setImportHandler(null);
+    this.setImportPayloadHandler(null);
+
+    if (m === "avatar") {
+      this.#show(this.el.avatarUI);
+      this.#show(this.el.confirmBtn);
+      return;
+    }
+
+    if (m === "garden") {
+      this.#show(this.el.saveBtn);
+      this.#show(this.el.exportBtn);
+      this.#show(this.el.importBtn);
+      this.#show(this.el.backBtn);
+      // confirm stays hidden in garden
+      return;
+    }
+
+    // "none" => keep all hidden
   }
 
-  // ---------- Modes ----------
-  showAvatarSelectUI() {
-    // avatar UI visible
-    if (this.avatarUIRoot) this.avatarUIRoot.classList.remove("hidden");
-
-    // confirm visible
-    if (this.confirmBtn) this.confirmBtn.style.display = "";
-
-    // back hidden in avatar select
-    this.showSaveButton(false);
-    this.setSaveHandler(null);
-    this.showExportImport(false);
-    this.setExportHandler(null);
-    this.setImportHandler(null);
-    if (this.backBtn) this.backBtn.style.display = "none";
-    this.setBackHandler(null);
-  }
-
-  showGardenUI() {
-    // avatar UI hidden
-    if (this.avatarUIRoot) this.avatarUIRoot.classList.add("hidden");
-
-    this.showSaveButton(true);
-    this.showExportImport(true);
-
-    // confirm hidden in garden
-    if (this.confirmBtn) this.confirmBtn.style.display = "none";
-    this.setConfirmHandler(null);
-
-    // back visible in garden
-    if (this.backBtn) this.backBtn.style.display = "";
-  }
-
-  // ---------- Shared handlers ----------
+  // ---- Click handlers (no stacking) ----
 
   setSaveHandler(fn) {
-    if (this.saveBtn && this._saveHandler) {
-      this.saveBtn.removeEventListener("click", this._saveHandler);
-    }
-    this._saveHandler = typeof fn === "function" ? fn : null;
-    if (this.saveBtn && this._saveHandler) {
-      this.saveBtn.addEventListener("click", this._saveHandler);
-    }
-  }
-
-  showSaveButton(show) {
-    if (!this.saveBtn) return;
-    this.saveBtn.style.display = show ? "" : "none";
+    this.#setClickHandler("save", this.el.saveBtn, fn);
   }
 
   setExportHandler(fn) {
-    if (this.exportBtn && this._exportHandler) {
-      this.exportBtn.removeEventListener("click", this._exportHandler);
-    }
-    this._exportHandler = typeof fn === "function" ? fn : null;
-    if (this.exportBtn && this._exportHandler) {
-      this.exportBtn.addEventListener("click", this._exportHandler);
-    }
-  }
-
-  setImportHandler(fn) {
-    if (this.importBtn && this._importHandler) {
-      this.importBtn.removeEventListener("click", this._importHandler);
-    }
-    this._importHandler = typeof fn === "function" ? fn : null;
-    if (this.importBtn && this._importHandler) {
-      this.importBtn.addEventListener("click", this._importHandler);
-    }
-  }
-
-  showExportImport(show) {
-    if (this.exportBtn) this.exportBtn.style.display = show ? "" : "none";
-    if (this.importBtn) this.importBtn.style.display = show ? "" : "none";
-    // file input stays hidden always
+    this.#setClickHandler("export", this.el.exportBtn, fn);
   }
 
   setBackHandler(fn) {
-    if (this.backBtn && this._backHandler) {
-      this.backBtn.removeEventListener("click", this._backHandler);
-    }
-    this._backHandler = typeof fn === "function" ? fn : null;
-    if (this.backBtn && this._backHandler) {
-      this.backBtn.addEventListener("click", this._backHandler);
-    }
+    this.#setClickHandler("back", this.el.backBtn, fn);
   }
 
   setConfirmHandler(fn) {
-    if (this.confirmBtn && this._confirmHandler) {
-      this.confirmBtn.removeEventListener("click", this._confirmHandler);
+    this.#setClickHandler("confirm", this.el.confirmBtn, fn);
+  }
+
+  /**
+   * Called when user selects a JSON file via the Import button.
+   * UIController will read+JSON.parse the file, then call `fn(payload, file)`.
+   * If parsing fails, it will alert + console.error.
+   */
+  setImportPayloadHandler(fn) {
+    this.handlers.importPayload = typeof fn === "function" ? fn : null;
+  }
+
+  setConfirmEnabled(
+    enabled,
+    textWhenEnabled = "Continue",
+    textWhenDisabled = "Locked — cannot confirm"
+  ) {
+    const btn = this.el.confirmBtn;
+    btn.disabled = !enabled;
+    btn.textContent = enabled ? textWhenEnabled : textWhenDisabled;
+  }
+
+  /* =========================================================
+     Internal helpers
+     ========================================================= */
+
+  #wireInternalImportFlow() {
+    // Import button ALWAYS just opens file picker.
+    // State only defines what to do with the parsed payload.
+    this.el.importBtn.addEventListener("click", () => {
+      // reset so selecting the same file twice triggers change
+      this.el.importFile.value = "";
+      this.el.importFile.click();
+    });
+
+    // Parse file + forward payload to state handler
+    this.el.importFile.addEventListener("change", async (e) => {
+      const file = e.target.files?.[0];
+      if (!file) return;
+
+      if (!this.handlers.importPayload) {
+        console.warn("Import selected, but no import handler is set.");
+        return;
+      }
+
+      try {
+        const text = await file.text();
+        const payload = JSON.parse(text);
+        await this.handlers.importPayload(payload, file);
+      } catch (err) {
+        console.error(err);
+        alert("Import failed: " + (err?.message || err));
+      }
+    });
+  }
+
+  #setClickHandler(key, element, fn) {
+    // Remove previous
+    if (this.handlers[key]) {
+      element.removeEventListener("click", this.handlers[key]);
     }
-    this._confirmHandler = typeof fn === "function" ? fn : null;
-    if (this.confirmBtn && this._confirmHandler) {
-      this.confirmBtn.addEventListener("click", this._confirmHandler);
+
+    this.handlers[key] = typeof fn === "function" ? fn : null;
+
+    if (this.handlers[key]) {
+      element.addEventListener("click", this.handlers[key]);
     }
   }
 
-  setConfirmEnabled(enabled, textWhenEnabled = "Confirm / Continue", textWhenDisabled = "Locked — cannot confirm") {
-    if (!this.confirmBtn) return;
-    this.confirmBtn.disabled = !enabled;
-    this.confirmBtn.textContent = enabled ? textWhenEnabled : textWhenDisabled;
+  #show(node) {
+    node.classList.remove("hidden");
+  }
+
+  #hide(node) {
+    node.classList.add("hidden");
+  }
+
+  #mustGet(id) {
+    const el = document.getElementById(id);
+    if (!el) {
+      throw new Error(`UIController: missing element #${id}`);
+    }
+    return el;
   }
 }

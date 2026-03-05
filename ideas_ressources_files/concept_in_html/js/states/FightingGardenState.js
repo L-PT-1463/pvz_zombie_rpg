@@ -61,7 +61,7 @@ export default class FightingGardenState {
   }
 
   setupUI() {
-    this.game.ui.showGardenUI();
+    this.game.ui.setMode("garden");
 
     // Back handler
     this.game.ui.setBackHandler(() => {
@@ -81,7 +81,6 @@ export default class FightingGardenState {
 
     // Export
     this.game.ui.setExportHandler(() => {
-      // Make sure the run is up to date before exporting
       this.saveNow("pre-export");
 
       const data = SaveSystem.exportAll();
@@ -97,37 +96,14 @@ export default class FightingGardenState {
       document.body.appendChild(a);
       a.click();
       a.remove();
-
       URL.revokeObjectURL(url);
     });
 
-    // Import
-    this.game.ui.setImportHandler(() => {
-      const fileInput = document.getElementById("importSaveFile");
-      if (!fileInput) return;
-
-      // reset so choosing same file twice still triggers change
-      fileInput.value = "";
-      fileInput.click();
+    // Import (UIController handles file picking + parsing)
+    this.game.ui.setImportPayloadHandler((payload) => {
+      SaveSystem.importAll(payload);
+      location.reload(); // still simplest/safest for now
     });
-
-    this.onImportFileChange = async (e) => {
-      const file = e.target.files?.[0];
-      if (!file) return;
-
-      try {
-        const text = await file.text();
-        const payload = JSON.parse(text);
-
-        SaveSystem.importAll(payload);
-
-        // simplest + safest: reload
-        location.reload();
-      } catch (err) {
-        console.error(err);
-        alert("Import failed: " + (err?.message || err));
-      }
-    };
 
     document.getElementById("importSaveFile")?.addEventListener("change", this.onImportFileChange);
   }
@@ -225,8 +201,6 @@ export default class FightingGardenState {
     this.game.ui.setBackHandler(null);
     this.game.ui.setSaveHandler(null);
     this.game.ui.setExportHandler(null);
-    this.game.ui.setImportHandler(null);
-    document.getElementById("importSaveFile")?.removeEventListener("change", this.onImportFileChange);
 
     document.removeEventListener("visibilitychange", this.onVisibilityChange);
 
