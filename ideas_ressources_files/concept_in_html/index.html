@@ -1,40 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>PvZ: Zombie RPG - Concept</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PvZ: Zombie RPG - Concept</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <canvas id="gameCanvas"></canvas>
+  <canvas id="gameCanvas"></canvas>
 
-    <div id="ui">
-        <button id="saveRunBtn" style="display:none;">Save</button>
-        <button id="exportSaveBtn" style="display:none;">Export</button>
-        <button id="importSaveBtn" style="display:none;">Import</button>
-        <input id="importSaveFile" type="file" accept="application/json" style="display:none;" />
-        <button id="backToAvatar" style="display:none;">Avatar Selection</button>
-        <div id="avatarUI">
-            <div id="modelSelector">
-            <button id="leftArrow" class="arrow">◀</button>
+  <!-- UI overlay (pointer-events disabled by default; interactive elements opt-in) -->
+  <div id="ui" class="ui">
+    <!-- Top actions (shown/hidden by UIController) -->
+    <div class="ui-topbar">
+      <button id="backToAvatar" class="ui-btn ui-btn--sm ui-btn--glass">
+        Avatar Selection
+      </button>
 
-            <div id="modelPreviewBlock">
-                <div id="previewFrame"></div>
-                <div id="modelName">Browncoat</div>
-            </div>
+      <div class="ui-topbar__right">
+        <button id="importSaveBtn" class="ui-btn ui-btn--sm ui-btn--glass">Import</button>
+        <button id="exportSaveBtn" class="ui-btn ui-btn--sm ui-btn--glass">Export</button>
+        <button id="saveRunBtn" class="ui-btn ui-btn--sm ui-btn--glass">Save</button>
 
-            <button id="rightArrow" class="arrow">▶</button>
-            </div>
-
-            <div id="colorSelector">
-            <label for="tieColorPicker">Tie Color</label>
-            <input type="color" id="tieColorPicker" value="#ff0000">
-            </div>
-
-            <button id="confirmAvatar">Continue</button>
-        </div>
+        <!-- Hidden file input triggered by the Import button -->
+        <input
+          id="importSaveFile"
+          class="hidden"
+          type="file"
+          accept="application/json"
+        />
+      </div>
     </div>
 
-    <script type="module" src="js/main.js"></script>
+    <!-- Avatar selection UI -->
+    <section id="avatarUI" class="ui-panel">
+      <div class="avatar-layout">
+        <div id="modelSelector" class="model-selector">
+          <button
+            id="leftArrow"
+            class="ui-btn ui-btn--icon ui-btn--glass"
+            aria-label="Previous avatar"
+          >◀</button>
+
+          <div id="modelPreviewBlock" class="model-preview">
+            <div id="previewFrame" class="preview-frame"></div>
+            <div id="modelName" class="model-name">Browncoat</div>
+          </div>
+
+          <button
+            id="rightArrow"
+            class="ui-btn ui-btn--icon ui-btn--glass"
+            aria-label="Next avatar"
+          >▶</button>
+        </div>
+
+        <div id="colorSelector" class="color-selector">
+          <label for="tieColorPicker" class="color-label">Tie Color</label>
+          <input type="color" id="tieColorPicker" value="#ff0000" />
+        </div>
+      </div>
+
+      <button id="confirmAvatar" class="ui-btn ui-btn--lg ui-btn--glass-strong">
+        Continue
+      </button>
+    </section>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>
