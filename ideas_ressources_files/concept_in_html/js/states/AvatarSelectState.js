@@ -1,4 +1,4 @@
-import SaveManager from "../storage/SaveManager.js";
+import SaveSystem from "../storage/SaveSystem.js";
 import { MODELS } from "../data/models.js";
 import AssetLoader from "../../assets/AssetLoader.js";
 import { tintWhiteSprite } from "../rendering/tint.js";
@@ -8,8 +8,8 @@ export default class AvatarSelectState {
   constructor(game) {
     this.game = game;
 
-    // Load save
-    this.save = SaveManager.load();
+    // Load profile (settings + avatar + unlocks)
+    this.profile = SaveSystem.loadProfile();
 
     // Model registry
     this.models = MODELS;
@@ -18,12 +18,12 @@ export default class AvatarSelectState {
     this.assets = new AssetLoader();
 
     // Resolve saved model index
-    const savedIndex = this.models.findIndex((m) => m.id === this.save.avatar.modelId);
+    const savedIndex = this.models.findIndex((m) => m.id === this.profile.avatar.modelId);
     this.selectedModelIndex = savedIndex >= 0 ? savedIndex : 0;
 
     // Color (saved), fallback to model default
     const currentModel = this.getCurrentModel();
-    this.color = this.save.avatar.color || currentModel.defaultColor;
+    this.color = this.profile.avatar.color || currentModel.defaultColor;
 
     // Queue sprites for initial model
     this.queueModelSprites(currentModel);
@@ -63,14 +63,14 @@ export default class AvatarSelectState {
   isModelUnlocked(model) {
     // browncoat should always be unlocked
     if (model.id === "browncoat") return true;
-    return this.save.unlocks?.[model.id] === true;
+    return this.profile.unlocks?.[model.id] === true;
   }
 
   persistAvatar() {
     const model = this.getCurrentModel();
-    this.save.avatar.modelId = model.id;
-    this.save.avatar.color = this.color;
-    SaveManager.save(this.save);
+    this.profile.avatar.modelId = model.id;
+    this.profile.avatar.color = this.color;
+    SaveSystem.saveProfile(this.profile);
   }
 
   queueModelSprites(model) {
@@ -121,8 +121,8 @@ export default class AvatarSelectState {
 
       this.game.changeState(
         new FightingGardenState(this.game, {
-          modelId: this.save.avatar.modelId,
-          color: this.save.avatar.color
+          modelId: this.profile.avatar.modelId,
+          color: this.profile.avatar.color
         })
       );
     });
@@ -158,8 +158,8 @@ export default class AvatarSelectState {
       // Debug keys
       if (key === "u") {
         // unlock all
-        for (const m of this.models) this.save.unlocks[m.id] = true;
-        SaveManager.save(this.save);
+        for (const m of this.models) this.profile.unlocks[m.id] = true;
+        SaveSystem.saveProfile(this.profile);
         this.refreshUIFromState();
         console.log("DEBUG: unlocked all models");
         return;
@@ -167,8 +167,8 @@ export default class AvatarSelectState {
 
       if (key === "l") {
         // lock all except browncoat
-        this.save.unlocks = { browncoat: true };
-        SaveManager.save(this.save);
+        this.profile.unlocks = { browncoat: true };
+        SaveSystem.saveProfile(this.profile);
         this.refreshUIFromState();
         console.log("DEBUG: locked all models (except browncoat)");
         return;
@@ -176,16 +176,16 @@ export default class AvatarSelectState {
 
       if (key === "r") {
         // reset save
-        SaveManager.reset();
-        this.save = SaveManager.load();
+        SaveSystem.resetProfile();
+        this.profile = SaveSystem.loadProfile();
 
-        const savedIndex = this.models.findIndex((m) => m.id === this.save.avatar.modelId);
+        const savedIndex = this.models.findIndex((m) => m.id === this.profile.avatar.modelId);
         this.selectedModelIndex = savedIndex >= 0 ? savedIndex : 0;
 
-        this.color = this.save.avatar.color || this.getCurrentModel().defaultColor;
+        this.color = this.profile.avatar.color || this.getCurrentModel().defaultColor;
 
         this.refreshUIFromState();
-        console.log("DEBUG: save reset");
+        console.log("DEBUG: profile reset");
         return;
       }
     };

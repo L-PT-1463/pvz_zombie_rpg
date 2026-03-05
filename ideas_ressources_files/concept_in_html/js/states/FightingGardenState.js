@@ -2,21 +2,38 @@ import AvatarSelectState from "./AvatarSelectState.js";
 import AssetLoader from "../../assets/AssetLoader.js";
 import { MODELS } from "../data/models.js";
 import Player from "../entities/Player.js";
-import SaveManager from "../storage/SaveManager.js";
+import SaveSystem from "../storage/SaveSystem.js";
 
 export default class FightingGardenState {
   constructor(game, playerProfile) {
     this.game = game;
 
-    // Fallback: if launched directly into the garden, use saved avatar
-    const save = SaveManager.load();
-    this.playerProfile = playerProfile ?? save.avatar;
+    // --- Load profile (settings + avatar + unlocks) ---
+    // This replaces the old SaveManager for long-term structure.
+    this.profile = SaveSystem.loadProfile();
+
+    // Use provided profile (from AvatarSelect) OR fallback to saved profile avatar
+    this.playerProfile = playerProfile ?? this.profile.avatar;
 
     // Safety fallback if save is weird/corrupt
     if (!this.playerProfile || !this.playerProfile.modelId) {
       this.playerProfile = { modelId: "browncoat", color: "#FF6600" };
     }
 
+    // --- Load or create current run save ---
+    this.run = SaveSystem.loadRun();
+
+    // If no run exists yet, create one from profile
+    if (!this.run.startedAt) {
+      this.run = SaveSystem.newRunFromProfile(this.profile);
+      SaveSystem.saveRun(this.run);
+    }
+
+    // Ensure run has avatar info (in case we entered garden via AvatarSelect)
+    this.run.player.modelId = this.playerProfile.modelId;
+    this.run.player.color = this.playerProfile.color;
+
+    // --- Assets + player creation ---
     this.assets = new AssetLoader();
 
     // Find model definition for the selected avatar
@@ -25,25 +42,42 @@ export default class FightingGardenState {
     // Create player (defaults to lane 2 col 1 inside Player)
     this.player = new Player(this.playerProfile, this.modelDef, this.assets);
 
-    this.lanes  = 3;
-    this.cols   = 9;
+    // Apply run -> player (run is the source of truth for live state)
+    this.player.lane = this.run.player.lane ?? 1;
+    this.player.col = this.run.player.col ?? 0;
+    this.player.hp = this.run.player.hp ?? 100;
+    this.player.maxHP = this.run.player.maxHP ?? 100;
+
+    // --- Grid definition ---
+    this.lanes = 3;
+    this.cols = 9;
 
     // Visual sizing
-    this.cellSize       = 90;
-    this.cellGap        = 6;
-    this.borderRadius   = 10;
+    this.cellSize = 90;
+    this.cellGap = 6;
+    this.borderRadius = 10;
 
     this.setupUI();
   }
 
   setupUI() {
-    // Put UI in the correct mode for this state
     this.game.ui.showGardenUI();
 
-    // Back button handler owned by UIController
+    // Back handler
     this.game.ui.setBackHandler(() => {
       this.game.changeState(new AvatarSelectState(this.game));
     });
+
+    // Manual save button
+    this.game.ui.setSaveHandler(() => this.saveNow("manual"));
+
+    // Autosave when tab is hidden / user leaves
+    this.onVisibilityChange = () => {
+      if (document.visibilityState === "hidden") {
+        this.saveNow("visibilitychange");
+      }
+    };
+    document.addEventListener("visibilitychange", this.onVisibilityChange);
   }
 
   update(dt) {
@@ -109,6 +143,26 @@ export default class FightingGardenState {
   }
 
   //----- helper methods -------
+  captureRunFromWorld() {
+    // take current world state and write into this.run
+    this.run.player.lane = this.player.lane;
+    this.run.player.col = this.player.col;
+    this.run.player.hp = this.player.hp;
+    this.run.player.maxHP = this.player.maxHP;
+
+    // Keep avatar info too (handy if you later load run directly)
+    this.run.player.modelId = this.playerProfile.modelId;
+    this.run.player.color = this.playerProfile.color;
+
+    SaveSystem.stamp(this.run);
+  }
+
+  saveNow(reason = "manual") {
+    this.captureRunFromWorld();
+    SaveSystem.saveRun(this.run);
+    console.log(`Saved run (${reason})`, this.run.updatedAt);
+  }
+
   getCellRect(renderer, startX, startY, r, c) {
     const x = startX + c * (this.cellSize + this.cellGap);
     const y = startY + r * (this.cellSize + this.cellGap);
@@ -116,7 +170,11 @@ export default class FightingGardenState {
   }
 
   destroy() {
-    // Prevent handler stacking
     this.game.ui.setBackHandler(null);
+    this.game.ui.setSaveHandler(null);
+
+    document.removeEventListener("visibilitychange", this.onVisibilityChange);
+
+    this.saveNow("state-exit");
   }
 }

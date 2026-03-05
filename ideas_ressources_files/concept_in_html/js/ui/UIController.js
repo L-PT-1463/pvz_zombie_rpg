@@ -6,6 +6,8 @@ export default class UIController {
     this.avatarUIRoot = document.getElementById("avatarUI");
 
     // Shared buttons
+    this.saveBtn = document.getElementById("saveRunBtn");
+    this._saveHandler = null;
     this.backBtn = document.getElementById("backToAvatar");
     this.confirmBtn = document.getElementById("confirmAvatar");
 
@@ -19,6 +21,7 @@ export default class UIController {
 
   hideAll() {
     // Hide blocks
+    if (this.saveBtn) this.saveBtn.style.display = "none";
     if (this.avatarUIRoot) this.avatarUIRoot.classList.add("hidden");
 
     // Hide buttons
@@ -26,6 +29,7 @@ export default class UIController {
     if (this.confirmBtn) this.confirmBtn.style.display = "none";
 
     // Remove handlers
+    this.setSaveHandler(null);
     this.setBackHandler(null);
     this.setConfirmHandler(null);
   }
@@ -39,6 +43,8 @@ export default class UIController {
     if (this.confirmBtn) this.confirmBtn.style.display = "";
 
     // back hidden in avatar select
+    this.showSaveButton(false);
+    this.setSaveHandler(null);
     if (this.backBtn) this.backBtn.style.display = "none";
     this.setBackHandler(null);
   }
@@ -46,6 +52,8 @@ export default class UIController {
   showGardenUI() {
     // avatar UI hidden
     if (this.avatarUIRoot) this.avatarUIRoot.classList.add("hidden");
+
+    this.showSaveButton(true);
 
     // confirm hidden in garden
     if (this.confirmBtn) this.confirmBtn.style.display = "none";
@@ -56,6 +64,22 @@ export default class UIController {
   }
 
   // ---------- Shared handlers ----------
+
+  setSaveHandler(fn) {
+    if (this.saveBtn && this._saveHandler) {
+      this.saveBtn.removeEventListener("click", this._saveHandler);
+    }
+    this._saveHandler = typeof fn === "function" ? fn : null;
+    if (this.saveBtn && this._saveHandler) {
+      this.saveBtn.addEventListener("click", this._saveHandler);
+    }
+  }
+
+  showSaveButton(show) {
+    if (!this.saveBtn) return;
+    this.saveBtn.style.display = show ? "" : "none";
+  }
+
   setBackHandler(fn) {
     if (this.backBtn && this._backHandler) {
       this.backBtn.removeEventListener("click", this._backHandler);
