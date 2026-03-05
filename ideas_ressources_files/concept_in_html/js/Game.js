@@ -3,6 +3,7 @@ import AvatarSelectState from "./states/AvatarSelectState.js";
 import FightingGardenState from "./states/FightingGardenState.js";
 import UIBus from "./ui/UI_BUS.js";
 import UIController from "./ui/UIController.js";
+import SaveSystem from "./storage/SaveSystem.js";
 import SaveIOController from "./storage/SaveIOController.js";
 
 export default class Game {
@@ -36,6 +37,27 @@ export default class Game {
 
         // Allow passing a factory to delay construction until after destroy()
         this.currentState = (typeof next === "function") ? next() : next;
+    }
+
+    requestRunSave(reason = "manual") {
+        const state = this.currentState;
+
+        // Only states that contain a run should implement this.
+        if (!state || typeof state.getRunSnapshot !== "function") {
+            console.warn(`[SAVE] Current state has no run to save (reason: ${reason}).`);
+            return false;
+        }
+
+        const runSnapshot = state.getRunSnapshot();
+        if (!runSnapshot) {
+            console.warn(`[SAVE] getRunSnapshot() returned nothing (reason: ${reason}).`);
+            return false;
+        }
+
+        SaveSystem.saveRun(runSnapshot);
+        console.log(`Saved run (${reason})`, runSnapshot.updatedAt);
+
+        return true;
     }
 
     loop(timestamp) {

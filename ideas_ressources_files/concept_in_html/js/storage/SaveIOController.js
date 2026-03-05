@@ -21,6 +21,16 @@ export default class SaveIOController {
         location.reload(); // rehydrate everything from storage
       })
     );
+
+    this.unsubs.push(
+        this.game.uiBus.on(UI_EVENTS.SAVE, () => {
+            const ok = this.game.requestRunSave("manual");
+            if (!ok) {
+            // Optional: show UI feedback later (toast).
+            console.log("[SAVE] Nothing to save in this UI mode.");
+            }
+        })
+    );
   }
 
   destroy() {

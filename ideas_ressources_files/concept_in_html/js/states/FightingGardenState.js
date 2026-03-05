@@ -95,8 +95,6 @@ export default class FightingGardenState {
         this.game.changeState(() => new AvatarSelectState(this.game));
       })
     );
-
-    this.unsubs.push(this.game.uiBus.on(UI_EVENTS.SAVE, () => this.saveNow("manual")));
   }
 
   update(dt) {
@@ -167,10 +165,10 @@ export default class FightingGardenState {
     SaveSystem.stamp(this.run);
   }
 
-  saveNow(reason = "manual") {
+  getRunSnapshot() {
+    // Make sure this.run reflects the latest world values before saving.
     this.captureRunFromWorld();
-    SaveSystem.saveRun(this.run);
-    console.log(`Saved run (${reason})`, this.run.updatedAt);
+    return this.run;
   }
 
   getCellRect(renderer, startX, startY, r, c) {
