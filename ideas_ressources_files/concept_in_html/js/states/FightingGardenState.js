@@ -6,6 +6,25 @@ import SaveSystem from "../storage/SaveSystem.js";
 import { UI_MODES } from "../ui/UI_MODES.js";
 import { UI_EVENTS } from "../ui/UI_EVENTS.js";
 
+const DEFAULT_PLAYER = { modelId: "browncoat", color: "#FF6600" };
+
+const GRID = {
+  lanes: 3,
+  cols: 9,
+  cellSize: 90,
+  cellGap: 6,
+  borderRadius: 10,
+};
+
+const CELL_COLORS = {
+  base: "#0b0b0b",
+  playerZone: "#3a1b4f",
+  neutral: "#000000",
+  enemyZone: "#123b1f",
+  border: "#ffffff",
+  background: "#101010",
+};
+
 export default class FightingGardenState {
   constructor(game, playerProfile) {
     this.game = game;
@@ -22,7 +41,7 @@ export default class FightingGardenState {
 
     // Safety fallback if save is weird/corrupt
     if (!this.playerProfile || !this.playerProfile.modelId) {
-      this.playerProfile = { modelId: "browncoat", color: "#FF6600" };
+      this.playerProfile = { ...DEFAULT_PLAYER };
     }
 
     // --- Load or create current run save ---
@@ -42,7 +61,7 @@ export default class FightingGardenState {
     this.assets = new AssetLoader();
 
     // Find model definition for the selected avatar
-    this.modelDef = MODELS.find(m => m.id === this.playerProfile.modelId) || MODELS[0];
+    this.modelDef = this.getModelDef(this.playerProfile.modelId);
 
     // Create player
     this.player = new Player(this.playerProfile, this.modelDef, this.assets);
@@ -54,13 +73,13 @@ export default class FightingGardenState {
     this.player.maxHP = this.run.player.maxHP ?? 100;
 
     // --- Grid definition ---
-    this.lanes = 3;
-    this.cols = 9;
+    this.lanes = GRID.lanes;
+    this.cols = GRID.cols;
 
     // Visual sizing
-    this.cellSize = 90;
-    this.cellGap = 6;
-    this.borderRadius = 10;
+    this.cellSize = GRID.cellSize;
+    this.cellGap = GRID.cellGap;
+    this.borderRadius = GRID.borderRadius;
 
     // --- Autosave when tab is hidden / user leaves ---
     this.onVisibilityChange = () => {
@@ -77,37 +96,7 @@ export default class FightingGardenState {
       })
     );
 
-    this.unsubs.push(
-      this.game.uiBus.on(UI_EVENTS.SAVE, () => this.saveNow("manual"))
-    );
-
-    this.unsubs.push(
-      this.game.uiBus.on(UI_EVENTS.EXPORT, () => {
-        this.saveNow("pre-export");
-
-        const data = SaveSystem.exportAll();
-        const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
-
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement("a");
-        a.href = url;
-
-        const stamp = new Date().toISOString().replace(/[:.]/g, "-");
-        a.download = `fighting-gardens-save_${stamp}.json`;
-
-        document.body.appendChild(a);
-        a.click();
-        a.remove();
-        URL.revokeObjectURL(url);
-      })
-    );
-
-    this.unsubs.push(
-      this.game.uiBus.on(UI_EVENTS.IMPORT_PAYLOAD, ({ payload }) => {
-        SaveSystem.importAll(payload);
-        location.reload(); // still simplest/safest for now
-      })
-    );
+    this.unsubs.push(this.game.uiBus.on(UI_EVENTS.SAVE, () => this.saveNow("manual")));
   }
 
   update(dt) {
@@ -116,7 +105,7 @@ export default class FightingGardenState {
 
   render(renderer) {
     renderer.clear();
-    renderer.fillRect(0, 0, renderer.width, renderer.height, "#101010");
+    renderer.fillRect(0, 0, renderer.width, renderer.height, CELL_COLORS.background);
 
     const gridW = this.cols * this.cellSize + (this.cols - 1) * this.cellGap;
     const gridH = this.lanes * this.cellSize + (this.lanes - 1) * this.cellGap;
@@ -131,24 +120,15 @@ export default class FightingGardenState {
         const x = startX + c * (this.cellSize + this.cellGap);
         const y = startY + r * (this.cellSize + this.cellGap);
 
-        // Columns are 1-9 in your description; c is 0-8
         const colNumber = c + 1;
+        const color = this.getCellColor(colNumber);
 
-        // 1-3 = purple spawn area
-        // 4 = black neutral column
-        // 5-9 = green enemy area
-        let color = "#0b0b0b";
-        if (colNumber >= 1 && colNumber <= 3) color = "#3a1b4f";      // purple
-        else if (colNumber === 4) color = "#000000";                  // black
-        else color = "#123b1f";                                       // green
-
-        // draw cell
         renderer.fillRect(x, y, this.cellSize, this.cellSize, color);
 
         // subtle grid border
         renderer.ctx.save();
         renderer.ctx.globalAlpha = 0.35;
-        renderer.ctx.strokeStyle = "#ffffff";
+        renderer.ctx.strokeStyle = CELL_COLORS.border;
         renderer.ctx.lineWidth = 2;
         renderer.ctx.strokeRect(x, y, this.cellSize, this.cellSize);
         renderer.ctx.restore();
@@ -197,6 +177,19 @@ export default class FightingGardenState {
     const x = startX + c * (this.cellSize + this.cellGap);
     const y = startY + r * (this.cellSize + this.cellGap);
     return { x, y, w: this.cellSize, h: this.cellSize };
+  }
+
+  getModelDef(modelId) {
+    return MODELS.find((m) => m.id === modelId) || MODELS[0];
+  }
+
+  getCellColor(colNumber) {
+    // 1-3 = player spawn area (purple)
+    // 4   = neutral column (black)
+    // 5-9 = enemy area (green)
+    if (colNumber >= 1 && colNumber <= 3) return CELL_COLORS.playerZone;
+    if (colNumber === 4) return CELL_COLORS.neutral;
+    return CELL_COLORS.enemyZone;
   }
 
   destroy() {

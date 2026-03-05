@@ -3,11 +3,15 @@ import AvatarSelectState from "./states/AvatarSelectState.js";
 import FightingGardenState from "./states/FightingGardenState.js";
 import UIBus from "./ui/UI_BUS.js";
 import UIController from "./ui/UIController.js";
+import SaveIOController from "./storage/SaveIOController.js";
 
 export default class Game {
     constructor() {
         this.uiBus      = new UIBus();
         this.ui         = new UIController(this.uiBus);
+
+        // Global save import/export wiring
+        this.saveIO     = new SaveIOController(this);
 
         this.renderer   = new Renderer();
 
