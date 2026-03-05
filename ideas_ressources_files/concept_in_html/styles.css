@@ -43,6 +43,29 @@ canvas {
   background: rgba(255,255,255,0.14);
 }
 
+#exportSaveBtn, #importSaveBtn {
+  position: absolute;
+  top: 18px;
+
+  pointer-events: auto;
+  cursor: pointer;
+
+  font-size: 14px;
+  padding: 10px 14px;
+
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.08);
+  color: white;
+}
+
+#exportSaveBtn { right: 90px; }
+#importSaveBtn { right: 170px; }
+
+#exportSaveBtn:hover, #importSaveBtn:hover {
+  background: rgba(255,255,255,0.14);
+}
+
 #backToAvatar {
   position: absolute;
   top: 18px;

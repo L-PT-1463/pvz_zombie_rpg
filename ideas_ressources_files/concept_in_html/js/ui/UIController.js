@@ -8,6 +8,12 @@ export default class UIController {
     // Shared buttons
     this.saveBtn = document.getElementById("saveRunBtn");
     this._saveHandler = null;
+    this.exportBtn = document.getElementById("exportSaveBtn");
+    this.importBtn = document.getElementById("importSaveBtn");
+    this.importFile = document.getElementById("importSaveFile");
+
+    this._exportHandler = null;
+    this._importHandler = null;
     this.backBtn = document.getElementById("backToAvatar");
     this.confirmBtn = document.getElementById("confirmAvatar");
 
@@ -32,6 +38,9 @@ export default class UIController {
     this.setSaveHandler(null);
     this.setBackHandler(null);
     this.setConfirmHandler(null);
+    this.showExportImport(false);
+    this.setExportHandler(null);
+    this.setImportHandler(null);
   }
 
   // ---------- Modes ----------
@@ -45,6 +54,9 @@ export default class UIController {
     // back hidden in avatar select
     this.showSaveButton(false);
     this.setSaveHandler(null);
+    this.showExportImport(false);
+    this.setExportHandler(null);
+    this.setImportHandler(null);
     if (this.backBtn) this.backBtn.style.display = "none";
     this.setBackHandler(null);
   }
@@ -54,6 +66,7 @@ export default class UIController {
     if (this.avatarUIRoot) this.avatarUIRoot.classList.add("hidden");
 
     this.showSaveButton(true);
+    this.showExportImport(true);
 
     // confirm hidden in garden
     if (this.confirmBtn) this.confirmBtn.style.display = "none";
@@ -78,6 +91,32 @@ export default class UIController {
   showSaveButton(show) {
     if (!this.saveBtn) return;
     this.saveBtn.style.display = show ? "" : "none";
+  }
+
+  setExportHandler(fn) {
+    if (this.exportBtn && this._exportHandler) {
+      this.exportBtn.removeEventListener("click", this._exportHandler);
+    }
+    this._exportHandler = typeof fn === "function" ? fn : null;
+    if (this.exportBtn && this._exportHandler) {
+      this.exportBtn.addEventListener("click", this._exportHandler);
+    }
+  }
+
+  setImportHandler(fn) {
+    if (this.importBtn && this._importHandler) {
+      this.importBtn.removeEventListener("click", this._importHandler);
+    }
+    this._importHandler = typeof fn === "function" ? fn : null;
+    if (this.importBtn && this._importHandler) {
+      this.importBtn.addEventListener("click", this._importHandler);
+    }
+  }
+
+  showExportImport(show) {
+    if (this.exportBtn) this.exportBtn.style.display = show ? "" : "none";
+    if (this.importBtn) this.importBtn.style.display = show ? "" : "none";
+    // file input stays hidden always
   }
 
   setBackHandler(fn) {

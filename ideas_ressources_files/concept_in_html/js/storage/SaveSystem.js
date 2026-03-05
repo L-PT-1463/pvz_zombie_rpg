@@ -123,4 +123,30 @@ export default class SaveSystem {
     static resetRun() {
         localStorage.removeItem("fc_run_v1");
     }
+
+    static exportAll() {
+        const payload = {
+            meta: {
+            format: "fighting-gardens-save",
+            exportedAt: new Date().toISOString(),
+            profileKey: "fc_profile_v1",
+            runKey: "fc_run_v1"
+            },
+            profile: this.loadProfile(),
+            run: this.loadRun()
+        };
+
+        return payload;
+    }
+
+    static importAll(payload) {
+        // Very light validation (enough to prevent trash writes)
+        if (!payload || typeof payload !== "object") throw new Error("Invalid save file (not an object).");
+        if (!payload.profile || typeof payload.profile !== "object") throw new Error("Invalid save file (missing profile).");
+        if (!payload.run || typeof payload.run !== "object") throw new Error("Invalid save file (missing run).");
+
+        // Write raw; loadProfile/loadRun already merge defaults later
+        localStorage.setItem("fc_profile_v1", JSON.stringify(payload.profile));
+        localStorage.setItem("fc_run_v1", JSON.stringify(payload.run));
+    }
 }

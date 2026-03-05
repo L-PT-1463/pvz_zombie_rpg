@@ -78,6 +78,58 @@ export default class FightingGardenState {
       }
     };
     document.addEventListener("visibilitychange", this.onVisibilityChange);
+
+    // Export
+    this.game.ui.setExportHandler(() => {
+      // Make sure the run is up to date before exporting
+      this.saveNow("pre-export");
+
+      const data = SaveSystem.exportAll();
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+
+      const stamp = new Date().toISOString().replace(/[:.]/g, "-");
+      a.download = `fighting-gardens-save_${stamp}.json`;
+
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+
+      URL.revokeObjectURL(url);
+    });
+
+    // Import
+    this.game.ui.setImportHandler(() => {
+      const fileInput = document.getElementById("importSaveFile");
+      if (!fileInput) return;
+
+      // reset so choosing same file twice still triggers change
+      fileInput.value = "";
+      fileInput.click();
+    });
+
+    this.onImportFileChange = async (e) => {
+      const file = e.target.files?.[0];
+      if (!file) return;
+
+      try {
+        const text = await file.text();
+        const payload = JSON.parse(text);
+
+        SaveSystem.importAll(payload);
+
+        // simplest + safest: reload
+        location.reload();
+      } catch (err) {
+        console.error(err);
+        alert("Import failed: " + (err?.message || err));
+      }
+    };
+
+    document.getElementById("importSaveFile")?.addEventListener("change", this.onImportFileChange);
   }
 
   update(dt) {
@@ -172,6 +224,9 @@ export default class FightingGardenState {
   destroy() {
     this.game.ui.setBackHandler(null);
     this.game.ui.setSaveHandler(null);
+    this.game.ui.setExportHandler(null);
+    this.game.ui.setImportHandler(null);
+    document.getElementById("importSaveFile")?.removeEventListener("change", this.onImportFileChange);
 
     document.removeEventListener("visibilitychange", this.onVisibilityChange);
 
