@@ -89,7 +89,7 @@ export default class SaveSystem {
         }
 
         if (Array.isArray(parsed.enemies)) r.enemies = parsed.enemies;
-        if (Array.isArray(parsed.spawns)) r.spawns = parsed.spawns;
+        if (Array.isArray(parsed.spawnlings)) r.spawnlings = parsed.spawnlings;
         if (parsed.roomState && typeof parsed.roomState === "object") r.roomState = parsed.roomState;
 
         return r;

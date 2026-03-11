@@ -84,7 +84,7 @@ export default class FightingGardenState {
     // --- Autosave when tab is hidden / user leaves ---
     this.onVisibilityChange = () => {
       if (document.visibilityState === "hidden") {
-        this.saveNow("visibilitychange");
+        this.game.requestRunSave("visibilitychange");
       }
     };
     document.addEventListener("visibilitychange", this.onVisibilityChange);
@@ -197,6 +197,6 @@ export default class FightingGardenState {
 
     document.removeEventListener("visibilitychange", this.onVisibilityChange);
 
-    this.saveNow("state-exit");
+    this.game.requestRunSave("state-exit");
   }
 }
