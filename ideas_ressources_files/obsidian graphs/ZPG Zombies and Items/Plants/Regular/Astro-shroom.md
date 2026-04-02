@@ -1,7 +1,7 @@
-#DarkAges #Plant
+#ZCorpIntraSpaceTime #Plant
 
 Type: #Regular
-Area: [[Dark Ages]] ([[Castle]])
+Area: [[ZCorp Intra-Space-Time]]
 Attack: #Lobbed
 
 Speciality: Makes an attack at a random zombie when a plant is spawned.

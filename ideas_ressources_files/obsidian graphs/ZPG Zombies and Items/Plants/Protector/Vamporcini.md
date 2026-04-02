@@ -1,7 +1,7 @@
 #DarkAges #Plant
 
 Type: #Protector
-Area: [[Dark Ages]] ([[Castle]])
+Area: [[Dark Ages]] ([[Mushroom Grotto]])
 Attack: #Melee
 Traits:
 - #FireWeak

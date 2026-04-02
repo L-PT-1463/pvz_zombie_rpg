@@ -1,7 +1,7 @@
-#ZCorpIntraSpaceTime #Plant
+#NeonCarnival  #Plant
 
 Type: #Boss #Regular
-Area: [[ZCorp Intra-Space-Time]]
+Area: [[Neon Carnival]]
 Attack: #Straight
 Traits:
 - #Fire

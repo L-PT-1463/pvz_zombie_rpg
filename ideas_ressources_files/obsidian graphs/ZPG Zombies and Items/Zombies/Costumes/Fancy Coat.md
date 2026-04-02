@@ -1,6 +1,6 @@
 #Costume
 
-Unlocked in the [[Steam City]] area by obtaining all gentleman almanac entries:
+Unlocked in the [[Steam City]] area by revealing all gentleman almanac entries:
 
 Items:
 - [[Tea Cup]]

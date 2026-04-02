@@ -1,7 +1,7 @@
 #DarkAges  #Plant 
 
 Type: #Regular 
-Area: [[Dark Ages]] ([[Castle]])
+Area: [[Dark Ages]] ([[Mushroom Grotto]])
 Attack: n/a
 Traits:
 - #Magnetising (4x3; two tiles in front)

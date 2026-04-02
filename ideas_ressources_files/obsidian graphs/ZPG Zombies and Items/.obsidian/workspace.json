@@ -16,10 +16,25 @@
               "state": {
                 "file": "Dungeon Crawling/Areas/Dark Ages.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": false
               },
               "icon": "lucide-file",
               "title": "Dark Ages"
+            }
+          },
+          {
+            "id": "86ed7595720220be",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Zombies/Costumes/Fancy Coat.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Fancy Coat"
             }
           },
           {
@@ -61,7 +76,16 @@
                 "file": "Dungeon Crawling/Areas/Lost City.md",
                 "mode": "source",
                 "source": false,
-                "backlinks": false
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
               "title": "Lost City"
@@ -188,15 +212,14 @@
             }
           },
           {
-            "id": "a6e77e97aefbc038",
+            "id": "0acd85a3c66e41ad",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Dungeon Crawling/Areas/Zen Garden.md",
                 "mode": "source",
-                "source": false,
-                "backlinks": false
+                "source": false
               },
               "icon": "lucide-file",
               "title": "Zen Garden"
@@ -215,7 +238,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Dungeon Crawling/Areas/Zen Garden.md",
+                "file": "Dungeon Crawling/Areas/Dark Ages.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -265,7 +288,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Zen Garden"
+              "title": "Graph of Dark Ages"
             }
           },
           {
@@ -428,34 +451,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0b46326dc340cec6",
+  "active": "84263421d2f11a46",
   "lastOpenFiles": [
     "Dungeon Crawling/Areas/Dark Ages.md",
-    "Dungeon Crawling/Areas/Zen Garden.md",
-    "Dungeon Crawling/Gardens/Holly Gambit.md",
-    "Plants/Regular/Holly Queen.md",
-    "Dungeon Crawling/Areas/Far Future.md",
-    "Dungeon Crawling/Areas/Jurassic Marsh.md",
-    "Plants/Regular/Jolly Bishop.md",
-    "Plants/Regular/Missile Queen.md",
-    "Dungeon Crawling/Areas/Old Wild Egypt.md",
-    "Dungeon Crawling/Areas/Neighbour's House.md",
-    "Dungeon Crawling/Areas/Pirate's Beach.md",
-    "Dungeon Crawling/Areas/ZCorp Intra-Space-Time.md",
-    "Dungeon Crawling/Areas/Training Grounds.md",
-    "Dungeon Crawling/Areas/Neon Carnival.md",
+    "Zombies/Costumes/Fancy Coat.md",
+    "Items/Attacks/Vaulting Pole.md",
     "Dungeon Crawling/Areas/Lost City.md",
-    "Dungeon Crawling/Areas/The Zombosseum.md",
-    "Dungeon Crawling/Areas/Steam City.md",
-    "Items/Gadgets/Necromancy (Renaissance).md",
-    "Zombies/Spawnlings/Engraved Gravestone.md",
-    "Plants/Boss/Bananasaurus Rex.md",
-    "Plants/Boss/Three-Headed Chomper.md",
-    "Dungeon Crawling/Gardens/Endangered Plant.md",
-    "Plants/Protector/Holly Knight.md",
-    "Plants/Protector/Holly Pawn.md",
-    "Plants/Regular/Holly Rook.md",
-    "Plants/Regular/Holly King.md",
+    "Zombies/Costumes/Snow Day.md",
+    "Zombies/Costumes/Relic Hunter.md",
+    "Dungeon Crawling/Areas/Jurassic Marsh.md",
+    "Dungeon Crawling/Areas/Far Future.md",
+    "Zombies/Player Zombie.md",
+    "Dungeon Crawling/Gardens/Castle.md",
+    "Dungeon Crawling/Gardens/Mushroom Grotto.md",
+    "Dungeon Crawling/Areas/Zen Garden.md",
+    "Plants/Regular/Briar Rose.md",
+    "Plants/Ground/Saucer.md",
+    "Plants/Boss/Beta-Carrotina.md",
+    "Plants/Regular/Starch Lord.md",
+    "Dungeon Crawling/Areas/ZCorp Intra-Space-Time.md",
+    "Dungeon Crawling/Gardens/Roof.md",
+    "Dungeon Crawling/Areas/Neighbour's House.md",
+    "Dungeon Crawling/Garden Gimmicks/Spore Cloud.md",
+    "Plants/Regular/Shadow-shroom.md",
+    "Plants/Boss/Ice-shroom.md",
+    "Dungeon Crawling/Areas/Old Wild Egypt.md",
+    "Dungeon Crawling/Areas/Neon Carnival.md",
+    "Items/Gadgets/Flashlight.md",
+    "Items/Armours/Mining Hardhat.md",
     "Dungeon Crawling/Areas",
     "Dungeon Crawling/Garden Gimmicks",
     "Garden",

@@ -1,4 +1,4 @@
 #DarkAges #FightingGarden
 
 Unique to [[Dark Ages]]
-- Sunflowers don't spawn.
+- Has no traits unique to itself, only a unique plant pool.

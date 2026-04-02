@@ -1,7 +1,7 @@
 #DarkAges #Plant
 
 Type: #Protector
-Area: [[Dark Ages]] ([[Dark Meadow]])
+Area: [[Dark Ages]] ([[Castle]])
 Attack: n/a
 Traits:
 - #Tiny (Not shadow-powered)

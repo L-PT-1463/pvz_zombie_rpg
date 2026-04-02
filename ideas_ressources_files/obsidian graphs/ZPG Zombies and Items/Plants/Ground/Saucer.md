@@ -1,7 +1,7 @@
-#FarFuture #Plant
+#ZCorpIntraSpaceTime #Plant
 
 Type: #GroundPlant 
-Area: [[Far Future]]
+Area: [[ZCorp Intra-Space-Time]]
 Attack: #GroundAttack 
 Traits:
 - #Aerial

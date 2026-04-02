@@ -1,7 +1,7 @@
-#FarFuture #Plant
+#ZCorpIntraSpaceTime #Plant
 
 Type: #Boss #Regular
-Area: [[Far Future]]
+Area: [[ZCorp Intra-Space-Time]]
 Attack: n/a
 Traits:
 - 

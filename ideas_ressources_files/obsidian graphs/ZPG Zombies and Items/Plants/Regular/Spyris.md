@@ -1,7 +1,7 @@
- #ZCorpIntraSpaceTime #Plant 
+ #NeonCarnival  #Plant 
 
 Type: #Regular 
-Area: [[ZCorp Intra-Space-Time]]
+Area: [[Neon Carnival]]
 Attack: #Straight
 Traits:
 - #Pierce

@@ -1,6 +1,6 @@
 #Costume
 
-Inspired by the [[Neighbour's House]] area, unlocked by obtaining all winter almanac entries:
+Inspired by the [[Neighbour's House]] area, unlocked by revealing all winter almanac entries:
 
 Spawnlings:
 - [[Brownparka]]

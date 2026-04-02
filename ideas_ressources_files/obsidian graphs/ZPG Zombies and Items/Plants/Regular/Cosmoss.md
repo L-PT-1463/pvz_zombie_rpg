@@ -6,4 +6,4 @@ Attack: #Straight
 Traits:
 - #Aerial
 
-Speciality: Increases damage and health when a Garden Gimmick happens.
+Speciality: Increases damage and health when a Garden Gimmick takes place.

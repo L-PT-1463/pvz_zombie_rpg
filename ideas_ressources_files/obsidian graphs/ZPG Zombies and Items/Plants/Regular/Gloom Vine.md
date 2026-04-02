@@ -1,7 +1,7 @@
 #DarkAges #Plant 
 
 Type: #Regular 
-Area: [[Dark Ages]] ([[Dark Meadow]])
+Area: [[Dark Ages]] ([[Castle]])
 Attack: n/a
 Traits:
 - #Vine

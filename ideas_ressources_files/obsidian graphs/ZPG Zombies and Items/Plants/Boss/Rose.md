@@ -1,7 +1,7 @@
-#ZCorpIntraSpaceTime #Plant 
+#NeonCarnival  #Plant 
 
 Type: #Boss #Hero 
-Area: [[ZCorp Intra-Space-Time]]
+Area: [[Neon Carnival]]
 Attack: n/a
 Traits:
 - 

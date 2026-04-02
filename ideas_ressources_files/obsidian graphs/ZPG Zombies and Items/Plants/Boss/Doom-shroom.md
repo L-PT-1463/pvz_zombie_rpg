@@ -1,7 +1,7 @@
 #DarkAges #Plant 
 
 Type: #Boss #Regular 
-Area: [[Dark Ages]] ([[Castle]])
+Area: [[Dark Ages]] ([[Mushroom Grotto]])
 Attack: n/a
 Traits:
 - 

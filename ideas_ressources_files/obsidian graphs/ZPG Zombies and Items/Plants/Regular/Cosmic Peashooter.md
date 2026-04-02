@@ -4,6 +4,6 @@ Type: #Regular
 Area: [[ZCorp Intra-Space-Time]]
 Attack: #Straight
 Traits:
-- #Repeat
+- #Flammable 
 
-Start of second turn: Becomes a random pea plant that gains the Repeat trait. 
+Start of second turn: Becomes a random pea plant that gains the #Flammable  trait. 

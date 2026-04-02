@@ -1,7 +1,7 @@
 #DarkAges #Plant 
 
 Type: #Regular 
-Area: [[Dark Ages]] ([[Castle]])
+Area: [[Dark Ages]] ([[Mushroom Grotto]])
 Attack: #Straight
 Traits:
 - #Pierce

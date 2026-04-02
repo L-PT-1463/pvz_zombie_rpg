@@ -1,7 +1,7 @@
 #DarkAges #Plant 
 
 Type: #Regular 
-Area: [[Dark Ages]] ([[Dark Meadow]])
+Area: [[Dark Ages]] ([[Castle]])
 Attack: #Heal
 
 Speciality: Powers other shadow plants in a cross-shaped area while alive.

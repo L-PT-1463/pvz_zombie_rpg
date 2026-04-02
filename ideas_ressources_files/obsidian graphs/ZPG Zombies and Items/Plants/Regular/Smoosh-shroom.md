@@ -1,7 +1,7 @@
-#DarkAges #Plant 
+#SteamCity  #Plant 
 
 Type: #Regular 
-Area: [[Dark Ages]] ([[Castle]])
+Area: [[Steam City]]
 Attack: #Melee
 Traits:
 - #Pierce

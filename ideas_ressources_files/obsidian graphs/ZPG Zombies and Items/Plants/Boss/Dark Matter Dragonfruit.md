@@ -1,7 +1,7 @@
 #DarkAges #Plant
 
 Type: #Boss #Regular
-Area: [[Dark Ages]] ([[Dark Meadow]])
+Area: [[Dark Ages]] ([[Castle]])
 Attack: #Straight
 Traits:
 - #Pierce
