@@ -6,4 +6,4 @@ Attack: #Straight
 Traits:
 - #Aerial
 
-Speciality: #TBD
+Start of turn (with cooldown): Makes a random spawnling #Hypnotized

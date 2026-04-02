@@ -3,7 +3,5 @@
 Type: #Regular 
 Area: [[Dark Ages]] ([[Mushroom Grotto]])
 Attack: n/a
-Traits:
-- 
 
-Speciality: #TBD
+When vanquished by a Munch type attack: Makes the zombie #Hypnotized 
