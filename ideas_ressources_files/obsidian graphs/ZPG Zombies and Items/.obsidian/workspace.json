@@ -24,34 +24,6 @@
             }
           },
           {
-            "id": "5f2ed6040b39a564",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Plants/Regular/Hypno-shroom.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Hypno-shroom"
-            }
-          },
-          {
-            "id": "86ed7595720220be",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Zombies/Costumes/Fancy Coat.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Fancy Coat"
-            }
-          },
-          {
             "id": "61f927548a961c27",
             "type": "leaf",
             "state": {
@@ -240,7 +212,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 12
       },
       {
         "id": "f22b0a8f55dd8c7e",
@@ -466,21 +438,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5f2ed6040b39a564",
+  "active": "0acd85a3c66e41ad",
   "lastOpenFiles": [
+    "Dungeon Crawling/Areas/Neighbour's House.md",
+    "Plants/Regular/Sunflower Seed.md",
+    "Dungeon Crawling/Areas/Dark Ages.md",
+    "Dungeon Crawling/Areas/Far Future.md",
+    "Plants/Regular/Lightning Reed.md",
     "Zombies/Costumes/Fancy Coat.md",
+    "Plants/Regular/Punk Shocker.md",
+    "Plants/Regular/Hypno-shroom.md",
     "Plants/Regular/Cardboard Sunflower.md",
     "Plants/Regular/Sunflower.md",
-    "Plants/Regular/Hypno-shroom.md",
     "Plants/Regular/Caulipower.md",
     "Plants/Boss/The Great Zucchini.md",
-    "Dungeon Crawling/Areas/Dark Ages.md",
     "Items/Attacks/Vaulting Pole.md",
     "Dungeon Crawling/Areas/Lost City.md",
     "Zombies/Costumes/Snow Day.md",
     "Zombies/Costumes/Relic Hunter.md",
     "Dungeon Crawling/Areas/Jurassic Marsh.md",
-    "Dungeon Crawling/Areas/Far Future.md",
     "Zombies/Player Zombie.md",
     "Dungeon Crawling/Gardens/Castle.md",
     "Dungeon Crawling/Gardens/Mushroom Grotto.md",
@@ -490,10 +466,6 @@
     "Plants/Boss/Beta-Carrotina.md",
     "Plants/Regular/Starch Lord.md",
     "Dungeon Crawling/Areas/ZCorp Intra-Space-Time.md",
-    "Dungeon Crawling/Gardens/Roof.md",
-    "Dungeon Crawling/Areas/Neighbour's House.md",
-    "Dungeon Crawling/Garden Gimmicks/Spore Cloud.md",
-    "Plants/Regular/Shadow-shroom.md",
     "Dungeon Crawling/Areas",
     "Dungeon Crawling/Garden Gimmicks",
     "Garden",
