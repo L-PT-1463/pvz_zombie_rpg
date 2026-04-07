@@ -2,6 +2,6 @@
 
 Type: #Regular 
 Area: [[The Zombosseum]]
-Attack: #Melee
+Attack: #Straight 
 
-Speciality: Attacks either in front or in both tiles diagonally in front.
+Speciality: Attacks either directly in front or in both tiles diagonally in front.

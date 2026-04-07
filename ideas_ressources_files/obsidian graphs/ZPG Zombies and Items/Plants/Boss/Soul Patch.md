@@ -2,8 +2,8 @@
 
 Type: #Boss #Protector
 Area: [[Steam City]]
-Attack: #Melee
+Attack: #Straight 
 Traits:
 - #Armoured (1)
 
-Speciality: When a plant is hit by an attack, this takes the damage instead.
+Speciality: Attack has one tile range. When a plant is hit by an attack, this takes damage instead.

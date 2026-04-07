@@ -2,9 +2,9 @@
 
 Type: #Regular 
 Area: [[Jurassic Marsh]]
-Attack: #Melee
+Attack: #Straight 
 Traits:
 - #Stun
 
-Speciality: Attacks deal no damage.
+Speciality: Attack has one tile range. Attacks deal no damage.
 When vanquished: Attacks the two tiles in front of it.

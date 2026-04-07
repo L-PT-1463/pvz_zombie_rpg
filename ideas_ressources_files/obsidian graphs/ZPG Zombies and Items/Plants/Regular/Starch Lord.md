@@ -2,7 +2,7 @@
 
 Type: #Boss #Regular
 Area: [[ZCorp Intra-Space-Time]]
-Attack: n/a
+Attack: #TBD 
 Traits:
 - 
 

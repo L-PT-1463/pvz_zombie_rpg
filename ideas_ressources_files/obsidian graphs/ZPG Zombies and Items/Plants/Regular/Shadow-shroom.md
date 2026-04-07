@@ -2,9 +2,9 @@
 
 Type: #Regular 
 Area: [[Dark Ages]] ([[Castle]])
-Attack: #Melee
+Attack: n/a
 Traits:
 - #Poison
 
-When vanquished by a Munch type attack: It attacks the zombie.
-When vanquished by a Munch or Strike type attack: If shadow-powered, it attacks in an X pattern.
+When vanquished by a Munch type attack: Makes a #Straight attack.
+When vanquished by a Munch or Strike type attack: If shadow-powered, makes a #Straight attack at the diagonally neighbouring tiles.

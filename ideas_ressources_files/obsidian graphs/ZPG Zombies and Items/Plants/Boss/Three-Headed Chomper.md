@@ -2,7 +2,7 @@
 
 Type: #Boss #Regular
 Area: [[Jurassic Marsh]]
-Attack: #Melee
-Traits:
+Attack: #Straight 
 
-[[Dino-roar]]: Vanishes the front-most spawnling.
+Speciality: Attack has one tile range.
+[[Dino-roar]]: Vanquishes the front-most spawnling.

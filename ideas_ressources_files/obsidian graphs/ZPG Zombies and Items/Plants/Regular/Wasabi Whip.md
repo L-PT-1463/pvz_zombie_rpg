@@ -2,9 +2,9 @@
 
 Type: #Regular
 Area: #TBD 
-Attack: #Melee
+Attack: #Straight 
 
 Traits:
 - #Fire 
 
-Speciality: Can attack both in front and behind itself.
+Speciality: Attack has one tile range. Can attack both in front and behind itself.

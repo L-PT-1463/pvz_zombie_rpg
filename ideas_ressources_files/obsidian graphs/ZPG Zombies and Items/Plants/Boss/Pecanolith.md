@@ -1,8 +1,8 @@
 #JurassicMarsh #Plant
 
-Type: #Boss n/a
+Type: #Boss #TBD 
 Area: [[Jurassic Marsh]]
-Attack: n/a
+Attack: #TBD 
 Traits:
 - 
 

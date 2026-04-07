@@ -2,8 +2,8 @@
 
 Type: #Boss #Hero 
 Area: [[Dark Ages]] ([[Mushroom Grotto]])
-Attack: n/a
+Attack: #TBD 
 Traits:
 - 
 
-Speciality: #TBD
+Start of turn: Spawns a [[Poison-shroom]] in an available tile. It then performs a #Straight, #Laser, #Pierce attack down that lane.

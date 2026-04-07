@@ -2,8 +2,8 @@
 
 Type: #Protector
 Area: [[Dark Ages]]
-Attack: #Melee
+Attack: n/a
 Traits:
 - #FireWeak
 
-Speciality: Attacks the zombie when hit by a Munch type attack. When a Protector type plant (that isn't a Holly) is vanquished, spawns a [[Holly Pawn]] on its tile.
+Speciality: Makes a #Straight type attack when hit by a Munch type attack. When a Protector type plant (that isn't a Holly) is vanquished, spawns a [[Holly Pawn]] on its tile.

@@ -2,6 +2,6 @@
 
 Type: #Regular
 Area: [[Old Wild Egypt]]
-Attack: #Melee
+Attack: #Straight 
 
-Speciality: Can attack both in front and behind itself.
+Speciality: Can attack the tile directly in front and behind itself.

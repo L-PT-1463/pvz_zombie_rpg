@@ -2,7 +2,7 @@
 
 Type: #Regular 
 Area: [[Dark Ages]] ([[Mushroom Grotto]])
-Attack: #Melee
+Attack: #Straight 
 Traits:
 - #Pierce
 

@@ -2,7 +2,7 @@
 
 Type: #Boss #Power-mint
 Area: [[Zen Garden]]
-Attack: n/a
+Attack: #TBD 
 Traits:
 - 
 

@@ -2,6 +2,6 @@
 
 Type: #Regular 
 Area: n/a
-Attack: #Melee
+Attack: #Straight 
 
-Speciality: Cooldown between attacks.
+Speciality: Attack has one tile range. Cooldown between attacks.

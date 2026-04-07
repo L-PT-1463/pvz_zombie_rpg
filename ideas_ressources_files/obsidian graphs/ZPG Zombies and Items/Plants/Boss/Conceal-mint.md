@@ -2,7 +2,7 @@
 
 Type: #Boss #Power-mint
 Area: [[Dark Ages]] ([[Castle]])
-Attack: n/a
+Attack: #TBD 
 Traits:
 - 
 

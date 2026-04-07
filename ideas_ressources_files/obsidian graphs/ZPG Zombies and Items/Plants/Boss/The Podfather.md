@@ -6,4 +6,5 @@ Attack: #Straight
 Traits:
 - #Flammable
 
-Speciality: Spawns [[Split Pea]], [[Snow Pea]] and [[Fire Peashooter]]. Buffs pea plants in the garden #TBD 
+Start of turn: Spawns a [[Split Pea]], [[Snow Pea]] or [[Fire Peashooter]].
+Speciality: Heals one pea when this attacks.

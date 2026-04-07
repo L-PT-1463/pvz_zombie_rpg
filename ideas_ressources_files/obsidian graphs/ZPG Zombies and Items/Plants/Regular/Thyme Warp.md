@@ -4,5 +4,5 @@ Type: #Regular
 Area: [[ZCorp Intra-Space-Time]]
 Attack: n/a
 
-Speciality: Every couple of turns, sends all zombies to the last available tiles in their lanes.
+Start of turn (with cooldown): Sends the front-zombie of each lane to the last available tile in its lane and applies #Stun to them. Can't affect #Sturdy zombies.
 When vanquished: Triggers a [[Time Twist]] Garden Gimmick.

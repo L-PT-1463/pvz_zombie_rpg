@@ -2,6 +2,6 @@
 
 Type: #Regular 
 Area: [[Dark Ages]]
-Attack: #Melee
+Attack: #Straight 
 
-Speciality: If it vanquishes a zombie, it spawns a [[Magical Beanstalk]] on its lane.
+Speciality: Attack has one tile range. If it vanquishes a zombie, it spawns a [[Magical Beanstalk]] on its lane.

@@ -2,7 +2,7 @@
 
 Type: #Boss #Hero 
 Area: [[Old Wild Egypt]]
-Attack: n/a
+Attack: #TBD 
 Traits:
 - 
 

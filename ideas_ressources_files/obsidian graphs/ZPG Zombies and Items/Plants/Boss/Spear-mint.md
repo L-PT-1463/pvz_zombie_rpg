@@ -2,7 +2,7 @@
 
 Type: #Boss #Power-mint
 Area: [[The Zombosseum]]
-Attack: n/a
+Attack: #TBD 
 Traits:
 - 
 

@@ -2,9 +2,9 @@
 
 Type: #Regular 
 Area: [[Pirate's Beach]]
-Attack: #Melee
+Attack: #Straight 
 Traits:
 - #Fire
 - #Pierce
 
-Speciality: Attacks on its lane and neighbouring lanes
+Speciality: Attacks the tiles directly in front of itself in its lane and neighbouring lanes.

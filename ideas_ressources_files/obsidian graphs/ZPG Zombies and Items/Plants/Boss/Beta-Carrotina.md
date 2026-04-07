@@ -2,7 +2,7 @@
 
 Type: #Boss #Hero 
 Area: [[Far Future]]
-Attack: n/a
+Attack: #TBD 
 Traits:
 - 
 

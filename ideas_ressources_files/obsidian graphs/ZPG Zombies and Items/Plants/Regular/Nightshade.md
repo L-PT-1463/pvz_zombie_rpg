@@ -2,8 +2,8 @@
 
 Type: #Regular 
 Area: [[Dark Ages]] ([[Castle]])
-Attack: #Melee
+Attack: #Straight 
 
-Speciality: Can only attack three times.
+Speciality: Attack has one tile range. Can only attack three times.
 Shadow-powered: 4x1 range (2 tiles in front)
-Start of turn: If shadow-powered, recharges one petal.
+Start of turn: If shadow-powered, gains one attack back.

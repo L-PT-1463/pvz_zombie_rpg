@@ -2,8 +2,10 @@
 
 Type: #Regular 
 Area: [[Old Wild Egypt]]
-Attack: #Melee
+Attack: #Straight 
 Traits:
 - #Fire
 - #Pierce
 - #Vine
+
+Speciality: Attack has one tile range.

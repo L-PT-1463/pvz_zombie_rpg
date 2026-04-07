@@ -2,6 +2,6 @@
 
 Type: #Protector
 Area: [[Neon Carnival]]
-Attack: #Melee
+Attack: #Straight 
 
-Speciality: Gains health when a Spawnling is spawned.
+Speciality: Attack has one tile range. Gains health when a Spawnling is spawned.

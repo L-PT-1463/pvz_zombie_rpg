@@ -9,4 +9,4 @@ Traits:
 - #FireWeak
 - #Armoured (1) (Shadow-powered)
 
-Shadow-powered: Gains a #Melee attack that triggers when hit by a Munch or Strike type attack. 
+Shadow-powered: Makes a #Straight type attack when hit by a Munch or Strike type attack.

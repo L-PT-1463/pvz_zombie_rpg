@@ -2,8 +2,8 @@
 
 Type: #Regular 
 Area: [[Neon Carnival]]
-Attack: #Melee
+Attack: #Straight 
 Traits:
 - #Butter
 
-Speciality: Can attack in front and behind itself.
+Speciality: Can attack the tile directly in front and behind itself.

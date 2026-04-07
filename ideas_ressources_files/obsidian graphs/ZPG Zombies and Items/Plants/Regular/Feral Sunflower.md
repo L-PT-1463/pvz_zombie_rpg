@@ -2,6 +2,6 @@
 
 Type: #Regular 
 Area: [[Jurassic Marsh]]
-Attack: #Melee
+Attack: #Straight 
 
-Speciality: Does a #Heal attack if hit by a Munch type attack.
+Speciality: Attack has one tile range. Does a #Heal attack if hit by a Munch type attack.

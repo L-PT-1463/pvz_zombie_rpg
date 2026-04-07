@@ -2,7 +2,7 @@
 
 Type: #Protector
 Area: [[The Zombosseum]]
-Attack: #Melee
+Attack: #Straight 
 
-Speciality: Can only attack behind itself.
+Speciality: Can only attack the tile directly behind itself.
 Start of turn: If there are no zombies in range, it hides (Becomes #Regular, #Grounded)

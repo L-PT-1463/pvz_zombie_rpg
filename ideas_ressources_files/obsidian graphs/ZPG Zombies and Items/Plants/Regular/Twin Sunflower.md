@@ -2,7 +2,7 @@
 
 Type: #Regular
 Area: [[Old Wild Egypt]]
-Attack: #Heal
+Attack: n/a
 Traits:
 - 
 

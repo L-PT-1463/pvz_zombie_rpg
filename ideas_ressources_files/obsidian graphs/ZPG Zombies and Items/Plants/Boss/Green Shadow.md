@@ -6,4 +6,4 @@ Attack: #Straight
 Traits:
 - #Flammable
 
-Speciality: #TBD
+Start of turn: Attacks.

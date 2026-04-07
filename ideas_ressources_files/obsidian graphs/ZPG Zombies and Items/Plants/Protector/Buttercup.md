@@ -2,8 +2,8 @@
 
 Type: #Protector
 Area: [[Neon Carnival]]
-Attack: #Melee
+Attack: #Straight 
 Traits:
 - #Butter
 
-Speciality: Attack deals no damage.
+Speciality: Attack has one tile range. Attack deals no damage.

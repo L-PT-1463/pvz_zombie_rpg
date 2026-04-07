@@ -2,6 +2,6 @@
 
 Type: #Regular
 Area: [[Training Grounds]]
-Attack: #Heal
+Attack: n/a
 
-When vanquished by a Munch type attack: It heals the zombie.
+When vanquished by a Munch type attack: #Heal the zombie.

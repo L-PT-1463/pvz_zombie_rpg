@@ -2,6 +2,6 @@
 
 Type: #Boss #Regular
 Area: [[Pirate's Beach]]
-Attack: #Straight
+Attack: #Lobbed 
 
 Speciality: Attacks on its lane and neighbouring lanes.

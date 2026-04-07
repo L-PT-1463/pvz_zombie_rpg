@@ -2,6 +2,8 @@
 
 Type: #Regular 
 Area: [[Lost City]]
-Attack: #Melee
+Attack: #Straight 
 Traits:
 - #Amphibious
+
+Speciality: Attack has one tile range.

@@ -2,7 +2,7 @@
 
 Type: #Boss #Hero 
 Area: [[Dark Ages]]
-Attack: n/a
+Attack: #TBD 
 Traits:
 - 
 

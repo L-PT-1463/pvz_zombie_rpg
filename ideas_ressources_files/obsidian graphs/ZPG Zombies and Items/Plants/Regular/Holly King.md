@@ -2,8 +2,8 @@
 
 Type: #Regular 
 Area: [[Dark Ages]]
-Attack: #Melee 
+Attack: n/a
 Traits:
 - #Chill 
 
-Speciality: Attacks the zombie when hit by a Munch type attack. Only spawns naturally in [[Holly Gambit]] bonus garden.
+Speciality: Makes a #Straight type attack when hit by a Munch type attack. Only spawns naturally in [[Holly Gambit]] bonus garden.

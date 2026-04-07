@@ -2,8 +2,8 @@
 
 Type: #Regular 
 Area: [[Pirate's Beach]]
-Attack: #Melee
+Attack: n/a
 Traits:
 - #Vine
 
-When vanquished: Attacks damage to all zombies in 3x3 area.
+When vanquished: Makes a #Straight type attack at all zombies in 3x3 area.

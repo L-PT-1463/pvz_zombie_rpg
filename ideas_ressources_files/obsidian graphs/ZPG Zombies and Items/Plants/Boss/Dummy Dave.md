@@ -4,4 +4,4 @@ Type: #Boss #Regular
 Area: [[Training Grounds]]
 Attack: n/a
 
-Speciality: Spawns cardboard plants.
+Start of turn: Spawns a cardboard plant.

@@ -2,8 +2,9 @@
 
 Type: #Regular 
 Area: [[Jurassic Marsh]]
-Attack: #Melee
+Attack: #Straight 
 Traits:
 - #Tiny
 
+Speciality: Attack has one tile range.
 When vanquished: Turns into a [[Grizzly Pear]]. 

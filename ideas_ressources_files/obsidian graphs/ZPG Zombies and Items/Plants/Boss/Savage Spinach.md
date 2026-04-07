@@ -2,8 +2,9 @@
 
 Type: #Boss #Regular
 Area: [[Jurassic Marsh]]
-Attack: #Melee
+Attack: #Straight 
 Traits:
 - #Pierce
 
-Speciality: Increases the damage of all plants in the garden.
+Speciality: Attack has one tile range.
+Start of turn (with cooldown): Slightly increases the damage of all plants in the garden.

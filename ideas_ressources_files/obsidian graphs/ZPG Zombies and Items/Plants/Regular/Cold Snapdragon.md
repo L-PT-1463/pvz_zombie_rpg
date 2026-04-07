@@ -2,10 +2,10 @@
 
 Type: #Regular 
 Area: [[Neighbour's House]] ([[Winter]])
-Attack: #Melee
+Attack: #Straight 
 Traits:
 - #Chill
 - #Pierce
 - #IceImmune
 
-Speciality: Attacks on its lane and neighbouring lanes.
+Speciality: Attack has one tile range. Attacks on its lane and neighbouring lanes.

@@ -2,7 +2,7 @@
 
 Type: #Boss #Power-mint
 Area: [[Old Wild Egypt]]
-Attack: n/a
+Attack: #TBD 
 Traits:
 - #FireImmune
 

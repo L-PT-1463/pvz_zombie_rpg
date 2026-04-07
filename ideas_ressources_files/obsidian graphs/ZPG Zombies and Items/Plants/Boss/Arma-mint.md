@@ -2,7 +2,7 @@
 
 Type: #Boss #Power-mint
 Area: [[Pirate's Beach]]
-Attack: n/a
+Attack: #TBD 
 Traits:
 - 
 

@@ -7,5 +7,5 @@ Traits:
 - #Freeze
 - #IceImmune
 
-Speciality: Attacks deal no damage. At most one can spawn in a garden.
+Speciality: Attacks deal no damage.
 When vanquished: Attacks all zombies.

@@ -2,7 +2,7 @@
 
 Type: #Boss #Power-mint
 Area: [[Jurassic Marsh]]
-Attack: n/a
+Attack: #TBD 
 Traits:
 - 
 

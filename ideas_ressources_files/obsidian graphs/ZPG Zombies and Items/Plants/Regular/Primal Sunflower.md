@@ -2,7 +2,7 @@
 
 Type: #Regular
 Area: [[Jurassic Marsh]]
-Attack: #Heal
+Attack: n/a
 Traits:
 - 
 

@@ -2,9 +2,8 @@
 
 Type: #Protector
 Area: [[Far Future]]
-Attack: #Melee
+Attack: n/a
 Traits:
-- #Chill
 - #Pass-through
 - #FireImmune
 - #IceImmune

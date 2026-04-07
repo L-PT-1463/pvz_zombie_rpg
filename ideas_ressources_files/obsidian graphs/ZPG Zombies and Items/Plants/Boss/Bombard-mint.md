@@ -2,7 +2,7 @@
 
 Type: #Boss #Power-mint
 Area: [[Lost City]]
-Attack: n/a
+Attack: #TBD 
 Traits:
 - 
 

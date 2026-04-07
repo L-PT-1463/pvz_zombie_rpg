@@ -2,7 +2,7 @@
 
 Type: #Boss #Hero 
 Area: [[Neon Carnival]]
-Attack: n/a
+Attack: #TBD 
 Traits:
 - 
 

@@ -2,8 +2,7 @@
 
 Type: #Boss #Hero 
 Area: [[The Zombosseum]]
-Attack: #Melee 
-Traits:
-- 
+Attack: #Straight 
 
-Speciality: #TBD
+Speciality: Attack has one tile range.
+Start of turn: Attacks the front-most spawnling on each lane.

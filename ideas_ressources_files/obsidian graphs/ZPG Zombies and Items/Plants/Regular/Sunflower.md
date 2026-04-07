@@ -2,6 +2,6 @@
 
 Type: #Regular 
 Area: n/a
-Attack: #Heal
+Attack: n/a
 
-Speciality: Heals zombie if hit by Munch type attack
+Speciality: #Heal zombie if hit by Munch type attack

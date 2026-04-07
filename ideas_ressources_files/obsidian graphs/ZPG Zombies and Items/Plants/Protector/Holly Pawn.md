@@ -2,9 +2,9 @@
 
 Type: #Protector
 Area: [[Dark Ages]]
-Attack: #Melee
+Attack: n/a
 Traits:
 - #FireWeak
 - #Pass-through
 
-Speciality: Attacks the zombie when hit by a Munch type attack.
+Speciality: Makes a #Straight type attack when hit by a Munch type attack.

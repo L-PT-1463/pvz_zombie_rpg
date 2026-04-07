@@ -1,8 +1,8 @@
 #Plant 
 
 Type: #Boss #Hero 
-Area: n/a
-Attack: n/a
+Area: #TBD 
+Attack: #TBD 
 Traits:
 - 
 

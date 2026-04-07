@@ -2,6 +2,7 @@
 
 Type: #Boss #Regular
 Area: [[ZCorp Intra-Space-Time]]
-Attack: #Melee
+Attack: #Straight 
 
-Start of turn: Turns every plant into a random plant. HP is converted proportionally (in %) with a slight heal.
+Speciality: Attack has one tile range.
+Start of turn: Turns a group of plants into different random plants. HP is converted proportionally (in %) with a slight heal.

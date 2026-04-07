@@ -2,7 +2,7 @@
 
 Type: #Boss #Regular
 Area: [[Zen Garden]] ([[Indoors]])
-Attack: #Straight
+Attack: #Lobbed
 Traits:
 - #Armoured (1)
 

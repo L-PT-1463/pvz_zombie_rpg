@@ -2,8 +2,8 @@
 
 Type: #Boss #Regular
 Area: [[The Zombosseum]]
-Attack: #Melee
+Attack: #Straight 
 Traits:
 - #Armoured (1)
 
-Speciality: Makes a straight attack, if possible, when any zombie equips or activates a Gadget.
+Speciality: Attack has one tile range. Attacks the front-most zombie in front of itself when any zombie equips or activates a Gadget.

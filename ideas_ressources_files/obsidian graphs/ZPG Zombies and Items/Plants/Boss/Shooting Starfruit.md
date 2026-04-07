@@ -7,4 +7,4 @@ Traits:
 - #Repeat
 - #Aerial
 
-Speciality: Attacks in a star pattern.
+Speciality: Attacks in a all three lanes and behind itself.

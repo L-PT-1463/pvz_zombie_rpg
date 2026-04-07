@@ -2,9 +2,9 @@
 
 Type: #Protector
 Area: [[Dark Ages]] ([[Mushroom Grotto]])
-Attack: #Melee
+Attack: #Straight 
 Traits:
 - #FireWeak
 - #Pass-through
 
-Speciality: Heals after attacking.
+Speciality: Attack has one tile range. Heals after attacking.

@@ -2,7 +2,7 @@
 
 Type: #Boss #Power-mint
 Area: [[Neighbour's House]] ([[Winter]])
-Attack: n/a
+Attack: #TBD 
 Traits:
 - #IceImmune
 

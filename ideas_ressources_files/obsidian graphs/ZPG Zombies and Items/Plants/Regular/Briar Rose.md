@@ -2,6 +2,7 @@
 
 Type: #Regular
 Area: [[Jurassic Marsh]]
-Attack: #Melee
+Attack: #Straight 
 
+Speciality: Attack has one tile range.
 Speciality: Makes a free #Straight type attack at a zombie when it hits a flower.

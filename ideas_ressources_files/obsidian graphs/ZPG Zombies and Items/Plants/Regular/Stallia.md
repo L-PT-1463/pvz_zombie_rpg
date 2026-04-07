@@ -2,7 +2,7 @@
 
 Type: #Regular 
 Area: [[Lost City]]
-Attack: #Melee
+Attack: #Straight 
 Traits:
 - #Stall
 

@@ -2,7 +2,7 @@
 
 Type: #Boss #Power-mint
 Area: [[Dark Ages]] ([[Mushroom Grotto]])
-Attack: n/a
+Attack: #TBD 
 Traits:
 - 
 

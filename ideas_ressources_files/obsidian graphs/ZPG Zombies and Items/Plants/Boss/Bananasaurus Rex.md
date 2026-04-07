@@ -2,8 +2,9 @@
 
 Type: #Boss #Regular
 Area: [[Jurassic Marsh]]
-Attack: #Melee
+Attack: #Straight 
 Traits:
 - #Repeat
 
+Speciality: Attack has one tile range.
 [[Dino-roar]]: Increases its own damage.

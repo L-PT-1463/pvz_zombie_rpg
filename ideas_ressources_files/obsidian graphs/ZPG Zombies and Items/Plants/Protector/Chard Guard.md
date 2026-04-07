@@ -2,6 +2,8 @@
 
 Type: #Protector
 Area: [[Jurassic Marsh]]
-Attack: #Melee
+Attack: #Straight 
 Traits:
 - #Knockback
+
+Speciality: Attack has one tile range.

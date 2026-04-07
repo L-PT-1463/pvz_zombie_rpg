@@ -6,4 +6,4 @@ Attack: #Straight
 Traits:
 - #Amphibious
 
-When vanquished: It attacks all zombies in lane ( #Melee #Pierce)
+When vanquished: It attacks all zombies in lane.

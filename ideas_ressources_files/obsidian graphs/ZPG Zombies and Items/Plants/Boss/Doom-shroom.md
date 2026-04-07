@@ -2,7 +2,7 @@
 
 Type: #Boss #Regular 
 Area: [[Dark Ages]] ([[Mushroom Grotto]])
-Attack: n/a
+Attack: #TBD 
 Traits:
 - 
 

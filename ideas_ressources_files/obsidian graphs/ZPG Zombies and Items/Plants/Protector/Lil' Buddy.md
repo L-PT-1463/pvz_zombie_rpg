@@ -2,9 +2,9 @@
 
 Type: #Protector
 Area: [[The Zombosseum]]
-Attack: #Heal
+Attack: n/a
 Traits:
 - #FireWeak
 - #Pass-through
 
-If vanquished by a Munch type attack: It heals the zombie.
+If vanquished by a Munch type attack: #Heal the zombie.

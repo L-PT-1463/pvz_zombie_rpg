@@ -4,4 +4,4 @@ Type: #Boss #Protector
 Area: [[Pirate's Beach]]
 Attack: n/a
 
-Speciality: Spawns [[Water Chestnut]] on column 6 and [[Coconut Cannon]] on column 9.
+Speciality: Spawns a [[Water Chestnut]] on column 6 or a [[Coconut Cannon]] on column 9.

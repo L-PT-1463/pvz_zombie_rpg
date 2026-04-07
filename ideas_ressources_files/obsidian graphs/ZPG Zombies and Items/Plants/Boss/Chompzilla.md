@@ -2,8 +2,8 @@
 
 Type: #Boss #Hero 
 Area: [[Zen Garden]]
-Attack: #Melee 
+Attack: #Straight 
 Traits:
 - 
 
-Speciality: #TBD
+Speciality: Attack has one tile range. #TBD

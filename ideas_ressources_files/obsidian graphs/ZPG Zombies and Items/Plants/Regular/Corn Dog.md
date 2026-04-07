@@ -2,6 +2,6 @@
 
 Type: #Regular 
 Area: [[Neon Carnival]]
-Attack: #Melee
+Attack: #Straight 
 
-Speciality: Can attack zombies in neighbouring lanes. When doing so, it moves to the tile if it is available.
+Speciality: Can attack the tiles directly in front of itself in its lane and neighbouring lanes. When attacking in a neighbouring lane, it also moves to the appropriate tile if it is available.

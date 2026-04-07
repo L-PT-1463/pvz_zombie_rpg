@@ -2,8 +2,6 @@
 
 Type: #Regular
 Area: [[Zen Garden]] ([[Roof]])
-Attack: n/a
-Traits:
-- 
+Attack: #Strike 
 
-Speciality: #TBD
+Speciality: Attack has one tile range.

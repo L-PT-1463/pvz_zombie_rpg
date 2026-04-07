@@ -2,9 +2,9 @@
 
 Type: #Protector
 Area: [[Far Future]]
-Attack: #Heal
+Attack: n/a
 Traits:
 - #Pass-through
 - #FireImmune
 
-Speciality: Heals the zombie if it is hit by a Munch type attack.
+Speciality: #Heal the zombie if it is hit by a Munch type attack.

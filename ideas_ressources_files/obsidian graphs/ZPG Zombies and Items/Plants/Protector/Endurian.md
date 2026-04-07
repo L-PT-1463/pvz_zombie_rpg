@@ -2,9 +2,9 @@
 
 Type: #Protector
 Area: [[Lost City]]
-Attack: #Melee
+Attack: n/a
 Traits:
 - #FireWeak
 - #Pass-through
 
-Speciality: Attacks when hit by a Munch or Strike type attack.
+Speciality: Makes a #Straight type attack when hit by a Munch or Strike type attack.

@@ -2,8 +2,8 @@
 
 Type: #Regular 
 Area: [[Pirate's Beach]]
-Attack: #Melee
+Attack: #Straight 
 Traits:
 - #Knockback
 
-Speciality: Attacks deal no damage.
+Speciality: Attack has one tile range. Attacks deal no damage.

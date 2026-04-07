@@ -7,4 +7,4 @@ Traits:
 - #Vine
 
 Speciality: Shadow-powers the plant inside.
-Shadow-powered: Gains a #Melee attack in a 3x3 area.
+Shadow-powered: Gains a #Straight attack in a 3x3 area.

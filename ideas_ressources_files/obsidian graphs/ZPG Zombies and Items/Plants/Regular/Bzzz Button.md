@@ -2,9 +2,9 @@
 
 Type: #Regular
 Area: [[The Zombosseum]]
-Attack: #Melee
+Attack: n/a
 Traits:
 - #Stun
 - #Tiny
 
-When vanquished by Munch or Strike type attack: Attacks the zombie. The attack jumps to another zombie within 1 tile of it. 
+When vanquished: Attacks a zombie in a 3x3 area with a #Straight attack. The attack jumps to another zombie within 1 tile of it. 

@@ -2,6 +2,6 @@
 
 Type: #Regular 
 Area: [[Jurassic Marsh]]
-Attack: #Melee
+Attack: #Straight 
 
-Speciality: Heals the plant in front of it equally to the damage dealt.
+Speciality: Attack has two tile range. Heals the plant in front of it equally to the damage dealt.

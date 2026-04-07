@@ -2,7 +2,7 @@
 
 Type: #Boss #Power-mint
 Area: [[Neon Carnival]]
-Attack: n/a
+Attack: #TBD 
 Traits:
 - 
 

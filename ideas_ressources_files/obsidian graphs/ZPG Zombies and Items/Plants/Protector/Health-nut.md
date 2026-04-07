@@ -2,8 +2,8 @@
 
 Type: #Protector 
 Area: [[Zen Garden]]
-Attack: #Melee
+Attack: #Straight 
 Traits:
 - #FireWeak 
 
-Speciality: Deals damage proportionally to the health it has left.
+Speciality: Attack has one tile range. Deals damage proportionally to the health it has left.
