@@ -1,6 +1,5 @@
-#ZenGarden #Item #Gadget
+#ZenGarden #Item #Accessory 
 
-Type: #Passive
 Area: [[Zen Garden]]
 *Armour slot*
 

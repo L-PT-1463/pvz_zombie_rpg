@@ -4,6 +4,6 @@ Type: #Regular
 Area: [[Far Future]]
 Attack: #Straight
 Traits:
-- #Laser
+- #Strike-through
 
-Speciality: Projectile damages zombies on neighbouring lanes as it passes them.
+Speciality: Attack switches lane if there is a zombie in the diagonally neighbouring tile to the zombie hit.

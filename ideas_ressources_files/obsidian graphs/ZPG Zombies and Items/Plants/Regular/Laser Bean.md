@@ -4,5 +4,4 @@ Type: #Regular
 Area: [[Far Future]]
 Attack: #Straight
 Traits:
--  #Laser
-- #Pierce
+- #Strike-through 

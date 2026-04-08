@@ -1,7 +1,6 @@
-#PiratesBeach #Item #Gadget
+#PiratesBeach #Item #Accessory 
 
-Type: #Passive
 Area: [[Pirate's Beach]]
-*Gadget slot*
+*Accessory slot*
 
 Speciality: Gives zombie #Amphibious trait while used

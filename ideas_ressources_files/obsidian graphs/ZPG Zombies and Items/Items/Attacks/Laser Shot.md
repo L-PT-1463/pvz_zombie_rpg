@@ -1,4 +1,4 @@
-#SteamCity #Item #Attack
+#SteamCity #Item #Weapon
 
 Type: #Ranged
 Area: [[Steam City]]

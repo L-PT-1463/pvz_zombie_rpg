@@ -1,6 +1,5 @@
-#LostCity #Item #Gadget 
+#LostCity #Item #Accessory 
 
-Type: #Passive
 Area: [[Lost City]]
 *Slot n/a*
 

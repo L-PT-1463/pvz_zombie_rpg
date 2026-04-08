@@ -1,4 +1,4 @@
-#ZCorpIntraSpaceTime #Item #Attack
+#ZCorpIntraSpaceTime #Item #Weapon
 
 Type: #Ranged
 Area: [[ZCorp Intra-Space-Time]]

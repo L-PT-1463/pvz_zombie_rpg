@@ -1,6 +1,5 @@
-#TheZombosseum  #Item #Gadget
+#TheZombosseum  #Item #Accessory 
 
-Type: #Passive
 Area: [[The Zombosseum]]
 *Slot n/a*
 

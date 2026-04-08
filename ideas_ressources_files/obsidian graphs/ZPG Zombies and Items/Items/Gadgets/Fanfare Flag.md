@@ -1,6 +1,5 @@
-#NeonCarnival #Item #Gadget
+#NeonCarnival #Item #Accessory 
 
-Type: #Passive
 Area: [[Neon Carnival]]
 *Weapon slot*
 

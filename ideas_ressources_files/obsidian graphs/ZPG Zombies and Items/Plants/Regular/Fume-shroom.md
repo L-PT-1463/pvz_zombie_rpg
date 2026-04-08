@@ -5,6 +5,6 @@ Area: [[Dark Ages]] ([[Mushroom Grotto]])
 Attack: #Straight
 Traits:
 - #Pierce
-- #Laser
+- #Strike-through
 
 Speciality: Attack has limited range.

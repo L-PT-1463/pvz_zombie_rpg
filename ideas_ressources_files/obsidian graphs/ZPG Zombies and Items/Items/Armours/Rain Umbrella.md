@@ -5,4 +5,4 @@ Area: [[Neighbour's House]]
 Traits:
 - #FireWeak
 
-Speciality: Gives zombie #Pierce trait for Munch and Strike type attacks while used
+Speciality: Gives zombie #Traverse trait for Munch and Strike type attacks while used

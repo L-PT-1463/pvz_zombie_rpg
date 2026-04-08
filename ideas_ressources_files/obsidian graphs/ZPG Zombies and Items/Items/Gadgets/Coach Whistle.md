@@ -1,6 +1,5 @@
-#TrainingGrounds #Item #Gadget
+#TrainingGrounds #Item #Accessory
 
-Type: #Passive
 Area: [[Training Grounds]]
 *Armour slot*
 

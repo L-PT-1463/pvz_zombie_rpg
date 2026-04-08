@@ -5,6 +5,6 @@ Area: [[Training Grounds]]
 Attack: #Straight
 Traits:
 - #Pierce
-- #Laser
+- #Strike-through
 
 Speciality: Limited range.

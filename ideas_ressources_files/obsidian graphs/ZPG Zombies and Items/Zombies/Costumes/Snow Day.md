@@ -1,4 +1,4 @@
-#Costume
+#Costume #NeighboursHouse 
 
 Inspired by the [[Neighbour's House]] area, unlocked by revealing all winter almanac entries:
 

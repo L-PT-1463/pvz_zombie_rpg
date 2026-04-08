@@ -1,4 +1,4 @@
-#Costume
+#Costume #SteamCity 
 
 Unlocked in the [[Steam City]] area by revealing all gentleman almanac entries:
 

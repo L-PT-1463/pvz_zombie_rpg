@@ -2,6 +2,8 @@
 
 Type: #Protector
 Area: [[Neon Carnival]]
-Attack: #Straight
+Attack: n/a
+Traits:
+- #FireImmune 
 
-Speciality: When a nut, including itself, is hit by an attack, it makes an attack.
+Speciality: When a nut, including itself, is hit by an attack, it makes a #Straight attack.

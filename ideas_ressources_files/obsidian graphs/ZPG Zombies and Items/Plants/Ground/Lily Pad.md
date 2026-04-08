@@ -1,6 +1,6 @@
 #PiratesBeach #Plant 
 
-Type: #GroundPlant 
+Type: #Ground
 Area: [[Pirate's Beach]]
 Attack: n/a
 Traits:

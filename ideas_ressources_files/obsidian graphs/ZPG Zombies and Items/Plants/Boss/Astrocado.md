@@ -4,7 +4,7 @@ Type: #Boss #Regular
 Area: [[ZCorp Intra-Space-Time]]
 Attack: #Straight
 Traits:
-- #Laser
+- #Strike-through
 - #Pierce
 - #Aerial
 

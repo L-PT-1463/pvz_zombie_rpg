@@ -1,4 +1,4 @@
-#JurassicMarsh #Item #Attack
+#JurassicMarsh #Item #Weapon
 
 Type: #Ranged
 Area: [[Jurassic Marsh]]

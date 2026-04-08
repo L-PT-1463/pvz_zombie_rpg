@@ -1,9 +1,9 @@
-#TheZombosseum #Item #Attack
+#TheZombosseum #Item #Weapon
 
 Type: #Ranged
 Area: [[The Zombosseum]]
 Traits:
 - #Poison
-- #Pierce
+- #Traverse
 
 Speciality: Attacks deal no damage.

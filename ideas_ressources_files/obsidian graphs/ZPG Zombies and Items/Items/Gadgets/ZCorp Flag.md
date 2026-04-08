@@ -1,7 +1,6 @@
-#ZCorpIntraSpaceTime #Item #Gadget
+#ZCorpIntraSpaceTime #Item #Accessory 
 
-Type: #Passive
 Area: [[ZCorp Intra-Space-Time]]
-*Gadget slot*
+*Accessory slot*
 
 Speciality: Summons [[ZCorp New Hire]]

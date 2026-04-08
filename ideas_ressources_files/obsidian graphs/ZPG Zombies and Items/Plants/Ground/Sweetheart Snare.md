@@ -1,6 +1,6 @@
 #TheZombosseum #Plant
 
-Type: #GroundPlant 
+Type: #Ground
 Area: [[The Zombosseum]]
 Attack: #GroundAttack 
 Traits:

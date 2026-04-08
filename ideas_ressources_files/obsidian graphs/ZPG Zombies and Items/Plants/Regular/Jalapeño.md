@@ -2,7 +2,7 @@
 
 Type: #Regular 
 Area: [[Old Wild Egypt]]
-Attack: #GroundAttack 
+Attack: #Ground
 Traits:
 - #Fire
 

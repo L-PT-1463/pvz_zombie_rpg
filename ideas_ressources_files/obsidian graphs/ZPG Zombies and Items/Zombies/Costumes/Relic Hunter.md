@@ -1,4 +1,4 @@
-#Costume
+#Costume #LostCity 
 
 Inspired by the [[Lost City]] area, unlocked by revealing all the relics' almanac entries:
 

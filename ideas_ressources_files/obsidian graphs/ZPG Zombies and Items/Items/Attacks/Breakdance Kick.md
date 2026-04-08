@@ -1,4 +1,4 @@
-#NeonCarnival #Item #Attack
+#NeonCarnival #Item #Weapon
 
 Type: #Strike
 Area: [[Neon Carnival]]

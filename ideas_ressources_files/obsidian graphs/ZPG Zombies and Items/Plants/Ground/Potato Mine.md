@@ -1,6 +1,6 @@
 #Plant
 
-Type: #GroundPlant 
+Type: #Ground
 Area: n/a
 Attack: #GroundAttack 
 Traits:

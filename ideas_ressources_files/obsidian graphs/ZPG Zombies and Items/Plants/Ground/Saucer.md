@@ -1,6 +1,6 @@
 #ZCorpIntraSpaceTime #Plant
 
-Type: #GroundPlant 
+Type: #Ground
 Area: [[ZCorp Intra-Space-Time]]
 Attack: #GroundAttack 
 Traits:

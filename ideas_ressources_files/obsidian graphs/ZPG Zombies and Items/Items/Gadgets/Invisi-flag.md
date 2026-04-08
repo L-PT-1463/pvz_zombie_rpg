@@ -1,7 +1,6 @@
-#Item #Gadget
+#Item #Accessory 
 
-Type: #Passive
-Area: n/a
-*Gadget slot*
+Area: #TBD
+*Accessory slot*
 
 Speciality: Summons [[Invisi-coat]]

@@ -1,6 +1,5 @@
-#DarkAges #Item #Gadget
+#DarkAges #Item #Accessory 
 
-Type: #Passive
 Area: [[Dark Ages]]
 *Weapon slot*
 

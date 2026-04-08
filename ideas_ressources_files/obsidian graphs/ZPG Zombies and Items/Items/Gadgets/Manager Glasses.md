@@ -1,6 +1,5 @@
-#ZCorpIntraSpaceTime #Item #Gadget
+#ZCorpIntraSpaceTime #Item #Accessory 
 
-Type: #Passive
 Area: [[ZCorp Intra-Space-Time]]
 *Armour slot*
 

@@ -1,6 +1,5 @@
-#SteamCity #Item #Gadget
+#SteamCity #Item #Accessory 
 
-Type: #Passive
 Area: [[Steam City]]
 *Weapon slot*
 

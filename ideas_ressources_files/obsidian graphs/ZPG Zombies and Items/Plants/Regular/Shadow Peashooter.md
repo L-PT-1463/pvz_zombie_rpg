@@ -5,4 +5,4 @@ Area: [[Dark Ages]] ([[Castle]])
 Attack: #Straight
 Traits:
 - #Stall (Shadow-powered)
-- #Laser (Shadow-powered)
+- #Strike-through (Shadow-powered)

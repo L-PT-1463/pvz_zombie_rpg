@@ -1,6 +1,6 @@
 #JurassicMarsh #Plant 
 
-Type: #GroundPlant 
+Type: #Ground
 Area: [[Jurassic Marsh]]
 Attack: #GroundAttack 
 Traits:

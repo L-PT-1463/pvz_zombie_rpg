@@ -1,6 +1,5 @@
-#OldWildEgypt #Item #Gadget
+#OldWildEgypt #Item #Accessory 
 
-Type: #Passive
 Area: [[Old Wild Egypt]]
 *Slot n/a*
 

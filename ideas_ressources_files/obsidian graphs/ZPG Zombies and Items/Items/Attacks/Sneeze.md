@@ -1,4 +1,4 @@
-#Item #Attack
+#Item #Weapon
 
 Type: #Ranged
 Area: n/a

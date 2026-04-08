@@ -2,7 +2,7 @@
 
 Type: #Regular 
 Area: [[Lost City]]
-Attack: #GroundAttack 
+Attack: #Ground
 Traits:
 - #Fire
 

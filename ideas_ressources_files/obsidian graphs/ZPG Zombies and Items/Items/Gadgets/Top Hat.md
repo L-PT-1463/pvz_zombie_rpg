@@ -1,4 +1,6 @@
-#SteamCity #Item #Gadget
+#SteamCity #Item #Accessory 
 
-Type: #TBD 
 Area: [[Steam City]]
+*Slot*
+
+Speciality: #TBD 

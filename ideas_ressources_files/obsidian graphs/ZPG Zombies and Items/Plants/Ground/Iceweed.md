@@ -1,8 +1,8 @@
 #Plant
 
-Type: #GroundPlant 
+Type: #Pass-through 
 Area: n/a
-Attack: #GroundAttack 
+Attack: #Ground
 Traits:
 - #Grounded
 - #Chill

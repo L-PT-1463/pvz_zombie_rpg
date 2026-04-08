@@ -1,4 +1,4 @@
-#ZenGarden #Item #Attack
+#ZenGarden #Item #Weapon
 
 Type: #Strike
 Area: [[Zen Garden]]

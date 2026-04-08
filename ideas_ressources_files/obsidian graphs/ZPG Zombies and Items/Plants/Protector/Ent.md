@@ -1,7 +1,7 @@
 #ZenGarden #Plant 
 
 Type: #Protector 
-Area: #ZenGarden 
-Attack: #GroundAttack
+Area: [[Zen Garden]]
+Attack: #Ground
 
-Speciality: Attacks the two tiles ahead of itself.
+Speciality: Attacks the tile ahead of itself.

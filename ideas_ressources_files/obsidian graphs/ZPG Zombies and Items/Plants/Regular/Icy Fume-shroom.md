@@ -4,8 +4,7 @@ Type: #Regular
 Area: [[Old Wild Egypt]]
 Attack: #Straight
 Traits:
-- #Pierce
-- #Laser
+- #Strike-through
 - #Chill 
 
 Speciality: Attack has limited range.

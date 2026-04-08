@@ -1,4 +1,4 @@
-#OldWildEgypt #Item #Attack
+#OldWildEgypt #Item #Weapon
 
 Type: #Ranged
 Area: [[Old Wild Egypt]]

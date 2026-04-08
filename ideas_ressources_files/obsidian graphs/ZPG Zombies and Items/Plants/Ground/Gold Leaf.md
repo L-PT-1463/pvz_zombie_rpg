@@ -1,8 +1,8 @@
 #LostCity #Plant
 
-Type: #GroundPlant 
+Type: #Pass-through 
 Area: [[Lost City]]
-Attack: #GroundAttack 
+Attack: #Ground
 Traits:
 - #Stall
 - #Pot

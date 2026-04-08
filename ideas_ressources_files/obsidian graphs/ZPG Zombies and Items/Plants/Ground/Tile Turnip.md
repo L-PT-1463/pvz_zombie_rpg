@@ -1,6 +1,6 @@
 #FarFuture #Plant 
 
-Type: #GroundPlant 
+Type: #Ground
 Area: [[Far Future]]
 Attack: n/a
 Traits:

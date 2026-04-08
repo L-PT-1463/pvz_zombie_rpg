@@ -6,6 +6,6 @@ Attack: #Straight
 Traits:
 - #Stall
 - #Pierce
-- #Laser
+- #Strike-through
 
 Speciality: Limited range. Attack deals no damage.

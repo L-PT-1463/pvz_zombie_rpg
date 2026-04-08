@@ -212,7 +212,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 12
       },
       {
         "id": "f22b0a8f55dd8c7e",
@@ -225,7 +225,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Dungeon Crawling/Areas/Jurassic Marsh.md",
+                "file": "Dungeon Crawling/Areas/Zen Garden.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -275,7 +275,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Jurassic Marsh"
+              "title": "Graph of Zen Garden"
             }
           },
           {
@@ -438,34 +438,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "941ef06550d48e3c",
+  "active": "0acd85a3c66e41ad",
   "lastOpenFiles": [
-    "Plants/Regular/Aloe.md",
-    "Dungeon Crawling/Areas/Far Future.md",
-    "Plants/Regular/Haunted Pumpking.md",
-    "Dungeon Crawling/Areas/Dark Ages.md",
-    "Plants/Regular/Hat-shroom.md",
-    "Dungeon Crawling/Areas/Zen Garden.md",
-    "Plants/Regular/Shadow-shroom.md",
-    "Plants/Regular/Twin Sunflower.md",
-    "Plants/Regular/Toadstool.md",
-    "Plants/Regular/Sunflower.md",
-    "Plants/Regular/Primal Sunflower.md",
-    "Plants/Regular/Feral Sunflower.md",
-    "Plants/Regular/Moonflower.md",
-    "Items/Attacks/Monk Fist.md",
-    "Plants/Protector/Metal Petal.md",
-    "Plants/Regular/Cryo-shroom.md",
-    "Plants/Regular/Pyro-shroom.md",
-    "Plants/Protector/Lil' Buddy.md",
-    "Plants/Regular/Half-Banana.md",
-    "Plants/Regular/Cosmic Sunflower.md",
-    "Plants/Regular/Cardboard Sunflower.md",
-    "Plants/Regular/Winter Squash.md",
-    "Plants/Regular/Wasabi Whip.md",
-    "Plants/Regular/Venus Flytrap.md",
-    "Plants/Regular/Veloci-Radish Hunter.md",
-    "Plants/Regular/Vanilla.md",
+    "Items/Armours/Ladder.md",
+    "Items/Armours/Rain Umbrella.md",
+    "Plants/Regular/Shadow Peashooter.md",
+    "Items/Attacks/Perfume.md",
+    "Items/Attacks/Snowball.md",
+    "Items/Attacks/Wormwhole Key.md",
+    "Items/Attacks/Vaulting Pole.md",
+    "Items/Attacks/Flint-tipped Spear.md",
+    "Plants/Regular/Power Flower.md",
+    "Plants/Boss/Nightcap.md",
+    "Plants/Regular/Laser Bean.md",
+    "Plants/Regular/Jack O' Lantern.md",
+    "Plants/Regular/Icy Fume-shroom.md",
+    "Plants/Regular/Goop-shroom.md",
+    "Plants/Regular/Fume-shroom.md",
+    "Plants/Regular/Electric Peashooter.md",
+    "Plants/Regular/Elderberry.md",
+    "Plants/Regular/Cosmic Mushroom.md",
+    "Plants/Regular/Cardboard Fume-shroom.md",
+    "Plants/Boss/Astrocado.md",
+    "Plants/Regular/Bloomerang.md",
+    "Items/Armours/ZCorp WC Door.md",
+    "Plants/Regular/Umbrella Leaf.md",
+    "Items/Armours/Trash Can.md",
+    "Items/Armours/Target.md",
+    "Items/Armours/Sled.md",
     "Untitled.canvas",
     "Dungeon Crawling/Areas",
     "Dungeon Crawling/Garden Gimmicks",

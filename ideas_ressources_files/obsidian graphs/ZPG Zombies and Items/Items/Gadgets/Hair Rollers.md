@@ -1,6 +1,5 @@
-#Item #Gadget
+#Item #Accessory 
 
-Type: #Passive
 Area: n/a
 *Armour slot*
 

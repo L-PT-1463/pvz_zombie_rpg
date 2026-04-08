@@ -1,6 +1,6 @@
-#TrainingGrounds #Item #Attack
+#TrainingGrounds #Item #Weapon
 
 Type: #Strike
 Area: [[Training Grounds]]
 Traits:
-- #Pierce
+- #Traverse

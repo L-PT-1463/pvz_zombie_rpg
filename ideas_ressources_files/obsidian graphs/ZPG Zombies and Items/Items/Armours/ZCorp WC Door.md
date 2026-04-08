@@ -4,3 +4,4 @@ Type: #Shield
 Area: [[ZCorp Intra-Space-Time]]
 Traits:
 - #FireWeak
+- #PierceImmune

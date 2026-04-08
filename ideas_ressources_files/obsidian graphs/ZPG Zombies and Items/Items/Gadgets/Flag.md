@@ -1,7 +1,6 @@
-#Item #Gadget
+#Item #Accessory 
 
-Type: #Passive
 Area: n/a
-*Gadget slot*
+*Accessory slot*
 
 Speciality: Summons [[Browncoat]]

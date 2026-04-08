@@ -2,7 +2,7 @@
 
 Type: #Regular 
 Area: [[ZCorp Intra-Space-Time]]
-Attack: #GroundAttack 
+Attack: #Ground
 Traits:
 - #Knockback
 - #Tiny

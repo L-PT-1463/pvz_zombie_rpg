@@ -5,5 +5,3 @@ Area: [[Dark Ages]]
 Attack: n/a
 Traits:
 - #Vine
-- #FireWeak
-- #Pass-through

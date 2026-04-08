@@ -4,5 +4,5 @@ Type: #Protector
 Area: [[The Zombosseum]]
 Attack: n/a
 Traits:
-- #Pass-through
+- #FireImmune 
 - #Armoured (1)

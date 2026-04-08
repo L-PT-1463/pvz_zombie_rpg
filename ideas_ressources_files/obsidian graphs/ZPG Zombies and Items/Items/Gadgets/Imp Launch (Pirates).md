@@ -1,6 +1,5 @@
-#PiratesBeach #Item #Gadget
+#PiratesBeach #Item #Accessory 
 
-Type: #Passive
 Area: [[Pirate's Beach]]
 *Slot n/a*
 

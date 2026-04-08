@@ -1,7 +1,6 @@
-#NeonCarnival #Item #Gadget
+#NeonCarnival #Item  #Accessory
 
-Type: #Passive
 Area: [[Neon Carnival]]
-*Gadget slot*
+*Accessory slot*
 
 Speciality: Spawns [[Carnie Zombie]]

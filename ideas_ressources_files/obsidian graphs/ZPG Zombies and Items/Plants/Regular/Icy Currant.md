@@ -1,8 +1,8 @@
 #NeighboursHouse #Plant 
 
-Type: #Regular 
+Type: #Pass-through 
 Area: [[Neighbour's House]] ([[Winter]])
-Attack: #GroundAttack 
+Attack: #Ground
 Traits:
 - #Chill
 

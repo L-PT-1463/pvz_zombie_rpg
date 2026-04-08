@@ -1,7 +1,7 @@
 #TrainingGrounds #Plant
 
-Type: #GroundPlant 
+Type: #Pass-through 
 Area: [[Training Grounds]]
-Attack: #GroundAttack 
+Attack: #Ground
 Traits:
 - #Grounded

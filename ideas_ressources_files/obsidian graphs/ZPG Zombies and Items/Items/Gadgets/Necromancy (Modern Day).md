@@ -1,6 +1,5 @@
-#NeighboursHouse #Item #Gadget
+#NeighboursHouse #Item #Accessory 
 
-Type: #Passive
 Area: [[Neighbour's House]]
 *Slot n/a*
 

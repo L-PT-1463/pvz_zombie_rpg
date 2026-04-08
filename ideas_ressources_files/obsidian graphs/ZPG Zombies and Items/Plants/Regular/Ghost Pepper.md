@@ -1,10 +1,9 @@
 #DarkAges #Plant 
 
-Type: #Regular 
+Type: #Pass-through 
 Area: [[Dark Ages]]
-Attack: #GroundAttack 
+Attack: #Ground
 Traits: 
-- #Grounded
 - #Pierce
 - #Aerial
 

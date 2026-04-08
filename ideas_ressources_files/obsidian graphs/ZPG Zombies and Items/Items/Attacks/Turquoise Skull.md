@@ -1,4 +1,4 @@
-#LostCity #Item #Attack
+#LostCity #Item  #Weapon
 
 Type: #Ranged
 Area: [[Lost City]]

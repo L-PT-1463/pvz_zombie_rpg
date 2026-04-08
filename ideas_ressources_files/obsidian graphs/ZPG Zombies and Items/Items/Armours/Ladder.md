@@ -5,4 +5,4 @@ Area: [[Zen Garden]]
 Traits:
 - #Magnetisable
 
-Speciality: Gives the zombie the #Pierce trait.
+Speciality: Gives the zombie the #Traverse trait.

@@ -1,4 +1,4 @@
-#TheZombosseum #Item #Attack
+#TheZombosseum #Item #Weapon
 
 Type: #Strike
 Area: [[The Zombosseum]]
