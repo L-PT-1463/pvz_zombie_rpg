@@ -1,4 +1,4 @@
 #DarkAges #FightingGarden
 
 Unique to [[Dark Ages]]
-- Mushrooms from all areas except [[Training Grounds]] can spawn
+- Non-cardboard mushrooms from all areas can spawn

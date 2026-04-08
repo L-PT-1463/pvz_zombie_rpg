@@ -4,4 +4,4 @@ Type: #Regular
 Area: [[Dark Ages]] ([[Mushroom Grotto]])
 Attack: #Lobbed
 
-Speciality: If it vanquishes a zombie that is in the Plant Spawn area, it spawns a Spore-shroom on that tile.
+Speciality: If it vanquishes a zombie, it spawns a Spore-shroom in that lane.

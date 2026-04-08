@@ -1,7 +1,7 @@
 #SteamCity #Plant 
 
 Type: #Regular 
-Area: [[Steam City]]
+Area: [[Steam City]] ([[Sky Battle]])
 Attack: #Straight
 Traits:
 - #Aerial

@@ -1,7 +1,7 @@
 #Plant
 
 Type: #Regular
-Area: n/a
+Area: #TBD 
 Attack: n/a
 Traits:
 - #Amphibious

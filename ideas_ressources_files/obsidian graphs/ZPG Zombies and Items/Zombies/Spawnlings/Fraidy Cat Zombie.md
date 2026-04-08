@@ -1,6 +1,6 @@
-#Spawnling #Pet
+ #NeighboursHouse #Spawnling #Pet
 
-Area: n/a
+Area: [[Neighbour's House]]
 Attack: [[Claws]]
 
-Speciality: Gains damage and health when a "When vanquished" is triggered happens.
+Speciality: Gains damage and health when a "When vanquished" ability is triggered.

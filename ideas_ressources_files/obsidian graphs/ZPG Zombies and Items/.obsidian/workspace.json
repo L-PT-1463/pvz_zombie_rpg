@@ -62,16 +62,7 @@
                 "file": "Dungeon Crawling/Areas/Lost City.md",
                 "mode": "source",
                 "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "backlinks": false
               },
               "icon": "lucide-file",
               "title": "Lost City"
@@ -225,7 +216,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Dungeon Crawling/Areas/Zen Garden.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -236,7 +226,7 @@
                   "showTags": false,
                   "showAttachments": false,
                   "hideUnresolved": false,
-                  "collapse-color-groups": false,
+                  "collapse-color-groups": true,
                   "colorGroups": [
                     {
                       "query": "tag:#plant",
@@ -270,12 +260,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.7132754626224436,
+                  "scale": 0.7132754626224442,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Zen Garden"
+              "title": "Graph view"
             }
           },
           {
@@ -438,34 +428,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0acd85a3c66e41ad",
+  "active": "0b46326dc340cec6",
   "lastOpenFiles": [
-    "Items/Armours/Ladder.md",
+    "Dungeon Crawling/Areas/Zen Garden.md",
+    "Items/Armours/Bamboo Hat.md",
+    "Items/Armours/Surf Board.md",
+    "Items/Armours/Parasol.md",
     "Items/Armours/Rain Umbrella.md",
-    "Plants/Regular/Shadow Peashooter.md",
-    "Items/Attacks/Perfume.md",
-    "Items/Attacks/Snowball.md",
-    "Items/Attacks/Wormwhole Key.md",
-    "Items/Attacks/Vaulting Pole.md",
-    "Items/Attacks/Flint-tipped Spear.md",
-    "Plants/Regular/Power Flower.md",
-    "Plants/Boss/Nightcap.md",
-    "Plants/Regular/Laser Bean.md",
-    "Plants/Regular/Jack O' Lantern.md",
-    "Plants/Regular/Icy Fume-shroom.md",
-    "Plants/Regular/Goop-shroom.md",
-    "Plants/Regular/Fume-shroom.md",
-    "Plants/Regular/Electric Peashooter.md",
-    "Plants/Regular/Elderberry.md",
-    "Plants/Regular/Cosmic Mushroom.md",
-    "Plants/Regular/Cardboard Fume-shroom.md",
-    "Plants/Boss/Astrocado.md",
-    "Plants/Regular/Bloomerang.md",
-    "Items/Armours/ZCorp WC Door.md",
-    "Plants/Regular/Umbrella Leaf.md",
-    "Items/Armours/Trash Can.md",
-    "Items/Armours/Target.md",
-    "Items/Armours/Sled.md",
+    "Items/Armours/Steam Umbrella.md",
+    "Plants/Regular/Sergeant Strongberry.md",
+    "Items/Attacks/Tennis Racket.md",
+    "Plants/Protector/Lychee.md",
+    "Plants/Regular/Wasabi Whip.md",
+    "Plants/Regular/Chili Bean.md",
+    "Plants/Regular/Vanilla.md",
+    "Dungeon Crawling/Areas/Lost City.md",
+    "Zombies/Spawnlings/Fraidy Cat Zombie.md",
+    "Items/Attacks/Claws.md",
+    "Items/Gadgets/Hair Rollers.md",
+    "Items/Attacks/Sneeze.md",
+    "Plants/Protector/Explode-o-Nut.md",
+    "Plants/Regular/Sting Bean.md",
+    "Plants/Regular/Bombegranate.md",
+    "Dungeon Crawling/Areas/The Zombosseum.md",
+    "Plants/Regular/Grapeshot.md",
+    "Plants/Regular/Seedling.md",
+    "Dungeon Crawling/Areas/Dark Ages.md",
+    "Plants/Regular/Grapes of Wrath.md",
+    "Plants/Regular/Acid Lemon.md",
     "Untitled.canvas",
     "Dungeon Crawling/Areas",
     "Dungeon Crawling/Garden Gimmicks",

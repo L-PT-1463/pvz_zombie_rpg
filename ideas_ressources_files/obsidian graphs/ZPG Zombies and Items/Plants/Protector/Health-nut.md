@@ -1,7 +1,7 @@
-#ZenGarden #Plant
+#TrainingGrounds #Plant
 
 Type: #Protector 
-Area: [[Zen Garden]]
+Area: [[Training Grounds]]
 Attack: #Straight 
 Traits:
 - #Tall 

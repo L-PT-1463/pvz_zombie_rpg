@@ -3,7 +3,6 @@
 Type: #Regular
 Area: #TBD 
 Attack: #Straight 
-
 Traits:
 - #Fire 
 

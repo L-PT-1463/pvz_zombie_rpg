@@ -1,7 +1,7 @@
-#Plant 
+#TrainingGrounds  #Plant 
 
 Type: #Regular 
-Area: #TBD 
+Area: [[Training Grounds]]
 Attack: #Straight 
 
 Speciality: Attack has one tile range.
