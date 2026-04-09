@@ -225,7 +225,8 @@
               "title": "Zen Garden"
             }
           }
-        ]
+        ],
+        "currentTab": 13
       },
       {
         "id": "f22b0a8f55dd8c7e",
@@ -238,7 +239,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Dungeon Crawling/Areas/Dark Ages.md",
+                "file": "Dungeon Crawling/Areas/Zen Garden.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -288,7 +289,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Dark Ages"
+              "title": "Graph of Zen Garden"
             }
           },
           {
@@ -451,15 +452,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "84263421d2f11a46",
+  "active": "548733cb148e7421",
   "lastOpenFiles": [
+    "Plants/Regular/Acesparagus.md",
+    "Dungeon Crawling/Gardens/Sky Battle.md",
+    "Plants/Regular/Rotobaga.md",
+    "Dungeon Crawling/Areas/Zen Garden.md",
+    "Plants/Regular/Soul Plantern.md",
+    "Plants/Regular/Plantern.md",
+    "Plants/Regular/Physalux.md",
+    "Plants/Regular/White Egret.md",
+    "Dungeon Crawling/Areas/Jurassic Marsh.md",
+    "Items/Armours/Treasure Chest.md",
+    "Items/Armours/Engine.md",
+    "Items/Armours/Birdhouse.md",
+    "Dungeon Crawling/Areas/Dark Ages.md",
     "Dungeon Crawling/Areas/Far Future.md",
     "Plants/Regular/Venus Flytrap.md",
-    "Dungeon Crawling/Areas/Dark Ages.md",
-    "Dungeon Crawling/Areas/Zen Garden.md",
     "Plants/Boss/Bombard-mint.md",
     "Dungeon Crawling/Areas/Kongfu Mausoleum.md",
-    "Untitled.md",
     "Items/Weapons/Fireworks Launch.md",
     "Items/Weapons/Firework.md",
     "Items/Accessories/Kongfu Flag.md",
@@ -469,16 +480,6 @@
     "Items/Accessories/Rally Flag.md",
     "Zombies/Spawnlings/Drinking Monk.md",
     "Zombies/Spawnlings/Gardener Zombie.md",
-    "Items/Weapons/Sling Canteen.md",
-    "Items/Weapons/Nunchaku.md",
-    "Items/Weapons/Katana.md",
-    "Items/Weapons/Sword.md",
-    "Zombies/Spawnlings/Monk Pothead.md",
-    "Items/Gadgets/Gong.md",
-    "Zombies/Spawnlings/Kongfu Zombie.md",
-    "Zombies/Spawnlings/Conehead.md",
-    "Zombies/Spawnlings/Browncoat.md",
-    "Items/Gadgets/Major Staff.md",
     "Items/Accessories",
     "Untitled.canvas",
     "Dungeon Crawling/Areas",

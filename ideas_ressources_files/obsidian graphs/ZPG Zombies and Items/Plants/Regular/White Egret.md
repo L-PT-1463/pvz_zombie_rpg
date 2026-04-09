@@ -4,5 +4,6 @@ Type: #Regular
 Area: [[Steam City]] ([[Sky Battle]])
 Attack: #Straight 
 Traits:
-- #Spread (3)
 - #Aerial
+
+Speciality: Every third attack, launches a more powerful missile instead of shooting.
