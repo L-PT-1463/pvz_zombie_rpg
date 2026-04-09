@@ -1,6 +1,0 @@
-#NeonCarnival #Item #Accessory 
-
-Area: [[Neon Carnival]]
-*Weapon slot*
-
-Speciality: Prevents plants from using their #Repeat trait

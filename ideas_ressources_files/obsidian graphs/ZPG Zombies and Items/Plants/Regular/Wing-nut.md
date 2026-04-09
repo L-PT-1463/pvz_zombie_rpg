@@ -1,4 +1,4 @@
-#ZCorpIntraSpaceTim #Plant 
+#ZCorpIntraSpaceTime #Plant 
 
 Type: #Regular 
 Area: [[ZCorp Intra-Space-Time]]

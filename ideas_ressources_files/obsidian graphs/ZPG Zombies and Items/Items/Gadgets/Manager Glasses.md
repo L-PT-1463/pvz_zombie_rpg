@@ -1,6 +1,0 @@
-#ZCorpIntraSpaceTime #Item #Accessory 
-
-Area: [[ZCorp Intra-Space-Time]]
-*Armour slot*
-
-Speciality: Zombie heals when a spawnling is vanquished.

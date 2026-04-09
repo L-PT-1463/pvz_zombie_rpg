@@ -1,7 +1,7 @@
-#OldWildEgypt #Plant 
+#PiratesBeach #Plant 
 
 Type: #Regular 
-Area: [[Old Wild Egypt]]
+Area: [[Pirate's Beach]]
 Attack: #Lobbed
 Traits:
 - #Spread (3)

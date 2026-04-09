@@ -1,7 +1,7 @@
-#LostCity #Plant 
+#KongfuMausoleum #Plant 
 
 Type: #Regular 
-Area: [[Lost City]]
+Area: [[Kongfu Mausoleum]]
 Attack: #Lobbed
 
 Speciality: Can target its lane and neighbouring lanes.

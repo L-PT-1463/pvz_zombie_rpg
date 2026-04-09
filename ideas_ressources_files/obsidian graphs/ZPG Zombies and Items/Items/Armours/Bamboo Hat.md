@@ -1,6 +1,6 @@
-#Item #Armour 
+#KongfuMausoleum  #Item #Armour 
 
 Type: #Umbrella 
-Area: n/a
+Area: [[Kongfu Mausoleum]]
 Traits:
  - #FireWeak 

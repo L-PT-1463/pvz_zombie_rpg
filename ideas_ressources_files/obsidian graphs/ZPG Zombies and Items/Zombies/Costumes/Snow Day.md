@@ -9,7 +9,6 @@ Spawnlings:
 - [[Sled Zombie]]
 - [[Snowball Thrower Imp]]
 Items:
-- [[Winter Cone]]
 - [[Sled]]
 - [[Frozen Flag]]
 - [[Snowball]]

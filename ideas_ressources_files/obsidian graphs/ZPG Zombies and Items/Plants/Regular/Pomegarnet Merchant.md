@@ -1,7 +1,7 @@
-#TheZombosseum #Plant 
+#KongfuMausoleum  #Plant 
 
 Type: #Regular 
-Area: [[The Zombosseum]]
+Area: [[Kongfu Mausoleum]]
 Attack: #Lobbed
 
 Speciality: Attack bounces diagonally if there is a zombie within 1 tile.

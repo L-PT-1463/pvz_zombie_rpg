@@ -1,7 +1,5 @@
-#ZenGarden #Plant 
+#KongfuMausoleum  #Plant 
 
 Type: #Regular
-Area: [[Zen Garden]]
+Area: [[Kongfu Mausoleum]]
 Attack: #Lobbed
-
-Speciality: #TBD

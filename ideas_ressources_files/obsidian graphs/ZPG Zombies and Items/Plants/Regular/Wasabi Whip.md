@@ -1,7 +1,7 @@
- #Plant
+#KongfuMausoleum #Plant
 
 Type: #Regular
-Area: n/a
+Area: [[Kongfu Mausoleum]]
 Attack: #Straight 
 Traits:
 - #Fire 

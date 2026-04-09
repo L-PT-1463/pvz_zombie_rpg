@@ -1,7 +1,7 @@
-#LostCity #Plant 
+#TheZombosseum #Plant 
 
 Type: #Boss #Regular 
-Area: [[Lost City]]
+Area: [[The Zombosseum]]
 Attack: #Straight 
 
 Speciality: Attack has one tile range.

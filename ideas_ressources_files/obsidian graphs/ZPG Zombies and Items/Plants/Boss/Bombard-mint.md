@@ -1,7 +1,7 @@
-#LostCity #Plant 
+#KongfuMausoleum #Plant 
 
 Type: #Boss #Power-mint
-Area: [[Lost City]]
+Area: [[Kongfu Mausoleum]]
 Attack: #TBD 
 Traits:
 - 

@@ -2,7 +2,7 @@
 
 Area: [[Neighbour's House]]
 Attack: [[Bite]]
-Armour: [[Winter Cone]]
+Armour: [[Mountain Cone]]
 
 Traits:
 - #IceImmune
