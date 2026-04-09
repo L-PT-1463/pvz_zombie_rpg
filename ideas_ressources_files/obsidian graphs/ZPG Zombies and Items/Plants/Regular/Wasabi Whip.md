@@ -1,7 +1,7 @@
  #Plant
 
 Type: #Regular
-Area: #TBD 
+Area: n/a
 Attack: #Straight 
 Traits:
 - #Fire 

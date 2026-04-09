@@ -1,6 +1,6 @@
 #Item #Accessory 
 
-Area: #TBD
+Area: n/a
 *Accessory slot*
 
 Speciality: Summons [[Invisi-coat]]

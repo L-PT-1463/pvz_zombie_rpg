@@ -1,5 +1,5 @@
  #Item #Gadget
 
-Area: #TBD 
+Area: n/a
 
 Speciality: Gives the user #Invisible (2)

@@ -17,7 +17,16 @@
                 "file": "Dungeon Crawling/Areas/Dark Ages.md",
                 "mode": "source",
                 "source": false,
-                "backlinks": false
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
               "title": "Dark Ages"
@@ -203,7 +212,7 @@
             }
           }
         ],
-        "currentTab": 12
+        "currentTab": 10
       },
       {
         "id": "f22b0a8f55dd8c7e",
@@ -216,6 +225,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "Dungeon Crawling/Areas/Training Grounds.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -260,12 +270,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.7132754626224442,
+                  "scale": 0.7132754626224446,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Graph of Training Grounds"
             }
           },
           {
@@ -428,34 +438,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0b46326dc340cec6",
+  "active": "ace3a594658d4d3d",
   "lastOpenFiles": [
-    "Dungeon Crawling/Areas/Zen Garden.md",
-    "Items/Armours/Bamboo Hat.md",
-    "Items/Armours/Surf Board.md",
-    "Items/Armours/Parasol.md",
-    "Items/Armours/Rain Umbrella.md",
-    "Items/Armours/Steam Umbrella.md",
-    "Plants/Regular/Sergeant Strongberry.md",
-    "Items/Attacks/Tennis Racket.md",
-    "Plants/Protector/Lychee.md",
-    "Plants/Regular/Wasabi Whip.md",
-    "Plants/Regular/Chili Bean.md",
-    "Plants/Regular/Vanilla.md",
-    "Dungeon Crawling/Areas/Lost City.md",
-    "Zombies/Spawnlings/Fraidy Cat Zombie.md",
-    "Items/Attacks/Claws.md",
-    "Items/Gadgets/Hair Rollers.md",
-    "Items/Attacks/Sneeze.md",
-    "Plants/Protector/Explode-o-Nut.md",
-    "Plants/Regular/Sting Bean.md",
-    "Plants/Regular/Bombegranate.md",
     "Dungeon Crawling/Areas/The Zombosseum.md",
-    "Plants/Regular/Grapeshot.md",
-    "Plants/Regular/Seedling.md",
+    "Dungeon Crawling/Areas/Training Grounds.md",
+    "Plants/Boss/Grass Knuckles.md",
+    "Dungeon Crawling/Areas/Zen Garden.md",
+    "Dungeon Crawling/Gardens/Indoors.md",
+    "Dungeon Crawling/Gardens/Day.md",
+    "Dungeon Crawling/Areas/ZCorp Intra-Space-Time.md",
+    "Plants/Regular/Wasabi Whip.md",
+    "Zombies/Costumes/Browncoat (costume).md",
+    "Plants/Regular/Sting Bean.md",
+    "Plants/Boss/Spudow.md",
+    "Plants/Boss/Solar Flare.md",
+    "Plants/Protector/Lychee.md",
+    "Items/Gadgets/Invisi-paint.md",
+    "Items/Gadgets/Invisi-flag.md",
+    "Zombies/Spawnlings/Invisi-coat.md",
+    "Plants/Protector/Explode-o-Nut.md",
+    "Plants/Regular/Body-gourd.md",
+    "Plants/Regular/Cactus.md",
+    "Items/Armours/Bamboo Hat.md",
+    "Plants/Regular/Astrocado Pit.md",
     "Dungeon Crawling/Areas/Dark Ages.md",
-    "Plants/Regular/Grapes of Wrath.md",
-    "Plants/Regular/Acid Lemon.md",
+    "Dungeon Crawling/Areas/Steam City.md",
+    "Dungeon Crawling/Gardens/Training Room.md",
+    "Items/Gadgets/Necromancy (Renaissance).md",
+    "Zombies/Spawnlings/Engraved Gravestone.md",
     "Untitled.canvas",
     "Dungeon Crawling/Areas",
     "Dungeon Crawling/Garden Gimmicks",

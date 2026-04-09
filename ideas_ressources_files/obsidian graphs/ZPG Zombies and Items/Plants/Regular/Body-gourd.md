@@ -1,5 +1,5 @@
 #Plant 
 
 Type: #Protector 
-Area: #TBD 
+Area: n/a
 Attack: #TBD (see Rogue Garden)

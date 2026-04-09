@@ -1,4 +1,5 @@
 Has multiple costumes available in a predefined selection of colours (black, blue, green, orange, pink, purple) with orange being used for promotional content and concept design.
+
 Costumes:
 - [[Browncoat (costume)]]
 - [[Training Bandana]]
@@ -9,6 +10,7 @@ Costumes:
 - [[Part of the Crew]]
 - [[Relic Hunter]]
 - [[Employee of the Week]]
+- [[Prized Employee]]
 
 Has access to all items by proxy of the almanac, but at start of game always has:
 - [[Bite]] attack

@@ -7,3 +7,4 @@ Items:
 - [[Bust Head]]
 - [[Fossil]]
 - [[Serpent Staff]]
+- [[Treasure Head]]

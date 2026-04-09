@@ -6,3 +6,5 @@ Items:
 - [[Tea Cup]]
 - [[Top Hat]]
 - [[Steam Umbrella]]
+Plants:
+- [[Hat-shroom]]

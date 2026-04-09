@@ -1,6 +1,6 @@
 #Spawnling #UnarmouredBasic 
 
-Area: #TBD 
+Area: n/a
 Attack: [[Bite]]
 
 Traits:

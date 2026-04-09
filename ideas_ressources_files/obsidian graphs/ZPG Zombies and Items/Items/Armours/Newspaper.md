@@ -1,4 +1,4 @@
-#NeonCarnival 
+#NeonCarnival #Item 
 
 Type: #Shield
 Area: [[Neon Carnival]]
