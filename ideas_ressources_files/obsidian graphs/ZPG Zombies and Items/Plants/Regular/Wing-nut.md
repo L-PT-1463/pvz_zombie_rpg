@@ -1,7 +1,7 @@
-#ZCorpIntraSpaceTime #Plant 
+#SteamCity #ZCorpIntraSpaceTime #Plant 
 
 Type: #Regular 
-Area: [[ZCorp Intra-Space-Time]]
+Area: [[Steam City]] ([[Sky Battle]]), [[ZCorp Intra-Space-Time]]
 Attack: #Straight
 Traits:
 - #Amphibious

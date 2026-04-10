@@ -1,7 +1,7 @@
-#NeonCarnival #Plant 
+#LostCity #Plant 
 
 Type: #Regular 
-Area: [[Neon Carnival]]
+Area: [[Lost City]]
 Attack: n/a
 Traits:
 - #Tiny

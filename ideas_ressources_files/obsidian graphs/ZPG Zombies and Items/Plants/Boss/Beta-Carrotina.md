@@ -1,7 +1,7 @@
-#FarFuture #Plant 
+#FarFuture #ZCorpIntraSpaceTime #Plant 
 
 Type: #Boss #Hero 
-Area: [[Far Future]]
+Area: [[Far Future]], [[ZCorp Intra-Space-Time]]
 Attack: #TBD 
 Traits:
 - 

@@ -1,7 +1,7 @@
-#NeonCarnival  #Plant 
+#NeonCarnival #TheZombosseum #Plant 
 
 Type: #Boss #Hero 
-Area: [[Neon Carnival]]
+Area: [[Neon Carnival]], [[The Zombosseum]]
 Attack: #TBD 
 Traits:
 - 

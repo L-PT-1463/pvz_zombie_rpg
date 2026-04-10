@@ -1,7 +1,7 @@
-#OldWildEgypt #Plant
+#KongfuMausoleum #TrainingGrounds #Plant
 
 Type: #Regular
-Area: [[Old Wild Egypt]]
+Area: [[Kongfu Mausoleum]], [[Training Grounds]]
 Attack: #Straight 
 
 Speciality: Can attack the tile directly in front and behind itself.

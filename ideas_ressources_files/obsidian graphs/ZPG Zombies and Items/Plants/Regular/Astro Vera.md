@@ -1,7 +1,7 @@
-#FarFuture #Plant
+#FarFuture #ZCorpIntraSpaceTime #Plant
 
 Type: #Regular
-Area: [[Far Future]]
+Area: [[Far Future]], [[ZCorp Intra-Space-Time]]
 Attack: #Straight 
 
 Speciality: Attack has one tile range.

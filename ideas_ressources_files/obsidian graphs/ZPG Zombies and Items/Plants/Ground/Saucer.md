@@ -1,7 +1,7 @@
-#ZCorpIntraSpaceTime #Plant
+ #OldWildEgypt #ZCorpIntraSpaceTime #Plant
 
 Type: #Ground
-Area: [[ZCorp Intra-Space-Time]]
+Area: [[Old Wild Egypt]], [[ZCorp Intra-Space-Time]]
 Attack: #GroundAttack 
 Traits:
 - #Aerial

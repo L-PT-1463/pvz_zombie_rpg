@@ -1,7 +1,7 @@
-#PiratesBeach #Plant 
+#PiratesBeach #SteamCity #Plant 
 
 Type: #Regular 
-Area: [[Pirate's Beach]]
+Area: [[Pirate's Beach]], [[Steam City]]
 Attack: #Lobbed
 Traits:
 - #Spread (3)

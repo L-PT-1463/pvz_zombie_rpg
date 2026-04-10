@@ -1,7 +1,7 @@
-#NeighboursHouse #Plant 
+#JurassicMarsh #NeighboursHouse #Plant 
 
 Type: #Regular 
-Area: [[Neighbour's House]] ([[Winter]])
+Area: [[Jurassic Marsh]], [[Neighbour's House]] ([[Winter]])
 Attack: #Straight 
 Traits:
 - #Chill

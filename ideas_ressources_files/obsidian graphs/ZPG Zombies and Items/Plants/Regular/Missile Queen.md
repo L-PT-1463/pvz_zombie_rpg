@@ -1,7 +1,7 @@
-#NeighboursHouse  #Plant 
+ #DarkAges #NeighboursHouse #Plant 
 
 Type: #Regular 
-Area: [[Neighbour's House]] ([[Winter]])
+Area: [[Dark Ages]], [[Neighbour's House]] ([[Winter]])
 Attack: #Lobbed
 Traits:
 - #Chill

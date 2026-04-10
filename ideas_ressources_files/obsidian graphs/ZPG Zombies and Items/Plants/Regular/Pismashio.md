@@ -1,5 +1,5 @@
-#ZenGarden #Plant 
+#KongfuMausoleum #OldWildEgypt #Plant 
 
 Type: #Regular 
-Area: [[Zen Garden]]
+Area: [[Kongfu Mausoleum]], [[Old Wild Egypt]]
 Attack: #Straight

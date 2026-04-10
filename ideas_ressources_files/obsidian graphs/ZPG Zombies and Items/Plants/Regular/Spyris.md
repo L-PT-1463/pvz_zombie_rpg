@@ -1,7 +1,7 @@
- #NeonCarnival  #Plant 
+ #NeonCarnival #OldWildEgypt  #Plant 
 
 Type: #Regular 
-Area: [[Neon Carnival]]
+Area: [[Neon Carnival]], [[Old Wild Egypt]]
 Attack: #Straight
 Traits:
 - #Pierce

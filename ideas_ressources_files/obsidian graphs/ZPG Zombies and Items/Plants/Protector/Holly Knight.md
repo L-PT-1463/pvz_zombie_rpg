@@ -1,7 +1,7 @@
-#DarkAges #Plant
+#DarkAges #NeighboursHouse #Plant
 
 Type: #Protector
-Area: [[Dark Ages]]
+Area: [[Dark Ages]], [[Neighbour's House]] ([[Winter]])
 Attack: n/a
 Traits:
 - #Tall 
