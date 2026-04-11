@@ -1,7 +1,7 @@
-#NeighboursHouse #Plant 
+#NeighboursHouse #OldWildEgypt #Plant 
 
 Type: #Boss #Hero 
-Area: [[Neighbour's House]]
+Area: [[Neighbour's House]], [[Old Wild Egypt]]
 Attack: #Straight
 Traits:
 - #Flammable

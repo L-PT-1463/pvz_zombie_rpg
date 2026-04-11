@@ -211,7 +211,8 @@
               "title": "ZCorp Intra-Space-Time"
             }
           }
-        ]
+        ],
+        "currentTab": 12
       },
       {
         "id": "f22b0a8f55dd8c7e",
@@ -224,7 +225,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Dungeon Crawling/Areas/Dark Ages.md",
+                "file": "Dungeon Crawling/Areas/ZCorp Intra-Space-Time.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -274,7 +275,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Dark Ages"
+              "title": "Graph of ZCorp Intra-Space-Time"
             }
           },
           {
@@ -345,7 +346,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 206.5
+    "width": 227.5
   },
   "right": {
     "id": "a45a7d09cbfba9df",
@@ -437,34 +438,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "84263421d2f11a46",
+  "active": "5a655f4165ff7415",
   "lastOpenFiles": [
+    "Plants/Regular/Dragon Bruit.md",
     "Dungeon Crawling/Areas/ZCorp Intra-Space-Time.md",
-    "Dungeon Crawling/Areas/Zen Garden.md",
-    "Zombies/Spawnlings/Zombie Monk.md",
-    "Plants/Regular/Sweet Pea.md",
-    "Items/Weapons/Sweep.md",
-    "Plants/Regular/Sun Magnet.md",
-    "Plants/Regular/Magnet Plant.md",
-    "Plants/Regular/Negative Magnet-shroom.md",
-    "Plants/Regular/Gold Magnet.md",
-    "Plants/Regular/Solar Sage.md",
-    "Plants/Regular/Shine Vine.md",
-    "Items/Gadgets/Seed Packet.md",
-    "Plants/Regular/Sage Sage.md",
-    "Plants/Regular/Power Lily.md",
-    "Plants/Regular/Gold Bloom.md",
-    "Dungeon Crawling/Areas/Neon Carnival.md",
-    "Dungeon Crawling/Areas/Old Wild Egypt.md",
-    "Dungeon Crawling/Gardens/Bog of Enlightenment.md",
-    "Plants/Boss/Enlighten-mint.md",
-    "Items/Weapons/Monk Fist.md",
-    "Plants/Regular/Marigold.md",
-    "Plants/Regular/Magnifiying Grass.md",
-    "Items/Armours/Ladder.md",
-    "Plants/Protector/Hibernating Beary.md",
-    "Plants/Regular/Heartichoke.md",
-    "Items/Armours/Hard Hat.md",
+    "Tiger Grass.md",
+    "Plants/Pass-through/Teleportato Mine.md",
+    "Plants/Pass-through/Tangle Kelp.md",
+    "Plants/Pass-through/Sweetheart Snare.md",
+    "Plants/Pass-through/Spikeweed.md",
+    "Plants/Pass-through/Spikerock.md",
+    "Plants/Pass-through/Saucer.md",
+    "Plants/Boss/Punish-shroom.md",
+    "Plants/Pass-through/Primal Potato Mine.md",
+    "Plants/Regular/Phat Beet.md",
+    "Plants/Pass-through/Olive Pit.md",
+    "Plants/Pass-through/Tile Turnip.md",
+    "Plants/Pass-through/Lily Pad.md",
+    "Plants/Pass-through/Potato Mine.md",
+    "Dungeon Crawling/Areas/Far Future.md",
+    "Plants/Regular/Jalapeño.md",
+    "Plants/Regular/Pea Vine.md",
+    "Plants/Regular/Blastberry Vine.md",
+    "Plants/Regular/Meteor Flower.md",
+    "Plants/Regular/Lava Guava.md",
+    "Plants/Regular/Hurrikale.md",
+    "Plants/Regular/Perfume-shroom.md",
+    "Dungeon Crawling/Garden Gimmicks/Freezing Winds.md",
+    "Dungeon Crawling/Areas/Jurassic Marsh.md",
     "Items/Accessories",
     "Untitled.canvas",
     "Dungeon Crawling/Areas",
@@ -475,7 +476,7 @@
     "00 Groupers/Traits",
     "00 Groupers/Types",
     "Plants/TBD",
-    "Plants/Ground",
+    "Plants/Pass-through",
     "orange_player_browncoat.png",
     "orange_player_mummy.png",
     "orange_player_fancycoat.png",

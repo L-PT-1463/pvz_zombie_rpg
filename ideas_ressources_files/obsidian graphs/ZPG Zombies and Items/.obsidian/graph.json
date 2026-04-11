@@ -5,20 +5,20 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
-      "query": "tag:#TrainingGrounds",
+      "query": "tag:#TBD",
       "color": {
         "a": 1,
-        "rgb": 6702080
+        "rgb": 16711680
       }
     },
     {
       "query": "tag:#NeighboursHouse",
       "color": {
         "a": 1,
-        "rgb": 292096
+        "rgb": 1408565
       }
     },
     {
@@ -53,14 +53,14 @@
       "query": "tag:#JurassicMarsh",
       "color": {
         "a": 1,
-        "rgb": 6029366
+        "rgb": 1787149
       }
     },
     {
       "query": "tag:#TheZombosseum",
       "color": {
         "a": 1,
-        "rgb": 16711680
+        "rgb": 5052715
       }
     },
     {
@@ -97,6 +97,13 @@
         "a": 1,
         "rgb": 9209940
       }
+    },
+    {
+      "query": "tag:#TrainingGrounds",
+      "color": {
+        "a": 1,
+        "rgb": 5321498
+      }
     }
   ],
   "collapse-display": true,
@@ -109,6 +116,6 @@
   "repelStrength": 10,
   "linkStrength": 0.849272349272349,
   "linkDistance": 259,
-  "scale": 0.12792609546069736,
+  "scale": 0.11660891579457346,
   "close": true
 }

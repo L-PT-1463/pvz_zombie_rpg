@@ -1,6 +1,6 @@
-#SteamCity #Item #Weapon
+n/a #Item #Weapon
 
 Type: #Ranged
-Area: [[Steam City]]
+Area: n/a
 Traits:
 - #Fire

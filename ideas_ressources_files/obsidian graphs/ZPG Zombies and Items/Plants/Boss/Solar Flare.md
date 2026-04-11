@@ -1,7 +1,7 @@
-#Plant 
+#LostCity #Plant 
 
 Type: #Boss #Hero 
-Area: n/a
+Area: [[Lost City]]
 Attack: #TBD 
 Traits:
 - 

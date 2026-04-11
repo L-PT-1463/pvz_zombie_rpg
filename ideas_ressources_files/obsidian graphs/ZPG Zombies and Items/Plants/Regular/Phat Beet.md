@@ -2,6 +2,6 @@
 
 Type: #Regular 
 Area: [[Neon Carnival]]
-Attack: #GroundAttack 
+Attack: #Ground
 
 Speciality: Attacks in a 3x3 area.

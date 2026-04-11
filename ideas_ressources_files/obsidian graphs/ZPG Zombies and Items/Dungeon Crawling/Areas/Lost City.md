@@ -5,6 +5,7 @@ Area including all of Lost City's usual plants, gemiums, and premiums and a hand
 Bosses:
 - [[Contain-mint]]
 - [[Enlighten-mint]]
+- [[Solar Flare]]
 
 Unique costumes:
 - [[Relic Hunter]]

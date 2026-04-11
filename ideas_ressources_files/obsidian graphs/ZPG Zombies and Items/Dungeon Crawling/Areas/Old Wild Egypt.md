@@ -9,6 +9,7 @@ Bosses:
 - [[Appease-mint]]
 - [[Pepper-mint]]
 - [[Captain Combustible]]
+- [[Green Shadow]]
 
 Unique costumes:
 - [[Modern Mummy]]
