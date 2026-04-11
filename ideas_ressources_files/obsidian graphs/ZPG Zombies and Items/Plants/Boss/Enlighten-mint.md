@@ -1,7 +1,7 @@
-#ZenGarden #Plant 
+#LostCity #Plant 
 
 Type: #Boss #Power-mint
-Area: [[Zen Garden]]
+Area: [[Lost City]], [[Neon Carnival]] ([[Bog of Enlightenment]])
 Attack: #TBD 
 Traits:
 - 

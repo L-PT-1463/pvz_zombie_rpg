@@ -1,6 +1,6 @@
-#ZenGarden #Spawnling 
+#KongfuMausoleum #Spawnling 
 
-Area: [[Zen Garden]]
+Area: [[Kongfu Mausoleum]]
 Attack: [[Monk Fist]]
 
 Traits:

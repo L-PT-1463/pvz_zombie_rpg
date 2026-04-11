@@ -1,7 +1,7 @@
-#ZenGarden #Plant 
+#SteamCity #Plant 
 
 Type: #Regular 
-Area: [[Zen Garden]] ([[Indoors]])
+Area: [[Steam City]] ([[Greenhouse]])
 Attack: n/a
 Traits:
 - #Tiny

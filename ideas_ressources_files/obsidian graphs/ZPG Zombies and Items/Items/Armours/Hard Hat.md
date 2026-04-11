@@ -1,4 +1,4 @@
-#ZenGarden #Item #Armour 
+#SteamCity #Item #Armour 
 
 Type: #Helmet
-Area: [[Zen Garden]]
+Area: [[Steam City]]

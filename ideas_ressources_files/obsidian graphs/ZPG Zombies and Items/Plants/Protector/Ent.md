@@ -1,7 +1,7 @@
-  #DarkAges #ZenGarden #Plant 
+  #DarkAges #Plant 
 
 Type: #Protector 
-Area: [[Dark Ages]], [[Zen Garden]]
+Area: [[Dark Ages]]
 Attack: #Ground
 
 Speciality: Attacks the tile ahead of itself.

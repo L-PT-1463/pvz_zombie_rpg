@@ -1,7 +1,7 @@
-#ZenGarden #Plant
+#NeighboursHouse #Plant
 
 Type: #Regular
-Area: [[Zen Garden]] ([[Roof]])
+Area: [[Neighbour's House]] ([[Rooftop]])
 Attack: #Strike 
 
 Speciality: Attack has one tile range.

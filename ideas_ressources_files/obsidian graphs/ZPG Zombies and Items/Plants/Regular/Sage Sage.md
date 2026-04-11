@@ -1,7 +1,7 @@
-#ZenGarden #Plant
+#KongfuMausoleum #SteamCity #Plant
 
 Type: #Regular
-Area: [[Zen Garden]]
+Area: [[Kongfu Mausoleum]], [[Steam City]] ([[Greenhouse]])
 Attack n/a
 
 Speciality: #TBD

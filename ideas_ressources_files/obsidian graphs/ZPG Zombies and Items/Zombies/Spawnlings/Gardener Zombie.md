@@ -1,6 +1,6 @@
-#ZenGarden #Spawnling
+#SteamCity #Spawnling
 
-Area: [[Zen Garden]]
+Area: [[Steam City]]
 Attack: [[Gardening Trowel]]
 Gadget: [[Seed Packet]]
 

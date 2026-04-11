@@ -1,7 +1,9 @@
-#ZenGarden #Plant
+#NeonCarnival #SteamCity #Plant
 
 Type: #Regular
-Area: [[Zen Garden]]
+Area: [[Neon Carnival]] ([[Bog of Enlightenment]]), [[Steam City]] ([[Greenhouse]])
 Attack: n/a
+Traits:
+- #Amphibious 
 
 Speciality: #TBD

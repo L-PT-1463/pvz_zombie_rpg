@@ -1,7 +1,7 @@
-#ZenGarden #Plant 
+#KongfuMausoleum #NeonCarnival #Plant 
 
 Type: #Regular 
-Area: [[Zen Garden]]
+Area: [[Kongfu Mausoleum]], [[Neon Carnival]]
 Attack: n/a
 Traits:
 - #Aerial

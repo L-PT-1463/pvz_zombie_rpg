@@ -1,7 +1,7 @@
-#JurassicMarsh #Plant 
+#JurassicMarsh #TheZombosseum #Plant 
 
 Type: #Regular
-Area: [[Jurassic Marsh]]
+Area: [[Jurassic Marsh]], [[The Zombosseum]]
 Attack: #Straight 
 
 Speciality: Attack has one tile range.

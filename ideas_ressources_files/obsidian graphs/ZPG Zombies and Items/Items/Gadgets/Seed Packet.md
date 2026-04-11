@@ -1,5 +1,5 @@
-#ZenGarden #Item #Gadget
+#NeighboursHouse #SteamCity #Item #Gadget
 
-Area: [[Zen Garden]]
+Area: [[Neighbour's House]], [[Steam City]]
 
 Speciality: Spawns a [[Sprout]], [[Sunflower Seed]], or a [[Seedling]].

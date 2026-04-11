@@ -1,7 +1,7 @@
-#ZenGarden #Item #Armour 
+#NeighboursHouse #SteamCity #Item #Armour 
 
 Type: #Shield
-Area: [[Zen Garden]]
+Area: [[Neighbour's House]], [[Steam City]]
 Traits:
 - #Magnetisable
 

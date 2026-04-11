@@ -1,7 +1,7 @@
-#ZenGarden #Plant
+#SteamCity #Plant
 
 Type: #Boss #Regular
-Area: [[Zen Garden]] ([[Indoors]])
+Area: [[Steam City]]
 Attack: #Lobbed
 Traits:
 - #Armoured (1)

@@ -1,5 +1,5 @@
-#ZenGarden #FightingGarden
+#SteamCity #FightingGarden
 
-Unique to [[Zen Garden]]
+Unique to [[Steam City]]
 - All plants have [[Flower Pot]] under them.
 - Aerial trait plants cannot spawn.

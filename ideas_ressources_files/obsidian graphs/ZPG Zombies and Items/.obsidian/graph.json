@@ -22,13 +22,6 @@
       }
     },
     {
-      "query": "tag:#ZenGarden",
-      "color": {
-        "a": 1,
-        "rgb": 10092288
-      }
-    },
-    {
       "query": "tag:#PiratesBeach",
       "color": {
         "a": 1,

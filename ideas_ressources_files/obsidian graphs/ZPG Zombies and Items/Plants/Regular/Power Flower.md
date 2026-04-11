@@ -1,7 +1,7 @@
-#ZenGarden #Plant 
+#LostCity #SteamCity #Plant 
 
 Type: #Regular 
-Area: [[Zen Garden]] ([[Indoors]])
+Area: [[Lost City]], [[Steam City]]
 Attack: #Straight
 Traits:
 - #Strike-through

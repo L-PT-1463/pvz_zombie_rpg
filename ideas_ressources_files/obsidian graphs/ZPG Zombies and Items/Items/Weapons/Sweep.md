@@ -1,4 +1,4 @@
-#ZenGarden #Item #Weapon
+#SteamCity #Item #Weapon
 
 Type: #Strike
-Area: [[Zen Garden]]
+Area: [[Steam City]]

@@ -1,7 +1,7 @@
-#ZenGarden #Plant 
+#Plant 
 
 Type: #Regular 
-Area: [[Zen Garden]]
+Area: n/a
 Attack: n/a
 
 When vanquished: It rewards Brainiac Coins.

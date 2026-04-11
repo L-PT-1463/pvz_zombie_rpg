@@ -5,6 +5,7 @@ Area combining the music and festivities of the Neon Mixtape Tour world, and Bac
 Bosses:
 - [[The Great Zucchini]]
 - [[Enchant-mint]]
+- [[Enlighten-mint]]
 - [[Rose]]
 
 Unique Gardens:

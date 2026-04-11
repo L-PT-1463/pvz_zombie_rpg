@@ -1,7 +1,7 @@
-#PiratesBeach #Plant 
+ #Plant 
 
 Type: #Ground
-Area: [[Pirate's Beach]]
+Area: n/a
 Attack: n/a
 Traits:
 - #Aquatic

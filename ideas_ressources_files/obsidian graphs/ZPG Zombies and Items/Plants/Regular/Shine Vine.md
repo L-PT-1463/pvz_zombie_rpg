@@ -1,7 +1,7 @@
-#ZenGarden #Plant 
+#Plant 
 
 Type: #Regular 
-Area: [[Zen Garden]]
+Area: n/a
 Attack: #Straight 
 Traits:
 - #Stun

@@ -1,5 +1,5 @@
-#ZenGarden #Plant
+#NeighboursHouse #Plant
 
 Type: #Regular
-Area: [[Zen Garden]]
+Area: [[Neighbour's House]]
 Attack: #Lobbed

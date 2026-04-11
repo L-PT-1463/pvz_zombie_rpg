@@ -1,7 +1,7 @@
-#ZenGarden #Plant 
+#JurassicMarsh #SteamCity #Plant 
 
 Type: #Boss #Hero 
-Area: [[Zen Garden]]
+Area: [[Jurassic Marsh]], [[Steam City]] ([[Greenhouse]])
 Attack: #Straight 
 Traits:
 - 

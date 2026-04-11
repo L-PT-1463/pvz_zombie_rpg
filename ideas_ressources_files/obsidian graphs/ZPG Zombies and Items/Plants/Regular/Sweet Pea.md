@@ -1,7 +1,7 @@
-#ZenGarden #Plant 
+#SteamCity #Plant 
 
 Type: #Regular 
-Area: [[Zen Garden]]
+Area: [[Steam City]]
 Attack: #Straight
 Traits:
 - #Flammable

@@ -1,7 +1,7 @@
-#ZenGarden #Plant
+#Plant
 
 Type: #Pass-through
-Area: [[Zen Garden]]
+Area: n/a
 Attack: n/a
 Traits:
 - #Pot

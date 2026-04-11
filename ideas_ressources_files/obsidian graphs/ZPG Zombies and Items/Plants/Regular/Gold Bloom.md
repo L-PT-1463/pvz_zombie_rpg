@@ -1,7 +1,7 @@
-#ZenGarden #Plant
+#LostCity  #Plant
 
 Type: #Regular
-Area: [[Zen Garden]]
+Area: [[Lost City]], [[Neon Carnival]] ([[Bog of Enlightenment]])
 Attack: n/a
 
 Speciality: #TBD

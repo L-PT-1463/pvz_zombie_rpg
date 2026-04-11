@@ -1,7 +1,7 @@
-#ZenGarden #Plant 
+#LostCity #SteamCity #Plant 
 
 Type: #Regular
-Area: [[Zen Garden]]
+Area: [[Lost City]], [[Steam City]] ([[Greenhouse]])
 Attack: #Straight
 
 Speciality: #TBD

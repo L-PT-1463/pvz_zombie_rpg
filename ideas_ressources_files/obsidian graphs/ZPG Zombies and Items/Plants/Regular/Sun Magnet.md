@@ -1,7 +1,7 @@
-#ZenGarden #Plant 
+#NeonCarnival #Plant 
 
 Type: #Regular 
-Area: [[Zen Garden]]
+Area: [[Neon Carnival]]
 Attack: n/a
 Traits:
 - Magnetising (Nx3)

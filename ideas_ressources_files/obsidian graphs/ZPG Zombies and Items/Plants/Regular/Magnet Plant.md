@@ -1,7 +1,7 @@
-#SteamCity #Plant 
+#SteamCity #TheZombosseum #Plant 
 
 Type: #Regular 
-Area: [[Steam City]]
+Area: [[Steam City]], [[The Zombosseum]]
 Attack: n/a
 Traits:
 - #Magnetising (neighbouring lanes)

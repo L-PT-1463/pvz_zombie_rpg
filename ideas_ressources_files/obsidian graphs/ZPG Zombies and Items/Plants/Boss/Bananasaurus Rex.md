@@ -1,6 +1,6 @@
 #JurassicMarsh #Plant
 
-Type: #Boss #Regular
+Type: #Regular
 Area: [[Jurassic Marsh]]
 Attack: #Straight 
 Traits:

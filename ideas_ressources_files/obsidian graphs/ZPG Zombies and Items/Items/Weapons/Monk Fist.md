@@ -1,7 +1,7 @@
-#ZenGarden #Item #Weapon
+#KongfuMausoleum #Item #Weapon
 
 Type: #Strike
-Area: [[Zen Garden]]
+Area: [[Kongfu Mausoleum]]
 Traits:
 - #FriendlyFire
 
