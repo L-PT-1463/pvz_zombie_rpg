@@ -211,8 +211,7 @@
               "title": "ZCorp Intra-Space-Time"
             }
           }
-        ],
-        "currentTab": 12
+        ]
       },
       {
         "id": "f22b0a8f55dd8c7e",
@@ -438,10 +437,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5a655f4165ff7415",
+  "active": "84263421d2f11a46",
   "lastOpenFiles": [
-    "Plants/Regular/Dragon Bruit.md",
     "Dungeon Crawling/Areas/ZCorp Intra-Space-Time.md",
+    "Plants/Regular/Potted Powerhouse.md",
+    "Plants/Regular/Dragon Bruit.md",
     "Tiger Grass.md",
     "Plants/Pass-through/Teleportato Mine.md",
     "Plants/Pass-through/Tangle Kelp.md",
@@ -465,7 +465,6 @@
     "Plants/Regular/Hurrikale.md",
     "Plants/Regular/Perfume-shroom.md",
     "Dungeon Crawling/Garden Gimmicks/Freezing Winds.md",
-    "Dungeon Crawling/Areas/Jurassic Marsh.md",
     "Items/Accessories",
     "Untitled.canvas",
     "Dungeon Crawling/Areas",
