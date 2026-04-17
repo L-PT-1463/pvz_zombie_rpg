@@ -4,4 +4,4 @@ Type: #Regular
 Area: [[Dark Ages]] ([[Castle]])
 Attack: #Lobbed
 
-Shadow-powered: Attacks in its lane and neighbouring lanes.
+Shadow-powered: Attacks deal splash damage in a 3x1 area.

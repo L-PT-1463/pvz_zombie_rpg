@@ -1,7 +1,8 @@
-#KongfuMausoleum #Plant 
+#DarkAges #JurassicMarsh #KongfuMausoleum #Plant 
 
 Type: #Regular 
-Area: [[Kongfu Mausoleum]]
+Area: [[Dark Ages]] ([[Castle]]), [[Jurassic Marsh]], [[Kongfu Mausoleum]]
 Attack: #Lobbed 
 
-Speciality: Attacks in its lane and neighbouring lanes.
+Shadow-powered: Attacks in its lane and neighbouring lanes.
+[[Dino-roar]]: Summon a [[Baby Bruit]] on an available tile.
