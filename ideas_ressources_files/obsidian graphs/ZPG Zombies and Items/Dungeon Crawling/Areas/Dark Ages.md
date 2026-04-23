@@ -20,3 +20,4 @@ Unique gardens:
 Garden Gimmicks:
 - [[Shadow Wave]]
 - [[Spore Cloud]]
+- [[Fog]]

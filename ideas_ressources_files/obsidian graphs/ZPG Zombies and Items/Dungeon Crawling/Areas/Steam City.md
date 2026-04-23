@@ -15,3 +15,6 @@ Unique gardens:
 - [[Day]]
 - [[Sky Battle]]
 - [[Greenhouse]]
+
+Garden gimmicks:
+- [[Fog]]
