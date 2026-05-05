@@ -6,7 +6,7 @@
       {
         "id": "0247de275d755c41",
         "type": "tabs",
-        "dimension": 51.94401244167963,
+        "dimension": 50.31645569620253,
         "children": [
           {
             "id": "84263421d2f11a46",
@@ -167,21 +167,6 @@
             }
           },
           {
-            "id": "752ec4a52c9e27a8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dungeon Crawling/Areas/The Zombosseum.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "The Zombosseum"
-            }
-          },
-          {
             "id": "ace3a594658d4d3d",
             "type": "leaf",
             "state": {
@@ -216,7 +201,7 @@
       {
         "id": "f22b0a8f55dd8c7e",
         "type": "tabs",
-        "dimension": 48.055987558320375,
+        "dimension": 49.68354430379747,
         "children": [
           {
             "id": "389216d31aea2c8a",
@@ -437,13 +422,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "84263421d2f11a46",
+  "active": "8eef5aa8c8e1dad5",
   "lastOpenFiles": [
+    "Dungeon Crawling/Areas/ZCorp Intra-Space-Time.md",
+    "Plants/Regular/Bolt-shroom Commander.md",
+    "Plants/Regular/Electrici-tea.md",
+    "Plants/Regular/Captain-shroom.md",
+    "Plants/Regular/Holo-flower Singer.md",
+    "Plants/Regular/Sunflower Singer.md",
+    "Plants/Regular/Power Vine.md",
+    "Plants/Regular/Whirlwind Bamboo.md",
+    "Dungeon Crawling/Areas/Dark Ages.md",
+    "Plants/Regular/Bamboo Shoot.md",
     "Dungeon Crawling/Areas/Far Future.md",
+    "Plants/Regular/Fanana.md",
+    "Dungeon Crawling/Areas/Training Grounds.md",
+    "Dungeon Crawling/Areas/The Zombosseum.md",
+    "Plants/Regular/A.K.E.E..md",
+    "Plants/Regular/Meteor Flower.md",
     "Items/Gadgets/Invisi-paint.md",
     "Items/Accessories/Invisi-flag.md",
     "Zombies/Spawnlings/Invisi-coat.md",
-    "Dungeon Crawling/Areas/Dark Ages.md",
     "Plants/Regular/Physalux.md",
     "Plants/Regular/Soul Plantern.md",
     "Plants/Regular/Plantern.md",
@@ -451,20 +450,6 @@
     "Dungeon Crawling/Areas/Steam City.md",
     "Dungeon Crawling/Areas/Neon Carnival.md",
     "Dungeon Crawling/Areas/Old Wild Egypt.md",
-    "Dungeon Crawling/Areas/Pirate's Beach.md",
-    "Plants/Regular/Dusk Lobber.md",
-    "Plants/Regular/Dragon Bruit.md",
-    "Plants/Regular/Baby Bruit.md",
-    "Plants/Boss/Bananasaurus Rex.md",
-    "Plants/Regular/Perfume-shroom.md",
-    "Dungeon Crawling/Areas/ZCorp Intra-Space-Time.md",
-    "Plants/Regular/Potted Powerhouse.md",
-    "Tiger Grass.md",
-    "Plants/Pass-through/Teleportato Mine.md",
-    "Plants/Pass-through/Tangle Kelp.md",
-    "Plants/Pass-through/Sweetheart Snare.md",
-    "Plants/Pass-through/Spikeweed.md",
-    "Plants/Pass-through/Spikerock.md",
     "Items/Accessories",
     "Untitled.canvas",
     "Dungeon Crawling/Areas",
