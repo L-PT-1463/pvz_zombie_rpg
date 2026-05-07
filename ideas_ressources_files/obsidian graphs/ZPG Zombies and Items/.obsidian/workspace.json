@@ -196,7 +196,8 @@
               "title": "ZCorp Intra-Space-Time"
             }
           }
-        ]
+        ],
+        "currentTab": 11
       },
       {
         "id": "f22b0a8f55dd8c7e",
@@ -422,18 +423,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8eef5aa8c8e1dad5",
+  "active": "5a655f4165ff7415",
   "lastOpenFiles": [
+    "Plants/Regular/Bamboo Shoot.md",
+    "Plants/Regular/Bamboo Spike.md",
     "Dungeon Crawling/Areas/ZCorp Intra-Space-Time.md",
+    "Plants/Regular/Rafflesia.md",
+    "Plants/Regular/Primal Rafflesia.md",
+    "Dungeon Crawling/Areas/Dark Ages.md",
+    "Plants/Regular/Sunflower Singer.md",
     "Plants/Regular/Bolt-shroom Commander.md",
     "Plants/Regular/Electrici-tea.md",
     "Plants/Regular/Captain-shroom.md",
     "Plants/Regular/Holo-flower Singer.md",
-    "Plants/Regular/Sunflower Singer.md",
     "Plants/Regular/Power Vine.md",
     "Plants/Regular/Whirlwind Bamboo.md",
-    "Dungeon Crawling/Areas/Dark Ages.md",
-    "Plants/Regular/Bamboo Shoot.md",
     "Dungeon Crawling/Areas/Far Future.md",
     "Plants/Regular/Fanana.md",
     "Dungeon Crawling/Areas/Training Grounds.md",
@@ -447,9 +451,6 @@
     "Plants/Regular/Soul Plantern.md",
     "Plants/Regular/Plantern.md",
     "Dungeon Crawling/Garden Gimmicks/Fog.md",
-    "Dungeon Crawling/Areas/Steam City.md",
-    "Dungeon Crawling/Areas/Neon Carnival.md",
-    "Dungeon Crawling/Areas/Old Wild Egypt.md",
     "Items/Accessories",
     "Untitled.canvas",
     "Dungeon Crawling/Areas",
