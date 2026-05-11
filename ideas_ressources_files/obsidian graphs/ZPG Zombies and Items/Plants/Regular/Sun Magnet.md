@@ -4,7 +4,7 @@ Type: #Regular
 Area: [[Neon Carnival]]
 Attack: n/a
 Traits:
-- Magnetising (Nx3)
+- #Magnetising (Nx3)
 
 Speciality: Steals armours with the Magnetisable trait from zombies in the Magnetising range, dealing damage every turn until it vanishes but giving it back at full health if vanquished before then.
 
