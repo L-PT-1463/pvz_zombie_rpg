@@ -5,4 +5,3 @@ Attack: [[Bite]]
 
 Traits:
 - #Amphibious
-- #Imp

@@ -1,4 +1,4 @@
-#SteamCity #Non-FightGarden #ShopGarden
+#SteamCity  #ShopGarden
 
 Unique to [[Steam City]]
 Speciality: #TBD

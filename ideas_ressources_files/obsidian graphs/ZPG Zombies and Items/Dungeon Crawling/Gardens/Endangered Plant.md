@@ -1,4 +1,4 @@
-#NeighboursHouse #Non-FightGarden #BonusGarden 
+#NeighboursHouse  #GameGarden 
 
 Unique to [[Neighbour's House]]
 Objective: Defeat the endangered plant in a limited amount of rounds.

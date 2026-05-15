@@ -1,4 +1,4 @@
- #Non-FightGarden #ShopGarden
+  #ShopGarden
 
 Area: n/a
 Speciality: #TBD

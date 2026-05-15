@@ -4,4 +4,4 @@ Type: #Regular
 Area: #JurassicMarsh 
 Attack: #Lobbed 
 Traits:
--  #Poison 
+-  #Poison (2)

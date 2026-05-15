@@ -17,7 +17,7 @@ Unique gardens:
 - [[Night]]
 - [[Winter]]
 - [[Fall]]
-- [[Rooftop]]
+- [[Roof]]
 
 Garden Gimmicks:
 - [[Freezing Winds]]

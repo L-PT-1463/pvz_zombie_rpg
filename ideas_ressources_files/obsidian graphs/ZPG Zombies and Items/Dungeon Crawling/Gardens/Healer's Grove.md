@@ -1,4 +1,4 @@
-#TheZombosseum #Non-FightGarden #SupportGarden 
+#TheZombosseum #ShopGarden
 
 Unique to [[The Zombosseum]]
 Speciality: #TBD

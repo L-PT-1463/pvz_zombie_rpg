@@ -4,7 +4,7 @@ Type: #Regular
 Area: [[Steam City]]
 Attack: #Straight 
 Traits:
-- #Poison 
+- #Poison (1)
 - #Pierce 
 
 Speciality: Attacks in a 3x3 area. Attacks deal no damage.

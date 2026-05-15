@@ -17,6 +17,21 @@
                 "file": "Dungeon Crawling/Areas/Dark Ages.md",
                 "mode": "source",
                 "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Dark Ages"
+            }
+          },
+          {
+            "id": "22bc6d7b1e525816",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dungeon Crawling/Gardens/Castle.md",
+                "mode": "source",
+                "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
                   "collapseAll": false,
@@ -29,7 +44,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Dark Ages"
+              "title": "Castle"
             }
           },
           {
@@ -167,6 +182,20 @@
             }
           },
           {
+            "id": "d10ba49d518ae767",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dungeon Crawling/Areas/The Zombosseum.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "The Zombosseum"
+            }
+          },
+          {
             "id": "ace3a594658d4d3d",
             "type": "leaf",
             "state": {
@@ -197,7 +226,7 @@
             }
           }
         ],
-        "currentTab": 11
+        "currentTab": 13
       },
       {
         "id": "f22b0a8f55dd8c7e",
@@ -210,7 +239,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Dungeon Crawling/Areas/ZCorp Intra-Space-Time.md",
+                "file": "Dungeon Crawling/Areas/The Zombosseum.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -260,7 +289,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of ZCorp Intra-Space-Time"
+              "title": "Graph of The Zombosseum"
             }
           },
           {
@@ -425,32 +454,32 @@
   },
   "active": "5a655f4165ff7415",
   "lastOpenFiles": [
-    "Plants/Regular/Sun Magnet.md",
-    "Plants/Regular/Magnet-shroom.md",
-    "Plants/Regular/Magnet Plant.md",
-    "Magnet Plant.md",
-    "Plants/Regular/Negative Magnet-shroom.md",
-    "Plants/Regular/Gold Magnet.md",
-    "Dungeon Crawling/Areas/ZCorp Intra-Space-Time.md",
-    "Plants/Regular/Bamboo Shoot.md",
-    "Plants/Regular/Bamboo Spike.md",
-    "Plants/Regular/Rafflesia.md",
+    "Plants/Regular/Mangosteam.md",
+    "Plants/Regular/Lily of Alchemy.md",
     "Plants/Regular/Primal Rafflesia.md",
-    "Dungeon Crawling/Areas/Dark Ages.md",
-    "Plants/Regular/Sunflower Singer.md",
-    "Plants/Regular/Bolt-shroom Commander.md",
-    "Plants/Regular/Electrici-tea.md",
-    "Plants/Regular/Captain-shroom.md",
-    "Plants/Regular/Holo-flower Singer.md",
-    "Plants/Regular/Power Vine.md",
-    "Plants/Regular/Whirlwind Bamboo.md",
-    "Dungeon Crawling/Areas/Far Future.md",
-    "Plants/Regular/Fanana.md",
-    "Dungeon Crawling/Areas/Training Grounds.md",
+    "Plants/Regular/Poison-shroom.md",
+    "Plants/Regular/Goo Peashooter.md",
+    "Plants/Regular/Shadow-shroom.md",
+    "Items/Weapons/Sneeze.md",
+    "Items/Weapons/Perfume.md",
+    "Dungeon Crawling/Areas/ZCorp Intra-Space-Time.md",
+    "Zombies/Spawnlings/Yeti Imp.md",
+    "Zombies/Spawnlings/Swabbie.md",
+    "Zombies/Spawnlings/Super-fan Imp.md",
+    "Zombies/Spawnlings/Snowball Thrower Imp.md",
+    "Zombies/Spawnlings/Paper Plane Imp.md",
+    "Zombies/Spawnlings/Neutron Imp.md",
+    "Zombies/Spawnlings/Dragon Imp.md",
+    "Zombies/Spawnlings/Campimp.md",
+    "Dungeon Crawling/Garden Gimmicks/Time Twist.md",
+    "Dungeon Crawling/Garden Gimmicks/Rush Hour.md",
+    "Dungeon Crawling/Garden Gimmicks/Solar Winds.md",
+    "Dungeon Crawling/Garden Gimmicks/Meteor Ztorm.md",
+    "Dungeon Crawling/Gardens/Medulla Nebula.md",
+    "Dungeon Crawling/Gardens/Cone Zone.md",
+    "Dungeon Crawling/Gardens/Black Hole.md",
+    "Dungeon Crawling/Areas/Steam City.md",
     "Dungeon Crawling/Areas/The Zombosseum.md",
-    "Plants/Regular/A.K.E.E..md",
-    "Plants/Regular/Meteor Flower.md",
-    "Items/Gadgets/Invisi-paint.md",
     "Items/Accessories",
     "Untitled.canvas",
     "Dungeon Crawling/Areas",

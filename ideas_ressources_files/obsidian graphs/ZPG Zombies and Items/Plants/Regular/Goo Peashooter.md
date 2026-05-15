@@ -4,4 +4,4 @@ Type: #Regular
 Area: n/a
 Attack: #Straight
 Traits:
-- #Poison
+- #Poison (2)

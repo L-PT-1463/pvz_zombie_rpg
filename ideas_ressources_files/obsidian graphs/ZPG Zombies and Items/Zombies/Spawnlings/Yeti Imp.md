@@ -5,4 +5,3 @@ Attacks: [[Bite]]
 
 Traits:
 - #IceImmune
-- #Imp

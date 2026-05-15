@@ -1,4 +1,4 @@
-#DarkAges #Non-FightGarden #ShopGarden 
+#DarkAges  #ShopGarden 
 
 Unique to [[Dark Ages]]
 Speciality: #TBD 

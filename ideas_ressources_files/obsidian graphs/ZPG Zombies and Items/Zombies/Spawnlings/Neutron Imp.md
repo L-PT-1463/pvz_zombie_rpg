@@ -5,4 +5,3 @@ Attack: [[Laser Shot]]
 
 Traits:
 - #Aerial
-- #Imp

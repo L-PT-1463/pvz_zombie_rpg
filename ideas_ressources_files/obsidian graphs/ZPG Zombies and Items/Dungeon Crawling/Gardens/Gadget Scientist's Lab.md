@@ -1,4 +1,4 @@
-#FarFuture #Non-FightGarden #ShopGarden 
+#FarFuture  #ShopGarden 
 
 Unique to [[Far Future]]
 Speciality: #TBD

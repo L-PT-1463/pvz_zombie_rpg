@@ -1,7 +1,7 @@
 #NeighboursHouse #Plant
 
 Type: #Regular
-Area: [[Neighbour's House]] ([[Rooftop]])
+Area: [[Neighbour's House]] ([[Roof]])
 Attack: n/a
 Traits:
 - 

@@ -1,4 +1,4 @@
-#DarkAges  #Non-FightGarden #BonusGarden 
+#DarkAges   #GameGarden 
 
 Unique to [[Dark Ages]], uses the [[Castle]] aesthetic.
 Objective: Defeat a garden of chess-inspired plants.

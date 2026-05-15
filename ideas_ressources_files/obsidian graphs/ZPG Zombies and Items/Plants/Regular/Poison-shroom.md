@@ -4,4 +4,4 @@ Type: #Regular
 Area: [[Dark Ages]] ([[Mushroom Grotto]])
 Attack: #Straight 
 Traits:
-- #Poison 
+- #Poison (1)

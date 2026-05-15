@@ -1,5 +1,5 @@
-#SteamCity  #Plant
+#PiratesBeach #SteamCity  #Plant
 
 Type: #Regular
-Area: [[Steam City]]
+Area: [[Pirate's Beach]], [[Steam City]]
 Attack: #Lobbed
