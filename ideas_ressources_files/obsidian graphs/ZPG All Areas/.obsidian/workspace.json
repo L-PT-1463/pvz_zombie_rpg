@@ -356,8 +356,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -453,7 +452,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d89ca350a2ea2304",
+  "active": "8eef5aa8c8e1dad5",
   "lastOpenFiles": [
     "Plants/Regular/Grimrose.md",
     "Plants/Regular/Gloom Vine.md",
