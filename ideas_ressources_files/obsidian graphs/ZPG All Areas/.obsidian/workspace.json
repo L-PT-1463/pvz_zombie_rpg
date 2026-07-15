@@ -226,7 +226,7 @@
             }
           }
         ],
-        "currentTab": 13
+        "currentTab": 2
       },
       {
         "id": "f22b0a8f55dd8c7e",
@@ -239,7 +239,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Dungeon Crawling/Areas/The Zombosseum.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -289,7 +288,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of The Zombosseum"
+              "title": "Graph view"
             }
           },
           {
@@ -452,13 +451,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8eef5aa8c8e1dad5",
+  "active": "0b46326dc340cec6",
   "lastOpenFiles": [
+    "Dungeon Crawling/Areas/Far Future.md",
+    "Dungeon Crawling/Areas/ZCorp Intra-Space-Time.md",
+    "Plants/Regular/Sea-shroom.md",
+    "Plants/Regular/Scaredy-shroom.md",
+    "Squirty-shroom.md",
+    "Plants/Regular/Snake Grass.md",
+    "Plants/Regular/Aceparagus.md",
+    "Plants/Regular/Atomic Bombegranate.md",
     "Plants/Regular/Grimrose.md",
     "Plants/Regular/Gloom Vine.md",
     "Plants/Regular/Dragon Bruit.md",
     "Plants/Boss/Dark Matter Dragonfruit.md",
-    "Dungeon Crawling/Areas/ZCorp Intra-Space-Time.md",
     "Plants/Protector/Jugger-nut.md",
     "Plants/Protector/Murkadamia Nut.md",
     "Plants/Regular/Noctarine.md",
@@ -468,18 +474,11 @@
     "Plants/Regular/Magical Beanstalk.md",
     "Plants/Regular/Typical Beanstalk.md",
     "Plants/Protector/Galacta-cactus.md",
-    "Plants/Regular/Acesparagus.md",
     "Plants/Pass-through/Olive Pit.md",
     "Plants/Pass-through/Tupistra Stalker.md",
     "Plants/Pass-through/Teleportato Mine.md",
     "Plants/Pass-through/Tangle Kelp.md",
     "Plants/Pass-through/Sweetheart Snare.md",
-    "Plants/Pass-through/Spikeweed.md",
-    "Plants/Pass-through/Spikerock.md",
-    "Plants/Pass-through/Saucer.md",
-    "Plants/Pass-through/Primal Potato Mine.md",
-    "Plants/Pass-through/Potato Mine.md",
-    "Plants/Pass-through/Lily Pad.md",
     "Items/Accessories",
     "Untitled.canvas",
     "Dungeon Crawling/Areas",
