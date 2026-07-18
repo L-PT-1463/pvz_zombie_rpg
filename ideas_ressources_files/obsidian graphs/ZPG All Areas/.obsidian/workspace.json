@@ -226,7 +226,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 13
       },
       {
         "id": "f22b0a8f55dd8c7e",
@@ -451,10 +451,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0b46326dc340cec6",
+  "active": "5a655f4165ff7415",
   "lastOpenFiles": [
-    "Dungeon Crawling/Areas/Far Future.md",
+    "Plants/Regular/Moonflower.md",
     "Dungeon Crawling/Areas/ZCorp Intra-Space-Time.md",
+    "Plants/Regular/Shrinking Violet.md",
+    "Plants/Regular/Shadow Peashooter.md",
+    "Plants/Regular/Stickybomb Rice.md",
+    "Plants/Regular/Pyre Vine.md",
+    "Plants/Protector/Pumpkin.md",
+    "Plants/Regular/Power Vine.md",
+    "Plants/Regular/Pea Vine.md",
+    "Plants/Regular/Gloom Vine.md",
+    "Plants/Regular/Explode-o-Vine.md",
+    "Plants/Regular/Blastberry Vine.md",
+    "Dungeon Crawling/Areas/Far Future.md",
+    "Plants/Regular/Fire Pea.md",
     "Plants/Regular/Sea-shroom.md",
     "Plants/Regular/Scaredy-shroom.md",
     "Squirty-shroom.md",
@@ -462,23 +474,11 @@
     "Plants/Regular/Aceparagus.md",
     "Plants/Regular/Atomic Bombegranate.md",
     "Plants/Regular/Grimrose.md",
-    "Plants/Regular/Gloom Vine.md",
     "Plants/Regular/Dragon Bruit.md",
     "Plants/Boss/Dark Matter Dragonfruit.md",
     "Plants/Protector/Jugger-nut.md",
     "Plants/Protector/Murkadamia Nut.md",
     "Plants/Regular/Noctarine.md",
-    "Plants/Regular/Shadow Peashooter.md",
-    "Plants/Regular/Dusk Lobber.md",
-    "Plants/Regular/Moonbean.md",
-    "Plants/Regular/Magical Beanstalk.md",
-    "Plants/Regular/Typical Beanstalk.md",
-    "Plants/Protector/Galacta-cactus.md",
-    "Plants/Pass-through/Olive Pit.md",
-    "Plants/Pass-through/Tupistra Stalker.md",
-    "Plants/Pass-through/Teleportato Mine.md",
-    "Plants/Pass-through/Tangle Kelp.md",
-    "Plants/Pass-through/Sweetheart Snare.md",
     "Items/Accessories",
     "Untitled.canvas",
     "Dungeon Crawling/Areas",
