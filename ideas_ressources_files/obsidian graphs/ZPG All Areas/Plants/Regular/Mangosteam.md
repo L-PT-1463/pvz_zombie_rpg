@@ -8,3 +8,5 @@ Traits:
 - #Pierce 
 
 Speciality: Attacks in a 3x3 area. Attacks deal no damage.
+
+Start of first turn: Triggers a [[Fog]] Garden Gimmick.
