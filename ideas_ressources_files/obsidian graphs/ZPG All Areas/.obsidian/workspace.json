@@ -4,6 +4,22 @@
     "type": "split",
     "children": [
       {
+        "id": "59ef47075b4613de",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e9f2bf5ced5bf54b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      },
+      {
         "id": "e2ad49420dcc93f2",
         "type": "tabs",
         "children": [
@@ -168,8 +184,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "26b7115953de7703",
+  "active": "e9f2bf5ced5bf54b",
   "lastOpenFiles": [
+    "Plants/Regular/Ghost Pepper.md",
+    "Plants/Regular/Electric Currant.md",
     "Plants/Regular/Shadow Peashooter.md",
     "Plants/Regular/Electric Peashooter.md",
     "Plants/Regular/Fire Pea.md",
@@ -194,8 +212,6 @@
     "Plants/Regular/Intensive Carrot.md",
     "Plants/Protector/Celery Stalker.md",
     "Plants/Regular/Sun Bean.md",
-    "Plants/Regular/Stallia.md",
-    "Plants/Regular/Red Stinger.md",
     "Items/Accessories",
     "Untitled.canvas",
     "Dungeon Crawling/Areas",
