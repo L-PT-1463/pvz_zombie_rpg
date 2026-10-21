@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9278514120f4c245",
+        "id": "58f85b018503b28e",
         "type": "tabs",
         "children": [
           {
-            "id": "4104541365be9e54",
+            "id": "f6950e4c3406d765",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Plants/Regular/Dragon Bruit.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Dragon Bruit"
             }
           }
         ]
@@ -184,34 +188,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4104541365be9e54",
+  "active": "f6950e4c3406d765",
   "lastOpenFiles": [
+    "Plants/Regular/Draftodil.md",
+    "Plants/Regular/Dazey Chain.md",
+    "Plants/Regular/Meteor Flower.md",
+    "Plants/Regular/Dartichoke.md",
+    "Plants/Regular/Dandelion Weed.md",
+    "Plants/Regular/Dandelion Bomber.md",
+    "Plants/Regular/Corn-fetti Popper.md",
+    "Plants/Regular/Bzzz Button.md",
+    "Plants/Regular/Atomic Bombegranate.md",
+    "Plants/Protector/Buttercup.md",
+    "Plants/Regular/Blooming Heart.md",
+    "Plants/Regular/Pomegarnet Merchant.md",
+    "Plants/Regular/Blastberry Vine.md",
+    "Plants/Protector/Bamboo Spartan.md",
+    "Plants/Regular/Aloe.md",
+    "Plants/Regular/Witch Hazel.md",
+    "Plants/Regular/Wasabi Whip.md",
+    "Plants/Regular/Toadstool.md",
+    "Plants/Regular/Strawburst.md",
+    "Plants/Regular/Power Lily.md",
+    "Plants/Regular/Parsnip.md",
+    "Plants/Regular/Missile Queen.md",
+    "Plants/Regular/Jack O' Lantern.md",
     "Plants/Protector/Holly Knight.md",
     "Plants/Regular/Grapes of Wrath.md",
     "Plants/Regular/Grapeshot.md",
-    "Plants/Boss/Pecanolith.md",
-    "Plants/Regular/Party Thyme.md",
-    "Plants/Go-nuts.md",
-    "Dungeon Crawling/Gardens/Gadget Scientist's Lab.md",
-    "Plants/Regular/Ketchup Mechanic.md",
-    "Items/Accessories/Fanfare Flag.md",
-    "Plants/Boss/Beta-Carrotina.md",
-    "Plants/Regular/Body-gourd.md",
-    "Plants/Regular/Gold Bloom.md",
-    "Plants/Regular/Electric Blueberry.md",
-    "Plants/Regular/Caulipower.md",
-    "Plants/Regular/Apple Mortar.md",
-    "Plants/Regular/Baby Bruit.md",
-    "Plants/Protector/Holly Pawn.md",
-    "Plants/Protector/Sweet Potato.md",
-    "Plants/Regular/Shrinking Violet.md",
-    "Plants/Regular/Sap-fling.md",
-    "Plants/Protector/Pea-nut.md",
-    "Plants/Regular/Lava Guava.md",
-    "Plants/Regular/Hurrikale.md",
-    "Dungeon Crawling/Garden Gimmicks/Freezing Winds.md",
-    "Plants/Boss/The Pinearch.md",
-    "Plants/Regular/Homing Thistle.md",
     "Items/Accessories",
     "Untitled.canvas",
     "Dungeon Crawling/Areas",

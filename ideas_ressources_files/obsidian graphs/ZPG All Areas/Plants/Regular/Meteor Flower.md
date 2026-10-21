@@ -1,7 +1,7 @@
 #LostCity #ZCorpIntraSpaceTime #Plant 
 
 Type: #Regular 
-Area: [[ZCorp Intra-Space-Time]]
+Area: [[ZCorp Intra-Space-Time]], [[Lost City]], [[Jurassic Marsh]]
 Attack: #Lobbed 
 Traits:
  - #Fire 
