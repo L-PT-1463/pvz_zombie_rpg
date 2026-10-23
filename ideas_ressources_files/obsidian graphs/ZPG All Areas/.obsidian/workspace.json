@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "58f85b018503b28e",
+        "id": "a0246db0672a2657",
         "type": "tabs",
         "children": [
           {
-            "id": "f6950e4c3406d765",
+            "id": "860f2430b93bb4d8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Plants/Regular/Dragon Bruit.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Dragon Bruit"
+              "title": "New tab"
             }
           }
         ]
@@ -188,34 +184,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f6950e4c3406d765",
+  "active": "860f2430b93bb4d8",
   "lastOpenFiles": [
-    "Plants/Regular/Draftodil.md",
-    "Plants/Regular/Dazey Chain.md",
-    "Plants/Regular/Meteor Flower.md",
-    "Plants/Regular/Dartichoke.md",
-    "Plants/Regular/Dandelion Weed.md",
-    "Plants/Regular/Dandelion Bomber.md",
-    "Plants/Regular/Corn-fetti Popper.md",
-    "Plants/Regular/Bzzz Button.md",
-    "Plants/Regular/Atomic Bombegranate.md",
-    "Plants/Protector/Buttercup.md",
-    "Plants/Regular/Blooming Heart.md",
-    "Plants/Regular/Pomegarnet Merchant.md",
-    "Plants/Regular/Blastberry Vine.md",
-    "Plants/Protector/Bamboo Spartan.md",
-    "Plants/Regular/Aloe.md",
-    "Plants/Regular/Witch Hazel.md",
-    "Plants/Regular/Wasabi Whip.md",
-    "Plants/Regular/Toadstool.md",
-    "Plants/Regular/Strawburst.md",
-    "Plants/Regular/Power Lily.md",
-    "Plants/Regular/Parsnip.md",
-    "Plants/Regular/Missile Queen.md",
-    "Plants/Regular/Jack O' Lantern.md",
-    "Plants/Protector/Holly Knight.md",
-    "Plants/Regular/Grapes of Wrath.md",
-    "Plants/Regular/Grapeshot.md",
+    "Plants/Regular/Electric Snapdragon.md",
+    "Plants/Regular/Sunflower Singer.md",
+    "Plants/Regular/Thorn Fencer.md",
+    "Dungeon Crawling/Gardens/Black Hole.md",
+    "Plants/Regular/Warlorchid.md",
+    "Plants/Regular/Electric Mangosteen.md",
+    "Plants/Regular/Magic-shroom.md",
+    "Plants/Regular/White Egret.md",
+    "Plants/Regular/Fire Gourd.md",
+    "Plants/Boss/The Podfather.md",
+    "Plants/Regular/Bamboo Spike.md",
+    "Plants/Regular/Stephania.md",
+    "Plants/Regular/Primal Rafflesia.md",
+    "Plants/Regular/Rafflesia.md",
+    "Plants/Regular/Oak Archer.md",
+    "Plants/Regular/Pyro-shroom.md",
+    "Plants/Regular/Cryo-shroom.md",
+    "Plants/Regular/Hat-shroom.md",
+    "Plants/Regular/Aceparagus.md",
+    "Plants/Regular/Water Chestnut Brothers.md",
+    "Plants/Regular/Icy Currant.md",
+    "Plants/Regular/Gorgon Pitcher.md",
+    "Plants/Regular/Acid Lemon.md",
+    "Plants/Regular/Anglerdragon.md",
+    "Plants/Protector/Vamporcini.md",
+    "Plants/Regular/Tumbleweed.md",
     "Items/Accessories",
     "Untitled.canvas",
     "Dungeon Crawling/Areas",
