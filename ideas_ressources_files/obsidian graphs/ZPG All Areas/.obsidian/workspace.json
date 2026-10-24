@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "a0246db0672a2657",
+        "id": "203542eb7452cfb6",
         "type": "tabs",
         "children": [
           {
-            "id": "860f2430b93bb4d8",
+            "id": "44ff94d18a27a7c2",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Plants/Regular/Negative Magnet-shroom.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Negative Magnet-shroom"
             }
           }
         ]
@@ -184,34 +188,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "860f2430b93bb4d8",
+  "active": "44ff94d18a27a7c2",
   "lastOpenFiles": [
-    "Plants/Regular/Electric Snapdragon.md",
-    "Plants/Regular/Sunflower Singer.md",
-    "Plants/Regular/Thorn Fencer.md",
-    "Dungeon Crawling/Gardens/Black Hole.md",
-    "Plants/Regular/Warlorchid.md",
-    "Plants/Regular/Electric Mangosteen.md",
-    "Plants/Regular/Magic-shroom.md",
-    "Plants/Regular/White Egret.md",
-    "Plants/Regular/Fire Gourd.md",
-    "Plants/Boss/The Podfather.md",
-    "Plants/Regular/Bamboo Spike.md",
-    "Plants/Regular/Stephania.md",
-    "Plants/Regular/Primal Rafflesia.md",
-    "Plants/Regular/Rafflesia.md",
-    "Plants/Regular/Oak Archer.md",
-    "Plants/Regular/Pyro-shroom.md",
-    "Plants/Regular/Cryo-shroom.md",
-    "Plants/Regular/Hat-shroom.md",
-    "Plants/Regular/Aceparagus.md",
-    "Plants/Regular/Water Chestnut Brothers.md",
-    "Plants/Regular/Icy Currant.md",
-    "Plants/Regular/Gorgon Pitcher.md",
-    "Plants/Regular/Acid Lemon.md",
-    "Plants/Regular/Anglerdragon.md",
-    "Plants/Protector/Vamporcini.md",
-    "Plants/Regular/Tumbleweed.md",
+    "Plants/Regular/Whirlwind Bamboo.md",
+    "Plants/Regular/Spearweed.md",
+    "Plants/Regular/Punk Shocker.md",
+    "Plants/Regular/Nippy Cabbage.md",
+    "Plants/Protector/Lychee.md",
+    "Plants/Regular/Fanana.md",
+    "Plants/Regular/Electro-flower Singer.md",
+    "Plants/Regular/Captain-shroom.md",
+    "Plants/Regular/Bolt-shroom Commander.md",
+    "Plants/Regular/Caramel Popcorn.md",
+    "Plants/Regular/Maypop Mechanic.md",
+    "Plants/Regular/Lily of Alchemy.md",
+    "Plants/Pass-through/Saucer.md",
+    "Plants/Regular/Physalux.md",
+    "Plants/Protector/Wax Guard.md",
+    "Plants/Regular/Pomegarnet Merchant.md",
+    "Plants/Regular/Dandelion Weed.md",
+    "Plants/Regular/Bruce Bamboo.md",
+    "Plants/Regular/Pepper-pult.md",
+    "Plants/Regular/Rotten Red.md",
+    "Dungeon Crawling/Areas/ZCorp Intra-Space-Time.md",
+    "Dungeon Crawling/Areas/Far Future.md",
+    "Dungeon Crawling/Areas/Jurassic Marsh.md",
+    "Dungeon Crawling/Areas/Lost City.md",
+    "Dungeon Crawling/Areas/Steam City.md",
+    "Dungeon Crawling/Areas/Pirate's Beach.md",
     "Items/Accessories",
     "Untitled.canvas",
     "Dungeon Crawling/Areas",

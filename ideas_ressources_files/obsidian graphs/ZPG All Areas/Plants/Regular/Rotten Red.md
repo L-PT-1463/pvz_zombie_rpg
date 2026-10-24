@@ -1,7 +1,0 @@
- #KongfuMausoleum #OldWildEgypt #Plant 
-
-Type: #Regular 
-Area: [[Kongfu Mausoleum]], [[Old Wild Egypt]]
-Attack: #Straight
-
-Special: If it hits a zombie, it has the #Knockback trait the next turn.
