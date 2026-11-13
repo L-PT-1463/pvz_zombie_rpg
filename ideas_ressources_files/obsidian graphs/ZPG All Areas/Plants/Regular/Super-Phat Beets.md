@@ -1,7 +1,0 @@
-#NeonCarnival #Plant 
-
-Type: #Regular 
-Area: [[Neon Carnival]]
-Attack: #Straight
-
-Speciality: Gains damage when a Spawnling is spawned.
